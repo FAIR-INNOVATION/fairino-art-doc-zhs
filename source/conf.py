@@ -135,8 +135,7 @@ html_css_files = ["custom.css"]
 html_logo = '_static/logo.svg'
 html_theme_options = {
     'logo_only': True,
-    # 'display_version': False,
-    'language_selector': True,  # 显示语言切换器
+    'display_version': False,
 }
 
 # highlight_language = "c,c++,python"
