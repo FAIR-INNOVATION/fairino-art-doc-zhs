@@ -27,3 +27,13 @@ formats:
 python:
    install:
    - requirements: requirements.txt
+
+# 关键：配置多语言！
+build:
+  jobs:
+    post_checkout:
+      # 确保 locale 目录被包含
+      - echo "包含多语言翻译"
+    post_install:
+      # 编译 .mo 文件
+      - sphinx-intl build   
