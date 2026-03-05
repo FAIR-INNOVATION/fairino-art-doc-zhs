@@ -1,4 +1,15 @@
-sphinx == 6.2.1
+# 核心 Sphinx
+sphinx >= 7.2.0
+
+# 主题
+sphinx-rtd-theme >= 3.0.0
+
+# 国际化工具
+sphinx-intl
+
+# 翻译脚本依赖
+polib
+dashscope
+
+# Markdown 支持（如果你需要）
 recommonmark == 0.7.1
-sphinx-rtd-theme>=3.0.0
-latex == 0.7.0 
