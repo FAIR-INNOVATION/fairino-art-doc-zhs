@@ -1,0 +1,8 @@
+.vscode
+build
+*.mo
+locale/**/*.mo
+locale/*/LC_MESSAGES/*.mo
+locale/*/LC_MESSAGES/**/*.mo
+auto_translate.py
+build_all.py

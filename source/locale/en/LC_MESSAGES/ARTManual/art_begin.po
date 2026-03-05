@@ -1,0 +1,361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-05 11:03+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/ARTManual/art_begin.rst:2
+msgid "开箱、搬运、安装与启用说明"
+msgstr "Unboxing, Handling, Installation, and Activation Instructions"
+
+#: ../../source/ARTManual/art_begin.rst:8
+msgid "开箱检查"
+msgstr "Unboxing"
+
+#: ../../source/ARTManual/art_begin.rst:9
+msgid ""
+"人形机械臂ART3-R7共有四种配置：配置一为单臂，配置二为单臂+控制器，配置三为双臂，配置四为双臂+控制器+分支器。如图2-1、2-2、2-3和2-4所示。到货之后，请依照装箱清单确认装箱物品。"
+msgstr ""
+"The humanoid robotic arm ART3-R7 has four configurations: Configuration 1 is"
+" a single arm, Configuration 2 is a single arm plus controller, "
+"Configuration 3 is dual arms, and Configuration 4 is dual arms plus "
+"controller plus brancher. As shown in Figure 2-1, 2-2, 2-3 and 2-4. After "
+"receiving the goods, please confirm the packing list."
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "004.png"
+msgstr "004.png"
+
+#: ../../source/ARTManual/art_begin.rst:16
+msgid "图表 2-1 配置一 单臂"
+msgstr "Figure 2-1 Configuration 1 Single-arm"
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "005.png"
+msgstr "005.png"
+
+#: ../../source/ARTManual/art_begin.rst:22
+msgid "图表 2-2 配置二 单臂和控制器"
+msgstr "Figure 2-2 Configuration 2: Single Arm and Controller"
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "006.png"
+msgstr "006.png"
+
+#: ../../source/ARTManual/art_begin.rst:28
+msgid "图表 2-3 配置三 双臂"
+msgstr "Figure 2-3 Configuration 3 Dual-arm"
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "007.png"
+msgstr "007.png"
+
+#: ../../source/ARTManual/art_begin.rst:34
+msgid "图表 2-4 配置四 双臂、控制器和分支器"
+msgstr "Figure 2-4 Configuration 4: Dual Arms, Controller, and Brancher"
+
+#: ../../source/ARTManual/art_begin.rst:36
+msgid "搬运"
+msgstr "Handling"
+
+#: ../../source/ARTManual/art_begin.rst:43
+msgid "名称：**危险**"
+msgstr "Name: **Danger**"
+
+#: ../../source/ARTManual/art_begin.rst:45
+#: ../../source/ARTManual/art_begin.rst:57
+msgid "说明："
+msgstr "Instructions:"
+
+#: ../../source/ARTManual/art_begin.rst:47
+msgid "请在机械臂外围设置安全栏，安全栏应具备不易翻越、移动的特点。否则，作业人员可能在机械臂动作时进入区域，导致人员受伤，设备受损。"
+msgstr ""
+"Please set up a safety barrier around the robot arm, which should be not "
+"easy to climb over and mobile. Otherwise, workers may enter the area when "
+"the robot arm is in motion, leading to personal injury and equipment damage."
+
+#: ../../source/ARTManual/art_begin.rst:48
+msgid "请明确标识机械臂动作区域。"
+msgstr "Please clearly mark the robot arm operation area."
+
+#: ../../source/ARTManual/art_begin.rst:55
+msgid "名称：**警告**"
+msgstr "Name: **Warning**"
+
+#: ../../source/ARTManual/art_begin.rst:59
+msgid "使用吊车、叉车等搬运机械臂，必须由持有操作资格证的人员或经公司允许的人员进行。否则，机械臂在搬运中有可能掉落，从而导致事故。"
+msgstr ""
+"Lifting arms must be operated by personnel holding the corresponding "
+"operation qualification certificate or authorized by the company. Otherwise,"
+" the lifting arm may fall during handling, causing an accident."
+
+#: ../../source/ARTManual/art_begin.rst:60
+msgid "机械臂安装后，要确保机械臂完全展开时，其腕部工具或工件尖端不会碰触到墙壁或安全栏。否则，可能导致人员受伤，设备受损。"
+msgstr ""
+"After installing the robotic arm, ensure that when the arm is fully "
+"extended, the wrist tool or workpiece tip does not touch the wall or safety "
+"barrier. Otherwise, it may cause injury to personnel or damage to the "
+"equipment."
+
+#: ../../source/ARTManual/art_begin.rst:61
+msgid "必须将机械臂固定好之后，再接通电源，启动机械臂。 否则，机械臂有倾倒风险，可能导致人员受伤，设备受损。"
+msgstr ""
+"The robotic arm must be securely fixed before power is applied and the arm "
+"is started. Otherwise, there is a risk of the arm tipping over, which may "
+"cause injury to personnel and damage to the equipment."
+
+#: ../../source/ARTManual/art_begin.rst:62
+msgid "请不要运行零部件缺失或损坏的机械臂，否则，机械臂误动作，可能导致人员受伤，设备受损。"
+msgstr ""
+"Do not operate the robotic arm if parts are missing or damaged, as incorrect"
+" movements of the robotic arm may cause injury to personnel and damage to "
+"the equipment."
+
+#: ../../source/ARTManual/art_begin.rst:63
+msgid "搬运过程中，请避免过度震动和冲击。否则，将影响机械臂性能。"
+msgstr ""
+"During transportation, avoid excessive vibration and impact. Otherwise, it "
+"will affect the performance of the robotic arm."
+
+#: ../../source/ARTManual/art_begin.rst:65
+msgid ""
+"人形机械臂ART3-R7产品（含包装）总质量约为12⁓20kg，需多人协作抬起，不建议单人操作，以免发生意外。长途运输前请将机械臂调整至规定的装箱姿势，并使用专用纸箱包装后运输。"
+msgstr ""
+"The humanoid robotic arm ART3-R7 product (including packaging) has a total "
+"weight of approximately 12-20 kg, and needs to be lifted by multiple people."
+" It is not recommended for single-person operation to avoid accidents. "
+"Before long-distance transportation, adjust the robotic arm to the specified"
+" packing position and transport it after using the dedicated carton box."
+
+#: ../../source/ARTManual/art_begin.rst:68
+msgid "安装固定"
+msgstr "Install and fix"
+
+#: ../../source/ARTManual/art_begin.rst:71
+msgid "本体安装与固定"
+msgstr "Ontology Installation and Fixation"
+
+#: ../../source/ARTManual/art_begin.rst:73
+msgid "人形机械臂ART3-R7底座尺寸如图2-5所示。"
+msgstr ""
+"The base size of the humanoid robotic arm ART3-R7 is shown in Figure 2-5."
+
+#: ../../source/ARTManual/art_begin.rst:75
+msgid "机械臂底座上有6个安装孔，固定机械臂的螺钉规格推荐值见表2-1。"
+msgstr ""
+"The robot arm base has six mounting holes. The recommended screw "
+"specifications for fixing the robot arm are shown in Table 2-1."
+
+#: ../../source/ARTManual/art_begin.rst:78
+msgid "表2-1  固定机械臂时使用的螺钉规格推荐"
+msgstr "Table 2-1 Recommended Screw Specifications for Fixing the Robotic Arm"
+
+#: ../../source/ARTManual/art_begin.rst:85
+msgid "**安装**"
+msgstr "**Installation**"
+
+#: ../../source/ARTManual/art_begin.rst:87
+msgid "螺钉规格"
+msgstr "Screw Specification"
+
+#: ../../source/ARTManual/art_begin.rst:88
+msgid "内六角圆柱头螺钉M6×30(推荐GB/T 3098.1 12.9级)"
+msgstr "Hexagon head screw M6×30 (recommended GB/T 3098.1 12.9 grade)"
+
+#: ../../source/ARTManual/art_begin.rst:90
+msgid "定位销规格"
+msgstr "Positioning pin specification"
+
+#: ../../source/ARTManual/art_begin.rst:91
+msgid "Ø5×20"
+msgstr "Ø5×20"
+
+#: ../../source/ARTManual/art_begin.rst:93
+msgid "螺钉紧固扭矩"
+msgstr "Screw Tightening Torque"
+
+#: ../../source/ARTManual/art_begin.rst:94
+msgid "≥10N·m"
+msgstr "≥10 N·m"
+
+#: ../../source/ARTManual/art_begin.rst:96
+msgid "螺钉数量"
+msgstr "Number of screws"
+
+#: ../../source/ARTManual/art_begin.rst:97
+msgid "4"
+msgstr "4"
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "008.png"
+msgstr "008.png"
+
+#: ../../source/ARTManual/art_begin.rst:104
+msgid "图表 2-5 底座安装尺寸"
+msgstr "Figure 2-5 Base Mounting Dimensions"
+
+#: ../../source/ARTManual/art_begin.rst:106
+msgid "控制器和分支器"
+msgstr "Controller and brancher"
+
+#: ../../source/ARTManual/art_begin.rst:107
+msgid "控制器外形尺寸为100mm×80mm×40mm，如图2-6所示。分支器外形尺寸为125mm×81.25mm，如图2-7所示。"
+msgstr ""
+"The controller has a dimension of 100mm×80mm×40mm, as shown in Figure 2-6. "
+"The distributor has a dimension of 125mm×81.25mm, as shown in Figure 2-7."
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "009.png"
+msgstr "009.png"
+
+#: ../../source/ARTManual/art_begin.rst:114
+msgid "图表 2-6 控制器外形图"
+msgstr "Figure 2-6 Controller Outline Diagram"
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "010.png"
+msgstr "010.png"
+
+#: ../../source/ARTManual/art_begin.rst:120
+msgid "图表 2-7 分支器外形图"
+msgstr "Figure 2-7 Schematic of the Brancher"
+
+#: ../../source/ARTManual/art_begin.rst:122
+msgid "存放场所与使用环境"
+msgstr "Storage Location and Usage Environment"
+
+#: ../../source/ARTManual/art_begin.rst:125
+msgid "存放场所"
+msgstr "Storage place"
+
+#: ../../source/ARTManual/art_begin.rst:127
+msgid "人形机械臂ART3-R7应在-25~60℃，无凝霜环境下存放。"
+msgstr ""
+"The humanoid robotic arm ART3-R7 should be stored in an environment without "
+"condensation, at a temperature between -25~60℃."
+
+#: ../../source/ARTManual/art_begin.rst:130
+msgid "使用环境"
+msgstr "Operating Environment"
+
+#: ../../source/ARTManual/art_begin.rst:131
+msgid "安装机械臂的场所需要满足以下条件："
+msgstr ""
+"The location where the robotic arm is installed needs to meet the following "
+"conditions:"
+
+#: ../../source/ARTManual/art_begin.rst:133
+msgid "机械臂运转时，周围温度应在0°C~45°C以内；"
+msgstr ""
+"When the robotic arm is operating, the surrounding temperature should be "
+"within 0°C to 45°C;"
+
+#: ../../source/ARTManual/art_begin.rst:134
+msgid "湿度小、较干燥(工作湿度90%RH，无凝露)；"
+msgstr ""
+"Low humidity, relatively dry (operating humidity 90% RH, no condensation);"
+
+#: ../../source/ARTManual/art_begin.rst:135
+msgid "不会受到较大冲击和震动；"
+msgstr "Not subject to significant impact and vibration;"
+
+#: ../../source/ARTManual/art_begin.rst:136
+msgid "远离灰尘、粉尘、金属粉、腐蚀性气体、易燃性气体、油雾等；"
+msgstr ""
+"Stay away from dust, powder, metal dust, corrosive gases, flammable gases, "
+"oil mist, etc.;"
+
+#: ../../source/ARTManual/art_begin.rst:137
+msgid "远离强磁场、远离电气干扰源等；"
+msgstr ""
+"Stay away from strong magnetic fields, away from electrical interference "
+"sources, etc.;"
+
+#: ../../source/ARTManual/art_begin.rst:139
+msgid "环境温度条件仅为机械臂适用条件。若要在不符合上述条件的场所使用，请咨询本公司。"
+msgstr ""
+"The environmental temperature conditions are only applicable for the robotic"
+" arm. If you need to use it in places that do not meet the above conditions,"
+" please consult our company."
+
+#: ../../source/ARTManual/art_begin.rst:142
+msgid "启用"
+msgstr "Enable"
+
+#: ../../source/ARTManual/art_begin.rst:143
+msgid ""
+"在产品安装和使用前，客户必须针对具体应用场景进行全面的安全评估，重点关注剩余风险因素，并依据本手册对软硬件进行相应的安全配置。首次启动机械臂时，务必密切观察其运动空间，确保无任何干涉或障碍。"
+msgstr ""
+"Before installing and using the product, the customer must conduct a "
+"comprehensive safety assessment for the specific application scenario, "
+"focusing on residual risk factors, and perform the corresponding security "
+"configurations for the software and hardware according to this manual. When "
+"starting the robotic arm for the first time, closely observe its motion "
+"space to ensure there are no interferences or obstacles."
+
+#: ../../source/ARTManual/art_begin.rst:145
+msgid "使用机械臂前，请确认机械臂零点姿态与图2-8和图2-9所示姿态一致。若机械臂未移动到图示位置，请咨询本公司。"
+msgstr ""
+"Before using the robotic arm, confirm that the robotic arm's zero position "
+"is consistent with the posture shown in Figure 2-8 and Figure 2-9. If the "
+"robotic arm has not moved to the position shown in the diagram, please "
+"consult our company."
+
+#: ../../source/ARTManual/art_begin.rst:147
+msgid "机械臂在出厂时，已经进行零点标定，所以在日常操作中不需要进行零点标定。但发生下述情况后需要进行零点标定。"
+msgstr ""
+"The robotic arm has been zero-point calibrated at the factory, so zero-point"
+" calibration is not required during daily operations. However, zero-point "
+"calibration is needed after the following situations occur."
+
+#: ../../source/ARTManual/art_begin.rst:149
+msgid "更换了关节驱动器或机械臂关节；"
+msgstr "Replaced the joint driver or the robotic arm joint;"
+
+#: ../../source/ARTManual/art_begin.rst:150
+msgid "重新安装系统或更换控制器；"
+msgstr "Reinstall the system or replace the controller;"
+
+#: ../../source/ARTManual/art_begin.rst:151
+msgid "发生剧烈碰撞后。"
+msgstr "After a severe collision."
+
+#: ../../source/ARTManual/art_begin.rst:153
+msgid "机械臂各轴零点标定位置如图2-9所示。"
+msgstr ""
+"The zero-point calibration positions of each axis of the manipulator are "
+"shown in Figure 2-9."
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "011.png"
+msgstr "011.png"
+
+#: ../../source/ARTManual/art_begin.rst:160
+msgid "图表 2-8 左臂零点姿态、右臂零点姿态"
+msgstr "Figure 2-8 Left Arm Zero Posture, Right Arm Zero Posture"
+
+#: ../../source/ARTManual/art_begin.rst:-1
+msgid "012.png"
+msgstr "012.png"
+
+#: ../../source/ARTManual/art_begin.rst:165
+msgid "图表 2-9 左臂零点位置标定、右臂零点位置标定"
+msgstr ""
+"Figure 2-9 Left Arm Zero Position Calibration, Right Arm Zero Position "
+"Calibration"

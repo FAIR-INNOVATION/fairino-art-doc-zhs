@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-05 11:03+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/ARTManual/art_line.rst:2
+msgid "接线"
+msgstr "Wiring"
+
+#: ../../source/ARTManual/art_line.rst:8
+msgid "接线注意事项"
+msgstr "Wiring Precautions"
+
+#: ../../source/ARTManual/art_line.rst:9
+msgid "进行接线操作时，应严格遵循如下要求："
+msgstr ""
+"When performing wiring operations, the following requirements must be "
+"strictly followed:"
+
+#: ../../source/ARTManual/art_line.rst:16
+msgid "名称：**警告**"
+msgstr "Name: **Warning**"
+
+#: ../../source/ARTManual/art_line.rst:18
+#: ../../source/ARTManual/art_line.rst:87
+msgid "说明："
+msgstr "Instructions:"
+
+#: ../../source/ARTManual/art_line.rst:20
+msgid "请勿触摸手臂基座内部关节模组器件，以免发生触电危险。"
+msgstr ""
+"Do not touch the internal joint module components of the arm base to avoid "
+"electric shock hazard."
+
+#: ../../source/ARTManual/art_line.rst:21
+msgid "外部接线工作仅限经过培训并授权的合格工程师来完成。"
+msgstr ""
+"Only trained and authorized qualified engineers are allowed to perform "
+"external wiring work."
+
+#: ../../source/ARTManual/art_line.rst:22
+msgid "通电前需检查设备的电压等级，否则可能造成人员伤亡和设备损坏。"
+msgstr ""
+"Before powering on, check the voltage level of the equipment; otherwise, it "
+"may cause personal injury and equipment damage."
+
+#: ../../source/ARTManual/art_line.rst:23
+msgid "为保证安全，设备必须可靠接地。"
+msgstr "To ensure safety, the equipment must be reliably grounded."
+
+#: ../../source/ARTManual/art_line.rst:24
+msgid "除电源接头外，严禁将电源输入端接入到其他端子，否则可能会损坏产品。"
+msgstr ""
+"Do not connect the power input terminal to any other terminal except the "
+"power connector, otherwise the product may be damaged."
+
+#: ../../source/ARTManual/art_line.rst:25
+msgid "所有端子接入的输入电压严禁超出允许范围。"
+msgstr ""
+"The input voltage connected to all terminals must not exceed the allowable "
+"range."
+
+#: ../../source/ARTManual/art_line.rst:26
+msgid "通电前需确保接线线序正确，连接可靠、绝缘可靠，否则可能会损坏产品。"
+msgstr ""
+"Ensure the wiring sequence is correct, the connection is reliable and the "
+"insulation is reliable before power is applied, otherwise the product may be"
+" damaged."
+
+#: ../../source/ARTManual/art_line.rst:29
+msgid "系统接线"
+msgstr "System wiring"
+
+#: ../../source/ARTManual/art_line.rst:30
+msgid ""
+"人形机械臂ART3-R7共有四种配置：配置一为单臂，配置二为单臂+控制器，配置三为双臂，配置四为双臂+控制器+分支器。其接线图如图4-1、4-2、4-3和4-4所示。"
+msgstr ""
+"The humanoid robotic arm ART3-R7 has four configurations: configuration one "
+"is a single arm, configuration two is a single arm plus a controller, "
+"configuration three is dual arms, and configuration four is dual arms plus a"
+" controller and a brancher. Its wiring diagrams are shown in Figures 4-1, "
+"4-2, 4-3, and 4-4."
+
+#: ../../source/ARTManual/art_line.rst:32
+msgid "人形机械臂ART3-R7的供电电压为DC48V，控制器和分支器的供电电压为DC24V，如图4-5和4-6所示。"
+msgstr ""
+"The power supply voltage of the humanoid robotic arm ART3-R7 is DC48V, and "
+"the power supply voltage of the controller and the brancher is DC24V, as "
+"shown in Figure 4-5 and 4-6."
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "031.png"
+msgstr "031.png"
+
+#: ../../source/ARTManual/art_line.rst:39
+msgid "图表 4-1 配置一接线图"
+msgstr "Figure 4-1 Wiring Diagram of Configuration 1"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "032.png"
+msgstr "032.png"
+
+#: ../../source/ARTManual/art_line.rst:45
+msgid "图表 4-2 配置二接线图"
+msgstr "Figure 4-2 Configuration Two Wiring Diagram"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "033.png"
+msgstr "033.png"
+
+#: ../../source/ARTManual/art_line.rst:51
+msgid "图表 4-3 配置三接线图"
+msgstr "Figure 4-3 Configuration Three Wiring Diagram"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "034.png"
+msgstr "034.png"
+
+#: ../../source/ARTManual/art_line.rst:57
+msgid "图表 4-4 配置四接线图"
+msgstr "Figure 4-4 Configuration Four Wiring Diagram"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "035.png"
+msgstr "035.png"
+
+#: ../../source/ARTManual/art_line.rst:63
+msgid "图表 4-5 控制器接线位置"
+msgstr "Figure 4-5 Controller Wiring Location"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "036.png"
+msgstr "036.png"
+
+#: ../../source/ARTManual/art_line.rst:69
+msgid "图表 3-6 分支器接线位置"
+msgstr "Figure 3-6 Connector Positions of the Brancher"
+
+#: ../../source/ARTManual/art_line.rst:71
+msgid "上位机调试接线"
+msgstr "Host computer debugging wiring"
+
+#: ../../source/ARTManual/art_line.rst:72
+msgid "调试机械臂时用网线连接上位机和控制器。如图4-7所示。"
+msgstr ""
+"When debugging the robotic arm, connect the host computer and controller "
+"with an Ethernet cable, as shown in Figure 4-7."
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "037.png"
+msgstr "037.png"
+
+#: ../../source/ARTManual/art_line.rst:79
+msgid "图表 4-7 上位机和控制器接线图"
+msgstr "Figure 4-7 Upper computer and controller wiring diagram"
+
+#: ../../source/ARTManual/art_line.rst:85
+msgid "名称：**注意**"
+msgstr "Name: **Note**"
+
+#: ../../source/ARTManual/art_line.rst:89
+msgid "24V、48V供电电源请自备。"
+msgstr "The 24V and 48V power supply are required to be provided by yourself."
+
+#: ../../source/ARTManual/art_line.rst:90
+msgid "上位机调试网线请自备。"
+msgstr ""
+"The host computer debugging network cable is required to be provided by "
+"yourself."
+
+#: ../../source/ARTManual/art_line.rst:91
+msgid "控制器和分支器之间的网线请自备。"
+msgstr ""
+"The network cable between the controller and the distributor is required to "
+"be prepared by yourself."

@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-05 11:03+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/ARTManual/art_line.rst:2
+msgid "接线"
+msgstr "受付"
+
+#: ../../source/ARTManual/art_line.rst:8
+msgid "接线注意事项"
+msgstr "コード接続の注意点"
+
+#: ../../source/ARTManual/art_line.rst:9
+msgid "进行接线操作时，应严格遵循如下要求："
+msgstr "配線作業を行う際は、次の要件を厳格に遵守しなければなりません。"
+
+#: ../../source/ARTManual/art_line.rst:16
+msgid "名称：**警告**"
+msgstr "名称：**警告**"
+
+#: ../../source/ARTManual/art_line.rst:18
+#: ../../source/ARTManual/art_line.rst:87
+msgid "说明："
+msgstr "説明："
+
+#: ../../source/ARTManual/art_line.rst:20
+msgid "请勿触摸手臂基座内部关节模组器件，以免发生触电危险。"
+msgstr "アームベース内部のジョイントモジュール部品に触れないでください。感電の危険があります。"
+
+#: ../../source/ARTManual/art_line.rst:21
+msgid "外部接线工作仅限经过培训并授权的合格工程师来完成。"
+msgstr "外部配線作業は、研修を受けた資格を持つエンジニアのみが行うことができます。"
+
+#: ../../source/ARTManual/art_line.rst:22
+msgid "通电前需检查设备的电压等级，否则可能造成人员伤亡和设备损坏。"
+msgstr "通電する前に機器の電圧レベルを確認してください。それ以外の場合、人員の負傷や機器の損傷が起こる可能性があります。"
+
+#: ../../source/ARTManual/art_line.rst:23
+msgid "为保证安全，设备必须可靠接地。"
+msgstr "安全を確保するため、機器は信頼性のある接地が必要です。"
+
+#: ../../source/ARTManual/art_line.rst:24
+msgid "除电源接头外，严禁将电源输入端接入到其他端子，否则可能会损坏产品。"
+msgstr "電源プラグ以外の端子に電源入力端子を接続しないでください。それを行うと製品が損傷する可能性があります。"
+
+#: ../../source/ARTManual/art_line.rst:25
+msgid "所有端子接入的输入电压严禁超出允许范围。"
+msgstr "すべての端子に接続される入力電圧は、許容範囲を超えてはならない。"
+
+#: ../../source/ARTManual/art_line.rst:26
+msgid "通电前需确保接线线序正确，连接可靠、绝缘可靠，否则可能会损坏产品。"
+msgstr ""
+"電源を接続する前に、配線の順序が正しいことを確認し、接続および絶縁が信頼できるものであることを確認してください。それ以外の場合、製品が損傷する可能性があります。"
+
+#: ../../source/ARTManual/art_line.rst:29
+msgid "系统接线"
+msgstr "システム配線"
+
+#: ../../source/ARTManual/art_line.rst:30
+msgid ""
+"人形机械臂ART3-R7共有四种配置：配置一为单臂，配置二为单臂+控制器，配置三为双臂，配置四为双臂+控制器+分支器。其接线图如图4-1、4-2、4-3和4-4所示。"
+msgstr ""
+"人形ロボットアームART3-R7には4つの構成があります。構成1は単一アーム、構成2は単一アーム＋コントローラー、構成3は二本アーム、構成4は二本アーム＋コントローラー＋分岐器です。その配線図は図4-1、4-2、4-3および4-4に示されています。"
+
+#: ../../source/ARTManual/art_line.rst:32
+msgid "人形机械臂ART3-R7的供电电压为DC48V，控制器和分支器的供电电压为DC24V，如图4-5和4-6所示。"
+msgstr ""
+"人形ロボットアームART3-R7の電源電圧はDC48Vであり、コントローラーおよび分岐器の電源電圧はDC24Vであり、図4-5および図4-6に示されている。"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "031.png"
+msgstr "031.png"
+
+#: ../../source/ARTManual/art_line.rst:39
+msgid "图表 4-1 配置一接线图"
+msgstr "図4-1 設置1の配線図"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "032.png"
+msgstr "032.png"
+
+#: ../../source/ARTManual/art_line.rst:45
+msgid "图表 4-2 配置二接线图"
+msgstr "図表4-2 二つ目の構成の配線図"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "033.png"
+msgstr "033.png"
+
+#: ../../source/ARTManual/art_line.rst:51
+msgid "图表 4-3 配置三接线图"
+msgstr "図表4-3 三接線図"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "034.png"
+msgstr "034.png"
+
+#: ../../source/ARTManual/art_line.rst:57
+msgid "图表 4-4 配置四接线图"
+msgstr "図表4-4 フォーム4の配線図"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "035.png"
+msgstr "035.png"
+
+#: ../../source/ARTManual/art_line.rst:63
+msgid "图表 4-5 控制器接线位置"
+msgstr "図4-5 コントローラーの配線位置"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "036.png"
+msgstr "036.png"
+
+#: ../../source/ARTManual/art_line.rst:69
+msgid "图表 3-6 分支器接线位置"
+msgstr "図3-6 ブランチャーの配線位置"
+
+#: ../../source/ARTManual/art_line.rst:71
+msgid "上位机调试接线"
+msgstr "上位機デバッグ接線"
+
+#: ../../source/ARTManual/art_line.rst:72
+msgid "调试机械臂时用网线连接上位机和控制器。如图4-7所示。"
+msgstr "ロボットアームをデバッグする際には、ネットワークケーブルで上位機とコントローラーを接続します。図4-7をご参照ください。"
+
+#: ../../source/ARTManual/art_line.rst:-1
+msgid "037.png"
+msgstr "037.png"
+
+#: ../../source/ARTManual/art_line.rst:79
+msgid "图表 4-7 上位机和控制器接线图"
+msgstr "図表4-7 上位機とコントローラの配線図"
+
+#: ../../source/ARTManual/art_line.rst:85
+msgid "名称：**注意**"
+msgstr "名称：**注意**"
+
+#: ../../source/ARTManual/art_line.rst:89
+msgid "24V、48V供电电源请自备。"
+msgstr "24V、48Vの電源はご用意ください。"
+
+#: ../../source/ARTManual/art_line.rst:90
+msgid "上位机调试网线请自备。"
+msgstr "上位機のデバッグ用ネットワークケーブルはご自身でご用意ください。"
+
+#: ../../source/ARTManual/art_line.rst:91
+msgid "控制器和分支器之间的网线请自备。"
+msgstr "コントローラーとブランチャーの間のケーブルはご自身で用意してください。"

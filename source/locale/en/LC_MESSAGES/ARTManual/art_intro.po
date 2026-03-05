@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-05 11:03+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/ARTManual/art_intro.rst:2
+msgid "前言"
+msgstr "Preface"
+
+#: ../../source/ARTManual/art_intro.rst:8
+msgid "阅读提示"
+msgstr "Reading Tip"
+
+#: ../../source/ARTManual/art_intro.rst:9
+msgid "本文档中单独出现的手臂、机械臂等，均为人形机械臂ART3-R7的简写。"
+msgstr ""
+"In this document, individual arms, robotic arms, etc., are abbreviations for"
+" the humanoid robotic arm ART3-R7."
+
+#: ../../source/ARTManual/art_intro.rst:10
+msgid "机械臂使用前，请务必认真阅读用户指南。"
+msgstr "Before using the robotic arm, please carefully read the user manual."
+
+#: ../../source/ARTManual/art_intro.rst:11
+msgid "未经授权，不得擅自拆卸、组装机械臂。"
+msgstr "Do not disassemble or assemble the robotic arm without authorization."
+
+#: ../../source/ARTManual/art_intro.rst:12
+msgid "请注意用户指南所涉及的安全警告事项。"
+msgstr "Please note the safety warnings mentioned in the user guide."
+
+#: ../../source/ARTManual/art_intro.rst:13
+msgid "若机械臂出现异常问题，请及时联系本公司。"
+msgstr ""
+"If the robotic arm has any abnormal issues, please contact our company in a "
+"timely manner."
+
+#: ../../source/ARTManual/art_intro.rst:14
+msgid "使用机械臂时，如闻到异常气味，请立即停车。"
+msgstr ""
+"When using the robotic arm, if you smell an unusual odor, stop immediately."
+
+#: ../../source/ARTManual/art_intro.rst:15
+msgid "用户指南不可替代技术协议。"
+msgstr "The user guide cannot replace the technical specifications."
+
+#: ../../source/ARTManual/art_intro.rst:18
+msgid "产品用途说明"
+msgstr "Product Usage Instructions"
+
+#: ../../source/ARTManual/art_intro.rst:19
+msgid ""
+"人形机械臂ART3-R7可实现人机协同作业，可在无防护栏环境下与人共同工作。需要特别说明的是，这里所指的“协同作业”具有明确的前提条件：除机械臂本身外，涉及的工具、工件、设备、障碍物及其他机器人等，均需针对具体应用场景完成全面的风险评估，并经过验证确认不存在重大安全隐患。"
+msgstr ""
+"The human-like robotic arm ART3-R7 can achieve human-robot collaborative "
+"operations and can work with humans in an environment without protective "
+"barriers. It should be particularly noted that the term \"collaborative "
+"operations\" here has clear preconditions: in addition to the robotic arm "
+"itself, tools, workpieces, equipment, obstacles, and other robots involved "
+"must undergo comprehensive risk assessments for specific application "
+"scenarios and be verified to ensure there are no significant safety hazards."
+
+#: ../../source/ARTManual/art_intro.rst:21
+msgid "任何与预期用途违背的应用都是不被允许的，包含但不限于："
+msgstr ""
+"Any application that deviates from the intended use is not allowed, "
+"including but not limited to:"
+
+#: ../../source/ARTManual/art_intro.rst:23
+msgid "使用在布满灰尘、粉尘、金属粉、腐蚀性气体、易燃性气体、油雾等具有爆炸危险的环境。"
+msgstr ""
+"Used in environments filled with dust, dust particles, metal powder, "
+"corrosive gases, flammable gases, oil mist, etc., which are explosive "
+"hazardous."
+
+#: ../../source/ARTManual/art_intro.rst:24
+msgid "应用于与生命相关的场合中。"
+msgstr "Applied in scenarios related to life."
+
+#: ../../source/ARTManual/art_intro.rst:25
+msgid "未作危险评判与风险评估就投入使用的和风险评估不合格就使用的。"
+msgstr ""
+"Used without hazardous evaluation and risk assessment, and used with "
+"unqualified risk assessment."
+
+#: ../../source/ARTManual/art_intro.rst:26
+msgid "在允许的操作参数之外进行的操作。"
+msgstr "An operation outside the allowed parameters."
+
+#: ../../source/ARTManual/art_intro.rst:27
+msgid "在极差（极端气候、冷冻仓库、强磁场等）的环境使用。"
+msgstr ""
+"Use in extreme environments (extreme climate, cold storage, strong magnetic "
+"fields, etc.)."
+
+#: ../../source/ARTManual/art_intro.rst:30
+msgid "责任声明"
+msgstr "Disclaimer"
+
+#: ../../source/ARTManual/art_intro.rst:31
+msgid ""
+"机械臂通常作为完整应用系统的一个核心组件，需与其他设备和软件协同工作，以实现具体应用功能。集成商应依据所在地法律法规及相关技术标准，设计并构建系统应用框架，全面识别潜在危害因素，并将其影响降低至可接受的水平。"
+msgstr ""
+"Robotic arms are typically a core component of an integrated application "
+"system, and need to work collaboratively with other devices and software to "
+"achieve specific application functions. Integrators should design and build "
+"the system application framework according to local laws and regulations and"
+" relevant technical standards, fully identify potential hazard factors, and "
+"reduce their impact to an acceptable level."
+
+#: ../../source/ARTManual/art_intro.rst:33
+msgid "该过程应遵循且不限于如下原则："
+msgstr ""
+"The process should follow and not be limited to the following principles:"
+
+#: ../../source/ARTManual/art_intro.rst:35
+msgid "对完整的机器人系统做一个风险评估。"
+msgstr "Conduct a risk assessment for the complete robot system."
+
+#: ../../source/ARTManual/art_intro.rst:36
+msgid "将风险评估定义的其他机械和附加安全设备连接在一起。"
+msgstr ""
+"Connect other machinery and additional safety devices as defined by the risk"
+" assessment."
+
+#: ../../source/ARTManual/art_intro.rst:37
+msgid "在软件中建立适当的安全设置。"
+msgstr "Establish appropriate security settings in the software."
+
+#: ../../source/ARTManual/art_intro.rst:38
+msgid "确保用户不会对任何安全措施加以修改。"
+msgstr "Ensure that users do not modify any security measures."
+
+#: ../../source/ARTManual/art_intro.rst:39
+msgid "确认整个机器人系统的设计和安装准确无误。"
+msgstr ""
+"Confirm that the design and installation of the entire robot system are "
+"accurate and error-free."
+
+#: ../../source/ARTManual/art_intro.rst:40
+msgid "明确使用说明。"
+msgstr "Clear usage instructions."
+
+#: ../../source/ARTManual/art_intro.rst:41
+msgid "在机械臂上标明集成商的相关标志和联系信息。"
+msgstr ""
+"Mark the integrator's relevant logo and contact information on the robotic "
+"arm."
+
+#: ../../source/ARTManual/art_intro.rst:42
+msgid "收集技术文件中的所有文档，包括本手册。"
+msgstr ""
+"Collect all documents in the technical documentation, including this manual."
+
+#: ../../source/ARTManual/art_intro.rst:45
+msgid "保修"
+msgstr "Warranty"
+
+#: ../../source/ARTManual/art_intro.rst:46
+msgid "所有出厂设备及其选装部件，均经过严格的质量检测与性能验证，确保符合公司标准。"
+msgstr ""
+"All factory equipment and optional components have undergone strict quality "
+"testing and performance verification to ensure they meet the company's "
+"standards."
+
+#: ../../source/ARTManual/art_intro.rst:48
+msgid "在交付产品的保修期内，本公司仅对正常使用时发生的故障进行免费修理。但在以下情况下，将对客户收取修理费用（即使在保修期内）："
+msgstr ""
+"During the warranty period of the product, our company will only provide "
+"free repair for failures occurring under normal use. However, in the "
+"following cases, repair fees will be charged to the customer (even during "
+"the warranty period):"
+
+#: ../../source/ARTManual/art_intro.rst:50
+msgid "因不同于本用户手册中内容的错误使用以及使用不当而导致的损坏或故障。"
+msgstr ""
+"Damage or failure caused by incorrect use or improper use not specified in "
+"this user manual."
+
+#: ../../source/ARTManual/art_intro.rst:51
+msgid "客户未经授权进行拆卸导致的故障。"
+msgstr "Failure caused by the customer's unauthorized disassembly."
+
+#: ../../source/ARTManual/art_intro.rst:52
+msgid "因调整不当或未经授权进行修理而导致的损坏。"
+msgstr "Damage caused by improper adjustment or unauthorized repairs."
+
+#: ../../source/ARTManual/art_intro.rst:53
+msgid "因地震、洪水等自然灾害导致的损坏。"
+msgstr "Damage caused by natural disasters such as earthquakes and floods."
+
+#: ../../source/ARTManual/art_intro.rst:56
+msgid "危险、警告、注意使用"
+msgstr "Danger, Warning, Caution Use"
+
+#: ../../source/ARTManual/art_intro.rst:58
+msgid "任何超出本书规定的使用条件及产品规格的应用，将导致相关产品的保修权利即时失效。"
+msgstr ""
+"Any application beyond the usage conditions and product specifications "
+"outlined in this book will immediately void the warranty rights of the "
+"relevant products."
+
+#: ../../source/ARTManual/art_intro.rst:59
+msgid "对于因未遵循本书中“危险”及“警告”提示而引发的任何故障、事故，包括但不限于人身伤害或死亡，本公司均不承担任何法律责任，敬请谅解。"
+msgstr ""
+"We will not assume any legal liability for any failure, accident, including "
+"but not limited to personal injury or death, caused by not following the "
+"\"Danger\" and \"Warning\" notices in this book. We apologize for any "
+"inconvenience."
+
+#: ../../source/ARTManual/art_intro.rst:60
+msgid "本公司无法预见所有可能的危险情形，本用户手册内容不应被视为对全部潜在风险的警告，用户需自行保持审慎。"
+msgstr ""
+"Our company cannot foresee all possible dangerous situations, and the "
+"contents of this user manual should not be considered as a warning for all "
+"potential risks; users are required to exercise their own caution."
+
+#: ../../source/ARTManual/art_intro.rst:67
+msgid "名称：**危险**"
+msgstr "Name: **Danger**"
+
+#: ../../source/ARTManual/art_intro.rst:69
+#: ../../source/ARTManual/art_intro.rst:81
+#: ../../source/ARTManual/art_intro.rst:99
+msgid "说明："
+msgstr "Instructions:"
+
+#: ../../source/ARTManual/art_intro.rst:71
+msgid "使用本产品前，请务必认真阅读并充分理解本用户手册。本用户手册包含安全注意事项、机械臂详细规格、安装等必要信息。"
+msgstr ""
+"Before using this product, please carefully read and fully understand this "
+"user manual. This user manual contains safety precautions, detailed "
+"specifications of the robotic arm, installation and other necessary "
+"information."
+
+#: ../../source/ARTManual/art_intro.rst:72
+msgid "没有在说明书中说明的内容请视作“禁止”或“不可”。"
+msgstr ""
+"Anything not specified in the manual should be considered \"prohibited\" or "
+"\"not allowed\"."
+
+#: ../../source/ARTManual/art_intro.rst:79
+msgid "名称：**警告**"
+msgstr "Name: **Warning**"
+
+#: ../../source/ARTManual/art_intro.rst:83
+msgid "操作机械臂前，必须认真阅读并充分理解所有安全注意事项。未理解并遵守相关规程而进行操作，可能导致人员受伤，设备受损。"
+msgstr ""
+"Before operating the robotic arm, you must carefully read and fully "
+"understand all safety precautions. Operating without understanding and "
+"complying with the relevant procedures may result in personnel injury or "
+"equipment damage."
+
+#: ../../source/ARTManual/art_intro.rst:84
+msgid "请勿在机械臂运动期间进入作业区域。即使观察到机械臂已停止动作，也可能突然运动，造成人员受伤，设备受损。"
+msgstr ""
+"Do not enter the work area while the robot arm is moving. Even if it appears"
+" the robot arm has stopped, it may suddenly move again, causing injury to "
+"personnel and damage to equipment."
+
+#: ../../source/ARTManual/art_intro.rst:85
+msgid "操作机械臂系统之前，请确认机械臂作业区域内没有人。"
+msgstr ""
+"Before operating the robotic arm system, confirm that there is no one in the"
+" working area of the robotic arm."
+
+#: ../../source/ARTManual/art_intro.rst:86
+msgid "机械臂可以在低速状态下运行以确保安全，但意外动作仍可能造成人员受伤，设备受损。"
+msgstr ""
+"The robotic arm can operate at a low speed to ensure safety, but unexpected "
+"movements may still cause injury to personnel and damage to the equipment."
+
+#: ../../source/ARTManual/art_intro.rst:87
+msgid "机械臂运动期间，一旦发现机械臂出现异常动作，请立即停止机械臂。若在异常状态下继续操作，可能导致人员受伤，设备受损。"
+msgstr ""
+"During the movement of the robotic arm, if any abnormal movement of the "
+"robotic arm is detected, please stop the robotic arm immediately. Continuing"
+" operation in an abnormal state may cause injury to personnel and damage to "
+"the equipment."
+
+#: ../../source/ARTManual/art_intro.rst:88
+msgid "进行人工负载装卸时，机械臂必须处于断电状态，以防止意外启动，确保人员安全。"
+msgstr ""
+"When manually loading and unloading, the robotic arm must be powered off to "
+"prevent accidental startup and ensure personnel safety."
+
+#: ../../source/ARTManual/art_intro.rst:89
+msgid "客户擅自对机械臂进行改造，将不在本公司保修范围内。若造成人员受伤，设备受损，本公司概不负责。"
+msgstr ""
+"The customer's unauthorized modification of the robotic arm is not covered "
+"by our warranty. If any personal injury or equipment damage occurs, we will "
+"not be held responsible."
+
+#: ../../source/ARTManual/art_intro.rst:90
+msgid "修理机械臂请联系本公司。"
+msgstr "Contact our company to repair the robotic arm."
+
+#: ../../source/ARTManual/art_intro.rst:97
+msgid "名称：**注意**"
+msgstr "Name: **Note**"
+
+#: ../../source/ARTManual/art_intro.rst:101
+msgid "说明书中的图片是示例，可能与所购买的产品不同。"
+msgstr ""
+"The images in the manual are for reference only and may differ from the "
+"product you purchased."
+
+#: ../../source/ARTManual/art_intro.rst:102
+msgid "由于破损、丢失等原因需重新订购说明书时，请与本公司联系。"
+msgstr ""
+"If you need to reorder the manual due to damage, loss, or other reasons, "
+"please contact our company."
+
+#: ../../source/ARTManual/art_intro.rst:103
+msgid "机械臂本体贴有表明机械臂型号、序列号、质量等重要内容的铭牌，请仔细确认后再使用。"
+msgstr ""
+"The robot arm has a nameplate indicating important information such as the "
+"model, serial number, and quality of the robot arm. Please confirm carefully"
+" before use."
+
+#: ../../source/ARTManual/art_intro.rst:104
+msgid "请不要撕毁机械臂铭牌。"
+msgstr "Do not tear off the robot arm nameplate."
+
+#: ../../source/ARTManual/art_intro.rst:105
+msgid "废弃机械臂时，按照《中华人民共和国固体废物污染环境防治法》进行处理。"
+msgstr ""
+"When disposing of the obsolete robotic arm, handle it in accordance with the"
+" Law of the People's Republic of China on the Prevention and Control of "
+"Environmental Pollution by Solid Wastes."
