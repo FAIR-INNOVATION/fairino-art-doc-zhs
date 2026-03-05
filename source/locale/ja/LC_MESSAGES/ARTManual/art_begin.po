@@ -21,7 +21,6 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 #: ../../source/ARTManual/art_begin.rst:2
-#, fuzzy
 msgid "开箱、搬运、安装与启用说明"
 msgstr "開封、搬入、設置および起動の手順"
 
