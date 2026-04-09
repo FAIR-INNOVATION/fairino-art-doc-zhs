@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥意威协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-05 11:03+0800\n"
+"POT-Creation-Date: 2026-04-07 10:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -518,6 +518,190 @@ msgstr "The end-effector flange size is shown in Figure 3-18."
 msgid "030.png"
 msgstr "030.png"
 
-#: ../../source/ARTManual/art_product.rst:318
+#: ../../source/ARTManual/art_product.rst:319
 msgid "图表 3-18 末端工具法兰尺寸"
 msgstr "Figure 3-18 End Tool Flange Dimensions"
+
+#: ../../source/ARTManual/art_product.rst:321
+msgid "机器人负载曲线"
+msgstr "Robot Load Curve"
+
+#: ../../source/ARTManual/art_product.rst:324
+msgid "概述"
+msgstr "Overview"
+
+#: ../../source/ARTManual/art_product.rst:325
+msgid "负载曲线用于描述机器人的负载能力，可协助用户进行型号选择，并评估所安装末端负载的可行性。"
+msgstr ""
+"The load curve describes the robot’s load capacity, helping users select "
+"appropriate models and assess the feasibility of the installed end-effector "
+"load."
+
+#: ../../source/ARTManual/art_product.rst:328
+msgid "负载曲线"
+msgstr "Load curve"
+
+#: ../../source/ARTManual/art_product.rst:329
+msgid ""
+"本节所涉及的负载曲线基于ART3-R7在不同全局运行速度(30%、50%，80%和100%)，执行特定轨迹仿真获取。负载曲线存在“完整性能”和“扩展后的负载能力”两部分，具体如下："
+msgstr ""
+"The load curves covered in this section are obtained from trajectory "
+"simulations of the ART3-R7 robot at different global operating speeds (30%, "
+"50%, 80%, and 100%). Each load curve consists of two parts: “Full "
+"Performance” and “Extended Load Capacity,” as detailed below:"
+
+#: ../../source/ARTManual/art_product.rst:331
+msgid ""
+"“完整性能”的运行环境为：各关节摩擦力补偿系数为1；各关节碰撞等级为10；Web界面设置相应运行速度，维护模式内加速度默认为360deg/s\\ "
+":sup:`2` ；动力学2.0。在此环境下，负载曲线“完整性能”部分适应绝大多数运行轨迹。"
+msgstr ""
+"The “Full Performance” operating environment is defined as follows: friction"
+" compensation coefficients for all joints are set to 1; collision "
+"sensitivity levels for all joints are set to 10; the corresponding operating"
+" speed is configured via the Web interface; the default acceleration in "
+"Maintenance Mode is 360 deg/s²; and Dynamics 2.0 is enabled. Under this "
+"environment, the “Full Performance” segment of the payload curve "
+"accommodates the vast majority of motion trajectories."
+
+#: ../../source/ARTManual/art_product.rst:332
+msgid "若末端负载处于“扩展后的负载能力”，须开启“时间最优模式”并满足加速度限制，或减小机器人工作范围。"
+msgstr ""
+"If the end-effector load is within the “extended load capacity,” the “time-"
+"optimal mode” must be enabled while satisfying the acceleration limits, or "
+"the robot’s working range must be reduced."
+
+#: ../../source/ARTManual/art_product.rst:335
+msgid "参数说明"
+msgstr "Parameter Description"
+
+#: ../../source/ARTManual/art_product.rst:336
+msgid "机器人的额定有效负载取决于有效负载的重心偏移，其中，重心偏移定义为末端法兰中心与附加的有效负载重心之间的距离。"
+msgstr ""
+"The robot’s rated payload depends on the center-of-gravity offset of the "
+"payload, defined as the distance between the center of the end flange and "
+"the center of gravity of the attached payload."
+
+#: ../../source/ARTManual/art_product.rst:339
+msgid "30%运行速度下的负载曲线"
+msgstr "Load curve at 30% operating speed"
+
+#: ../../source/ARTManual/art_product.rst:341
+msgid "在30%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"At 30% of the global operating speed, the ART3-R7 robot model has a maximum "
+"payload capacity of 5 kg and a rated payload of 3 kg, as shown in the "
+"payload curve below. The payload curve is interpreted as follows:"
+
+#: ../../source/ARTManual/art_product.rst:343
+#: ../../source/ARTManual/art_product.rst:361
+#: ../../source/ARTManual/art_product.rst:379
+#: ../../source/ARTManual/art_product.rst:397
+msgid "ART3-R7在完整性能下可携带3kg及以下的负载，见“蓝色包络线”；"
+msgstr ""
+"ART3-R7 can carry a load of 3 kg or less at full performance, as shown by "
+"the “blue envelope.”"
+
+#: ../../source/ARTManual/art_product.rst:344
+#: ../../source/ARTManual/art_product.rst:362
+#: ../../source/ARTManual/art_product.rst:380
+#: ../../source/ARTManual/art_product.rst:398
+msgid "当负载为3kg至5kg时，为扩展后的负载能力，见“红色包络线”，此时机器人可运行在如下状态："
+msgstr ""
+"When the load is 3 kg to 5 kg, the extended load capacity (see the “red "
+"envelope curve”) allows the robot to operate in the following states:"
+
+#: ../../source/ARTManual/art_product.rst:346
+msgid "①开启“时间最优模式”，建议加速度设置在108deg/s\\ :sup:`2` 以下；"
+msgstr ""
+"① Enable “Time-Optimal Mode”; it is recommended to set the acceleration "
+"below 108 deg/s²."
+
+#: ../../source/ARTManual/art_product.rst:348
+#: ../../source/ARTManual/art_product.rst:366
+#: ../../source/ARTManual/art_product.rst:384
+#: ../../source/ARTManual/art_product.rst:402
+msgid "②减小机器人工作范围，避免频繁冲击。"
+msgstr "② Reduce the robot’s working range to avoid frequent impacts."
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "048.png"
+msgstr "048.png"
+
+#: ../../source/ARTManual/art_product.rst:355
+msgid "图表 3-19 负载曲线—全局运行速度30%"
+msgstr "Figure 3-19 Load Curve—Global Operating Speed at 30%"
+
+#: ../../source/ARTManual/art_product.rst:357
+msgid "50%运行速度下的负载曲线"
+msgstr "Load curve at 50% operating speed"
+
+#: ../../source/ARTManual/art_product.rst:359
+msgid "在50%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"At 50% of the global operating speed, the ART3-R7 robot model has a maximum "
+"payload capacity of 5 kg and a rated payload of 3 kg, as shown in the "
+"payload curve below. The payload curve is interpreted as follows:"
+
+#: ../../source/ARTManual/art_product.rst:364
+msgid "①开启“时间最优模式”，建议加速度设置在180deg/s\\ :sup:`2` 以下；"
+msgstr ""
+"① Enable “Time-Optimal Mode”; it is recommended to set the acceleration "
+"below 180 deg/s²."
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "049.png"
+msgstr "049.png"
+
+#: ../../source/ARTManual/art_product.rst:373
+msgid "图表 3-20 负载曲线—全局运行速度50%"
+msgstr "Figure 3-20 Load Curve—Global Operating Speed at 50%"
+
+#: ../../source/ARTManual/art_product.rst:375
+msgid "80%运行速度下的负载曲线"
+msgstr "Load curve at 80% operating speed"
+
+#: ../../source/ARTManual/art_product.rst:377
+msgid "在80%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"At 80% of the global operating speed, the ART3-R7 robot model has a maximum "
+"payload capacity of 5 kg and a rated payload of 3 kg; the payload curve is "
+"shown in the figure below. The payload curve is interpreted as follows:"
+
+#: ../../source/ARTManual/art_product.rst:382
+msgid "①开启“时间最优模式”，建议加速度设置在288deg/s\\ :sup:`2` 以下；"
+msgstr ""
+"① Enable “Time-Optimal Mode”; it is recommended to set the acceleration "
+"below 288 deg/s²."
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "050.png"
+msgstr "050.png"
+
+#: ../../source/ARTManual/art_product.rst:391
+msgid "图表 3-21 负载曲线—全局运行速度80%"
+msgstr "Figure 3-21 Load Curve—Global Operating Speed at 80%"
+
+#: ../../source/ARTManual/art_product.rst:393
+msgid "100%运行速度下的负载曲线"
+msgstr "Load curve at 100% operating speed"
+
+#: ../../source/ARTManual/art_product.rst:395
+msgid "在100%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"At 100% global operating speed, the maximum payload capacity of the ART3-R7 "
+"robot model is 5 kg, with a rated payload of 3 kg. The payload curve is "
+"shown below. The specific interpretation of the payload curve is as follows:"
+
+#: ../../source/ARTManual/art_product.rst:400
+msgid "①开启“时间最优模式”，建议加速度设置在360deg/s\\ :sup:`2` 以下；"
+msgstr ""
+"① Enable “Time-Optimal Mode”; it is recommended to set the acceleration "
+"below 360 deg/s²."
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "051.png"
+msgstr "051.png"
+
+#: ../../source/ARTManual/art_product.rst:408
+msgid "图表 3-22 负载曲线—全局运行速度100%"
+msgstr "Figure 3-22 Load Curve—Global Operating Speed at 100%"

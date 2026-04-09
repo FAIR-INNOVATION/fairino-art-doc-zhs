@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥意威协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-05 11:03+0800\n"
+"POT-Creation-Date: 2026-04-07 10:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -26,11 +26,11 @@ msgstr "製品紹介"
 
 #: ../../source/ARTManual/art_product.rst:8
 msgid "产品尺寸"
-msgstr "製品の寸法"
+msgstr "製品サイズ"
 
 #: ../../source/ARTManual/art_product.rst:10
 msgid "左臂和右臂的外形尺寸均为836.5mm×123mm×123mm，如图3-1和3-2所示。"
-msgstr "左腕および右腕の外形寸法はともに836.5mm×123mm×123mmであり、図3-1および図3-2に示す。"
+msgstr "左腕および右腕の外形寸法は、いずれも836.5mm×123mm×123mmであり、図3-1および図3-2に示すとおりである。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "013.png"
@@ -46,7 +46,7 @@ msgstr "014.png"
 
 #: ../../source/ARTManual/art_product.rst:23
 msgid "图表 3-2 右臂外形尺寸"
-msgstr "図3-2 右腕の外観寸法"
+msgstr "図3-2 右腕の外形寸法"
 
 #: ../../source/ARTManual/art_product.rst:25
 msgid "铭牌信息"
@@ -54,7 +54,7 @@ msgstr "銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:26
 msgid "配置一单臂和包装箱的铭牌信息如图3-3和3-4所示。"
-msgstr "1本のアームとパッケージボックスの銘板情報は、図3-3および3-4に示されています。"
+msgstr "単アームおよび包装箱の銘板情報は、図3-3および図3-4に示すとおりです。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "015.png"
@@ -62,7 +62,7 @@ msgstr "015.png"
 
 #: ../../source/ARTManual/art_product.rst:33
 msgid "图表 3-3 配置一 单臂铭牌信息"
-msgstr "図3-3 設置1 ワンアームプレート情報"
+msgstr "図3-3 構成1：シングルアーム銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "016.png"
@@ -70,11 +70,11 @@ msgstr "016.png"
 
 #: ../../source/ARTManual/art_product.rst:39
 msgid "图表 3-4 配置一 包装箱铭牌信息"
-msgstr "図表3-4 設置1 パッケージボックスの銘板情報"
+msgstr "図3-4 構成1：包装箱の銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:40
 msgid "配置二单臂+控制器和包装箱的铭牌信息如图3-5和3-6所示。"
-msgstr "2つの単腕＋コントローラーおよびパッケージボックスの銘板情報は図3-5および3-6に示されています。"
+msgstr "二重単腕＋コントローラおよび包装箱の銘板情報は、図3-5および図3-6に示すとおりです。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "017.png"
@@ -82,7 +82,7 @@ msgstr "017.png"
 
 #: ../../source/ARTManual/art_product.rst:47
 msgid "图表 3-5 配置二 单臂铭牌信息"
-msgstr "図表3-5 設置2 ワンアームラベル情報"
+msgstr "図3-5 構成2：シングルアーム銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "018.png"
@@ -90,11 +90,11 @@ msgstr "018.png"
 
 #: ../../source/ARTManual/art_product.rst:53
 msgid "图表 3-6 配置二 包装箱铭牌信息"
-msgstr "図表3-6 設置2 パッケージボックスの銘板情報"
+msgstr "図3-6 構成2：包装箱の銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:54
 msgid "配置三双臂和包装箱的铭牌信息如图3-7、3-8和3-9所示。"
-msgstr "3本のアームとパッケージボックスの銘板情報は図3-7、3-8および3-9に示されています。"
+msgstr "三本のアームおよび包装箱の銘板情報は、図3-7、図3-8および図3-9に示すとおりです。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "019.png"
@@ -102,7 +102,7 @@ msgstr "019.png"
 
 #: ../../source/ARTManual/art_product.rst:61
 msgid "图表 3-7 配置三 左臂铭牌信息"
-msgstr "図表3-7 プロファイル3 左腕の銘板情報"
+msgstr "図3-7 構成3：左アームの銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "020.png"
@@ -110,7 +110,7 @@ msgstr "020.png"
 
 #: ../../source/ARTManual/art_product.rst:67
 msgid "图表 3-8 配置三 右臂铭牌信息"
-msgstr "図表3-8 設定3 右腕の銘板情報"
+msgstr "図3-8 構成3：右腕の銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "021.png"
@@ -118,11 +118,11 @@ msgstr "021.png"
 
 #: ../../source/ARTManual/art_product.rst:73
 msgid "图表 3-9 配置三 包装箱铭牌信息"
-msgstr "図表3-9 設置3 パッケージボックスの銘板情報"
+msgstr "図3-9 構成3：梱包箱の銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:74
 msgid "配置四双臂、控制器、分支器和包装箱的铭牌信息如图3-10、3-11和3-12所示。"
-msgstr "4本のアーム、コントローラー、分岐器およびパッケージボックスの銘板情報は図3-10、3-11および3-12に示されています。"
+msgstr "4本のアーム、コントローラー、ブランチャーおよび包装箱の銘板情報は、図3-10、図3-11および図3-12に示すとおりです。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "022.png"
@@ -130,7 +130,7 @@ msgstr "022.png"
 
 #: ../../source/ARTManual/art_product.rst:81
 msgid "图表 3-10 配置四 左臂铭牌信息"
-msgstr "図3-10 プロファイル4 左腕の銘板情報"
+msgstr "図3-10 構成4：左アームの銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "023.png"
@@ -138,7 +138,7 @@ msgstr "023.png"
 
 #: ../../source/ARTManual/art_product.rst:87
 msgid "图表 3-11 右臂铭牌信息"
-msgstr "図表3-11 右腕の銘板情報"
+msgstr "図3-11 右腕の銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "024.png"
@@ -146,7 +146,7 @@ msgstr "024.png"
 
 #: ../../source/ARTManual/art_product.rst:93
 msgid "图表 3-12 配置四 包装箱铭牌信息"
-msgstr "図表3-12 パッケージ4 パッケージラベル情報"
+msgstr "図3-12 構成4：包装箱の銘板情報"
 
 #: ../../source/ARTManual/art_product.rst:95
 msgid "技术参数"
@@ -154,23 +154,23 @@ msgstr "技術仕様"
 
 #: ../../source/ARTManual/art_product.rst:96
 msgid "机械臂的技术参数如表3-1所示。"
-msgstr "ロボットアームの技術仕様は表3-1に示されています。"
+msgstr "マニピュレーターの技術仕様は表3-1に示されています。"
 
 #: ../../source/ARTManual/art_product.rst:99
 msgid "表3-1  技术参数"
-msgstr "表3-1 技術仕様"
+msgstr "表3-1　技術仕様"
 
 #: ../../source/ARTManual/art_product.rst:105
 msgid "**参数类型**"
-msgstr "パラメータの種類"
+msgstr "**パラメータータイプ**"
 
 #: ../../source/ARTManual/art_product.rst:106
 msgid "**具体参数**"
-msgstr "**具体的なパラメータ**"
+msgstr "**具体的パラメータ**"
 
 #: ../../source/ARTManual/art_product.rst:108
 msgid "型号参数"
-msgstr "型式パラメータ"
+msgstr "型式・仕様"
 
 #: ../../source/ARTManual/art_product.rst:109
 msgid "ART3-R7"
@@ -182,7 +182,7 @@ msgstr "ペイロード"
 
 #: ../../source/ARTManual/art_product.rst:112
 msgid "单臂3kg"
-msgstr "片手3kg"
+msgstr "片腕3kg"
 
 #: ../../source/ARTManual/art_product.rst:114
 msgid "有效工作范围"
@@ -190,7 +190,7 @@ msgstr "有効作業範囲"
 
 #: ../../source/ARTManual/art_product.rst:115
 msgid "600mm"
-msgstr "600ミリメートル"
+msgstr "600mm"
 
 #: ../../source/ARTManual/art_product.rst:117
 msgid "自由度"
@@ -208,7 +208,7 @@ msgstr "7つの回転自由度"
 #: ../../source/ARTManual/art_product.rst:135
 #: ../../source/ARTManual/art_product.rst:138
 msgid "关节活动范围"
-msgstr "関節の可動域"
+msgstr "関節可動域"
 
 #: ../../source/ARTManual/art_product.rst:121
 msgid "1轴：±175°"
@@ -224,7 +224,7 @@ msgstr "3軸：±175°"
 
 #: ../../source/ARTManual/art_product.rst:130
 msgid "4轴：0-120°"
-msgstr "4軸：0-120°"
+msgstr "4軸：0～120°"
 
 #: ../../source/ARTManual/art_product.rst:133
 msgid "5轴：±175°"
@@ -244,19 +244,19 @@ msgstr "関節速度"
 
 #: ../../source/ARTManual/art_product.rst:142
 msgid "1-2轴≥150°/s，3-7轴≥180°/s"
-msgstr "1-2軸≥150°/s、3-7軸≥180°/s"
+msgstr "1～2軸：≥150°/s、3～7軸：≥180°/s"
 
 #: ../../source/ARTManual/art_product.rst:144
 msgid "噪音"
-msgstr "騒音"
+msgstr "ノイズ"
 
 #: ../../source/ARTManual/art_product.rst:145
 msgid "<65dB"
-msgstr "<65デシベル"
+msgstr "65dB以下"
 
 #: ../../source/ARTManual/art_product.rst:147
 msgid "安装方向"
-msgstr "取り付け方向"
+msgstr "設置方向"
 
 #: ../../source/ARTManual/art_product.rst:148
 msgid "任何方向"
@@ -264,7 +264,7 @@ msgstr "あらゆる方向"
 
 #: ../../source/ARTManual/art_product.rst:150
 msgid "重复定位精度"
-msgstr "再定位精度"
+msgstr "繰り返し定位精度"
 
 #: ../../source/ARTManual/art_product.rst:151
 msgid "±0.1mm"
@@ -272,7 +272,7 @@ msgstr "±0.1mm"
 
 #: ../../source/ARTManual/art_product.rst:153
 msgid "整机质量"
-msgstr "本体の重量"
+msgstr "全体の質量"
 
 #: ../../source/ARTManual/art_product.rst:154
 msgid "约8kg"
@@ -280,11 +280,11 @@ msgstr "約8kg"
 
 #: ../../source/ARTManual/art_product.rst:157
 msgid "关节定义"
-msgstr "関節定義"
+msgstr "関節の定義"
 
 #: ../../source/ARTManual/art_product.rst:158
 msgid "左臂和右臂的关节定义如图3-13和3-14所示。"
-msgstr "左腕と右腕の関節は図3-13および図3-14に示されている。"
+msgstr "左腕および右腕の関節の定義は、図3-13および図3-14に示すとおりである。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "025.png"
@@ -292,7 +292,7 @@ msgstr "025.png"
 
 #: ../../source/ARTManual/art_product.rst:165
 msgid "图表 3-13 左臂关节定义"
-msgstr "図3-13 左腕関節の定義"
+msgstr "図3-13　左腕関節の定義"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "026.png"
@@ -308,7 +308,7 @@ msgstr "可動範囲"
 
 #: ../../source/ARTManual/art_product.rst:174
 msgid "机械臂的运动范围如图3-15所示。"
-msgstr "ロボットアームの運動範囲は図3-15に示されている。"
+msgstr "マニピュレーターの可動範囲を図3-15に示します。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "027.png"
@@ -316,7 +316,7 @@ msgstr "027.png"
 
 #: ../../source/ARTManual/art_product.rst:181
 msgid "图表 3-15 机械臂运动范围"
-msgstr "図3-15 ロボットアームの動作範囲"
+msgstr "図3-15 機械アームの動作範囲"
 
 #: ../../source/ARTManual/art_product.rst:183
 msgid "DH参数与坐标系"
@@ -324,11 +324,11 @@ msgstr "DHパラメータと座標系"
 
 #: ../../source/ARTManual/art_product.rst:184
 msgid "左臂DH参数如表3-2和图3-16所示。"
-msgstr "左腕のDHパラメータは表3-2および図3-16に示されている。"
+msgstr "左腕のDHパラメータは表3-2および図3-16に示すとおりである。"
 
 #: ../../source/ARTManual/art_product.rst:187
 msgid "表3-2 左臂DH参数表"
-msgstr "表3-2 左腕DHパラメータ表"
+msgstr "表3-2 左腕のDHパラメータ表"
 
 #: ../../source/ARTManual/art_product.rst:193
 #: ../../source/ARTManual/art_product.rst:256
@@ -343,17 +343,17 @@ msgstr "**θi**"
 #: ../../source/ARTManual/art_product.rst:195
 #: ../../source/ARTManual/art_product.rst:258
 msgid "**di/mm**"
-msgstr "**di/mm**"
+msgstr "**日/月**"
 
 #: ../../source/ARTManual/art_product.rst:196
 #: ../../source/ARTManual/art_product.rst:259
 msgid "**ai**"
-msgstr "**AI**"
+msgstr "**ai**"
 
 #: ../../source/ARTManual/art_product.rst:197
 #: ../../source/ARTManual/art_product.rst:260
 msgid "**αi/rad**"
-msgstr "**αi/rad**"
+msgstr "**αi/ラジアン**"
 
 #: ../../source/ARTManual/art_product.rst:199
 #: ../../source/ARTManual/art_product.rst:262
@@ -477,7 +477,7 @@ msgstr "図3-16 左腕座標系"
 
 #: ../../source/ARTManual/art_product.rst:247
 msgid "右臂DH参数如表3-3和图3-17所示。"
-msgstr "右腕のDHパラメータは表3-3および図3-17に示されている。"
+msgstr "右腕のDHパラメータは表3-3および図3-17に示すとおりである。"
 
 #: ../../source/ARTManual/art_product.rst:250
 msgid "表3-3 右臂DH参数表"
@@ -489,20 +489,170 @@ msgstr "029.png"
 
 #: ../../source/ARTManual/art_product.rst:309
 msgid "图表 3-17 右臂坐标系"
-msgstr "図3-17 右腕の座標系"
+msgstr "図3-17 右腕座標系"
 
 #: ../../source/ARTManual/art_product.rst:311
 msgid "工具法兰尺寸"
-msgstr "ツールフランジ寸法"
+msgstr "ツールフランジサイズ"
 
 #: ../../source/ARTManual/art_product.rst:312
 msgid "末端工具法兰尺寸如图3-18所示。"
-msgstr "エンドツールフランジの寸法は図3-18に示されている。"
+msgstr "エンド・エフェクターフランジの寸法は、図3-18に示すとおりです。"
 
 #: ../../source/ARTManual/art_product.rst:-1
 msgid "030.png"
 msgstr "030.png"
 
-#: ../../source/ARTManual/art_product.rst:318
+#: ../../source/ARTManual/art_product.rst:319
 msgid "图表 3-18 末端工具法兰尺寸"
-msgstr "図3-18 終端ツールフランジ寸法"
+msgstr "図3-18 末端ツールフランジ寸法"
+
+#: ../../source/ARTManual/art_product.rst:321
+msgid "机器人负载曲线"
+msgstr "ロボット負荷曲線"
+
+#: ../../source/ARTManual/art_product.rst:324
+msgid "概述"
+msgstr "概要"
+
+#: ../../source/ARTManual/art_product.rst:325
+msgid "负载曲线用于描述机器人的负载能力，可协助用户进行型号选择，并评估所安装末端负载的可行性。"
+msgstr ""
+"負荷曲線は、ロボットの負荷能力を示すものであり、ユーザーが機種選定を行う際の支援および取り付けられたエンドローダーの実現可能性評価に役立ちます。"
+
+#: ../../source/ARTManual/art_product.rst:328
+msgid "负载曲线"
+msgstr "負荷曲線"
+
+#: ../../source/ARTManual/art_product.rst:329
+msgid ""
+"本节所涉及的负载曲线基于ART3-R7在不同全局运行速度(30%、50%，80%和100%)，执行特定轨迹仿真获取。负载曲线存在“完整性能”和“扩展后的负载能力”两部分，具体如下："
+msgstr ""
+"本セクションで扱う負荷曲線は、ART3-R7を異なるグローバル運転速度（30％、50％、80％、および100％）で動作させ、特定の軌道をシミュレーションした結果に基づいて得られたものである。負荷曲線は「完全性能」と「拡張された負荷能力」の2つの部分から構成されており、具体的には以下のとおりである："
+
+#: ../../source/ARTManual/art_product.rst:331
+msgid ""
+"“完整性能”的运行环境为：各关节摩擦力补偿系数为1；各关节碰撞等级为10；Web界面设置相应运行速度，维护模式内加速度默认为360deg/s\\ "
+":sup:`2` ；动力学2.0。在此环境下，负载曲线“完整性能”部分适应绝大多数运行轨迹。"
+msgstr ""
+"「フルパフォーマンス」の動作環境は以下のとおりです：各関節の摩擦力補償係数は1、各関節の衝突レベルは10、Webインターフェースで対応する動作速度を設定し、メンテナンスモード内の加速度はデフォルトで360"
+" deg/s²、およびダイナミクス2.0。この環境下では、負荷曲線の「フルパフォーマンス」部分が、ほとんどの動作軌道に適合します。"
+
+#: ../../source/ARTManual/art_product.rst:332
+msgid "若末端负载处于“扩展后的负载能力”，须开启“时间最优模式”并满足加速度限制，或减小机器人工作范围。"
+msgstr ""
+"末端負荷が「拡張された負荷能力」の状態にある場合、「時間最適モード」を有効化し、加速度制限を満たす必要があります。または、ロボットの作業範囲を縮小してください。"
+
+#: ../../source/ARTManual/art_product.rst:335
+msgid "参数说明"
+msgstr "パラメータの説明"
+
+#: ../../source/ARTManual/art_product.rst:336
+msgid "机器人的额定有效负载取决于有效负载的重心偏移，其中，重心偏移定义为末端法兰中心与附加的有效负载重心之间的距离。"
+msgstr ""
+"ロボットの定格有効負荷は、有効負荷の重心位置のずれに依存します。ここで、重心位置のずれとは、エンド・フランジ中心と追加された有効負荷の重心との間の距離を指します。"
+
+#: ../../source/ARTManual/art_product.rst:339
+msgid "30%运行速度下的负载曲线"
+msgstr "30％運転速度における負荷曲線"
+
+#: ../../source/ARTManual/art_product.rst:341
+msgid "在30%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"全体運転速度が30％の条件下では、ART3-R7型ロボットの最大搬送可能負荷は5kg、定格負荷は3kgであり、負荷曲線は下図のとおりです。負荷曲線の具体的な意味は以下のとおりです："
+
+#: ../../source/ARTManual/art_product.rst:343
+#: ../../source/ARTManual/art_product.rst:361
+#: ../../source/ARTManual/art_product.rst:379
+#: ../../source/ARTManual/art_product.rst:397
+msgid "ART3-R7在完整性能下可携带3kg及以下的负载，见“蓝色包络线”；"
+msgstr "ART3-R7は、完全な性能を発揮した状態で3kg以下の荷重を搬送可能です（「青色の包絡線」参照）。"
+
+#: ../../source/ARTManual/art_product.rst:344
+#: ../../source/ARTManual/art_product.rst:362
+#: ../../source/ARTManual/art_product.rst:380
+#: ../../source/ARTManual/art_product.rst:398
+msgid "当负载为3kg至5kg时，为扩展后的负载能力，见“红色包络线”，此时机器人可运行在如下状态："
+msgstr "負荷が3kg～5kgの場合、拡張された負荷能力（「赤色エンベロープ線」参照）を発揮し、ロボットは以下の状態で動作可能です："
+
+#: ../../source/ARTManual/art_product.rst:346
+msgid "①开启“时间最优模式”，建议加速度设置在108deg/s\\ :sup:`2` 以下；"
+msgstr "①「時間最適モード」をオンにする場合、加速度は108deg/s²以下に設定することを推奨します。"
+
+#: ../../source/ARTManual/art_product.rst:348
+#: ../../source/ARTManual/art_product.rst:366
+#: ../../source/ARTManual/art_product.rst:384
+#: ../../source/ARTManual/art_product.rst:402
+msgid "②减小机器人工作范围，避免频繁冲击。"
+msgstr "②ロボットの作業範囲を縮小し、頻繁な衝撃を回避する。"
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "048.png"
+msgstr "048.png"
+
+#: ../../source/ARTManual/art_product.rst:355
+msgid "图表 3-19 负载曲线—全局运行速度30%"
+msgstr "図3-19 負荷曲線—グローバル運転速度30％"
+
+#: ../../source/ARTManual/art_product.rst:357
+msgid "50%运行速度下的负载曲线"
+msgstr "50％運転速度における負荷曲線"
+
+#: ../../source/ARTManual/art_product.rst:359
+msgid "在50%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"グローバル運転速度を50％に設定した場合、ART3-R7型ロボットの最大許容荷重は5kg、定格荷重は3kgであり、荷重曲線は下図のとおりです。荷重曲線の具体的な意味は以下のとおりです："
+
+#: ../../source/ARTManual/art_product.rst:364
+msgid "①开启“时间最优模式”，建议加速度设置在180deg/s\\ :sup:`2` 以下；"
+msgstr "①「時間最適モード」をオンにする場合、加速度は180deg/s²以下に設定することを推奨します。"
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "049.png"
+msgstr "049.png"
+
+#: ../../source/ARTManual/art_product.rst:373
+msgid "图表 3-20 负载曲线—全局运行速度50%"
+msgstr "図3-20 負荷曲線—グローバル運転速度50％"
+
+#: ../../source/ARTManual/art_product.rst:375
+msgid "80%运行速度下的负载曲线"
+msgstr "80％運転速度における負荷曲線"
+
+#: ../../source/ARTManual/art_product.rst:377
+msgid "在80%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"グローバル運転速度が80％のとき、ART3-R7型ロボットの最大許容荷重は5kg、定格荷重は3kgであり、荷重曲線を以下に示します。荷重曲線の具体的な意味は以下のとおりです："
+
+#: ../../source/ARTManual/art_product.rst:382
+msgid "①开启“时间最优模式”，建议加速度设置在288deg/s\\ :sup:`2` 以下；"
+msgstr "①「時間最適モード」をオンにした場合、加速度は288 deg/s²以下に設定することを推奨します。"
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "050.png"
+msgstr "050.png"
+
+#: ../../source/ARTManual/art_product.rst:391
+msgid "图表 3-21 负载曲线—全局运行速度80%"
+msgstr "図3-21 負荷曲線—グローバル運転速度80％"
+
+#: ../../source/ARTManual/art_product.rst:393
+msgid "100%运行速度下的负载曲线"
+msgstr "100％運転速度における負荷曲線"
+
+#: ../../source/ARTManual/art_product.rst:395
+msgid "在100%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
+msgstr ""
+"100％のグローバル動作速度において、ART3-R7型ロボットの最大搬送荷重は5kg、定格荷重は3kgであり、荷重曲線は下図のとおりです。荷重曲線の具体的な意味は以下のとおりです："
+
+#: ../../source/ARTManual/art_product.rst:400
+msgid "①开启“时间最优模式”，建议加速度设置在360deg/s\\ :sup:`2` 以下；"
+msgstr "①「時間最適モード」をオンにする場合、加速度は360deg/s²以下に設定することを推奨します。"
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "051.png"
+msgstr "051.png"
+
+#: ../../source/ARTManual/art_product.rst:408
+msgid "图表 3-22 负载曲线—全局运行速度100%"
+msgstr "図3-22 負荷曲線—グローバル運転速度100％"
