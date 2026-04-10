@@ -1,0 +1,1049 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 17:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/PluginManual/plugin_board.rst:2
+msgid "状态看板与指令"
+msgstr "ステータスボードと指示"
+
+#: ../../source/PluginManual/plugin_board.rst:8
+msgid "状态看板"
+msgstr "ステータスダッシュボード"
+
+#: ../../source/PluginManual/plugin_board.rst:9
+msgid ""
+"状态看板实际上是一个默认随着插件开机自启动的controller，名称为fairino_hardware_state_broadcaster，它以500HZ的频率监控插件中所有状态反馈接口，并以topic的形式发布出来，消息类型名称是fairino_hardware_state_broadcaster/msg/HardwareState。"
+msgstr ""
+"ステータス掲示板（ステータス・カンバン）は、実際にはプラグインの起動時に自動的に起動するコントローラーであり、その名称は「fairino_hardware_state_broadcaster」である。このコントローラーは500Hzの周波数で、プラグイン内のすべてのステータスフィードバックインターフェースを監視し、トピック形式で状態情報を発行する。メッセージの型名は「fairino_hardware_state_broadcaster/msg/HardwareState」である。"
+
+#: ../../source/PluginManual/plugin_board.rst:12
+msgid "表2-1 具体的msg定义"
+msgstr "表2-1　具体的msg定義"
+
+#: ../../source/PluginManual/plugin_board.rst:18
+msgid "**字段名称**"
+msgstr "**フィールド名**"
+
+#: ../../source/PluginManual/plugin_board.rst:19
+msgid "**数据类型**"
+msgstr "**データ型**"
+
+#: ../../source/PluginManual/plugin_board.rst:20
+msgid "**物理含义与业务释义**"
+msgstr "**物理的意味と業務上の意味**"
+
+#: ../../source/PluginManual/plugin_board.rst:22
+msgid "header"
+msgstr "ヘッダー"
+
+#: ../../source/PluginManual/plugin_board.rst:23
+msgid "std_msgs/Header"
+msgstr "std_msgs/Header"
+
+#: ../../source/PluginManual/plugin_board.rst:24
+msgid "包含时间戳（Timestamp）与坐标系信息，用于数据帧的高精度时间同步。"
+msgstr "タイムスタンプと座標系情報を含み、データフレームの高精度な時刻同期に使用されます。"
+
+#: ../../source/PluginManual/plugin_board.rst:26
+msgid "joint_names"
+msgstr "ジョイント名"
+
+#: ../../source/PluginManual/plugin_board.rst:27
+msgid "string[]"
+msgstr "文字列配列[]"
+
+#: ../../source/PluginManual/plugin_board.rst:28
+msgid "关节名称。对应 URDF 中定义的关节名，用于保证数据映射不乱序。"
+msgstr "関節名。URDF で定義された関節名に対応し、データのマッピングが順序どおりになるようにするためのものです。"
+
+#: ../../source/PluginManual/plugin_board.rst:30
+msgid "errorcode"
+msgstr "エラーコード"
+
+#: ../../source/PluginManual/plugin_board.rst:31
+#: ../../source/PluginManual/plugin_board.rst:55
+msgid "int32[]"
+msgstr "int32[]"
+
+#: ../../source/PluginManual/plugin_board.rst:32
+msgid "单轴伺服错误码。记录各关节驱动器自身的独立报警状态（如单轴过载/编码器异常）。"
+msgstr "単軸サーボエラーコード。各関節ドライバの個別のアラーム状態（例：単軸過負荷／エンコーダ異常）を記録します。"
+
+#: ../../source/PluginManual/plugin_board.rst:34
+msgid "position"
+msgstr "ポジション"
+
+#: ../../source/PluginManual/plugin_board.rst:35
+#: ../../source/PluginManual/plugin_board.rst:39
+#: ../../source/PluginManual/plugin_board.rst:43
+#: ../../source/PluginManual/plugin_board.rst:47
+#: ../../source/PluginManual/plugin_board.rst:59
+#: ../../source/PluginManual/plugin_board.rst:63
+#: ../../source/PluginManual/plugin_board.rst:67
+msgid "float64[]"
+msgstr "float64[]"
+
+#: ../../source/PluginManual/plugin_board.rst:36
+msgid "实际位置反馈。电机的真实位置读数（单位：rad 或 m）。"
+msgstr "実際の位置フィードバック。モーターの実際の位置読み取り値（単位：rad または m）。"
+
+#: ../../source/PluginManual/plugin_board.rst:38
+msgid "velocity"
+msgstr "速度"
+
+#: ../../source/PluginManual/plugin_board.rst:40
+msgid "实际速度反馈。电机的真实速度读数（单位：rad/s 或 m/s）。"
+msgstr "実際の速度フィードバック。モーターの実際の速度（単位：rad/s または m/s）。"
+
+#: ../../source/PluginManual/plugin_board.rst:42
+msgid "effort"
+msgstr "努力"
+
+#: ../../source/PluginManual/plugin_board.rst:44
+msgid "实际电流/力矩反馈。电机当前的实际出力估算值。"
+msgstr "実際の電流／トルクフィードバック。モータの現在の実際の出力推定値。"
+
+#: ../../source/PluginManual/plugin_board.rst:46
+msgid "sensortorque"
+msgstr "センサートルク"
+
+#: ../../source/PluginManual/plugin_board.rst:48
+msgid "传感器力矩反馈。若配备双编码器或外部关节扭矩传感器，此处为真实物理扭矩。"
+msgstr "センサトルクフィードバック。デュアルエンコーダまたは外部関節トルクセンサが装備されている場合、ここに表示されるのは実際の物理トルクです。"
+
+#: ../../source/PluginManual/plugin_board.rst:50
+msgid "stateword"
+msgstr "状態語"
+
+#: ../../source/PluginManual/plugin_board.rst:51
+msgid "uint16[]"
+msgstr "uint16[]"
+
+#: ../../source/PluginManual/plugin_board.rst:52
+msgid "伺服状态字 (Statusword)。严格对应 EtherCAT CiA 402 标准状态机字典（如 0x0237 代表运行使能）。"
+msgstr ""
+"サーボ状態ワード（Statusword）。EtherCAT CiA 402標準のステートマシン辞書と厳密に対応（例：0x0237は「動作可能」を表す）。"
+
+#: ../../source/PluginManual/plugin_board.rst:54
+msgid "opmode"
+msgstr "動作モード"
+
+#: ../../source/PluginManual/plugin_board.rst:56
+msgid "伺服运行模式 (Mode of Operation)。如 8 代表 CSP（周期同步位置），10 代表 CST（周期同步力矩）。"
+msgstr "サーボ運転モード（動作モード）。例えば、8はCSP（周期同期位置）、10はCST（周期同期トルク）を表します。"
+
+#: ../../source/PluginManual/plugin_board.rst:58
+msgid "command_position"
+msgstr "コマンド位置"
+
+#: ../../source/PluginManual/plugin_board.rst:60
+msgid "指令位置。ROS 2 控制器刚向该关节下发的目标点位。与 position 相减可得“跟随误差”。"
+msgstr "指令位置。ROS 2 コントローラが当該関節に送信した目標位置。position との差を取ることで「追従誤差」が得られます。"
+
+#: ../../source/PluginManual/plugin_board.rst:62
+msgid "command_velocity"
+msgstr "コマンド速度"
+
+#: ../../source/PluginManual/plugin_board.rst:64
+msgid "指令速度。ROS 2 控制器下发的目标前馈速度。"
+msgstr "指令速度。ROS 2 コントローラーが送信する目標前フィード速度。"
+
+#: ../../source/PluginManual/plugin_board.rst:66
+msgid "command_torque"
+msgstr "コマンドトルク"
+
+#: ../../source/PluginManual/plugin_board.rst:68
+msgid "指令力矩。ROS 2 控制器下发的目标前馈力矩。"
+msgstr "指令トルク。ROS 2 コントローラーが送信する目標フィードフォワードトルク。"
+
+#: ../../source/PluginManual/plugin_board.rst:70
+msgid "version_major"
+msgstr "メジャーバージョン"
+
+#: ../../source/PluginManual/plugin_board.rst:71
+#: ../../source/PluginManual/plugin_board.rst:75
+#: ../../source/PluginManual/plugin_board.rst:79
+#: ../../source/PluginManual/plugin_board.rst:87
+#: ../../source/PluginManual/plugin_board.rst:95
+#: ../../source/PluginManual/plugin_board.rst:99
+#: ../../source/PluginManual/plugin_board.rst:103
+#: ../../source/PluginManual/plugin_board.rst:107
+#: ../../source/PluginManual/plugin_board.rst:111
+msgid "float64"
+msgstr "float64"
+
+#: ../../source/PluginManual/plugin_board.rst:72
+msgid "主版本号。底层硬件或固件的核心大版本。"
+msgstr "メジャーバージョン番号。基盤となるハードウェアまたはファームウェアのコアとなる大規模なバージョン。"
+
+#: ../../source/PluginManual/plugin_board.rst:74
+msgid "version_minor"
+msgstr "マイナーバージョン"
+
+#: ../../source/PluginManual/plugin_board.rst:76
+msgid "次版本号。功能更新版本迭代号。"
+msgstr "次のバージョン番号。機能更新のバージョン反復番号。"
+
+#: ../../source/PluginManual/plugin_board.rst:78
+msgid "version_minor2"
+msgstr "マイナーバージョン2"
+
+#: ../../source/PluginManual/plugin_board.rst:80
+msgid "修订版本号。小补丁或 Bug 修复号。"
+msgstr "リビジョン番号。小さなパッチまたはバグ修正番号。"
+
+#: ../../source/PluginManual/plugin_board.rst:82
+msgid "hexerrorcode_curerrcode"
+msgstr "16進エラーコード_現在のエラーコード"
+
+#: ../../source/PluginManual/plugin_board.rst:83
+msgid "int32"
+msgstr "int32"
+
+#: ../../source/PluginManual/plugin_board.rst:84
+msgid "当前系统致命/运行故障码。对应 32 位 Hex 码。非零时立即触发全臂抱闸及 Dump 故障快照。"
+msgstr ""
+"現在のシステム致命的エラー／実行時エラーコード。32ビットの16進数コードに対応。ゼロでない場合、即座に全アームブレーキおよびダンプ障害スナップショットを実行する。"
+
+#: ../../source/PluginManual/plugin_board.rst:86
+msgid "hexerrorcode_curwarncode"
+msgstr "16進エラーコード_現在の警告コード"
+
+#: ../../source/PluginManual/plugin_board.rst:88
+msgid "当前系统一般警告码。对应 32 位 Hex 码（如触发轨迹削峰）。仅作记录上报，不阻断运动。"
+msgstr ""
+"現在のシステムにおける一般的な警告コード。32ビットの16進数コードに対応（例：トラジェクトリのピークカットが発生した場合）。記録および報告のみを目的とし、運動は中断されません。"
+
+#: ../../source/PluginManual/plugin_board.rst:90
+msgid "generalio_di"
+msgstr "一般日"
+
+#: ../../source/PluginManual/plugin_board.rst:91
+msgid "uint32"
+msgstr "uint32"
+
+#: ../../source/PluginManual/plugin_board.rst:92
+msgid "通用数字输入 (DI)。通过 32 位二进制掩码表示多路数字输入电平（如安全门、外部按钮状态）。"
+msgstr "汎用デジタル入力（DI）。32ビットのバイナリマスクにより、複数のデジタル入力レベル（例：安全ドア、外部ボタンの状態など）を表します。"
+
+#: ../../source/PluginManual/plugin_board.rst:94
+msgid "generalio_ai"
+msgstr "generalio_ai"
+
+#: ../../source/PluginManual/plugin_board.rst:96
+msgid "通用模拟输入 (AI)。0-10V 或 4-20mA 模拟量信号的数字化读数。"
+msgstr "汎用アナログ入力（AI）。0～10Vまたは4～20mAのアナログ信号をデジタル化して読み取ります。"
+
+#: ../../source/PluginManual/plugin_board.rst:98
+msgid "interface485_feedback485"
+msgstr "インターフェース485／フィードバック485"
+
+#: ../../source/PluginManual/plugin_board.rst:100
+msgid "RS-485 接口反馈。用于末端智能夹爪或外部串口传感器的通信数据回读。"
+msgstr "RS-485インターフェースによるフィードバック。末端のスマートグリッパーまたは外部シリアルセンサーとの通信データの読み戻しに使用します。"
+
+#: ../../source/PluginManual/plugin_board.rst:102
+msgid "interfacecan_feedbackcan"
+msgstr "インターフェース可能・フィードバック可能・CAN"
+
+#: ../../source/PluginManual/plugin_board.rst:104
+msgid "CAN 总线接口反馈。扩展 CAN 节点的外围通信数据或状态反馈。"
+msgstr "CANバスインターフェースからのフィードバック。拡張CANノードの周辺通信データまたはステータスのフィードバック。"
+
+#: ../../source/PluginManual/plugin_board.rst:106
+msgid "interfacesdo_sdoreaddata"
+msgstr "インターフェース do_sdo_read_data"
+
+#: ../../source/PluginManual/plugin_board.rst:108
+msgid "SDO 读取数据。EtherCAT 非周期性数据对象 (SDO) 字典查询后返回的参数值。"
+msgstr "SDOによるデータ読み込み。EtherCATの非周期的データオブジェクト（SDO）辞書照会後に返されるパラメータ値。"
+
+#: ../../source/PluginManual/plugin_board.rst:110
+msgid "interfacesdo_sdostatus"
+msgstr "インターフェース do_sdo_status"
+
+#: ../../source/PluginManual/plugin_board.rst:112
+msgid "SDO 通信状态。反映 SDO 异步读写请求是否成功握手或报错。"
+msgstr "SDO通信ステータス。SDO非同期読み書き要求が正常にハンドシェイクされたか、エラーが発生したかを反映します。"
+
+#: ../../source/PluginManual/plugin_board.rst:114
+msgid ""
+"其中，hexerrorcode_curerrcode是当前系统的错误码，一旦该数值为非0，说明系统存在错误，由于错误码显示使用了十进制，而编写错误码采用了十六进制，因此需要讲十进制数据转换成十六进制数，才能解析出错误码对应的故障信息，以下是32位错误码组成说明。"
+msgstr ""
+"このうち、「hexerrorcode_curerrcode」は現在のシステムのエラーコードであり、この値が0でない場合、システムにエラーが発生していることを示します。エラーコードの表示には10進数が用いられているのに対し、エラーコードの定義には16進数が用いられているため、10進数で表示されたデータを16進数に変換しなければ、エラーコードに対応する障害情報を解析できません。以下に、32ビットエラーコードの構成について説明します。"
+
+#: ../../source/PluginManual/plugin_board.rst:117
+msgid "表2-2 插件32位错误码组成说明表"
+msgstr "表2-2　プラグイン32ビットエラーコード構成説明表"
+
+#: ../../source/PluginManual/plugin_board.rst:123
+msgid "**字节位置**"
+msgstr "**バイト位置**"
+
+#: ../../source/PluginManual/plugin_board.rst:124
+msgid "**名称**"
+msgstr "**名称**"
+
+#: ../../source/PluginManual/plugin_board.rst:125
+msgid "**取值及含义**"
+msgstr "**値とその意味**"
+
+#: ../../source/PluginManual/plugin_board.rst:127
+msgid "[31:24] 字节4"
+msgstr "[31:24] バイト4"
+
+#: ../../source/PluginManual/plugin_board.rst:128
+msgid "Severity (故障等级)"
+msgstr "重大度（障害レベル）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x00 = OK (正常)"
+msgstr "0x00 = OK（正常）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x01 = INFO (提示信息)"
+msgstr "0x01 = INFO（情報メッセージ）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x02 = WARN (一般警告，不阻断运行)"
+msgstr "0x02 = WARN（一般的警告。実行を停止しない）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x0E = ERROR (运行故障，打断运动)"
+msgstr "0x0E = エラー（運転障害、運動の中断）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x0F = FATAL (致命故障，触发急停与安全锁)"
+msgstr "0x0F = FATAL（致命的障害。緊急停止および安全ロックをトリガー）"
+
+#: ../../source/PluginManual/plugin_board.rst:135
+msgid "[23:16] 字节3"
+msgstr "[23:16] バイト3"
+
+#: ../../source/PluginManual/plugin_board.rst:136
+msgid "Subsystem (子系统模块)"
+msgstr "サブシステム（サブシステム・モジュール）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x00 = INIT (初始化过程)"
+msgstr "0x00 = INIT（初期化プロセス）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x10 = RUN (运行过程)"
+msgstr "0x10 = RUN（実行中）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x20 = SENSOR (传感器)"
+msgstr "0x20 = SENSOR（センサー）"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x30 = HAL (硬件抽象层反馈)"
+msgstr "0x30 = HAL（ハードウェア抽象化レイヤーのフィードバック）"
+
+#: ../../source/PluginManual/plugin_board.rst:142
+msgid "[15:08] 字节2"
+msgstr "[15:08] バイト2"
+
+#: ../../source/PluginManual/plugin_board.rst:143
+msgid "MainCode (主错误码)"
+msgstr "MainCode（主エラーコード）"
+
+#: ../../source/PluginManual/plugin_board.rst:144
+msgid "例如：0x00, 0x01, 0xFF (全局广播)"
+msgstr "例：0x00、0x01、0xFF（グローバルブロードキャスト）"
+
+#: ../../source/PluginManual/plugin_board.rst:146
+msgid "[07:00] 字节1"
+msgstr "[07:00] バイト1"
+
+#: ../../source/PluginManual/plugin_board.rst:147
+msgid "SubCode (从错误码)"
+msgstr "サブコード（エラーコードから）"
+
+#: ../../source/PluginManual/plugin_board.rst:148
+msgid "流水号，用于精确区分具体的报错原因"
+msgstr "連番号：具体的なエラー原因を正確に区別するために使用されます。"
+
+#: ../../source/PluginManual/plugin_board.rst:151
+msgid ""
+"请注意，目前规定致命级别的错误不支持错误恢复，错误级别的均可以通过指令服务器的reseterror指令恢复，警告级别的信息会通过curwarncode提示但是不会中断系统运行。"
+msgstr ""
+"なお、現在のところ、致命的なエラー（ファタール・エラー）についてはエラー回復がサポートされていません。エラー（エラー・レベル）は、コマンドサーバーの「reseterror」コマンドによりすべて回復可能です。警告（ワーニング・レベル）の情報は「curwarncode」で通知されますが、システムの動作を中断することはありません。"
+
+#: ../../source/PluginManual/plugin_board.rst:154
+msgid "表2-3 致命(FATAL)级别故障码"
+msgstr "表2-3 致命（FATAL）レベルのエラーコード"
+
+#: ../../source/PluginManual/plugin_board.rst:160
+#: ../../source/PluginManual/plugin_board.rst:222
+#: ../../source/PluginManual/plugin_board.rst:245
+msgid "**完整Hex数值**"
+msgstr "**完全な16進数値**"
+
+#: ../../source/PluginManual/plugin_board.rst:161
+#: ../../source/PluginManual/plugin_board.rst:223
+msgid "**故障释义**"
+msgstr "**障害の定義**"
+
+#: ../../source/PluginManual/plugin_board.rst:162
+#: ../../source/PluginManual/plugin_board.rst:224
+#: ../../source/PluginManual/plugin_board.rst:247
+msgid "**排查与处理方向**"
+msgstr "**トラブルシューティングと対応方針**"
+
+#: ../../source/PluginManual/plugin_board.rst:164
+msgid "0x0F000001"
+msgstr "0x0F000001"
+
+#: ../../source/PluginManual/plugin_board.rst:165
+msgid "参数读取异常，非法参数"
+msgstr "パラメータ読み込み例外：不正なパラメータ"
+
+#: ../../source/PluginManual/plugin_board.rst:166
+#: ../../source/PluginManual/plugin_board.rst:170
+msgid "启动之前是否自行修改过配置文件，或者配置文件是否损坏，建议重新运行frconfig指令，使用法奥给的配置文件进行从站配置"
+msgstr ""
+"起動前に設定ファイルを手動で変更した、あるいは設定ファイルが破損していないか確認してください。frconfigコマンドを再度実行し、ファオ社が提供する設定ファイルを使用してスレーブ側の設定を行ってください。"
+
+#: ../../source/PluginManual/plugin_board.rst:168
+msgid "0x0F000002"
+msgstr "0x0F000002"
+
+#: ../../source/PluginManual/plugin_board.rst:169
+msgid "伺服从站格式非法，正则解析减速比失败"
+msgstr "サーバー形式が不正です。正規表現による減速比の解析に失敗しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:172
+msgid "0x0F000004"
+msgstr "0x0F000004"
+
+#: ../../source/PluginManual/plugin_board.rst:173
+msgid "初始化共享内存或者信号量打开失败"
+msgstr "共有メモリまたはセマフォの初期化／オープンに失敗しました"
+
+#: ../../source/PluginManual/plugin_board.rst:174
+msgid "HAL库没有正确启动，请联系法奥技术人员排查"
+msgstr "HALライブラリが正しく起動していません。ファオの技術スタッフに連絡し、原因を調査してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:176
+msgid "0x0F000008"
+msgstr "0x0F000008"
+
+#: ../../source/PluginManual/plugin_board.rst:177
+msgid "读取初始状态和校验错误"
+msgstr "初期状態の読み込みと検証エラー"
+
+#: ../../source/PluginManual/plugin_board.rst:178
+msgid "调用的HAL库版本不对，请使用法奥提供的升级包进行升级后重启"
+msgstr ""
+"呼び出されたHALライブラリのバージョンが正しくありません。ファオ社が提供するアップグレードパッケージを用いてアップグレードし、その後再起動してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:180
+msgid "0x0F000010"
+msgstr "0x0F000010"
+
+#: ../../source/PluginManual/plugin_board.rst:181
+msgid "读取初始状态从站信息校验错误,检查ethercat拓扑结构"
+msgstr "初期状態のスレーブ情報読み込み時の検証エラーです。EtherCATトポロジー構造を確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:182
+msgid "从站数量和类型校验错误，请检查当前加载的配置是否和真实硬件对应并且确认开机的时候EtherCAT线是接在控制器上的"
+msgstr ""
+"ステーション数およびタイプの検証エラーです。現在読み込まれている設定が実際のハードウェアと一致しているか確認し、起動時にEtherCATケーブルがコントローラに接続されているかどうかもご確認ください。"
+
+#: ../../source/PluginManual/plugin_board.rst:184
+msgid "0x0F000020"
+msgstr "0x0F000020"
+
+#: ../../source/PluginManual/plugin_board.rst:185
+msgid "读取初始状态共享内存对象为空错误"
+msgstr "初期状態の共有メモリオブジェクトを読み込む際に空エラーが発生しました"
+
+#: ../../source/PluginManual/plugin_board.rst:186
+#: ../../source/PluginManual/plugin_board.rst:190
+msgid "HAL库退出，请联系法奥技术人员排查"
+msgstr "HALライブラリが終了しました。ファオの技術者に連絡してトラブルシューティングを行ってください。"
+
+#: ../../source/PluginManual/plugin_board.rst:188
+msgid "0x0F000040"
+msgstr "0x0F000040"
+
+#: ../../source/PluginManual/plugin_board.rst:189
+msgid "读取初始状态超时"
+msgstr "初期状態の読み込みがタイムアウトしました"
+
+#: ../../source/PluginManual/plugin_board.rst:192
+msgid "0x0F100001"
+msgstr "0x0F100001"
+
+#: ../../source/PluginManual/plugin_board.rst:193
+msgid "共享内存看门狗超时"
+msgstr "共有メモリウォッチドッグタイムアウト"
+
+#: ../../source/PluginManual/plugin_board.rst:194
+msgid "HAL 库掉线或底层驱动进程死掉。排查底层 igh 进程是否正常存活，检查 IPC 共享内存机制是否被阻塞。"
+msgstr ""
+"HALライブラリが切断されたか、または低レベルドライバプロセスが異常終了しました。低レベルのighプロセスが正常に動作しているかを確認し、IPC共有メモリ機構がブロックされていないかをチェックしてください。"
+
+#: ../../source/PluginManual/plugin_board.rst:196
+msgid "0x0F100101"
+msgstr "0x0F100101"
+
+#: ../../source/PluginManual/plugin_board.rst:197
+msgid "从站信息和校验错误"
+msgstr "ステーション情報および検証エラー"
+
+#: ../../source/PluginManual/plugin_board.rst:198
+msgid "底层获取的伺服数据包 CRC 校验失败。重点检查总线网线是否松动、水晶头是否良好，或线缆是否受到强电磁干扰。"
+msgstr ""
+"下位層で取得したサーボデータパケットのCRCチェックが失敗しました。バスのネットワークケーブルが緩んでいないか、RJ-45コネクタの状態が良好か、またはケーブルが強い電磁干渉を受けていないかを重点的に確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:200
+msgid "0x0F100102"
+msgstr "0x0F100102"
+
+#: ../../source/PluginManual/plugin_board.rst:201
+msgid "从站数量或类型异常"
+msgstr "ステーション数またはタイプが異常です"
+
+#: ../../source/PluginManual/plugin_board.rst:202
+msgid "实际扫描到的物理关节数量/型号，与 YAML 配置文件定义的拓扑结构不一致。检查配置文件加载是否正确。"
+msgstr ""
+"実際にスキャンされた物理関節の数／型番が、YAML設定ファイルで定義されたトポロジー構造と一致していません。設定ファイルの読み込みが正しく行われているか確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:204
+msgid "0x0F100103"
+msgstr "0x0F100103"
+
+#: ../../source/PluginManual/plugin_board.rst:205
+msgid "状态共享内存指针为空"
+msgstr "ステータス共有メモリポインタがNULLです"
+
+#: ../../source/PluginManual/plugin_board.rst:206
+msgid "内存映射失败。ROS 2 hardware_interface 无法正确挂载读取机械臂状态的共享内存地址。"
+msgstr ""
+"メモリマップに失敗しました。ROS "
+"2のhardware_interfaceが、ロボットアームの状態を読み取るための共有メモリアドレスを正しくマウントできませんでした。"
+
+#: ../../source/PluginManual/plugin_board.rst:208
+msgid "0x0F100201"
+msgstr "0x0F100201"
+
+#: ../../source/PluginManual/plugin_board.rst:209
+msgid "指令共享内存指针为空"
+msgstr "コマンド共有メモリポインタがNULLです"
+
+#: ../../source/PluginManual/plugin_board.rst:210
+msgid "内存映射失败。ROS 2 hardware_interface 无法正确挂载下发运动指令的共享内存地址。"
+msgstr ""
+"メモリマップの失敗。ROS 2 の hardware_interface "
+"が、運動指令を送信するための共有メモリアドレスを正しくマウントできませんでした。"
+
+#: ../../source/PluginManual/plugin_board.rst:213
+msgid ""
+"请注意，在系统刚启动的时候，解析出来的错误码可能在以上表格中找不到，比如会出现0x0F00005，这个错误码是0x0F00001和0x0F00004的组合，因为在系统初始化的时候，进行一系列的操作均可能出现错误，但是系统没启动之前，这些错误无法立即给出，只能采用叠加累计的方式，因此会在初始化后出现这种组合错误码。"
+msgstr ""
+"ご注意ください。システムが起動直後の段階では、上記の表に掲載されていないエラーコード（例：0x0F00005）が解析される場合があります。このエラーコードは、0x0F00001と0x0F00004を組み合わせたものであり、システム初期化時に一連の操作においてそれぞれ異なるエラーが発生する可能性がありますが、システムが完全に起動する前にはこれらのエラーを即座に報告できないため、エラーを重畳・累積的に処理する方式が採用されています。その結果、初期化後にこのような複合エラーコードが表示されることになります。"
+
+#: ../../source/PluginManual/plugin_board.rst:216
+msgid "表2-4 错误(ERROR)级别错误码"
+msgstr "表2-4 エラー（ERROR）レベルのエラーコード"
+
+#: ../../source/PluginManual/plugin_board.rst:226
+msgid "0x0E10FF01"
+msgstr "0x0E10FF01"
+
+#: ../../source/PluginManual/plugin_board.rst:227
+msgid "驱动器故障 (全局广播)"
+msgstr "ドライブ障害（グローバルブロードキャスト）"
+
+#: ../../source/PluginManual/plugin_board.rst:228
+msgid "0xFF 代表任意轴的广播报警。电机可能发生了过流、过载、碰撞导致过力矩，或编码器掉线。需结合单轴 errorcode 进一步定位具体关节。"
+msgstr ""
+"0xFF "
+"は任意の軸におけるブロードキャストアラームを表します。モーターに過電流、過負荷、衝突による過トルク、またはエンコーダの信号断線が発生している可能性があります。具体的な関節を特定するには、単軸のエラーコードを参照する必要があります。"
+
+#: ../../source/PluginManual/plugin_board.rst:230
+msgid "0x0E100001"
+msgstr "0x0E100001"
+
+#: ../../source/PluginManual/plugin_board.rst:231
+msgid "软急停触发"
+msgstr "ソフト緊急停止が作動しました"
+
+#: ../../source/PluginManual/plugin_board.rst:232
+msgid "逻辑急停被拍下。上位机或示教器下发了紧急停止指令，底层立刻中断当前运动队列以保障安全。"
+msgstr ""
+"論理緊急停止が作動しました。上位機またはティーチングペンダントから緊急停止指令が送信され、下位制御装置は直ちに現在の動作キューを中断し、安全性を確保しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:234
+msgid "0x0E100002"
+msgstr "0x0E100002"
+
+#: ../../source/PluginManual/plugin_board.rst:235
+msgid "指令队列长度过长"
+msgstr "コマンドキューの長さが長すぎます"
+
+#: ../../source/PluginManual/plugin_board.rst:236
+msgid "插补缓冲区溢出。上位机下发轨迹点位过密或控制频率过高，导致底层消费者处理超时。需检查控制器执行频率设置。"
+msgstr ""
+"補間バッファーオーバーフロー。上位機が軌道上のポイントを過剰に密に送信したか、または制御周波数が高すぎたため、下位の処理ユニットがタイムアウトしました。コントローラーの実行周波数設定を確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:239
+msgid "表2-5 警告(WARN)级别错误码"
+msgstr "表2-5 警告（WARN）レベルのエラーコード"
+
+#: ../../source/PluginManual/plugin_board.rst:246
+msgid "**警告释义**"
+msgstr "**警告の意味**"
+
+#: ../../source/PluginManual/plugin_board.rst:249
+msgid "0x02100001"
+msgstr "0x02100001"
+
+#: ../../source/PluginManual/plugin_board.rst:250
+msgid "指令步进较大 (触发削峰)"
+msgstr "指令ステップが大きすぎる（クリッピングが発生）"
+
+#: ../../source/PluginManual/plugin_board.rst:251
+msgid "规划器下发的相邻两点位置差值超过了底层的最大速度/加速度限制，底层强制进行了削峰平滑。可能会导致实际轨迹与预期有极小偏差。"
+msgstr ""
+"プランナーが指示した隣接する2点間の位置差が、下位層の最大速度／加速度制限を超過したため、下位層で強制的にピークカット平滑化が行われました。これにより、実際の軌道と期待される軌道との間に極めて小さなずれが生じる場合があります。"
+
+#: ../../source/PluginManual/plugin_board.rst:253
+msgid "0x02100002"
+msgstr "0x02100002"
+
+#: ../../source/PluginManual/plugin_board.rst:254
+msgid "指令队列写入失败"
+msgstr "命令キューへの書き込みに失敗しました"
+
+#: ../../source/PluginManual/plugin_board.rst:255
+msgid "瞬时并发过高，导致系统在极短瞬间无法将插补点推入无锁队列，可能引起短暂的运动卡顿。"
+msgstr ""
+"瞬間的な同時実行数が過剰となり、システムが極めて短時間のうちに補間点をロックフリー・キューにプッシュできなくなるため、一時的な運動のカクツキが発生する可能性があります。"
+
+#: ../../source/PluginManual/plugin_board.rst:258
+msgid "指令服务器"
+msgstr "コマンドサーバー"
+
+#: ../../source/PluginManual/plugin_board.rst:259
+msgid ""
+"指令服务器是随着插件系统默认开机自启动的一个controller，名称是fairino_hardware_command_controller，它对外提供了一个名称为command的action服务器，其自定义交互消息格式为："
+msgstr ""
+"コマンドサーバーは、プラグインシステムとともにデフォルトで起動時に自動実行されるコントローラーであり、「fairino_hardware_command_controller」という名称です。このコントローラーは外部に対して「command」という名称のアクションサーバーを提供しており、そのカスタムインタラクションメッセージ形式は以下の通りです："
+
+#: ../../source/PluginManual/plugin_board.rst:262
+msgid "表2-6 自定义交互消息格式"
+msgstr "表2-6 カスタムインタラクティブメッセージフォーマット"
+
+#: ../../source/PluginManual/plugin_board.rst:268
+msgid "string command"
+msgstr "文字列コマンド"
+
+#: ../../source/PluginManual/plugin_board.rst:269
+msgid "Request (Goal) - 字符串指令，例如 \"Enable(1)\""
+msgstr "リクエスト（目的）－「Enable(1)」などの文字列指令"
+
+#: ../../source/PluginManual/plugin_board.rst:271
+msgid "string error_code"
+msgstr "文字列エラーコード"
+
+#: ../../source/PluginManual/plugin_board.rst:272
+msgid "Result - 控制器专属 16位 Hex 错误码，例如 \"0xC000\""
+msgstr "結果 - コントローラー専用の16ビット16進数エラーコード（例：「0xC000」）"
+
+#: ../../source/PluginManual/plugin_board.rst:274
+msgid "float32 progress"
+msgstr "float32 進行状況"
+
+#: ../../source/PluginManual/plugin_board.rst:275
+msgid "Feedback - 执行进度 (0.0 ~ 100.0)"
+msgstr "フィードバック - 実行進捗（0.0～100.0）"
+
+#: ../../source/PluginManual/plugin_board.rst:278
+msgid "表2-7 目前支持的指令表"
+msgstr "表2-7 現在サポートされている命令一覧"
+
+#: ../../source/PluginManual/plugin_board.rst:284
+msgid "**指令名称**"
+msgstr "**命令名**"
+
+#: ../../source/PluginManual/plugin_board.rst:285
+msgid "**功能深度描述**"
+msgstr "**機能の詳細な説明**"
+
+#: ../../source/PluginManual/plugin_board.rst:286
+msgid "**输入参数说明**"
+msgstr "**入力パラメータの説明**"
+
+#: ../../source/PluginManual/plugin_board.rst:288
+msgid "activatecontroller"
+msgstr "コントローラーを有効化"
+
+#: ../../source/PluginManual/plugin_board.rst:289
+msgid ""
+"激活指定的 ROS 2 控制器。通过调用 controller_manager 的服务，将目标控制器状态从 inactive 切换为 active。"
+msgstr ""
+"指定されたROS "
+"2コントローラーをアクティブ化します。controller_managerのサービスを呼び出して、対象コントローラーの状態を「非アクティブ」から「アクティブ」に切り替えます。"
+
+#: ../../source/PluginManual/plugin_board.rst:290
+#: ../../source/PluginManual/plugin_board.rst:294
+msgid "args[0]: 控制器名称 (String)示例: fairino_trajectory_controller"
+msgstr "args[0]: コントローラー名（文字列）例: fairino_trajectory_controller"
+
+#: ../../source/PluginManual/plugin_board.rst:292
+msgid "deactivatecontroller"
+msgstr "コントローラーを無効化"
+
+#: ../../source/PluginManual/plugin_board.rst:293
+msgid "停用指定的 ROS 2 控制器。将正在运行的控制器状态切换为 inactive，常用于控制权交接（如切出轨迹控制，切入阻抗控制）。"
+msgstr ""
+"指定されたROS "
+"2コントローラを無効化します。実行中のコントローラの状態を「非アクティブ」に切り替え、制御権の引継ぎ（例：軌道制御からインピーダンス制御への切り替え）などに使用されます。"
+
+#: ../../source/PluginManual/plugin_board.rst:296
+msgid "enable"
+msgstr "有効化"
+
+#: ../../source/PluginManual/plugin_board.rst:297
+msgid "机器人使能 (Servo ON)。向下位机发送指令，闭合继电器，给各关节伺服电机上电并开启力矩输出。"
+msgstr "ロボットのサーボをオンにします。下位機に指令を送信し、リレーを閉じて各関節のサーボモーターに電源を供給し、トルク出力を開始します。"
+
+#: ../../source/PluginManual/plugin_board.rst:298
+msgid "无参数的情况下是全部关节使能，有参数的情况按照Bit位使能(比如1是第一关节，2是第二关节，4是第三关节，8是第四关节，7是一二三关节)"
+msgstr ""
+"パラメータなしの場合、すべてのジョイントを有効化します。パラメータありの場合、ビット位置に応じてジョイントを有効化します（例：1は第1ジョイント、2は第2ジョイント、4は第3ジョイント、8は第4ジョイント、7は第1～第3ジョイント）。"
+
+#: ../../source/PluginManual/plugin_board.rst:300
+msgid "disable"
+msgstr "無効化"
+
+#: ../../source/PluginManual/plugin_board.rst:301
+msgid "机器人下使能 (Servo OFF)。切断伺服电机力矩输出，机械臂进入抱闸（Brake）状态。"
+msgstr "ロボットのサーボをオフにします。サーボモーターのトルク出力を遮断し、アームがブレーキ状態に入ります。"
+
+#: ../../source/PluginManual/plugin_board.rst:302
+msgid "同enable函数用法"
+msgstr "同じenable関数の使用法"
+
+#: ../../source/PluginManual/plugin_board.rst:304
+msgid "setdo"
+msgstr "セットドー"
+
+#: ../../source/PluginManual/plugin_board.rst:305
+msgid "设置数字输出 (Digital Output)。控制机器人控制柜或末端工具的 IO 针脚电平，用于触发外围设备（如夹爪、焊枪、继电器）。"
+msgstr ""
+"デジタル出力（Digital "
+"Output）を設定します。ロボット制御盤またはエンド・オブ・アーム・トゥールのI/Oピンの電圧レベルを制御し、グリッパー、溶接ガン、リレーなどの周辺機器をトリガーします。"
+
+#: ../../source/PluginManual/plugin_board.rst:306
+msgid "args[0]: IO 端口索引/名称args[1]: 状态 (\"1\"/\"true\" 开, \"0\"/\"false\" 关)"
+msgstr ""
+"args[0]：IOポートのインデックス／名称  \n"
+"args[1]：状態（「1」／「true」でON、「0」／「false」でOFF）"
+
+#: ../../source/PluginManual/plugin_board.rst:308
+msgid "zeroing"
+msgstr "ゼロ点調整"
+
+#: ../../source/PluginManual/plugin_board.rst:309
+msgid "执行机械臂零点标定。触发底层寻零逻辑，使关节自动寻找机械原点并重置绝对编码器偏置。"
+msgstr ""
+"ロボットアームのゼロ点校正を実行します。下位レベルのゼロ位置探索ロジックを起動し、関節が機械的原点を自動的に検索して絶対エンコーダのオフセットをリセットします。"
+
+#: ../../source/PluginManual/plugin_board.rst:310
+msgid "同enable用法"
+msgstr "「同enable」の使い方"
+
+#: ../../source/PluginManual/plugin_board.rst:312
+msgid "reseterror"
+msgstr "エラーをリセット"
+
+#: ../../source/PluginManual/plugin_board.rst:313
+msgid "错误复位。当底层触发 ERROR 报警导致抱闸后，如果物理故障已解除，调用此指令清除底层错误标志，使系统恢复待机状态。"
+msgstr ""
+"エラーのリセット。下位層でエラー警報が発生し、ブレーキが作動した場合、物理的な障害が解消された後に、この命令を実行して下位層のエラー状態をクリアし、システムを待機状態に復帰させます。"
+
+#: ../../source/PluginManual/plugin_board.rst:314
+msgid "无参数"
+msgstr "パラメータなし"
+
+#: ../../source/PluginManual/plugin_board.rst:316
+msgid "frconfig"
+msgstr "frconfig"
+
+#: ../../source/PluginManual/plugin_board.rst:317
+msgid ""
+"动态生成机器人的核心配置文件。拉起后台 Python 脚本，解析 YAML 配置，动态生成 URDF 模型和 controller_manager "
+"配置文件。"
+msgstr ""
+"ロボットのコア設定ファイルを動的に生成します。バックグラウンドでPythonスクリプトを起動し、YAML設定を解析して、URDFモデルおよびcontroller_managerの設定ファイルを動的に生成します。"
+
+#: ../../source/PluginManual/plugin_board.rst:318
+msgid ""
+"args[0] (可选): /opt/fairino_art_plugin/config文件夹下配置文件名。若为空，默认使用 "
+"\"fairino_config.yaml\"，等同于frconfig(fairino_config.yaml)"
+msgstr ""
+"args[0]（任意）：/opt/fairino_art_plugin/config "
+"フォルダー内の設定ファイル名。空の場合、デフォルトで「fairino_config.yaml」が使用されます。これは "
+"frconfig（fairino_config.yaml）と同等です。"
+
+#: ../../source/PluginManual/plugin_board.rst:320
+msgid "upgradeplugin"
+msgstr "アップグレードプラグイン"
+
+#: ../../source/PluginManual/plugin_board.rst:321
+msgid "自动升级底层驱动与插件包。解压传入的 zip 包，清理旧环境，将新代码覆盖至 /opt 系统目录，并自动修复 .sh 及可执行文件的权限。"
+msgstr ""
+"基盤ドライバーおよびプラグインパッケージの自動アップグレード。受信したZIPパッケージを展開し、旧環境をクリーンアップした後、新しいコードを/optシステムディレクトリに上書きし、.shファイルおよび実行可能ファイルの権限を自動的に修復します。"
+
+#: ../../source/PluginManual/plugin_board.rst:322
+msgid "args[0]: 升级包 .zip 的绝对路径。示例: [\"/tmp/update_v2.zip\"]"
+msgstr "args[0]: アップグレードパッケージ（.zip）の絶対パス。例: [\"/tmp/update_v2.zip\"]"
+
+#: ../../source/PluginManual/plugin_board.rst:324
+msgid "packlog"
+msgstr "パックログ"
+
+#: ../../source/PluginManual/plugin_board.rst:325
+msgid ""
+"一键打包系统日志与 Dump 故障快照。将 /home/fairino/plugin_log/ "
+"下的故障快照及系统运行日志压缩成一个归档文件，方便现场人员拷贝导出。"
+msgstr ""
+"ワンクリックでシステムログとダンプ障害スナップショットをパッケージ化します。/home/fairino/plugin_log/ "
+"ディレクトリ内の障害スナップショットおよびシステム実行ログを1つのアーカイブファイルに圧縮し、現場担当者が簡単にコピー・エクスポートできるようにします。"
+
+#: ../../source/PluginManual/plugin_board.rst:326
+msgid "无参数 (或可选传入目标导出路径)"
+msgstr "パラメーターなし（またはオプションで出力先パスを指定可能）"
+
+#: ../../source/PluginManual/plugin_board.rst:328
+msgid "recorddata"
+msgstr "記録データ"
+
+#: ../../source/PluginManual/plugin_board.rst:329
+msgid "控制用户高频数据录制器。在内存中开启/关闭 20MB 的循环数据录制队列，用于抓取高精度的关节位置、力矩及状态波形。"
+msgstr ""
+"ユーザー向け高周波データ記録装置を制御します。高精度な関節位置、トルクおよび状態波形の取得のために、メモリ上で20MBの循環型データ記録キューをオン／オフします。"
+
+#: ../../source/PluginManual/plugin_board.rst:330
+msgid "args[0]: 动作指令。仅接受 \"start\" 或 \"stop\" (忽略大小写)。"
+msgstr "args[0]：アクションコマンド。\"start\" または \"stop\" のみを許可（大文字・小文字は区別されません）。"
+
+#: ../../source/PluginManual/plugin_board.rst:332
+msgid ""
+"同样的，根据上面阐述的指令服务器交互信息格式，每个一string指令都会有一个string反馈值，这个返回值是16位的错误码系统，其具体函数见如下表格："
+msgstr ""
+"同様に、上記で説明した指令サーバー間のインタラクション情報フォーマットに基づき、各文字列（string）指令には対応する文字列（string）フィードバック値が存在し、この返却値は16ビットのエラーコードシステムであり、その具体的な機能は以下の表を参照してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:335
+msgid "表2-8 具体函数表"
+msgstr "表2-8 具体的な関数一覧"
+
+#: ../../source/PluginManual/plugin_board.rst:341
+msgid "**返回值**"
+msgstr "**戻り値**"
+
+#: ../../source/PluginManual/plugin_board.rst:342
+msgid "**触发场景释义**"
+msgstr "**トリガーとなるシーンの説明**"
+
+#: ../../source/PluginManual/plugin_board.rst:343
+msgid "**常见排查与处理建议**"
+msgstr "**よくあるトラブルシューティングと対処建議**"
+
+#: ../../source/PluginManual/plugin_board.rst:345
+msgid "\"0xC000\""
+msgstr "「0xC000」"
+
+#: ../../source/PluginManual/plugin_board.rst:346
+msgid "执行成功。指令完整拉起并顺利结束。"
+msgstr "実行に成功しました。コマンドが完全に起動され、正常に終了しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:347
+msgid "无需处理，上位机可继续下发后续流程。"
+msgstr "処理不要です。上位機は引き続き次の工程を指令できます。"
+
+#: ../../source/PluginManual/plugin_board.rst:349
+msgid "\"0xC010\""
+msgstr "「0xC010」"
+
+#: ../../source/PluginManual/plugin_board.rst:350
+msgid "参数非法或防注入拦截。传入参数为空，或包含危险 Shell 字符。"
+msgstr ""
+"パラメータが無効であるか、SQLインジェクション防止機能によりブロックされました。入力パラメータが空であるか、危険なシェル文字を含んでいます。"
+
+#: ../../source/PluginManual/plugin_board.rst:351
+msgid "检查上位机下发的参数，确保仅包含合法文件路径或纯文本。"
+msgstr "上位機から送信されたパラメータを確認し、正当なファイルパスまたは純粋なテキストのみを含むことを保証します。"
+
+#: ../../source/PluginManual/plugin_board.rst:353
+msgid "\"0xC011\""
+msgstr "「0xC011」"
+
+#: ../../source/PluginManual/plugin_board.rst:354
+msgid "依赖服务不可用。试图调用的 ROS 2 内部服务（如 controller_manager）掉线或未就绪。"
+msgstr ""
+"依存するサービスが利用できません。呼び出しを試みたROS "
+"2内部サービス（例：controller_manager）が切断されているか、準備ができていません。"
+
+#: ../../source/PluginManual/plugin_board.rst:355
+msgid "检查目标节点是否存活，或等待系统完全启动后再下发指令。"
+msgstr "ターゲットノードが稼働中であるかどうかを確認するか、システムが完全に起動してからコマンドを送信してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:357
+msgid "\"0xC012\""
+msgstr "「0xC012」"
+
+#: ../../source/PluginManual/plugin_board.rst:358
+msgid "硬件状态异常。在下发需要硬件配合的指令时，检测到底层处于报错或未使能状态。"
+msgstr ""
+"ハードウェアの状態が異常です。ハードウェアの協力を必要とするコマンドを送信する際に、下位層がエラー状態または無効化されていることが検出されました。"
+
+#: ../../source/PluginManual/plugin_board.rst:359
+msgid "请先查阅 fairino_hardware 的硬件报警码，复位硬件后再试。"
+msgstr "まず、fairino_hardware のハードウェアアラームコードを確認し、ハードウェアをリセットしてから再度お試しください。"
+
+#: ../../source/PluginManual/plugin_board.rst:361
+msgid "\"0xC013\""
+msgstr "「0xC013」"
+
+#: ../../source/PluginManual/plugin_board.rst:362
+msgid "指令超时。指令在规定时间内未完成（如下载、系统响应等）。"
+msgstr "コマンドのタイムアウト。コマンドが指定された時間内に完了しませんでした（例：ダウンロード、システム応答など）。"
+
+#: ../../source/PluginManual/plugin_board.rst:363
+msgid "检查网络连接或系统负载是否过高。"
+msgstr "ネットワーク接続またはシステム負荷が高すぎないか確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:365
+msgid "\"0xC020\""
+msgstr "「0xC020」"
+
+#: ../../source/PluginManual/plugin_board.rst:366
+msgid "控制器切换失败。软切换（如从关节空间切换到笛卡尔空间 Controller）被系统拒绝。"
+msgstr ""
+"コントローラの切り替えに失敗しました。システムにより、ソフト切替（例：関節空間コントローラからカルテシアン空間コントローラへの切替）が拒否されました。"
+
+#: ../../source/PluginManual/plugin_board.rst:367
+msgid "检查控制器名称是否拼写正确，或控制器端口占用冲突"
+msgstr "コントローラー名のスペルが正しいか、またはコントローラーのポートが他のプロセスによって占有されていないかを確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:369
+msgid "\"0xC021\""
+msgstr "「0xC021」"
+
+#: ../../source/PluginManual/plugin_board.rst:370
+msgid "校零超时。"
+msgstr "ゼロ調整タイムアウト。"
+
+#: ../../source/PluginManual/plugin_board.rst:371
+msgid "检查插件是否正常运行中"
+msgstr "プラグインが正常に動作しているかを確認中"
+
+#: ../../source/PluginManual/plugin_board.rst:373
+msgid "\"0xC030\""
+msgstr "「0xC030」"
+
+#: ../../source/PluginManual/plugin_board.rst:374
+msgid "配置生成失败。Python 脚本解析 YAML 或生成 URDF/控制器配置失败。"
+msgstr "設定の生成に失敗しました。PythonスクリプトがYAMLを解析するか、URDF/コントローラー設定を生成する際にエラーが発生しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:375
+msgid "检查 YAML 格式是否正确，文件是否人为篡改或者出现乱码"
+msgstr "YAML形式の正当性を確認し、ファイルが人為的に改ざんされていないか、または文字化けしていないかをチェックします。"
+
+#: ../../source/PluginManual/plugin_board.rst:377
+msgid "\"0xC040\""
+msgstr "「0xC040」"
+
+#: ../../source/PluginManual/plugin_board.rst:378
+msgid "解压升级包失败。unzip 指令返回非零退出码。"
+msgstr "アップグレードパッケージの展開に失敗しました。unzip コマンドがゼロ以外の終了コードを返しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:379
+msgid "检查 .zip 文件路径是否正确、压缩包是否损坏或 /tmp 空间是否满。"
+msgstr ".zipファイルのパスが正しいか、アーカイブが破損していないか、および/tmpディレクトリの空き容量が十分にあるかを確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:381
+msgid "\"0xC041\""
+msgstr "「0xC041」"
+
+#: ../../source/PluginManual/plugin_board.rst:382
+msgid "目录覆盖失败。插件升级覆盖到 /opt/... 目录时出错。"
+msgstr "目録の上書きに失敗しました。プラグインのアップグレード時に /opt/... ディレクトリへの上書き中にエラーが発生しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:383
+msgid "检查目录的权限归属（属主是否为 fairino）或是否被占用。"
+msgstr "ディレクトリの権限と所有者（所有者がfairinoであるか）を確認するか、またはそのディレクトリが使用中かどうかを確認します。"
+
+#: ../../source/PluginManual/plugin_board.rst:385
+msgid "\"0xC050\""
+msgstr "「0xC050」"
+
+#: ../../source/PluginManual/plugin_board.rst:386
+msgid "打包日志失败。收集、压缩 Dump 文件及系统运行日志时报错。"
+msgstr "パッケージ化ログの作成に失敗しました。ダンプファイルおよびシステム実行ログの収集・圧縮中にエラーが発生しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:387
+msgid "检查目标存储路径权限及磁盘剩余容量。"
+msgstr "ターゲットストレージパスの権限およびディスクの空き容量を確認します。"
+
+#: ../../source/PluginManual/plugin_board.rst:389
+msgid "\"0xC060\""
+msgstr "「0xC060」"
+
+#: ../../source/PluginManual/plugin_board.rst:390
+msgid "数据记录操作失败。recorddata(start/stop) 指令处理失败或写入异常。"
+msgstr "データ記録操作に失敗しました。recorddata（start/stop）コマンドの処理に失敗したか、書き込み異常が発生しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:391
+msgid "检查 /tmp/record_data 目录是否可写，或内存中是否存在死锁。"
+msgstr "/tmp/record_data ディレクトリが書き込み可能であるか、またはメモリ内でデッドロックが発生していないかを確認してください。"
+
+#: ../../source/PluginManual/plugin_board.rst:393
+msgid "\"0xC0FE\""
+msgstr "「0xC0FE」"
+
+#: ../../source/PluginManual/plugin_board.rst:394
+msgid "未知指令。上位机发送了一个 Action Server 无法解析的命令字。"
+msgstr "不明なコマンドです。ホストコンピュータが、Action Server が解析できないコマンドを送信しました。"
+
+#: ../../source/PluginManual/plugin_board.rst:395
+msgid "对齐上位机与下位机的通信协议接口文档。"
+msgstr "上位機と下位機の通信プロトコル・インターフェース仕様書の整合。"
+
+#: ../../source/PluginManual/plugin_board.rst:397
+msgid "\"0xC0FF\""
+msgstr "「0xC0FF」"
+
+#: ../../source/PluginManual/plugin_board.rst:398
+msgid "底层抛出异常。C++ 或脚本内部发生未捕获的严重崩溃/被系统强杀。"
+msgstr ""
+"下位層で例外がスローされました。C++ またはスクリプト内部で、キャッチされない重大なクラッシュが発生したか、システムによって強制終了されました。"
+
+#: ../../source/PluginManual/plugin_board.rst:399
+msgid "需查看宿主机 dmesg 或节点标准输出，排查段错误（Segfault）或依赖丢失。"
+msgstr ""
+"セグメンテーションフォールト（Segfault）や依存関係の欠落を特定するには、ホストマシンの dmesg "
+"またはノードの標準出力を確認する必要があります。"

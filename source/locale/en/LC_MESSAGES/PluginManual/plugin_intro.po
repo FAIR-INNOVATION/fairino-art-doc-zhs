@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 17:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/PluginManual/plugin_intro.rst:2
+msgid "插件概述"
+msgstr "Plugin Overview"
+
+#: ../../source/PluginManual/plugin_intro.rst:8
+msgid ""
+"插件是基于Ubuntu22.04LTS下ROS2 control "
+"humble版本，用于ART系列产品及产品的底层控制，具备简单的人机交互功能，适合使用Moveit2或者ROS2生态产品的用户对接法奥的ART系列产品。"
+msgstr ""
+"The plugin is based on ROS 2 Control Humble for Ubuntu 22.04 LTS and is "
+"designed for low-level control of FA Robotics’ ART series products, "
+"featuring simple human-machine interaction capabilities. It is suitable for "
+"users integrating FA Robotics’ ART series products with MoveIt 2 or other "
+"ROS 2 ecosystem tools."
+
+#: ../../source/PluginManual/plugin_intro.rst:10
+msgid "插件的交互逻辑主要是分为三块：插件状态看板，插件指令服务器和执行具体功能的ros2 controller，框架图如下:"
+msgstr ""
+"The plugin’s interaction logic is primarily divided into three components: "
+"the plugin status dashboard, the plugin command server, and the ROS2 "
+"controller that executes specific functions. The framework diagram is shown "
+"below:"
+
+#: ../../source/PluginManual/plugin_intro.rst:-1
+msgid "001.png"
+msgstr "001.png"
+
+#: ../../source/PluginManual/plugin_intro.rst:17
+msgid "图表 1-1 ARTPlugin框架"
+msgstr "Figure 1-1 ARTPlugin Framework"
+
+#: ../../source/PluginManual/plugin_intro.rst:18
+msgid ""
+"底层的ros2 "
+"control插件开放了EtherCAT设备的诸多接口：关节的指令位置，指令速度，指令扭矩，控制字等。对于非高频使用的接口(比如伺服控制字，IO读写)，对接入指令服务器，指令服务器通过一个Action服务器与用户进行交互。对于高频读写的接口，开放给了具体的控制器，控制器与用户的规划器进行对接从而实现位置、速度、扭矩的控制。"
+msgstr ""
+"The underlying ROS 2 Control plugin exposes numerous interfaces for EtherCAT"
+" devices: commanded joint position, velocity, torque, and control word, "
+"among others. For infrequently accessed interfaces—such as servo control "
+"words and I/O read/write operations—the plugin interfaces with a command "
+"server, which interacts with users via an Action server. For high-frequency "
+"read/write interfaces, direct access is provided to specific controllers, "
+"enabling them to interface with the user’s planner to achieve position, "
+"velocity, and torque control."
+
+#: ../../source/PluginManual/plugin_intro.rst:21
+msgid "注意：ARTPlugin插件是开机随着系统启动的，因此不需要额外启动它，只要监控到下文所说的看板服务和指令服务器，就说明插件是在正常运行中。"
+msgstr ""
+"Note: The ARTPlugin is launched automatically upon system startup, so no "
+"additional activation is required. As long as the dashboard service and "
+"command server described below are detected, the plugin is operating "
+"normally."

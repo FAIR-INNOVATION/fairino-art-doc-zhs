@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 17:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/PluginManual/plugin_tool.rst:2
+msgid "调试工具"
+msgstr "Debugging Tools"
+
+#: ../../source/PluginManual/plugin_tool.rst:7
+msgid ""
+"根据第二章节的阐述，ARTPlugin插件系统提供了看板和指令两条人机交互通道，但是ROS2的接口需要程序对接上才能正常交互，这部分ROS2系统并没有提供便捷的人机交互界面。更进一步的，用户学习使用插件，或者调试过程中往往需要产品能够首先简单运动，然后再往后继续深入。基于此，法奥提供了便捷的可视化交互工具，方便用户入门ARTPlugin系统。"
+msgstr ""
+"According to the description in Section 2, the ARTPlugin plugin system "
+"provides two human-machine interaction channels: a dashboard and command-"
+"based interface. However, ROS2’s interfaces require program-level "
+"integration to enable normal interaction, and ROS2 itself does not provide a"
+" convenient human-machine interaction interface. Moreover, users learning to"
+" use plugins or debugging often need the robot to perform simple motions "
+"first before proceeding to more advanced tasks. To address this, Faou "
+"provides an easy-to-use visual interaction tool to help users get started "
+"with the ARTPlugin system."
+
+#: ../../source/PluginManual/plugin_tool.rst:10
+msgid "调试工具启动"
+msgstr "Debugging tool launched"
+
+#: ../../source/PluginManual/plugin_tool.rst:11
+msgid ""
+"上面提到对于用户交互最重要的3个方面为：状态看板人机交互，Action指令人机交互和伺服调试人机交互。这3个方面依次给出了人机交互界面调试工具，第一个为rqt自带的topic"
+" monitor，第二个和第三个为专门为插件开发的配套调试软件fairino_debug_tool。"
+msgstr ""
+"The three most critical aspects of user interaction mentioned above are: "
+"status dashboard human-machine interaction, action command human-machine "
+"interaction, and servo debugging human-machine interaction. For these three "
+"aspects, corresponding HMI debugging tools are provided in sequence: the "
+"first is the topic monitor built into rqt, while the second and third are "
+"dedicated debugging software—fairino_debug_tool—developed specifically for "
+"the plugin."
+
+#: ../../source/PluginManual/plugin_tool.rst:13
+msgid ""
+"首先进入/opt/fairino_art_plugin目录下，运行改目录下runrqttool.sh脚本，可以看到界面会依次弹出3个软件页面。"
+msgstr ""
+"First, navigate to the `/opt/fairino_art_plugin` directory and run the "
+"`runrqttool.sh` script located in this directory. You will then see three "
+"software windows pop up sequentially."
+
+#: ../../source/PluginManual/plugin_tool.rst:15
+msgid "Topic Monitor界面："
+msgstr "Topic Monitor Interface:"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "002.png"
+msgstr "002.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:22
+msgid "图表 3-1 状态看板"
+msgstr "Figure 3-1 Status Dashboard"
+
+#: ../../source/PluginManual/plugin_tool.rst:23
+msgid "在Topic列表里面勾选hardware_state话题，就可以看到插件发布的全状态。"
+msgstr ""
+"Select the “hardware_state” topic in the Topic list to view the full status "
+"published by the plugin."
+
+#: ../../source/PluginManual/plugin_tool.rst:25
+msgid "Action调试界面："
+msgstr "Action Debug Interface:"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "003.png"
+msgstr "003.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:32
+msgid "图表 3-2 Action指令调试工具"
+msgstr "Figure 3-2 Action Command Debugging Tool"
+
+#: ../../source/PluginManual/plugin_tool.rst:33
+msgid ""
+"在该界面中，点击refresh，会自动刷新action服务列表，选择fairino_hardware_command_controller/command这个action服务，然后在Comman"
+" String后面的文本框中可以输入指令字符，点击call发送，下面的文本框会反馈指令执行结果："
+msgstr ""
+"In this interface, clicking “Refresh” automatically refreshes the action "
+"server list. Select the action server "
+"“fairino_hardware_command_controller/command”, then enter the command string"
+" in the text box next to “Command String”. Click “Call” to send the command;"
+" the result of the command execution will be displayed in the text box "
+"below."
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "004.png"
+msgstr "004.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:40
+msgid "图表 3-3 Action指令调试工具收发指令"
+msgstr ""
+"Figure 3-3 Action Command Debugging Tool: Command Transmission and Reception"
+
+#: ../../source/PluginManual/plugin_tool.rst:41
+msgid "多关节调试工具："
+msgstr "Multi-joint Debugging Tool:"
+
+#: ../../source/PluginManual/plugin_tool.rst:43
+msgid ""
+"该工具是可以加载joint_trajectory_controller，然后对controller关联的关节进行位置调试。首先，需要激活至少一个joint_trjectory_controller，可以通过上一个action指令调试工具实现。"
+msgstr ""
+"This tool can load the joint_trajectory_controller and perform position "
+"tuning on the joints associated with the controller. First, at least one "
+"joint_trajectory_controller must be activated, which can be achieved using "
+"the previous action command debugging tool."
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "005.png"
+msgstr "005.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:50
+msgid "图表 3-4 激活left_arm_controller"
+msgstr "Figure 3-4 Activate left_arm_controller"
+
+#: ../../source/PluginManual/plugin_tool.rst:51
+msgid "然后在多关节调试工具页面上点击刷新列表按钮，就可以看到刚激活的controller。"
+msgstr ""
+"Then click the Refresh List button on the Multi-Joint Debugging Tool page to"
+" see the newly activated controller."
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "006.png"
+msgstr "006.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:58
+msgid "图表 3-5 获取到controller的页面"
+msgstr "Figure 3-5: Page that obtains the controller"
+
+#: ../../source/PluginManual/plugin_tool.rst:59
+msgid "点击同步并获取关节配置，可以获取到该controller对应的关节名称和数量信息，用户可以设置每一个关节的限位和最大速度。"
+msgstr ""
+"Click “Synchronize and Retrieve Joint Configuration” to obtain the joint "
+"names and quantity associated with this controller; users can set the limit "
+"positions and maximum speed for each joint."
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "007.png"
+msgstr "007.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:66
+msgid "图表 3-6 配置界面"
+msgstr "Figure 3-6 Configuration Interface"
+
+#: ../../source/PluginManual/plugin_tool.rst:67
+msgid "设置完毕后，点击进入调试界面，就可以进入主界面，该界面会同步当前伺服关节的实际位置，用户可以通过点击同步位置手动刷新当前实际位置到界面中。"
+msgstr ""
+"After configuration is complete, click to enter the debugging interface to "
+"access the main interface, which synchronizes the actual positions of the "
+"current servo joints. Users can manually refresh the current actual "
+"positions to the interface by clicking “Synchronize Position.”"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "008.png"
+msgstr "008.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:74
+msgid "图表 3-7 运动调试界面"
+msgstr "Figure 3-7 Motion Debugging Interface"
+
+#: ../../source/PluginManual/plugin_tool.rst:75
+msgid "该页面支持的功能："
+msgstr "Features supported on this page:"
+
+#: ../../source/PluginManual/plugin_tool.rst:77
+msgid ""
+"用户通过手动调节关节滑块，设定期望的关节移动目标位置，点击执行当前位置，各关节可以通过样条规划曲线运动值目标位置，用户可以通过速度比例和加速度值(单位rad/s2)调节运动快慢"
+msgstr ""
+"The user manually adjusts the joint sliders to set the desired target joint "
+"positions, then clicks “Execute at Current Position.” The joints then move "
+"along spline-planned trajectories to reach their target positions. The user "
+"can adjust the motion speed using a velocity scaling factor and an "
+"acceleration value (in rad/s²)."
+
+#: ../../source/PluginManual/plugin_tool.rst:78
+msgid ""
+"点击记录点位，可以把当前位置记录成一个示教点，记录多个点之后，点击开始循环，可以在各个示教点之间顺序循环移动，通过点间停顿，可以调节点和点之间的运动暂停间隔时间。用户可以通过删除点位删除选中的示教点"
+msgstr ""
+"Click “Record Point” to save the current position as a teaching point. After"
+" recording multiple points, click “Start Loop” to cycle sequentially among "
+"the teaching points. By adjusting the pause duration between points, users "
+"can set the dwell time between consecutive teaching points. Users can delete"
+" a selected teaching point by clicking “Delete Point.”"
+
+#: ../../source/PluginManual/plugin_tool.rst:79
+msgid "无论是点击执行当前位置还是开始循环，机械臂产生的运动均可以通过紧急停止来立马停在原地"
+msgstr ""
+"Whether clicking “Execute Current Position” or “Start Loop,” the robotic "
+"arm’s motion can be immediately halted in place via emergency stop."

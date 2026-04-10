@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-07 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/SDKManual/sdk_use.rst:3
+msgid "SDK客户端动态库使用"
+msgstr "SDKクライアント動的ライブラリの使用"
+
+#: ../../source/SDKManual/sdk_use.rst:9
+msgid ""
+"SDK库的使用需要在上位机上，SDK库会通过TCP连接与机器人控制器建立通讯，推荐使用Ubuntu系统，Windows系统暂时不支持。执行SDK所需要的文件目录如下所示。"
+msgstr ""
+"SDKライブラリの使用には、ホストコンピュータ上での実行が必要です。SDKライブラリはTCP接続を介してロボットコントローラと通信します。Ubuntuシステムの使用を推奨します。Windowsシステムは現時点ではサポートされていません。SDKを実行するために必要なファイルディレクトリは以下の通りです。"
+
+#: ../../source/SDKManual/sdk_use.rst:-1
+msgid "004.png"
+msgstr "004.png"
+
+#: ../../source/SDKManual/sdk_use.rst:16
+msgid "图表 2-1 SDK库目录"
+msgstr "図2-1 SDKライブラリディレクトリ"
+
+#: ../../source/SDKManual/sdk_use.rst:18
+msgid ""
+"注意事项： "
+"1.注意需要将libfairino_middleware_logger、libfairino_motion_planner和libkine_FR_7Axis动态库与libhumanorid_sdk动态库放到同一文件目录下。"
+msgstr ""
+"注意事項：  \n"
+"1. libfairino_middleware_logger、libfairino_motion_planner、libkine_FR_7Axis の各動的ライブラリを、libhumanorid_sdk 動的ライブラリと同じディレクトリに配置してください。"

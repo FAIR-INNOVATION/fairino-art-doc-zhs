@@ -1,0 +1,1218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 17:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/PluginManual/plugin_board.rst:2
+msgid "状态看板与指令"
+msgstr "Status Dashboard and Instructions"
+
+#: ../../source/PluginManual/plugin_board.rst:8
+msgid "状态看板"
+msgstr "Status Dashboard"
+
+#: ../../source/PluginManual/plugin_board.rst:9
+msgid ""
+"状态看板实际上是一个默认随着插件开机自启动的controller，名称为fairino_hardware_state_broadcaster，它以500HZ的频率监控插件中所有状态反馈接口，并以topic的形式发布出来，消息类型名称是fairino_hardware_state_broadcaster/msg/HardwareState。"
+msgstr ""
+"The status dashboard is essentially a controller named "
+"“fairino_hardware_state_broadcaster” that starts automatically with the "
+"plugin by default. It monitors all status feedback interfaces within the "
+"plugin at a frequency of 500 Hz and publishes the data as topics, with the "
+"message type name being "
+"“fairino_hardware_state_broadcaster/msg/HardwareState”."
+
+#: ../../source/PluginManual/plugin_board.rst:12
+msgid "表2-1 具体的msg定义"
+msgstr "Table 2-1 Specific Message Definitions"
+
+#: ../../source/PluginManual/plugin_board.rst:18
+msgid "**字段名称**"
+msgstr "**Field Name**"
+
+#: ../../source/PluginManual/plugin_board.rst:19
+msgid "**数据类型**"
+msgstr "**Data Types**"
+
+#: ../../source/PluginManual/plugin_board.rst:20
+msgid "**物理含义与业务释义**"
+msgstr "**Physical Meaning and Business Interpretation**"
+
+#: ../../source/PluginManual/plugin_board.rst:22
+msgid "header"
+msgstr "Header"
+
+#: ../../source/PluginManual/plugin_board.rst:23
+msgid "std_msgs/Header"
+msgstr "std_msgs/Header"
+
+#: ../../source/PluginManual/plugin_board.rst:24
+msgid "包含时间戳（Timestamp）与坐标系信息，用于数据帧的高精度时间同步。"
+msgstr ""
+"Includes timestamp and coordinate system information for high-precision time"
+" synchronization of data frames."
+
+#: ../../source/PluginManual/plugin_board.rst:26
+msgid "joint_names"
+msgstr "joint_names"
+
+#: ../../source/PluginManual/plugin_board.rst:27
+msgid "string[]"
+msgstr "string[]"
+
+#: ../../source/PluginManual/plugin_board.rst:28
+msgid "关节名称。对应 URDF 中定义的关节名，用于保证数据映射不乱序。"
+msgstr ""
+"Joint name. Corresponds to the joint name defined in the URDF to ensure data"
+" mapping remains in correct order."
+
+#: ../../source/PluginManual/plugin_board.rst:30
+msgid "errorcode"
+msgstr "error code"
+
+#: ../../source/PluginManual/plugin_board.rst:31
+#: ../../source/PluginManual/plugin_board.rst:55
+msgid "int32[]"
+msgstr "int32[]"
+
+#: ../../source/PluginManual/plugin_board.rst:32
+msgid "单轴伺服错误码。记录各关节驱动器自身的独立报警状态（如单轴过载/编码器异常）。"
+msgstr ""
+"Single-axis servo error code. Records the independent alarm status of each "
+"joint driver (e.g., single-axis overload/encoder abnormality)."
+
+#: ../../source/PluginManual/plugin_board.rst:34
+msgid "position"
+msgstr "position"
+
+#: ../../source/PluginManual/plugin_board.rst:35
+#: ../../source/PluginManual/plugin_board.rst:39
+#: ../../source/PluginManual/plugin_board.rst:43
+#: ../../source/PluginManual/plugin_board.rst:47
+#: ../../source/PluginManual/plugin_board.rst:59
+#: ../../source/PluginManual/plugin_board.rst:63
+#: ../../source/PluginManual/plugin_board.rst:67
+msgid "float64[]"
+msgstr "float64[]"
+
+#: ../../source/PluginManual/plugin_board.rst:36
+msgid "实际位置反馈。电机的真实位置读数（单位：rad 或 m）。"
+msgstr ""
+"Actual position feedback. The motor’s true position reading (in rad or m)."
+
+#: ../../source/PluginManual/plugin_board.rst:38
+msgid "velocity"
+msgstr "velocity"
+
+#: ../../source/PluginManual/plugin_board.rst:40
+msgid "实际速度反馈。电机的真实速度读数（单位：rad/s 或 m/s）。"
+msgstr ""
+"Actual speed feedback. The motor’s true speed reading (in rad/s or m/s)."
+
+#: ../../source/PluginManual/plugin_board.rst:42
+msgid "effort"
+msgstr "effort"
+
+#: ../../source/PluginManual/plugin_board.rst:44
+msgid "实际电流/力矩反馈。电机当前的实际出力估算值。"
+msgstr ""
+"Actual current/torque feedback. Estimated actual output force of the motor."
+
+#: ../../source/PluginManual/plugin_board.rst:46
+msgid "sensortorque"
+msgstr "sensor torque"
+
+#: ../../source/PluginManual/plugin_board.rst:48
+msgid "传感器力矩反馈。若配备双编码器或外部关节扭矩传感器，此处为真实物理扭矩。"
+msgstr ""
+"Sensor torque feedback. If equipped with dual encoders or external joint "
+"torque sensors, this represents the actual physical torque."
+
+#: ../../source/PluginManual/plugin_board.rst:50
+msgid "stateword"
+msgstr "state word"
+
+#: ../../source/PluginManual/plugin_board.rst:51
+msgid "uint16[]"
+msgstr "uint16[]"
+
+#: ../../source/PluginManual/plugin_board.rst:52
+msgid "伺服状态字 (Statusword)。严格对应 EtherCAT CiA 402 标准状态机字典（如 0x0237 代表运行使能）。"
+msgstr ""
+"Servo Status Word. Strictly conforms to the EtherCAT CiA 402 standard state "
+"machine dictionary (e.g., 0x0237 indicates Operation Enabled)."
+
+#: ../../source/PluginManual/plugin_board.rst:54
+msgid "opmode"
+msgstr "operating mode"
+
+#: ../../source/PluginManual/plugin_board.rst:56
+msgid "伺服运行模式 (Mode of Operation)。如 8 代表 CSP（周期同步位置），10 代表 CST（周期同步力矩）。"
+msgstr ""
+"Servo operation mode. For example, 8 represents CSP (Cyclic Synchronous "
+"Position), and 10 represents CST (Cyclic Synchronous Torque)."
+
+#: ../../source/PluginManual/plugin_board.rst:58
+msgid "command_position"
+msgstr "command_position"
+
+#: ../../source/PluginManual/plugin_board.rst:60
+msgid "指令位置。ROS 2 控制器刚向该关节下发的目标点位。与 position 相减可得“跟随误差”。"
+msgstr ""
+"Command position. The target position for this joint recently issued by the "
+"ROS 2 controller. Subtracting it from “position” yields the “tracking "
+"error.”"
+
+#: ../../source/PluginManual/plugin_board.rst:62
+msgid "command_velocity"
+msgstr "command_velocity"
+
+#: ../../source/PluginManual/plugin_board.rst:64
+msgid "指令速度。ROS 2 控制器下发的目标前馈速度。"
+msgstr ""
+"Command velocity. The feedforward velocity commanded by the ROS 2 "
+"controller."
+
+#: ../../source/PluginManual/plugin_board.rst:66
+msgid "command_torque"
+msgstr "command_torque"
+
+#: ../../source/PluginManual/plugin_board.rst:68
+msgid "指令力矩。ROS 2 控制器下发的目标前馈力矩。"
+msgstr ""
+"Command torque. The target feedforward torque issued by the ROS 2 "
+"controller."
+
+#: ../../source/PluginManual/plugin_board.rst:70
+msgid "version_major"
+msgstr "version_major"
+
+#: ../../source/PluginManual/plugin_board.rst:71
+#: ../../source/PluginManual/plugin_board.rst:75
+#: ../../source/PluginManual/plugin_board.rst:79
+#: ../../source/PluginManual/plugin_board.rst:87
+#: ../../source/PluginManual/plugin_board.rst:95
+#: ../../source/PluginManual/plugin_board.rst:99
+#: ../../source/PluginManual/plugin_board.rst:103
+#: ../../source/PluginManual/plugin_board.rst:107
+#: ../../source/PluginManual/plugin_board.rst:111
+msgid "float64"
+msgstr "float64"
+
+#: ../../source/PluginManual/plugin_board.rst:72
+msgid "主版本号。底层硬件或固件的核心大版本。"
+msgstr ""
+"Major version number. The core major version of the underlying hardware or "
+"firmware."
+
+#: ../../source/PluginManual/plugin_board.rst:74
+msgid "version_minor"
+msgstr "minor_version"
+
+#: ../../source/PluginManual/plugin_board.rst:76
+msgid "次版本号。功能更新版本迭代号。"
+msgstr "Minor version number. Functional update iteration number."
+
+#: ../../source/PluginManual/plugin_board.rst:78
+msgid "version_minor2"
+msgstr "version_minor2"
+
+#: ../../source/PluginManual/plugin_board.rst:80
+msgid "修订版本号。小补丁或 Bug 修复号。"
+msgstr "Revision number. Minor patch or bug fix number."
+
+#: ../../source/PluginManual/plugin_board.rst:82
+msgid "hexerrorcode_curerrcode"
+msgstr "hex_error_code_current_error_code"
+
+#: ../../source/PluginManual/plugin_board.rst:83
+msgid "int32"
+msgstr "int32"
+
+#: ../../source/PluginManual/plugin_board.rst:84
+msgid "当前系统致命/运行故障码。对应 32 位 Hex 码。非零时立即触发全臂抱闸及 Dump 故障快照。"
+msgstr ""
+"Current system fatal/operational fault code. Corresponds to a 32-bit "
+"hexadecimal code. When non-zero, immediately triggers full-arm brake "
+"engagement and dumps a fault snapshot."
+
+#: ../../source/PluginManual/plugin_board.rst:86
+msgid "hexerrorcode_curwarncode"
+msgstr "hex error code_current warning code"
+
+#: ../../source/PluginManual/plugin_board.rst:88
+msgid "当前系统一般警告码。对应 32 位 Hex 码（如触发轨迹削峰）。仅作记录上报，不阻断运动。"
+msgstr ""
+"Current system general warning code. Corresponds to a 32-bit hexadecimal "
+"code (e.g., trajectory peak clipping triggered). Recorded and reported only;"
+" does not interrupt motion."
+
+#: ../../source/PluginManual/plugin_board.rst:90
+msgid "generalio_di"
+msgstr "generalio_di"
+
+#: ../../source/PluginManual/plugin_board.rst:91
+msgid "uint32"
+msgstr "uint32"
+
+#: ../../source/PluginManual/plugin_board.rst:92
+msgid "通用数字输入 (DI)。通过 32 位二进制掩码表示多路数字输入电平（如安全门、外部按钮状态）。"
+msgstr ""
+"General-purpose digital input (DI). Represents the status of multiple "
+"digital inputs (e.g., safety door, external button) via a 32-bit binary "
+"mask."
+
+#: ../../source/PluginManual/plugin_board.rst:94
+msgid "generalio_ai"
+msgstr "generalio_ai"
+
+#: ../../source/PluginManual/plugin_board.rst:96
+msgid "通用模拟输入 (AI)。0-10V 或 4-20mA 模拟量信号的数字化读数。"
+msgstr ""
+"General-purpose analog input (AI). Digital reading of analog signals in the "
+"range of 0–10 V or 4–20 mA."
+
+#: ../../source/PluginManual/plugin_board.rst:98
+msgid "interface485_feedback485"
+msgstr "Interface485_Feedback485"
+
+#: ../../source/PluginManual/plugin_board.rst:100
+msgid "RS-485 接口反馈。用于末端智能夹爪或外部串口传感器的通信数据回读。"
+msgstr ""
+"RS-485 interface feedback: Used for reading back communication data from "
+"end-effector smart grippers or external serial sensors."
+
+#: ../../source/PluginManual/plugin_board.rst:102
+msgid "interfacecan_feedbackcan"
+msgstr "interface_can_feedback_can"
+
+#: ../../source/PluginManual/plugin_board.rst:104
+msgid "CAN 总线接口反馈。扩展 CAN 节点的外围通信数据或状态反馈。"
+msgstr ""
+"CAN bus interface feedback. Peripheral communication data or status feedback"
+" from expanded CAN nodes."
+
+#: ../../source/PluginManual/plugin_board.rst:106
+msgid "interfacesdo_sdoreaddata"
+msgstr "interfaces_do_sdo_read_data"
+
+#: ../../source/PluginManual/plugin_board.rst:108
+msgid "SDO 读取数据。EtherCAT 非周期性数据对象 (SDO) 字典查询后返回的参数值。"
+msgstr ""
+"SDO reads data. Parameter values returned after querying the EtherCAT "
+"acyclic data object (SDO) dictionary."
+
+#: ../../source/PluginManual/plugin_board.rst:110
+msgid "interfacesdo_sdostatus"
+msgstr "interfaces_do_sdo_status"
+
+#: ../../source/PluginManual/plugin_board.rst:112
+msgid "SDO 通信状态。反映 SDO 异步读写请求是否成功握手或报错。"
+msgstr ""
+"SDO communication status. Indicates whether the SDO asynchronous read/write "
+"request has successfully handshaked or encountered an error."
+
+#: ../../source/PluginManual/plugin_board.rst:114
+msgid ""
+"其中，hexerrorcode_curerrcode是当前系统的错误码，一旦该数值为非0，说明系统存在错误，由于错误码显示使用了十进制，而编写错误码采用了十六进制，因此需要讲十进制数据转换成十六进制数，才能解析出错误码对应的故障信息，以下是32位错误码组成说明。"
+msgstr ""
+"Here, “hexerrorcode_curerrcode” is the current system error code. If this "
+"value is non-zero, it indicates that an error exists in the system. Since "
+"the displayed error code uses decimal notation while the error codes are "
+"defined in hexadecimal, the decimal value must be converted to hexadecimal "
+"to interpret the corresponding fault information. Below is an explanation of"
+" the 32-bit error code structure."
+
+#: ../../source/PluginManual/plugin_board.rst:117
+msgid "表2-2 插件32位错误码组成说明表"
+msgstr "Table 2-2: Description of 32-bit Plugin Error Codes"
+
+#: ../../source/PluginManual/plugin_board.rst:123
+msgid "**字节位置**"
+msgstr "**Byte Position**"
+
+#: ../../source/PluginManual/plugin_board.rst:124
+msgid "**名称**"
+msgstr "**Name**"
+
+#: ../../source/PluginManual/plugin_board.rst:125
+msgid "**取值及含义**"
+msgstr "**Values and Their Meanings**"
+
+#: ../../source/PluginManual/plugin_board.rst:127
+msgid "[31:24] 字节4"
+msgstr "[31:24] Byte 4"
+
+#: ../../source/PluginManual/plugin_board.rst:128
+msgid "Severity (故障等级)"
+msgstr "Severity"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x00 = OK (正常)"
+msgstr "0x00 = OK (Normal)"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x01 = INFO (提示信息)"
+msgstr "0x01 = INFO (informational message)"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x02 = WARN (一般警告，不阻断运行)"
+msgstr "0x02 = WARN (General warning, does not interrupt execution)"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x0E = ERROR (运行故障，打断运动)"
+msgstr "0x0E = ERROR (Operation failure, motion interruption)"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x0F = FATAL (致命故障，触发急停与安全锁)"
+msgstr "0x0F = FATAL (Fatal fault, triggering emergency stop and safety lock)"
+
+#: ../../source/PluginManual/plugin_board.rst:135
+msgid "[23:16] 字节3"
+msgstr "[23:16] Byte 3"
+
+#: ../../source/PluginManual/plugin_board.rst:136
+msgid "Subsystem (子系统模块)"
+msgstr "Subsystem"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x00 = INIT (初始化过程)"
+msgstr "0x00 = INIT (initialization process)"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x10 = RUN (运行过程)"
+msgstr "0x10 = RUN (Running Process)"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x20 = SENSOR (传感器)"
+msgstr "0x20 = SENSOR"
+
+#: ../../source/PluginManual/plugin_board.rst
+msgid "0x30 = HAL (硬件抽象层反馈)"
+msgstr "0x30 = HAL (Hardware Abstraction Layer Feedback)"
+
+#: ../../source/PluginManual/plugin_board.rst:142
+msgid "[15:08] 字节2"
+msgstr "[15:08] Byte 2"
+
+#: ../../source/PluginManual/plugin_board.rst:143
+msgid "MainCode (主错误码)"
+msgstr "MainCode (Main Error Code)"
+
+#: ../../source/PluginManual/plugin_board.rst:144
+msgid "例如：0x00, 0x01, 0xFF (全局广播)"
+msgstr "For example: 0x00, 0x01, 0xFF (global broadcast)"
+
+#: ../../source/PluginManual/plugin_board.rst:146
+msgid "[07:00] 字节1"
+msgstr "[07:00] Byte 1"
+
+#: ../../source/PluginManual/plugin_board.rst:147
+msgid "SubCode (从错误码)"
+msgstr "Subcode (from error code)"
+
+#: ../../source/PluginManual/plugin_board.rst:148
+msgid "流水号，用于精确区分具体的报错原因"
+msgstr ""
+"Serial number, used to precisely distinguish the specific cause of an error"
+
+#: ../../source/PluginManual/plugin_board.rst:151
+msgid ""
+"请注意，目前规定致命级别的错误不支持错误恢复，错误级别的均可以通过指令服务器的reseterror指令恢复，警告级别的信息会通过curwarncode提示但是不会中断系统运行。"
+msgstr ""
+"Note that fatal-level errors currently do not support error recovery; all "
+"error-level issues can be recovered via the server’s “reseterror” command; "
+"warning-level messages are indicated by “curwarncode” but do not interrupt "
+"system operation."
+
+#: ../../source/PluginManual/plugin_board.rst:154
+msgid "表2-3 致命(FATAL)级别故障码"
+msgstr "Table 2-3 Fatal-Level Fault Codes"
+
+#: ../../source/PluginManual/plugin_board.rst:160
+#: ../../source/PluginManual/plugin_board.rst:222
+#: ../../source/PluginManual/plugin_board.rst:245
+msgid "**完整Hex数值**"
+msgstr "**Complete Hexadecimal Value**"
+
+#: ../../source/PluginManual/plugin_board.rst:161
+#: ../../source/PluginManual/plugin_board.rst:223
+msgid "**故障释义**"
+msgstr "**Fault Interpretation**"
+
+#: ../../source/PluginManual/plugin_board.rst:162
+#: ../../source/PluginManual/plugin_board.rst:224
+#: ../../source/PluginManual/plugin_board.rst:247
+msgid "**排查与处理方向**"
+msgstr "**Troubleshooting and Resolution Guidelines**"
+
+#: ../../source/PluginManual/plugin_board.rst:164
+msgid "0x0F000001"
+msgstr "0x0F000001"
+
+#: ../../source/PluginManual/plugin_board.rst:165
+msgid "参数读取异常，非法参数"
+msgstr "Parameter reading exception, invalid parameter"
+
+#: ../../source/PluginManual/plugin_board.rst:166
+#: ../../source/PluginManual/plugin_board.rst:170
+msgid "启动之前是否自行修改过配置文件，或者配置文件是否损坏，建议重新运行frconfig指令，使用法奥给的配置文件进行从站配置"
+msgstr ""
+"Before startup, did you manually modify the configuration file, or is the "
+"configuration file corrupted? It is recommended to rerun the “frconfig” "
+"command and use the configuration file provided by Faou to configure the "
+"slave station."
+
+#: ../../source/PluginManual/plugin_board.rst:168
+msgid "0x0F000002"
+msgstr "0x0F000002"
+
+#: ../../source/PluginManual/plugin_board.rst:169
+msgid "伺服从站格式非法，正则解析减速比失败"
+msgstr ""
+"Invalid slave station format; failed to parse gear ratio using regular "
+"expression."
+
+#: ../../source/PluginManual/plugin_board.rst:172
+msgid "0x0F000004"
+msgstr "0x0F000004"
+
+#: ../../source/PluginManual/plugin_board.rst:173
+msgid "初始化共享内存或者信号量打开失败"
+msgstr "Failed to initialize shared memory or open semaphore"
+
+#: ../../source/PluginManual/plugin_board.rst:174
+msgid "HAL库没有正确启动，请联系法奥技术人员排查"
+msgstr ""
+"The HAL library failed to initialize properly. Please contact FAO technical "
+"support for troubleshooting."
+
+#: ../../source/PluginManual/plugin_board.rst:176
+msgid "0x0F000008"
+msgstr "0x0F000008"
+
+#: ../../source/PluginManual/plugin_board.rst:177
+msgid "读取初始状态和校验错误"
+msgstr "Reading initial state and checksum error"
+
+#: ../../source/PluginManual/plugin_board.rst:178
+msgid "调用的HAL库版本不对，请使用法奥提供的升级包进行升级后重启"
+msgstr ""
+"The invoked HAL library version is incorrect. Please upgrade using the Faao-"
+"provided update package and then restart."
+
+#: ../../source/PluginManual/plugin_board.rst:180
+msgid "0x0F000010"
+msgstr "0x0F000010"
+
+#: ../../source/PluginManual/plugin_board.rst:181
+msgid "读取初始状态从站信息校验错误,检查ethercat拓扑结构"
+msgstr ""
+"Error reading initial slave status information; check the EtherCAT topology."
+
+#: ../../source/PluginManual/plugin_board.rst:182
+msgid "从站数量和类型校验错误，请检查当前加载的配置是否和真实硬件对应并且确认开机的时候EtherCAT线是接在控制器上的"
+msgstr ""
+"Error in verifying the number and type of slave stations. Please check "
+"whether the currently loaded configuration matches the actual hardware and "
+"confirm that the EtherCAT cable is connected to the controller at power-on."
+
+#: ../../source/PluginManual/plugin_board.rst:184
+msgid "0x0F000020"
+msgstr "0x0F000020"
+
+#: ../../source/PluginManual/plugin_board.rst:185
+msgid "读取初始状态共享内存对象为空错误"
+msgstr "Error: Reading initial state shared memory object is empty"
+
+#: ../../source/PluginManual/plugin_board.rst:186
+#: ../../source/PluginManual/plugin_board.rst:190
+msgid "HAL库退出，请联系法奥技术人员排查"
+msgstr ""
+"HAL library exited. Please contact Faou technical support for "
+"troubleshooting."
+
+#: ../../source/PluginManual/plugin_board.rst:188
+msgid "0x0F000040"
+msgstr "0x0F000040"
+
+#: ../../source/PluginManual/plugin_board.rst:189
+msgid "读取初始状态超时"
+msgstr "Timeout reading initial state"
+
+#: ../../source/PluginManual/plugin_board.rst:192
+msgid "0x0F100001"
+msgstr "0x0F100001"
+
+#: ../../source/PluginManual/plugin_board.rst:193
+msgid "共享内存看门狗超时"
+msgstr "Shared Memory Watchdog Timeout"
+
+#: ../../source/PluginManual/plugin_board.rst:194
+msgid "HAL 库掉线或底层驱动进程死掉。排查底层 igh 进程是否正常存活，检查 IPC 共享内存机制是否被阻塞。"
+msgstr ""
+"The HAL library has gone offline or the underlying driver process has "
+"crashed. Check whether the underlying igh process is running normally and "
+"verify whether the IPC shared memory mechanism is blocked."
+
+#: ../../source/PluginManual/plugin_board.rst:196
+msgid "0x0F100101"
+msgstr "0x0F100101"
+
+#: ../../source/PluginManual/plugin_board.rst:197
+msgid "从站信息和校验错误"
+msgstr "Slave Information and Checksum Errors"
+
+#: ../../source/PluginManual/plugin_board.rst:198
+msgid "底层获取的伺服数据包 CRC 校验失败。重点检查总线网线是否松动、水晶头是否良好，或线缆是否受到强电磁干扰。"
+msgstr ""
+"CRC verification failure for the servo data packet obtained at the lower "
+"layer. Pay special attention to whether the bus network cable is loose, "
+"whether the RJ-45 connector is intact, or whether the cable is subject to "
+"strong electromagnetic interference."
+
+#: ../../source/PluginManual/plugin_board.rst:200
+msgid "0x0F100102"
+msgstr "0x0F100102"
+
+#: ../../source/PluginManual/plugin_board.rst:201
+msgid "从站数量或类型异常"
+msgstr "Abnormal number or type of slave stations"
+
+#: ../../source/PluginManual/plugin_board.rst:202
+msgid "实际扫描到的物理关节数量/型号，与 YAML 配置文件定义的拓扑结构不一致。检查配置文件加载是否正确。"
+msgstr ""
+"The actual number/model of physically scanned joints is inconsistent with "
+"the topology defined in the YAML configuration file. Check whether the "
+"configuration file is loaded correctly."
+
+#: ../../source/PluginManual/plugin_board.rst:204
+msgid "0x0F100103"
+msgstr "0x0F100103"
+
+#: ../../source/PluginManual/plugin_board.rst:205
+msgid "状态共享内存指针为空"
+msgstr "Status shared memory pointer is null"
+
+#: ../../source/PluginManual/plugin_board.rst:206
+msgid "内存映射失败。ROS 2 hardware_interface 无法正确挂载读取机械臂状态的共享内存地址。"
+msgstr ""
+"Memory mapping failed. The ROS 2 hardware_interface failed to correctly "
+"mount the shared memory address for reading the robotic arm’s status."
+
+#: ../../source/PluginManual/plugin_board.rst:208
+msgid "0x0F100201"
+msgstr "0x0F100201"
+
+#: ../../source/PluginManual/plugin_board.rst:209
+msgid "指令共享内存指针为空"
+msgstr "Instruction shared memory pointer is null"
+
+#: ../../source/PluginManual/plugin_board.rst:210
+msgid "内存映射失败。ROS 2 hardware_interface 无法正确挂载下发运动指令的共享内存地址。"
+msgstr ""
+"Memory mapping failed. The ROS 2 hardware_interface cannot correctly mount "
+"the shared memory address for issuing motion commands."
+
+#: ../../source/PluginManual/plugin_board.rst:213
+msgid ""
+"请注意，在系统刚启动的时候，解析出来的错误码可能在以上表格中找不到，比如会出现0x0F00005，这个错误码是0x0F00001和0x0F00004的组合，因为在系统初始化的时候，进行一系列的操作均可能出现错误，但是系统没启动之前，这些错误无法立即给出，只能采用叠加累计的方式，因此会在初始化后出现这种组合错误码。"
+msgstr ""
+"Note that immediately after system startup, the parsed error codes may not "
+"be found in the table above—for example, 0x0F00005 may appear. This error "
+"code is a combination of 0x0F00001 and 0x0F00004, because multiple "
+"operations during system initialization may each fail; however, before the "
+"system fully starts up, these errors cannot be reported immediately and are "
+"instead accumulated cumulatively, resulting in such composite error codes "
+"appearing after initialization."
+
+#: ../../source/PluginManual/plugin_board.rst:216
+msgid "表2-4 错误(ERROR)级别错误码"
+msgstr "Table 2-4 ERROR-Level Error Codes"
+
+#: ../../source/PluginManual/plugin_board.rst:226
+msgid "0x0E10FF01"
+msgstr "0x0E10FF01"
+
+#: ../../source/PluginManual/plugin_board.rst:227
+msgid "驱动器故障 (全局广播)"
+msgstr "Drive Failure (Global Broadcast)"
+
+#: ../../source/PluginManual/plugin_board.rst:228
+msgid "0xFF 代表任意轴的广播报警。电机可能发生了过流、过载、碰撞导致过力矩，或编码器掉线。需结合单轴 errorcode 进一步定位具体关节。"
+msgstr ""
+"0xFF indicates a broadcast alarm for any axis. Possible causes include "
+"overcurrent, overload, excessive torque due to collision, or encoder "
+"disconnection. Refer to the individual-axis error code to pinpoint the "
+"specific joint."
+
+#: ../../source/PluginManual/plugin_board.rst:230
+msgid "0x0E100001"
+msgstr "0x0E100001"
+
+#: ../../source/PluginManual/plugin_board.rst:231
+msgid "软急停触发"
+msgstr "Soft Emergency Stop Triggered"
+
+#: ../../source/PluginManual/plugin_board.rst:232
+msgid "逻辑急停被拍下。上位机或示教器下发了紧急停止指令，底层立刻中断当前运动队列以保障安全。"
+msgstr ""
+"Logical emergency stop triggered. The host computer or teach pendant issued "
+"an emergency stop command, causing the underlying system to immediately "
+"interrupt the current motion queue to ensure safety."
+
+#: ../../source/PluginManual/plugin_board.rst:234
+msgid "0x0E100002"
+msgstr "0x0E100002"
+
+#: ../../source/PluginManual/plugin_board.rst:235
+msgid "指令队列长度过长"
+msgstr "Instruction queue is too long"
+
+#: ../../source/PluginManual/plugin_board.rst:236
+msgid "插补缓冲区溢出。上位机下发轨迹点位过密或控制频率过高，导致底层消费者处理超时。需检查控制器执行频率设置。"
+msgstr ""
+"Interpolation buffer overflow. The host computer sends trajectory points too"
+" densely or sets the control frequency too high, causing timeout in the "
+"underlying consumer processing. Please check the controller’s execution "
+"frequency setting."
+
+#: ../../source/PluginManual/plugin_board.rst:239
+msgid "表2-5 警告(WARN)级别错误码"
+msgstr "Table 2-5 Warning (WARN)-Level Error Codes"
+
+#: ../../source/PluginManual/plugin_board.rst:246
+msgid "**警告释义**"
+msgstr "**Warning Interpretation**"
+
+#: ../../source/PluginManual/plugin_board.rst:249
+msgid "0x02100001"
+msgstr "0x02100001"
+
+#: ../../source/PluginManual/plugin_board.rst:250
+msgid "指令步进较大 (触发削峰)"
+msgstr "Large instruction step (triggering clipping)"
+
+#: ../../source/PluginManual/plugin_board.rst:251
+msgid "规划器下发的相邻两点位置差值超过了底层的最大速度/加速度限制，底层强制进行了削峰平滑。可能会导致实际轨迹与预期有极小偏差。"
+msgstr ""
+"The positional difference between two consecutive points issued by the "
+"planner exceeds the underlying system’s maximum velocity/acceleration "
+"limits, triggering forced peak clipping and smoothing. This may cause a "
+"negligible deviation between the actual and intended trajectory."
+
+#: ../../source/PluginManual/plugin_board.rst:253
+msgid "0x02100002"
+msgstr "0x02100002"
+
+#: ../../source/PluginManual/plugin_board.rst:254
+msgid "指令队列写入失败"
+msgstr "Instruction queue write failure"
+
+#: ../../source/PluginManual/plugin_board.rst:255
+msgid "瞬时并发过高，导致系统在极短瞬间无法将插补点推入无锁队列，可能引起短暂的运动卡顿。"
+msgstr ""
+"Excessively high instantaneous concurrency causes the system to fail to push"
+" interpolation points into the lock-free queue within an extremely short "
+"time, potentially resulting in brief motion stuttering."
+
+#: ../../source/PluginManual/plugin_board.rst:258
+msgid "指令服务器"
+msgstr "Command Server"
+
+#: ../../source/PluginManual/plugin_board.rst:259
+msgid ""
+"指令服务器是随着插件系统默认开机自启动的一个controller，名称是fairino_hardware_command_controller，它对外提供了一个名称为command的action服务器，其自定义交互消息格式为："
+msgstr ""
+"The instruction server is a controller that starts automatically with the "
+"plugin system upon boot-up, named “fairino_hardware_command_controller.” It "
+"provides an action server externally named “command,” using a custom "
+"interaction message format:"
+
+#: ../../source/PluginManual/plugin_board.rst:262
+msgid "表2-6 自定义交互消息格式"
+msgstr "Table 2-6 Custom Interactive Message Format"
+
+#: ../../source/PluginManual/plugin_board.rst:268
+msgid "string command"
+msgstr "string command"
+
+#: ../../source/PluginManual/plugin_board.rst:269
+msgid "Request (Goal) - 字符串指令，例如 \"Enable(1)\""
+msgstr "Request (Goal) – String command, e.g., \"Enable(1)\""
+
+#: ../../source/PluginManual/plugin_board.rst:271
+msgid "string error_code"
+msgstr "string error_code"
+
+#: ../../source/PluginManual/plugin_board.rst:272
+msgid "Result - 控制器专属 16位 Hex 错误码，例如 \"0xC000\""
+msgstr ""
+"Result – Controller-specific 16-bit hexadecimal error code, e.g., \"0xC000\""
+
+#: ../../source/PluginManual/plugin_board.rst:274
+msgid "float32 progress"
+msgstr "float32 progress"
+
+#: ../../source/PluginManual/plugin_board.rst:275
+msgid "Feedback - 执行进度 (0.0 ~ 100.0)"
+msgstr "Feedback – Execution Progress (0.0 ~ 100.0)"
+
+#: ../../source/PluginManual/plugin_board.rst:278
+msgid "表2-7 目前支持的指令表"
+msgstr "Table 2-7 Supported Instructions"
+
+#: ../../source/PluginManual/plugin_board.rst:284
+msgid "**指令名称**"
+msgstr "**Instruction Name**"
+
+#: ../../source/PluginManual/plugin_board.rst:285
+msgid "**功能深度描述**"
+msgstr "**In-depth Feature Description**"
+
+#: ../../source/PluginManual/plugin_board.rst:286
+msgid "**输入参数说明**"
+msgstr "**Input Parameter Description**"
+
+#: ../../source/PluginManual/plugin_board.rst:288
+msgid "activatecontroller"
+msgstr "activateController"
+
+#: ../../source/PluginManual/plugin_board.rst:289
+msgid ""
+"激活指定的 ROS 2 控制器。通过调用 controller_manager 的服务，将目标控制器状态从 inactive 切换为 active。"
+msgstr ""
+"Activate the specified ROS 2 controller by calling the controller_manager "
+"service to transition the target controller’s state from inactive to active."
+
+#: ../../source/PluginManual/plugin_board.rst:290
+#: ../../source/PluginManual/plugin_board.rst:294
+msgid "args[0]: 控制器名称 (String)示例: fairino_trajectory_controller"
+msgstr ""
+"args[0]: Controller name (String) Example: fairino_trajectory_controller"
+
+#: ../../source/PluginManual/plugin_board.rst:292
+msgid "deactivatecontroller"
+msgstr "Deactivate controller"
+
+#: ../../source/PluginManual/plugin_board.rst:293
+msgid "停用指定的 ROS 2 控制器。将正在运行的控制器状态切换为 inactive，常用于控制权交接（如切出轨迹控制，切入阻抗控制）。"
+msgstr ""
+"Deactivate the specified ROS 2 controller. Switch the running controller’s "
+"state to inactive, commonly used for control authority handover (e.g., "
+"switching out trajectory control and switching in impedance control)."
+
+#: ../../source/PluginManual/plugin_board.rst:296
+msgid "enable"
+msgstr "enable"
+
+#: ../../source/PluginManual/plugin_board.rst:297
+msgid "机器人使能 (Servo ON)。向下位机发送指令，闭合继电器，给各关节伺服电机上电并开启力矩输出。"
+msgstr ""
+"Robot Enable (Servo ON). Send a command to the lower-level controller to "
+"close the relay, power up the joint servo motors, and enable torque output."
+
+#: ../../source/PluginManual/plugin_board.rst:298
+msgid "无参数的情况下是全部关节使能，有参数的情况按照Bit位使能(比如1是第一关节，2是第二关节，4是第三关节，8是第四关节，7是一二三关节)"
+msgstr ""
+"When no parameters are provided, all joints are enabled; when parameters are"
+" provided, joints are enabled according to bit positions (e.g., 1 enables "
+"joint 1, 2 enables joint 2, 4 enables joint 3, 8 enables joint 4, and 7 "
+"enables joints 1, 2, and 3)."
+
+#: ../../source/PluginManual/plugin_board.rst:300
+msgid "disable"
+msgstr "disable"
+
+#: ../../source/PluginManual/plugin_board.rst:301
+msgid "机器人下使能 (Servo OFF)。切断伺服电机力矩输出，机械臂进入抱闸（Brake）状态。"
+msgstr ""
+"Robot servo disable (Servo OFF). Cuts off torque output from the servo "
+"motors, causing the robotic arm to engage the brake."
+
+#: ../../source/PluginManual/plugin_board.rst:302
+msgid "同enable函数用法"
+msgstr "Same usage as the enable function"
+
+#: ../../source/PluginManual/plugin_board.rst:304
+msgid "setdo"
+msgstr "setdo"
+
+#: ../../source/PluginManual/plugin_board.rst:305
+msgid "设置数字输出 (Digital Output)。控制机器人控制柜或末端工具的 IO 针脚电平，用于触发外围设备（如夹爪、焊枪、继电器）。"
+msgstr ""
+"Configure digital output to control the IO pin levels of the robot control "
+"cabinet or end-effector, enabling activation of peripheral devices (e.g., "
+"grippers, welding torches, relays)."
+
+#: ../../source/PluginManual/plugin_board.rst:306
+msgid "args[0]: IO 端口索引/名称args[1]: 状态 (\"1\"/\"true\" 开, \"0\"/\"false\" 关)"
+msgstr ""
+"args[0]: IO port index/name  \n"
+"args[1]: Status (\"1\"/\"true\" for on, \"0\"/\"false\" for off)"
+
+#: ../../source/PluginManual/plugin_board.rst:308
+msgid "zeroing"
+msgstr "zeroing"
+
+#: ../../source/PluginManual/plugin_board.rst:309
+msgid "执行机械臂零点标定。触发底层寻零逻辑，使关节自动寻找机械原点并重置绝对编码器偏置。"
+msgstr ""
+"Perform zero-point calibration of the robotic arm. Trigger the underlying "
+"homing logic to enable joints to automatically locate the mechanical origin "
+"and reset the absolute encoder offset."
+
+#: ../../source/PluginManual/plugin_board.rst:310
+msgid "同enable用法"
+msgstr "Same usage as enable"
+
+#: ../../source/PluginManual/plugin_board.rst:312
+msgid "reseterror"
+msgstr "reset error"
+
+#: ../../source/PluginManual/plugin_board.rst:313
+msgid "错误复位。当底层触发 ERROR 报警导致抱闸后，如果物理故障已解除，调用此指令清除底层错误标志，使系统恢复待机状态。"
+msgstr ""
+"Error reset. When the underlying system triggers an ERROR alarm causing "
+"brake engagement, invoking this command clears the underlying error flag and"
+" restores the system to standby mode, provided the physical fault has been "
+"resolved."
+
+#: ../../source/PluginManual/plugin_board.rst:314
+msgid "无参数"
+msgstr "No parameters"
+
+#: ../../source/PluginManual/plugin_board.rst:316
+msgid "frconfig"
+msgstr "frconfig"
+
+#: ../../source/PluginManual/plugin_board.rst:317
+msgid ""
+"动态生成机器人的核心配置文件。拉起后台 Python 脚本，解析 YAML 配置，动态生成 URDF 模型和 controller_manager "
+"配置文件。"
+msgstr ""
+"Dynamically generate the robot’s core configuration files. Launch the "
+"background Python script to parse the YAML configuration and dynamically "
+"generate the URDF model and controller_manager configuration files."
+
+#: ../../source/PluginManual/plugin_board.rst:318
+msgid ""
+"args[0] (可选): /opt/fairino_art_plugin/config文件夹下配置文件名。若为空，默认使用 "
+"\"fairino_config.yaml\"，等同于frconfig(fairino_config.yaml)"
+msgstr ""
+"args[0] (optional): The configuration file name under the "
+"`/opt/fairino_art_plugin/config` directory. If omitted, the default file "
+"`\"fairino_config.yaml\"` is used, equivalent to "
+"`frconfig(fairino_config.yaml)`."
+
+#: ../../source/PluginManual/plugin_board.rst:320
+msgid "upgradeplugin"
+msgstr "upgrade plugin"
+
+#: ../../source/PluginManual/plugin_board.rst:321
+msgid "自动升级底层驱动与插件包。解压传入的 zip 包，清理旧环境，将新代码覆盖至 /opt 系统目录，并自动修复 .sh 及可执行文件的权限。"
+msgstr ""
+"Automatically upgrade underlying drivers and plugin packages. Extract the "
+"incoming ZIP package, clean up the old environment, overwrite the new code "
+"to the /opt system directory, and automatically fix permissions for .sh and "
+"executable files."
+
+#: ../../source/PluginManual/plugin_board.rst:322
+msgid "args[0]: 升级包 .zip 的绝对路径。示例: [\"/tmp/update_v2.zip\"]"
+msgstr ""
+"args[0]: The absolute path of the upgrade package (.zip). Example: "
+"[\"/tmp/update_v2.zip\"]"
+
+#: ../../source/PluginManual/plugin_board.rst:324
+msgid "packlog"
+msgstr "PackLog"
+
+#: ../../source/PluginManual/plugin_board.rst:325
+msgid ""
+"一键打包系统日志与 Dump 故障快照。将 /home/fairino/plugin_log/ "
+"下的故障快照及系统运行日志压缩成一个归档文件，方便现场人员拷贝导出。"
+msgstr ""
+"One-click packaging of system logs and dump snapshots. Compresses fault "
+"snapshots and system runtime logs from /home/fairino/plugin_log/ into a "
+"single archive file for easy copying and export by on-site personnel."
+
+#: ../../source/PluginManual/plugin_board.rst:326
+msgid "无参数 (或可选传入目标导出路径)"
+msgstr "No parameters (or optionally specify the target export path)"
+
+#: ../../source/PluginManual/plugin_board.rst:328
+msgid "recorddata"
+msgstr "record data"
+
+#: ../../source/PluginManual/plugin_board.rst:329
+msgid "控制用户高频数据录制器。在内存中开启/关闭 20MB 的循环数据录制队列，用于抓取高精度的关节位置、力矩及状态波形。"
+msgstr ""
+"Control the user’s high-frequency data recorder. Enable or disable a 20 MB "
+"circular data recording queue in memory for capturing high-precision joint "
+"position, torque, and status waveforms."
+
+#: ../../source/PluginManual/plugin_board.rst:330
+msgid "args[0]: 动作指令。仅接受 \"start\" 或 \"stop\" (忽略大小写)。"
+msgstr ""
+"args[0]: Action command. Only \"start\" or \"stop\" is accepted (case-"
+"insensitive)."
+
+#: ../../source/PluginManual/plugin_board.rst:332
+msgid ""
+"同样的，根据上面阐述的指令服务器交互信息格式，每个一string指令都会有一个string反馈值，这个返回值是16位的错误码系统，其具体函数见如下表格："
+msgstr ""
+"Similarly, according to the instruction-server interaction format described "
+"above, each string instruction has a corresponding string feedback value—a "
+"16-bit error code system, whose specific functions are detailed in the table"
+" below:"
+
+#: ../../source/PluginManual/plugin_board.rst:335
+msgid "表2-8 具体函数表"
+msgstr "Table 2-8 Specific Function Table"
+
+#: ../../source/PluginManual/plugin_board.rst:341
+msgid "**返回值**"
+msgstr "**Return Value**"
+
+#: ../../source/PluginManual/plugin_board.rst:342
+msgid "**触发场景释义**"
+msgstr "**Trigger Scenario Definition**"
+
+#: ../../source/PluginManual/plugin_board.rst:343
+msgid "**常见排查与处理建议**"
+msgstr "**Common Troubleshooting and Resolution Recommendations**"
+
+#: ../../source/PluginManual/plugin_board.rst:345
+msgid "\"0xC000\""
+msgstr "0xC000"
+
+#: ../../source/PluginManual/plugin_board.rst:346
+msgid "执行成功。指令完整拉起并顺利结束。"
+msgstr ""
+"Execution succeeded. The command was fully launched and completed "
+"successfully."
+
+#: ../../source/PluginManual/plugin_board.rst:347
+msgid "无需处理，上位机可继续下发后续流程。"
+msgstr ""
+"No action required; the host computer can continue issuing subsequent "
+"procedures."
+
+#: ../../source/PluginManual/plugin_board.rst:349
+msgid "\"0xC010\""
+msgstr "0xC010"
+
+#: ../../source/PluginManual/plugin_board.rst:350
+msgid "参数非法或防注入拦截。传入参数为空，或包含危险 Shell 字符。"
+msgstr ""
+"Invalid parameter or injection prevention intercepted. The input parameter "
+"is empty or contains dangerous shell characters."
+
+#: ../../source/PluginManual/plugin_board.rst:351
+msgid "检查上位机下发的参数，确保仅包含合法文件路径或纯文本。"
+msgstr ""
+"Check the parameters sent by the host computer to ensure they contain only "
+"valid file paths or plain text."
+
+#: ../../source/PluginManual/plugin_board.rst:353
+msgid "\"0xC011\""
+msgstr "0xC011"
+
+#: ../../source/PluginManual/plugin_board.rst:354
+msgid "依赖服务不可用。试图调用的 ROS 2 内部服务（如 controller_manager）掉线或未就绪。"
+msgstr ""
+"Dependent service is unavailable. The ROS 2 internal service being called "
+"(e.g., controller_manager) is offline or not ready."
+
+#: ../../source/PluginManual/plugin_board.rst:355
+msgid "检查目标节点是否存活，或等待系统完全启动后再下发指令。"
+msgstr ""
+"Check whether the target node is alive, or wait until the system has fully "
+"booted before issuing commands."
+
+#: ../../source/PluginManual/plugin_board.rst:357
+msgid "\"0xC012\""
+msgstr "0xC012"
+
+#: ../../source/PluginManual/plugin_board.rst:358
+msgid "硬件状态异常。在下发需要硬件配合的指令时，检测到底层处于报错或未使能状态。"
+msgstr ""
+"Hardware status is abnormal. An error or disabled state was detected at the "
+"underlying level when issuing commands requiring hardware cooperation."
+
+#: ../../source/PluginManual/plugin_board.rst:359
+msgid "请先查阅 fairino_hardware 的硬件报警码，复位硬件后再试。"
+msgstr ""
+"Please first check the hardware alarm codes for fairino_hardware, then reset"
+" the hardware and try again."
+
+#: ../../source/PluginManual/plugin_board.rst:361
+msgid "\"0xC013\""
+msgstr "0xC013"
+
+#: ../../source/PluginManual/plugin_board.rst:362
+msgid "指令超时。指令在规定时间内未完成（如下载、系统响应等）。"
+msgstr ""
+"Command timeout. The command did not complete within the specified time "
+"(e.g., download, system response, etc.)."
+
+#: ../../source/PluginManual/plugin_board.rst:363
+msgid "检查网络连接或系统负载是否过高。"
+msgstr "Check the network connection or whether the system load is too high."
+
+#: ../../source/PluginManual/plugin_board.rst:365
+msgid "\"0xC020\""
+msgstr "0xC020"
+
+#: ../../source/PluginManual/plugin_board.rst:366
+msgid "控制器切换失败。软切换（如从关节空间切换到笛卡尔空间 Controller）被系统拒绝。"
+msgstr ""
+"Controller switching failed. The soft switch (e.g., from joint space to "
+"Cartesian space controller) was rejected by the system."
+
+#: ../../source/PluginManual/plugin_board.rst:367
+msgid "检查控制器名称是否拼写正确，或控制器端口占用冲突"
+msgstr ""
+"Check whether the controller name is spelled correctly, or whether there is "
+"a port conflict on the controller."
+
+#: ../../source/PluginManual/plugin_board.rst:369
+msgid "\"0xC021\""
+msgstr "0xC021"
+
+#: ../../source/PluginManual/plugin_board.rst:370
+msgid "校零超时。"
+msgstr "Zero calibration timeout."
+
+#: ../../source/PluginManual/plugin_board.rst:371
+msgid "检查插件是否正常运行中"
+msgstr "Checking if the plugin is running normally"
+
+#: ../../source/PluginManual/plugin_board.rst:373
+msgid "\"0xC030\""
+msgstr "\"0xC030\""
+
+#: ../../source/PluginManual/plugin_board.rst:374
+msgid "配置生成失败。Python 脚本解析 YAML 或生成 URDF/控制器配置失败。"
+msgstr ""
+"Configuration generation failed. The Python script failed to parse the YAML "
+"or generate the URDF/controller configuration."
+
+#: ../../source/PluginManual/plugin_board.rst:375
+msgid "检查 YAML 格式是否正确，文件是否人为篡改或者出现乱码"
+msgstr ""
+"Check whether the YAML format is correct, and whether the file has been "
+"manually tampered with or contains garbled characters."
+
+#: ../../source/PluginManual/plugin_board.rst:377
+msgid "\"0xC040\""
+msgstr "0xC040"
+
+#: ../../source/PluginManual/plugin_board.rst:378
+msgid "解压升级包失败。unzip 指令返回非零退出码。"
+msgstr ""
+"Failed to extract the upgrade package. The unzip command returned a non-zero"
+" exit code."
+
+#: ../../source/PluginManual/plugin_board.rst:379
+msgid "检查 .zip 文件路径是否正确、压缩包是否损坏或 /tmp 空间是否满。"
+msgstr ""
+"Check whether the .zip file path is correct, whether the archive is "
+"corrupted, or whether the /tmp space is full."
+
+#: ../../source/PluginManual/plugin_board.rst:381
+msgid "\"0xC041\""
+msgstr "0xC041"
+
+#: ../../source/PluginManual/plugin_board.rst:382
+msgid "目录覆盖失败。插件升级覆盖到 /opt/... 目录时出错。"
+msgstr ""
+"Directory overwrite failed. An error occurred while the plugin upgrade "
+"attempted to overwrite the /opt/... directory."
+
+#: ../../source/PluginManual/plugin_board.rst:383
+msgid "检查目录的权限归属（属主是否为 fairino）或是否被占用。"
+msgstr ""
+"Check the directory permissions and ownership (whether the owner is fairino)"
+" or whether it is occupied."
+
+#: ../../source/PluginManual/plugin_board.rst:385
+msgid "\"0xC050\""
+msgstr "0xC050"
+
+#: ../../source/PluginManual/plugin_board.rst:386
+msgid "打包日志失败。收集、压缩 Dump 文件及系统运行日志时报错。"
+msgstr ""
+"Failed to package logs. An error occurred while collecting and compressing "
+"dump files and system runtime logs."
+
+#: ../../source/PluginManual/plugin_board.rst:387
+msgid "检查目标存储路径权限及磁盘剩余容量。"
+msgstr ""
+"Check the permissions of the target storage path and the remaining disk "
+"capacity."
+
+#: ../../source/PluginManual/plugin_board.rst:389
+msgid "\"0xC060\""
+msgstr "\"0xC060\""
+
+#: ../../source/PluginManual/plugin_board.rst:390
+msgid "数据记录操作失败。recorddata(start/stop) 指令处理失败或写入异常。"
+msgstr ""
+"Data recording operation failed. The recorddata(start/stop) command "
+"processing failed or a write exception occurred."
+
+#: ../../source/PluginManual/plugin_board.rst:391
+msgid "检查 /tmp/record_data 目录是否可写，或内存中是否存在死锁。"
+msgstr ""
+"Check whether the /tmp/record_data directory is writable, or whether a "
+"deadlock exists in memory."
+
+#: ../../source/PluginManual/plugin_board.rst:393
+msgid "\"0xC0FE\""
+msgstr "0xC0FE"
+
+#: ../../source/PluginManual/plugin_board.rst:394
+msgid "未知指令。上位机发送了一个 Action Server 无法解析的命令字。"
+msgstr ""
+"Unknown command. The host computer sent a command that the Action Server "
+"cannot parse."
+
+#: ../../source/PluginManual/plugin_board.rst:395
+msgid "对齐上位机与下位机的通信协议接口文档。"
+msgstr ""
+"Alignment of the communication protocol interface documentation between the "
+"host computer and the slave computer."
+
+#: ../../source/PluginManual/plugin_board.rst:397
+msgid "\"0xC0FF\""
+msgstr "0xC0FF"
+
+#: ../../source/PluginManual/plugin_board.rst:398
+msgid "底层抛出异常。C++ 或脚本内部发生未捕获的严重崩溃/被系统强杀。"
+msgstr ""
+"An exception was thrown at the lower level. A severe crash occurred inside "
+"C++ or a script, or the process was forcibly terminated by the system."
+
+#: ../../source/PluginManual/plugin_board.rst:399
+msgid "需查看宿主机 dmesg 或节点标准输出，排查段错误（Segfault）或依赖丢失。"
+msgstr ""
+"Check the host’s dmesg or the node’s standard output to troubleshoot "
+"segmentation faults (segfaults) or missing dependencies."

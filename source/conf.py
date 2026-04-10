@@ -40,6 +40,8 @@ html_context = {
         ('ja', '日文'),
     ]
 }
+# 提取并翻译代码实例内容
+gettext_additional_targets = ['literal-block']
 
 # source/conf.py
 

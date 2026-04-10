@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
+# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 17:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/PluginManual/plugin_tool.rst:2
+msgid "调试工具"
+msgstr "デバッグツール"
+
+#: ../../source/PluginManual/plugin_tool.rst:7
+msgid ""
+"根据第二章节的阐述，ARTPlugin插件系统提供了看板和指令两条人机交互通道，但是ROS2的接口需要程序对接上才能正常交互，这部分ROS2系统并没有提供便捷的人机交互界面。更进一步的，用户学习使用插件，或者调试过程中往往需要产品能够首先简单运动，然后再往后继续深入。基于此，法奥提供了便捷的可视化交互工具，方便用户入门ARTPlugin系统。"
+msgstr ""
+"第2章の説明によると、ARTPluginプラグインシステムは、ホワイトボードとコマンドという2つの人機インタラクションチャネルを提供していますが、ROS2のインターフェースはプログラムとの接続がなければ正常にインタラクションできません。この部分に関して、ROS2システム自体は使いやすい人機インタラクションインターフェースを提供していません。さらに、ユーザーがプラグインの使用方法を学んだり、デバッグを行ったりする際には、製品がまずシンプルな動作を行い、その後で徐々に詳細な操作へと進むことがしばしば必要となります。こうした背景から、FA-"
+"ROBOT（ファーオー）は、ユーザーがARTPluginシステムを容易に学習・導入できるよう、使いやすい可視化インタラクションツールを提供しています。"
+
+#: ../../source/PluginManual/plugin_tool.rst:10
+msgid "调试工具启动"
+msgstr "デバッグツールが起動しました"
+
+#: ../../source/PluginManual/plugin_tool.rst:11
+msgid ""
+"上面提到对于用户交互最重要的3个方面为：状态看板人机交互，Action指令人机交互和伺服调试人机交互。这3个方面依次给出了人机交互界面调试工具，第一个为rqt自带的topic"
+" monitor，第二个和第三个为专门为插件开发的配套调试软件fairino_debug_tool。"
+msgstr ""
+"上記で述べたユーザーインタラクションにおいて最も重要な3つの側面は、状態ダッシュボードにおける人間-機械インタラクション、アクション指令における人間-"
+"機械インタラクション、およびサーボ調整における人間-機械インタラクションである。これらの3つの側面に対応する人間-"
+"機械インタラクションインターフェースのデバッグツールは順に提供されており、最初のものはrqtに標準搭載されているトピックモニタであり、2番目と3番目はプラグイン専用に開発された連携デバッグソフトウェア「fairino_debug_tool」である。"
+
+#: ../../source/PluginManual/plugin_tool.rst:13
+msgid ""
+"首先进入/opt/fairino_art_plugin目录下，运行改目录下runrqttool.sh脚本，可以看到界面会依次弹出3个软件页面。"
+msgstr ""
+"まず、/opt/fairino_art_plugin ディレクトリに移動し、そのディレクトリ内の runrqttool.sh "
+"スクリプトを実行します。すると、インターフェース上に順次3つのソフトウェアウィンドウが表示されます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:15
+msgid "Topic Monitor界面："
+msgstr "トピックモニター画面："
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "002.png"
+msgstr "002.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:22
+msgid "图表 3-1 状态看板"
+msgstr "図3-1 ステータスダッシュボード"
+
+#: ../../source/PluginManual/plugin_tool.rst:23
+msgid "在Topic列表里面勾选hardware_state话题，就可以看到插件发布的全状态。"
+msgstr "トピック一覧から「hardware_state」トピックをチェックすると、プラグインが発行する全状態を確認できます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:25
+msgid "Action调试界面："
+msgstr "アクションデバッグインターフェース："
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "003.png"
+msgstr "003.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:32
+msgid "图表 3-2 Action指令调试工具"
+msgstr "図3-2 Action指令デバッグツール"
+
+#: ../../source/PluginManual/plugin_tool.rst:33
+msgid ""
+"在该界面中，点击refresh，会自动刷新action服务列表，选择fairino_hardware_command_controller/command这个action服务，然后在Comman"
+" String后面的文本框中可以输入指令字符，点击call发送，下面的文本框会反馈指令执行结果："
+msgstr ""
+"このインターフェースで「Refresh」をクリックすると、アクションサービスのリストが自動的に更新されます。「fairino_hardware_command_controller/command」のアクションサービスを選択し、「Command"
+" "
+"String」の後ろにあるテキストボックスにコマンド文字列を入力して「Call」をクリックすると、下部のテキストボックスにコマンド実行結果が表示されます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "004.png"
+msgstr "004.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:40
+msgid "图表 3-3 Action指令调试工具收发指令"
+msgstr "図3-3 Action指令デバッグツールによる指令の送信および受信"
+
+#: ../../source/PluginManual/plugin_tool.rst:41
+msgid "多关节调试工具："
+msgstr "多関節デバッグツール："
+
+#: ../../source/PluginManual/plugin_tool.rst:43
+msgid ""
+"该工具是可以加载joint_trajectory_controller，然后对controller关联的关节进行位置调试。首先，需要激活至少一个joint_trjectory_controller，可以通过上一个action指令调试工具实现。"
+msgstr ""
+"このツールは、joint_trajectory_controllerを読み込み、そのコントローラーに関連付けられた関節の位置調整を行うことができます。まず、少なくとも1つのjoint_trajectory_controllerを有効化する必要があります。これは、前のアクション指令デバッグツールを用いて実現できます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "005.png"
+msgstr "005.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:50
+msgid "图表 3-4 激活left_arm_controller"
+msgstr "図3-4　left_arm_controllerの起動"
+
+#: ../../source/PluginManual/plugin_tool.rst:51
+msgid "然后在多关节调试工具页面上点击刷新列表按钮，就可以看到刚激活的controller。"
+msgstr "その後、マルチジョイントデバッグツールページで「リストを更新」ボタンをクリックすると、先ほど有効化したコントローラーが表示されます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "006.png"
+msgstr "006.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:58
+msgid "图表 3-5 获取到controller的页面"
+msgstr "図3-5 コントローラーを取得したページ"
+
+#: ../../source/PluginManual/plugin_tool.rst:59
+msgid "点击同步并获取关节配置，可以获取到该controller对应的关节名称和数量信息，用户可以设置每一个关节的限位和最大速度。"
+msgstr ""
+"「同期」をクリックして関節設定を取得すると、該当コントローラーに対応する関節名および関節数の情報が得られます。ユーザーは各関節の可動範囲制限および最大速度を設定できます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "007.png"
+msgstr "007.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:66
+msgid "图表 3-6 配置界面"
+msgstr "図3-6 設定インターフェース"
+
+#: ../../source/PluginManual/plugin_tool.rst:67
+msgid "设置完毕后，点击进入调试界面，就可以进入主界面，该界面会同步当前伺服关节的实际位置，用户可以通过点击同步位置手动刷新当前实际位置到界面中。"
+msgstr ""
+"設定が完了したら、デバッグ画面に入るためにクリックし、メイン画面に移動します。この画面では、現在のサーボジョイントの実際の位置が同期されます。ユーザーは「位置を同期」をクリックすることで、現在の実際の位置を手動で画面に更新できます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "008.png"
+msgstr "008.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:74
+msgid "图表 3-7 运动调试界面"
+msgstr "図3-7 運転調整インターフェース"
+
+#: ../../source/PluginManual/plugin_tool.rst:75
+msgid "该页面支持的功能："
+msgstr "このページでサポートされている機能："
+
+#: ../../source/PluginManual/plugin_tool.rst:77
+msgid ""
+"用户通过手动调节关节滑块，设定期望的关节移动目标位置，点击执行当前位置，各关节可以通过样条规划曲线运动值目标位置，用户可以通过速度比例和加速度值(单位rad/s2)调节运动快慢"
+msgstr ""
+"ユーザーは関節スライダーを手動で調整して、希望する関節の目標位置を設定し、「現在位置を実行」をクリックします。各関節はスプライン曲線を用いて目標位置へ滑らかに移動します。ユーザーは速度比率および加速度値（単位：rad/s²）を調整することで、運動の速さを制御できます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:78
+msgid ""
+"点击记录点位，可以把当前位置记录成一个示教点，记录多个点之后，点击开始循环，可以在各个示教点之间顺序循环移动，通过点间停顿，可以调节点和点之间的运动暂停间隔时间。用户可以通过删除点位删除选中的示教点"
+msgstr ""
+"記録ポイントをクリックすると、現在位置を1つのティーチングポイントとして記録できます。複数のポイントを記録した後、「ループ開始」をクリックすると、各ティーチングポイント間を順次ループ移動します。ポイント間の停止時間を調整することで、各ポイント間の動作停止間隔を設定できます。ユーザーはポイントを削除することにより、選択したティーチングポイントを削除できます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:79
+msgid "无论是点击执行当前位置还是开始循环，机械臂产生的运动均可以通过紧急停止来立马停在原地"
+msgstr ""
+"現在位置の実行またはループの開始をクリックした場合でも、ロボットアームが生成する動作は、非常停止ボタンを押すことで即座に停止させることができます。"

@@ -11,3 +11,5 @@
    :caption: 用户手册
 
    ARTManual/intro
+   PluginManual/intro
+   SDKManual/intro
