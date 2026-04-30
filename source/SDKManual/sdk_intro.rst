@@ -493,21 +493,6 @@ SDK函数介绍
         return 0;
     }
 
-笛卡尔空间伺服运动
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: c++
-    :linenos:
-
-    /**
-    * @brief  笛卡尔空间伺服运动
-    * @param [in] servo_cartPos   笛卡尔伺服运动轨迹点，[末端法兰坐标系位置、坐标系rpy角、机械臂臂角]，长度7*len，单位[mm、deg、deg]
-    * @param [in] len   笛卡尔伺服运动轨迹点个数
-    * @param [out] errMsg 错误信息打印
-    * @return 错误码
-    **/
-    ARMErrorCode ServoCart(double* servo_cartPos, uint32_t len, char errMsg[1024]);
-
 伺服运动开始
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -533,7 +518,7 @@ SDK函数介绍
     ARMErrorCode ServoMoveEnd();
 
 关节空间伺服模式运动
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
     :linenos:
@@ -546,6 +531,21 @@ SDK函数介绍
     * @return 错误码
     **/
     ARMErrorCode ServoJ(double* jointPos, int period, char errMsg[1024]);
+
+笛卡尔空间伺服运动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  笛卡尔空间伺服运动
+    * @param [in] servo_cartPos   笛卡尔伺服运动轨迹点，[末端法兰坐标系位置、坐标系rpy角、机械臂臂角]，长度7*len，单位[mm、deg、deg]
+    * @param [in] len   笛卡尔伺服运动轨迹点个数
+    * @param [out] errMsg 错误信息打印
+    * @return 错误码
+    **/
+    ARMErrorCode ServoCart(double* servo_cartPos, uint32_t len, char errMsg[1024]);
 
 关节空间伺服模式运动-单臂
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -771,6 +771,131 @@ SDK函数介绍
     **/
     ARMErrorCode StopMotion();
 
+暂停运动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  暂停运动
+    * @return 错误码
+    **/
+    ARMErrorCode PauseMotion();
+
+恢复运动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  恢复运动
+    * @return 错误码
+    **/
+    ARMErrorCode ResumeMotion();
+
+清空运动指令队列
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 清空运动指令队列
+    * @return 错误码
+    */
+    ARMErrorCode MotionQueueClear();
+
+多点关节空间运动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  多点关节空间运动
+    * @param [in] jointPos 关节位置，单位: deg
+    * @param [in] pointNum 关节空间点个数
+    * @param [in] velocity 速度百分比，范围[0-100]
+    * @param [in] acceleration 加速度百分比，范围[0-100]，暂不开放
+    * @param [out] errMsg 错误信息打印
+    * @return 错误码
+    **/
+    ARMErrorCode MoveJ_path(double jointPos[256][7], uint8_t pointNum, double velocity, double acceleration, char errMsg[1024]);
+
+机械臂回零
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  机械臂回零
+    * @param [in] velocity 速度百分比，范围[0-100]
+    * @param [in] acceleration 加速度百分比，范围[0-100]，暂不开放
+    * @param [out] errMsg 错误信息打印
+    * @return 错误码
+    **/
+    ARMErrorCode RobotHoming(double velocity, double acceleration, char errMsg[1024]);
+
+点动开始
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  点动开始
+    * @param [in] ref 0-关节点动
+    * @param [in] number 关节序号 1-关节1 2-关节2 3-关节3 4-关节4 5-关节5 6-关节6 7-关节7
+    * @param [in] dir 方向，0-负方向，1-正方向
+    * @param [in] vel 速度百分比，范围[0-100]
+    * @param [in] acc 加速度百分比，范围[0-100]，暂不开放
+    * @param [in] max_dis 单次最大点动角度，单位: deg
+    * @param [out] errMsg 错误信息打印
+    * @return 错误码
+    **/
+    ARMErrorCode StartJOG(uint8_t ref, uint8_t number, uint8_t dir, double vel, double acc, double max_dis, char errMsg[1024]);
+
+点动结束
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  点动结束
+    * @return 错误码
+    **/
+    ARMErrorCode StopJOG();
+
+开始奇异位姿保护
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  开始奇异位姿保护
+    * @param [in] dist 奇异距离区间，单位mm
+    * @param [in] ang 奇异角度区间，单位deg
+    * @return 错误码
+    **/
+    ARMErrorCode SingularAvoidStart(double dist, double ang);
+
+停止奇异位姿保护
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  停止奇异位姿保护
+    * @return 错误码
+    **/
+    ARMErrorCode SingularAvoidEnd();
+
 设置工具坐标系
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -870,6 +995,19 @@ SDK函数介绍
     **/
     ARMErrorCode GetActualJointPosDegree(double joint_pos[7]);
 
+获取当前工具位姿
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+    
+    /**
+    * @brief  获取当前工具位姿
+    * @param [out] pose，单位[mm, deg]
+    * @return 错误码
+    **/
+    ARMErrorCode GetActualTCPPose(double pose[6]);
+
 查询机械臂运动是否完成
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -894,7 +1032,77 @@ SDK函数介绍
     * @param [out] eeVal，单位[mm/s、deg/s]
     * @return 错误码
     **/
-    ARMErrorCode GetEEVel(double eeVal[6]);
+    ARMErrorCode GetActualToolFlangeSpeed(double eeVal[6]);
+
+获取关节扭矩
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取关节扭矩
+    * @param [out] torques，单位Nm
+    * @return 错误码
+    **/
+    ARMErrorCode GetJointTorques(double torques[7]);
+
+获取关节驱动器扭矩
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取关节驱动器扭矩
+    * @param [out] torques，单位Nm
+    * @return 错误码
+    **/
+    ARMErrorCode GetJointDriverTorque(double torques[7]);
+
+查询机器人错误码
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  查询机器人错误码
+    * @param [out] errCode 错误码
+    * @return 错误码
+    **/
+    ARMErrorCode GetRobotErrorCode(unsigned int& errCode);
+
+获取机器人是否奇异
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取机器人是否奇异
+    * @param [in] judgeDist 奇异距离判断区间，单位mm
+    * @param [in] judgeAng 奇异角度判断区间，单位deg
+    * @param [out] state 0-不奇异 1-奇异
+    * @return 错误码
+    **/
+    ARMErrorCode GetRobotSingularState(double judgeDist, double judgeAng, uint8_t& state);
+
+获取机器人DH参数补偿值
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取机器人DH参数补偿值
+    * @param [out] dh_theta 零位角
+    * @param [out] dh_a 连杆偏距
+    * @param [out] dh_d 连杆长度
+    * @param [out] dh_alpha 连杆扭角
+    * @return 错误码
+    **/
+    ARMErrorCode GetDHCompensation(double dh_theta[7], double dh_a[7], double dh_d[7], double dh_alpha[7]);
 
 关节使能
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -946,6 +1154,183 @@ SDK函数介绍
     * @return 错误码
     **/
     ARMErrorCode AxisResetError();
+
+设置负载重量和质心(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置负载重量和质心
+    * @param [in] index 负载列表下标，范围:[0-19]
+    * @param [in] mess 负载重量，单位:kg
+    * @param [in] mess 负载质心坐标，单位:mm
+    * @return 错误码
+    **/
+    ARMErrorCode SetLoadcoord(uint8_t index, double mess, double messCenter[3]);
+
+设置关节摩擦力补偿开关(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置关节摩擦力补偿开关
+    * @param [in] onOff 补偿开关 0-关，1-开
+    * @return 错误码
+    **/
+    ARMErrorCode FrictionCompensationOnOff(uint8_t onOff);
+
+设置关节摩擦力补偿系数(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置关节摩擦力补偿系数
+    * @param [in] value 摩擦力补偿系数，范围: [0, 1]
+    * @return 错误码
+    **/
+    ARMErrorCode SetFrictionValue(double value[7]);
+
+设置机械臂软限位保护开关(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置机械臂软限位保护开关
+    * @param [in] onOff 补偿开关 0-关，1-开
+    * @return 错误码
+    **/
+    ARMErrorCode SetJointSoftLimitOnOff(uint8_t onOff);
+
+设置电流环拖动示教(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+     * @brief  设置电流环拖动示教
+     * @param [in] enable 拖动示教开关 0-关，1-开
+     * @param [in] mode   拖动示教方法选择 0-电流环
+     * @return 错误码
+     **/
+    ARMErrorCode SetTeachMode(uint8_t enable, uint8_t mode=0);
+
+设置关节扭矩力传感器拖动示教(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置关节扭矩力传感器拖动示教
+    * @param [in] enable 拖动示教开关 0-关，1-开
+    * @param [in] mode   拖动示教方法选择 0-扭矩力传感器
+    * @return 错误码
+    **/
+    ARMErrorCode SetJointSensorTeachMode(uint8_t enable, uint8_t mode=0);
+
+获取是否处于拖动示教模式(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 获取是否处于拖动示教模式
+    * @param [out] mode 是否处于拖动模式标志 0-不处于，1-处于
+    * @return 错误码
+    **/
+    ARMErrorCode IsInDragTeach(uint8_t& mode);
+
+设置碰撞检测(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置碰撞检测
+    * @param [in] enable 碰撞检测开关 0-关，1-开
+    * @param [in] mode   碰撞检测方法选择 0-电流环
+    * @return 错误码
+    **/
+    ARMErrorCode SetCollisionDetectionMode(uint8_t enable, uint8_t mode);
+
+设置碰撞等级(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置碰撞等级
+    * @param [in] level 碰撞等级，范围: [1-10]
+    * @return 错误码
+    **/
+    ARMErrorCode SetAnticollision(uint8_t level[7]);
+
+设置碰撞后策略(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置碰撞后策略
+    * @param [in] strategy 碰撞后策略 0-停止，1-重力矩模式
+    * @return 错误码
+    **/
+    ARMErrorCode SetCollisionStrategy(uint8_t strategy);
+
+设置关节扭矩力传感器零点标定(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置关节扭矩力传感器零点标定
+    * @param [in] joint_val 关节角，单位: deg
+    * @param [in] speed 速度百分比
+    * @return 错误码
+    **/
+    ARMErrorCode SetJointSensorZero(double joint_val[7], double speed);
+
+设置机器人安装角度(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 设置机器人安装角度
+    * @param [in] yangle 倾斜角，单位: deg
+    * @param [in] zangle 旋转角，单位: deg
+    * @return 错误码
+    **/
+    ARMErrorCode SetRobotInstallAngle(double yangle, double zangle);
+
+获取机器人安装角度(仅杰克2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 获取机器人安装角度
+    * @param [in] yangle 倾斜角，单位: deg
+    * @param [in] zangle 旋转角，单位: deg
+    * @return 错误码
+    **/
+    ARMErrorCode GetRobotInstallAngle(double& yangle, double& zangle);
 
 获取当前末端法兰位姿
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1000,6 +1385,25 @@ SDK函数介绍
     * @return 错误码
     **/
     ARMErrorCode GetJointSoftLimitDeg(double limitNegative[7], double limitPositive[7]);
+
+获取机械臂固件版本
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取机械臂固件版本
+    * @param [out] driver1version 驱动器1固件版本
+    * @param [out] driver2version 驱动器2固件版本
+    * @param [out] driver3version 驱动器3固件版本
+    * @param [out] driver4version 驱动器4固件版本
+    * @param [out] driver5version 驱动器5固件版本
+    * @param [out] driver6version 驱动器6固件版本
+    * @param [out] driver7version 驱动器7固件版本
+    * @return 错误码
+    **/
+    ARMErrorCode GetFirmwareVersion(char driver1version[128], char driver2version[128], char driver3version[128], char driver4version[128], char driver5version[128], char driver6version[128], char driver7version[128]);
 
 腰部的SDK函数介绍(存在腰部关节的情况下)
 -----------------------------------------------------------------------------------------
@@ -1222,6 +1626,42 @@ SDK函数介绍
     **/
     ~RobotTool();
 
+与机器人控制器建立通信
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  与机器人控制器建立通信，ip默认为192.168.58.1
+    **/
+    ARMErrorCode RPC(const char *ip, int port);
+
+与机器人控制器关闭通讯
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  与机器人控制器关闭通讯
+    * @return 错误码
+    */
+    ARMErrorCode CloseRPC();
+
+获取SDK与机器人的通讯状态
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取SDK与机器人的通讯状态
+    * @param [out] state 0-初始化 1-连接 2-断开连接
+    * @return 错误码
+    **/
+    ARMErrorCode GetSDKComState(uint8_t& state);
+
 设置机器人配置
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1272,3 +1712,67 @@ SDK服务端部署
     * @return 错误码
     **/
     ARMErrorCode UpdateSDKServer(std::string filepath);
+
+获取SDK版本信息
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取SDK版本信息
+    * @param [out] version SDK版本号
+    * @return 错误码
+    **/
+    ARMErrorCode GetSDKVersion(std::string& version);
+
+SDK服务端部署
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  SDK服务端部署
+    * @param [in] filepath 升级包全路径
+    * @return 错误码
+    **/
+    ARMErrorCode UpdateSDKServer(std::string filepath);
+
+获取机器人软件版本信息
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取机器人软件版本信息
+    * @param [out] pluginVersion 插件版本
+    * @param [out] sdkServerVersion SDK服务端版本
+    * @return 错误码
+    **/
+    ARMErrorCode GetSoftwareVersion(std::string& pluginVersion, std::string& sdkServerVersion);
+
+重启机器人操作系统
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  重启机器人操作系统
+    * @return 错误码
+    **/
+    ARMErrorCode robotSystemReboot();
+
+关闭机器人操作系统
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  关闭机器人操作系统
+    * @return 错误码
+    **/
+    ARMErrorCode robotSyetemShutclose();
