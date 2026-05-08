@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥意威协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-29 13:53+0800\n"
+"POT-Creation-Date: 2026-05-08 16:07+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -2055,8 +2055,8 @@ msgstr ""
 "ARMErrorCode AxisResetError();"
 
 #: ../../source/SDKManual/sdk_intro.rst:1159
-msgid "设置负载重量和质心(仅杰克2.0机械臂使用)"
-msgstr "Set Load Weight and Center of Mass (for Jack 2.0 Robotic Arm Only)"
+msgid "设置负载重量和质心(仅JK2.0机械臂使用)"
+msgstr "Set Load Weight and Center of Gravity(OnlyJK2.0Robotic Arm Use)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1161
 msgid ""
@@ -2079,8 +2079,8 @@ msgstr ""
 "ARMErrorCode SetLoadcoord(uint8_t index, double weight, double centerOfMass[3]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1174
-msgid "设置关节摩擦力补偿开关(仅杰克2.0机械臂使用)"
-msgstr "Enable Joint Friction Compensation (for JACK 2.0 Robotic Arm only)"
+msgid "设置关节摩擦力补偿开关(仅JK2.0机械臂使用)"
+msgstr "Set joint friction compensation switch(onlyJK2.0manipulator use)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1176
 msgid ""
@@ -2099,9 +2099,8 @@ msgstr ""
 "ARMErrorCode FrictionCompensationOnOff(uint8_t onOff);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1187
-msgid "设置关节摩擦力补偿系数(仅杰克2.0机械臂使用)"
-msgstr ""
-"Set joint friction compensation coefficient (for JACK 2.0 robotic arm only)"
+msgid "设置关节摩擦力补偿系数(仅JK2.0机械臂使用)"
+msgstr "Set joint friction compensation coefficient(onlyJK2.0manipulator use)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1189
 msgid ""
@@ -2120,10 +2119,9 @@ msgstr ""
 "ARMErrorCode SetFrictionValue(double value[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1200
-msgid "设置机械臂软限位保护开关(仅杰克2.0机械臂使用)"
+msgid "设置机械臂软限位保护开关(仅JK2.0机械臂使用)"
 msgstr ""
-"Set the robotic arm’s soft limit protection switch (for Jack 2.0 robotic "
-"arms only)"
+"Set robotic arm soft limit protection switch ( only JK2.0 robotic arm use )"
 
 #: ../../source/SDKManual/sdk_intro.rst:1202
 msgid ""
@@ -2142,8 +2140,8 @@ msgstr ""
 "ARMErrorCode SetJointSoftLimitOnOff(uint8_t onOff);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1213
-msgid "设置电流环拖动示教(仅杰克2.0机械臂使用)"
-msgstr "Set Current Loop Drag Teaching (for Jack 2.0 Robotic Arm only)"
+msgid "设置电流环拖动示教(仅JK2.0机械臂使用)"
+msgstr "Set current loop teaching drag ( only JK2.0 robotic arm use )"
 
 #: ../../source/SDKManual/sdk_intro.rst:1215
 msgid ""
@@ -2164,9 +2162,9 @@ msgstr ""
 "ARMErrorCode SetTeachMode(uint8_t enable, uint8_t mode = 0);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1227
-msgid "设置关节扭矩力传感器拖动示教(仅杰克2.0机械臂使用)"
+msgid "设置关节扭矩力传感器拖动示教(仅JK2.0机械臂使用)"
 msgstr ""
-"Set Joint Torque Force Sensor Drag Teaching (for JACK 2.0 Robotic Arm Only)"
+"Set Joint Torque Force Sensor Drag Teaching ( Only JK2.0 Robotic Arm Use )"
 
 #: ../../source/SDKManual/sdk_intro.rst:1229
 msgid ""
@@ -2187,8 +2185,8 @@ msgstr ""
 "ARMErrorCode SetJointSensorTeachMode(uint8_t enable, uint8_t mode=0);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1241
-msgid "获取是否处于拖动示教模式(仅杰克2.0机械臂使用)"
-msgstr "Get whether in drag-teaching mode (for Jack 2.0 robotic arm only)"
+msgid "获取是否处于拖动示教模式(仅JK2.0机械臂使用)"
+msgstr "Get whether in drag-teaching mode(OnlyJK2.0robot arm uses)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1243
 msgid ""
@@ -2207,8 +2205,8 @@ msgstr ""
 "ARMErrorCode IsInDragTeach(uint8_t& mode);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1254
-msgid "设置碰撞检测(仅杰克2.0机械臂使用)"
-msgstr "Enable collision detection (for Jack 2.0 robotic arm only)"
+msgid "设置碰撞检测(仅JK2.0机械臂使用)"
+msgstr "Enable collision detection(onlyJK2.0for robotic arm use)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1256
 msgid ""
@@ -2229,8 +2227,8 @@ msgstr ""
 "ARMErrorCode SetCollisionDetectionMode(uint8_t enable, uint8_t mode);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1268
-msgid "设置碰撞等级(仅杰克2.0机械臂使用)"
-msgstr "Set Collision Level (for Jack 2.0 Robotic Arm only)"
+msgid "设置碰撞等级(仅JK2.0机械臂使用)"
+msgstr "Set Collision Level ( Only JK2.0 Robotic Arm Uses )"
 
 #: ../../source/SDKManual/sdk_intro.rst:1270
 msgid ""
@@ -2249,8 +2247,8 @@ msgstr ""
 "ARMErrorCode SetAnticollision(uint8_t level[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1281
-msgid "设置碰撞后策略(仅杰克2.0机械臂使用)"
-msgstr "Set Collision Response Strategy (for Jack 2.0 Robotic Arm only)"
+msgid "设置碰撞后策略(仅JK2.0机械臂使用)"
+msgstr "Set Collision Response Strategy(OnlyJK2.0Robot Arm Use)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1283
 msgid ""
@@ -2269,9 +2267,9 @@ msgstr ""
 "ARMErrorCode SetCollisionStrategy(uint8_t strategy);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1294
-msgid "设置关节扭矩力传感器零点标定(仅杰克2.0机械臂使用)"
+msgid "设置关节扭矩力传感器零点标定(仅JK2.0机械臂使用)"
 msgstr ""
-"Set Joint Torque Sensor Zero Calibration (for Jack 2.0 Robotic Arm only)"
+"Set Joint Torque Sensor Zero Calibration ( Only JK2.0 Robotic Arm Use )"
 
 #: ../../source/SDKManual/sdk_intro.rst:1296
 msgid ""
@@ -2292,8 +2290,8 @@ msgstr ""
 "ARMErrorCode SetJointSensorZero(double joint_val[7], double speed);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1308
-msgid "设置机器人安装角度(仅杰克2.0机械臂使用)"
-msgstr "Set Robot Installation Angle (for Jack 2.0 Robotic Arm only)"
+msgid "设置机器人安装角度(仅JK2.0机械臂使用)"
+msgstr "Set Robot Installation Angle(OnlyJK2.0Robotic Arm Use)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1310
 msgid ""
@@ -2314,8 +2312,8 @@ msgstr ""
 "ARMErrorCode SetRobotInstallAngle(double yangle, double zangle);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1322
-msgid "获取机器人安装角度(仅杰克2.0机械臂使用)"
-msgstr "Obtain robot installation angle (for Jack 2.0 robotic arm only)"
+msgid "获取机器人安装角度(仅JK2.0机械臂使用)"
+msgstr "Obtain robot installation angle(OnlyJK2.0manipulator use)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1324
 msgid ""
