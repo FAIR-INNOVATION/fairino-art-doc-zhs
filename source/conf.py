@@ -1,9 +1,13 @@
 import os
 
-# 从环境变量获取语言（Sphinx 会设置这个）
-language = os.environ.get('SPHINX_LANGUAGE', 'zh_CN')
+# 优先使用 RTD 的语言变量，其次使用自定义变量，最后默认中文
+rtd_lang = os.environ.get('READTHEDOCS_LANGUAGE', '')
+custom_lang = os.environ.get('SPHINX_LANGUAGE', '')
 
-print(f"[conf.py] 检测到语言: {language}")
+# 合并优先级：READTHEDOCS_LANGUAGE > SPHINX_LANGUAGE > zh_CN
+language = rtd_lang or custom_lang or 'zh_CN'
+
+print(f"[conf.py] RTD语言: {rtd_lang}, 自定义语言: {custom_lang}, 最终语言: {language}")
 
 # -- Project information -----------------------------------------------------
 
@@ -12,7 +16,6 @@ if language == 'zh_CN':
     copyright = '2022-2026, 法奥（苏州）机器人技术股份有限公司'
     author = '法奥（苏州）机器人技术股份有限公司'
 else:
-    # 英文、日文都显示英文
     project = 'FAIRINO Collaborative Robot User Manual'
     copyright = '2022-2026, Fairino (Suzhou) Robot Technology Co.,Ltd.'
     author = 'Fairino (Suzhou) Robot Technology Co.,Ltd.'
