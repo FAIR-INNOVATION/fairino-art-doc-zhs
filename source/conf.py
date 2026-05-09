@@ -1,14 +1,22 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+import os
+
+# 从环境变量获取语言（Sphinx 会设置这个）
+language = os.environ.get('SPHINX_LANGUAGE', 'zh_CN')
+
+print(f"[conf.py] 检测到语言: {language}")
 
 # -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = '法奥意威协作机器人用户手册'
-copyright = '2022-2026, 法奥意威（苏州）机器人系统有限公司'
-author = '法奥意威（苏州）机器人系统有限公司'
+if language == 'zh_CN':
+    project = '法奥协作机器人用户手册'
+    copyright = '2022-2026, 法奥（苏州）机器人技术股份有限公司'
+    author = '法奥（苏州）机器人技术股份有限公司'
+else:
+    # 英文、日文都显示英文
+    project = 'FAIRINO Collaborative Robot User Manual'
+    copyright = '2022-2026, Fairino (Suzhou) Robot Technology Co.,Ltd.'
+    author = 'Fairino (Suzhou) Robot Technology Co.,Ltd.'
+
 release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
@@ -19,7 +27,7 @@ extensions = ['recommonmark']
 templates_path = ['_templates']
 exclude_patterns = []
 
-language = 'zh_CN'
+# language = 'zh_CN'
 locale_dirs = ['locale/']  # 设置本地化数据目录
 
 # 让gettext为每个文档生成独立的.po文件（便于管理）

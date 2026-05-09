@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022-2026, 法奥意威（苏州）机器人系统有限公司
-# This file is distributed under the same license as the 法奥意威协作机器人用户手册
+# Copyright (C) 2022-2026, 法奥（苏州）机器人技术股份有限公司
+# This file is distributed under the same license as the 法奥协作机器人用户手册
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 法奥意威协作机器人用户手册\n"
+"Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-08 16:07+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
