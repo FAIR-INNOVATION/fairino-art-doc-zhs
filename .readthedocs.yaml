@@ -7,12 +7,15 @@ build:
   tools:
     python: "3.11"
 
-jobs:
-  post_build:
-    - sphinx-build -b html -D language=zh_CN source/ build/html/zh_CN/
-    - sphinx-build -b html -D language=en source/ build/html/en/
-    - sphinx-build -b html -D language=ja source/ build/html/ja/
-
+  jobs:
+    pre_build:
+      # 禁用默认构建，直接清理
+      - rm -rf build/html/
+    post_build:
+      - sphinx-build -b html -D language=zh_CN source/ build/html/zh_CN/
+      - sphinx-build -b html -D language=en source/ build/html/en/
+      - sphinx-build -b html -D language=ja source/ build/html/ja/
+      
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
   configuration: source/conf.py
