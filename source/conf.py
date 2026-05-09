@@ -1,17 +1,18 @@
 import os
 
-# 优先使用 RTD 的语言变量，其次使用自定义变量，最后默认中文
-rtd_lang = os.environ.get('READTHEDOCS_LANGUAGE', '')
-custom_lang = os.environ.get('SPHINX_LANGUAGE', '')
+# 1. 用于公司名称判断的语言变量
+company_lang = os.environ.get('READTHEDOCS_LANGUAGE', os.environ.get('SPHINX_LANGUAGE', 'zh_CN'))
 
-# 合并优先级：READTHEDOCS_LANGUAGE > SPHINX_LANGUAGE > zh_CN
-language = rtd_lang or custom_lang or 'zh_CN'
+# 2. 用于 Sphinx 文档的语言变量
+language = company_lang  # 如果 RTD 的语言代码正确，直接用
 
-print(f"[conf.py] RTD语言: {rtd_lang}, 自定义语言: {custom_lang}, 最终语言: {language}")
+print(f"[conf.py] 公司名称语言: {company_lang}")
+print(f"[conf.py] Sphinx语言: {language}")
 
 # -- Project information -----------------------------------------------------
 
-if language == 'zh_CN':
+# 公司名称判断：只有明确是 zh_CN 才显示中文
+if company_lang == 'zh_CN' or company_lang == 'zh' or company_lang == 'zh-cn':
     project = '法奥协作机器人用户手册'
     copyright = '2022-2026, 法奥（苏州）机器人技术股份有限公司'
     author = '法奥（苏州）机器人技术股份有限公司'
