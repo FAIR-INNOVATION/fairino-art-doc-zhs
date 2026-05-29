@@ -824,6 +824,24 @@ SDK函数介绍
     **/
     ARMErrorCode MoveJ_path(double jointPos[256][7], uint8_t pointNum, double velocity, double acceleration, char errMsg[1024]);
 
+多点关节空间运动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  多点笛卡尔空间运动
+    * @param [in] cartPos 笛卡尔位姿，单位: [mm, deg]
+    * @param [in] armAngle 臂角，单位: deg
+    * @param [in] pointNum 关节空间点个数
+    * @param [in] velocity 速度百分比，范围[0-100]
+    * @param [in] acceleration 加速度百分比，范围[0-100]，暂不开放
+    * @param [out] errMsg 错误信息打印
+    * @return 错误码
+    **/
+    ARMErrorCode MoveL_path(double cartPos[256][6], double armAngle[256], uint8_t pointNum, double velocity, double acceleration, char errMsg[1024]);
+
 机械臂回零
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1405,6 +1423,207 @@ SDK函数介绍
     **/
     ARMErrorCode GetFirmwareVersion(char driver1version[128], char driver2version[128], char driver3version[128], char driver4version[128], char driver5version[128], char driver6version[128], char driver7version[128]);
 
+机器人控制权设置
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  机器人控制权设置
+    * @param [in] controlMode 0-SDK控制 1-ROS2控制
+    * @return 错误码
+    **/
+    ARMErrorCode SetControlAuthority(uint8_t controlMode);
+
+加速度平滑开启
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  加速度平滑开启
+    * @return 错误码
+    **/
+    ARMErrorCode AccSmoothStart();
+
+加速度平滑关闭
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  加速度平滑关闭
+    * @return 错误码
+    **/
+    ARMErrorCode AccSmoothEnd();
+
+指定关节进入拖动/位置模式
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  指定关节进入拖动/位置模式
+    * @param [in] joint_id 关节ID，范围:1~7
+    * @param [in] flag 0-位置模式，1-拖动模式
+    * @return 错误码
+    **/
+    ARMErrorCode SetJointDrag(uint8_t joint_id, uint8_t flag);
+
+设置工件坐标系
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置工件坐标系
+    * @param [in] corrd 工件坐标系位姿，单位:[mm, deg]
+    * @return 错误码
+    **/
+    ARMErrorCode SetWObjCorrd(double corrd[6]);
+
+设置关节扭矩传感器拖动示教参数
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置关节扭矩传感器拖动示教参数
+    * @param [in] drag_level 0-软，1-适中，2-硬
+    * @return 错误码
+    **/
+    ARMErrorCode SetJointSensorTeachModeParam(uint8_t drag_level);
+
+获取关节驱动器温度
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取关节驱动器温度
+    * @param [out] temperature 关节驱动器温度，单位: 摄氏度
+    * @return 错误码
+    **/
+    ARMErrorCode GetJointDriverTemperature(double temperature[7]);
+
+回安全点
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  回安全点
+    * @param [in] safePoint 安全点关节位置，单位: deg
+    * @param [in] velocity  速度百分比，范围：[0, 100]
+    * @param [in] acc       加速度百分比，范围：[0, 100]
+    * @return 错误码
+    **/
+    ARMErrorCode MoveToSafePoint(double safePoint[7], double velocity, double acc);
+
+力传感器激活
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  力传感器激活
+    * @param [in] onOff 0-复位 1-激活
+    * @return 错误码
+    **/
+    ARMErrorCode FT_Activate(uint8_t onOff);
+
+力传感器校零
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  力传感器校零
+    * @param [in] joints 校零关节位置，单位: deg
+    * @param [in] velocity  速度百分比，范围：[0, 100]
+    * @param [in] acceleration 加速度百分比，范围：[0, 100]
+    * @return 错误码
+    **/
+    ARMErrorCode FT_SetZero(double joints[7], double velocity, double acceleration);
+
+力传感器负载辨识
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  力传感器负载辨识
+    * @param [in] joints 负载辨识点位，单位: deg
+    * @param [in] velocity  速度百分比，范围：[0, 100]
+    * @param [in] acceleration 加速度百分比，范围：[0, 100]
+    * @return 错误码
+    **/
+    ARMErrorCode FT_PdCogIden(double joints[3][7], double velocity, double acceleration);
+
+力传感器安全检测
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  力传感器安全检测
+    * @param [in] onOff  安全检测开关
+    * @param [in] safeTime 安全检测时间，单位: ms
+    * @return 错误码
+    **/
+    ARMErrorCode SetForceSensorSafetyInspection(uint8_t onOff, uint8_t safeTime);
+
+力传感器安全检测触发策略
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  力传感器安全检测触发策略
+    * @param [in] tragger 安全检测触发策略 0-停止 1-重力矩模式
+    * @return 错误码
+    **/
+    ARMErrorCode SetForceSensorSafetyTriggerStrategy(uint8_t tragger);
+
+设置力传感器坐标系
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置力传感器坐标系
+    * @param [in] corrd 传感器坐标系位姿，单位:[mm, deg]
+    * @return 错误码
+    **/
+    ARMErrorCode SetForceSensorCorrd(double corrd[6]);
+
+设置力传感器安全检测阈值
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置力传感器安全检测阈值
+    * @param [in] threshold 传感器检测阈值，单位:
+    * @return 错误码
+    **/
+    ARMErrorCode SetForceSensorThreshold(double threshold[6]);
+
 腰部的SDK函数介绍(存在腰部关节的情况下)
 -----------------------------------------------------------------------------------------
 
@@ -1600,6 +1819,32 @@ SDK函数介绍
     * @return 错误码
     **/
     ARMErrorCode SetSpeed(double speed);
+
+获取机械臂固件版本
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取机械臂固件版本
+    * @param [out] driverversion 驱动器1固件版本
+    * @return 错误码
+    **/
+    ARMErrorCode GetFirmwareVersion(char driverversion[][128]);
+
+获取关节驱动器温度
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取关节驱动器温度
+    * @param [out] temperature 关节驱动器温度，单位: 摄氏度
+    * @return 错误码
+    **/
+    ARMErrorCode GetJointDriverTemperature(double* temperature);
 
 工具部分的SDK函数介绍
 ------------------------------------------------------------

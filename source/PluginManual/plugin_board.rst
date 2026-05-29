@@ -109,7 +109,119 @@
 
    * - interfacesdo_sdostatus
      - float64
-     - SDO 通信状态。反映 SDO 异步读写请求是否成功握手或报错。
+     - SDO 通信状态。反映 SDO 异步读写请求是否成功握手或报错。 
+
+   * - interfaceGripper1_act
+     - float64
+     - 左臂夹爪的act状态(需要具有末端板的手臂型号)
+
+   * - interfaceGripper1_id
+     - float64
+     - 左臂夹爪的id(需要具有末端板的手臂型号)
+
+   * - interfaceGripper1_cmdnum
+     - float64
+     - 左臂夹爪指令号(需要具有末端板的手臂型号)
+
+   * - interfaceGripper1_curpos
+     - float64
+     - 左臂夹爪的当前位置(需要具有末端板的手臂型号)
+
+   * - interfaceGripper1_curtor
+     - float64
+     - 左臂夹爪的当前电机扭矩(需要具有末端板的手臂型号)
+
+   * - interfaceGripper1_done
+     - float64
+     - 左臂夹爪的当前指令执行是否执行完成(需要具有末端板的手臂型号)
+
+   * - interfaceGripper1_error
+     - float64
+     - 左臂夹爪的当前错误码(需要具有末端板的手臂型号)
+
+   * - interfaceGripper2_act
+     - float64
+     - 右臂夹爪的act状态(需要具有末端板的手臂型号)
+
+   * - interfaceGripper2_id
+     - float64
+     - 右臂夹爪的id(需要具有末端板的手臂型号)
+
+   * - interfaceGripper2_cmdnum
+     - float64
+     - 右臂夹爪指令号(需要具有末端板的手臂型号)
+
+   * - interfaceGripper2_curpos
+     - float64
+     - 右臂夹爪的当前位置(需要具有末端板的手臂型号)
+
+   * - interfaceGripper2_curtor
+     - float64
+     - 右臂夹爪的当前电机扭矩(需要具有末端板的手臂型号)
+
+   * - interfaceGripper2_done
+     - float64
+     - 右臂夹爪的当前指令执行是否执行完成(需要具有末端板的手臂型号)
+
+   * - interfaceGripper2_error
+     - float64
+     - 右臂夹爪的当前错误码(需要具有末端板的手臂型号)
+
+   * - freedrive1_flag
+     - float64
+     - 左臂拖动按钮触发标志位，1代表触发(需要具有末端板的手臂型号)
+
+   * - freedrive2_flag
+     - float64
+     - 右臂拖动按钮触发标志位，1代表触发(需要具有末端板的手臂型号)
+
+   * - force_sensor1_linx
+     - float64
+     - 左臂力矩传感器x方向力(需要具有末端板的手臂型号)
+
+   * - force_sensor1_liny
+     - float64
+     - 左臂力矩传感器y方向力(需要具有末端板的手臂型号)
+
+   * - force_sensor1_linz
+     - float64
+     - 左臂力矩传感器z方向力(需要具有末端板的手臂型号)
+
+   * - force_sensor1_rotx
+     - float64
+     - 左臂力矩传感器x方向扭矩(需要具有末端板的手臂型号)
+
+   * - force_sensor1_roty
+     - float64
+     - 左臂力矩传感器y方向扭矩(需要具有末端板的手臂型号)
+
+   * - force_sensor1_rotz
+     - float64
+     - 左臂力矩传感器z方向扭矩(需要具有末端板的手臂型号)
+
+   * - force_sensor2_linx
+     - float64
+     - 左臂力矩传感器x方向力(需要具有末端板的手臂型号)
+
+   * - force_sensor2_liny
+     - float64
+     - 右臂力矩传感器y方向力(需要具有末端板的手臂型号)
+
+   * - force_sensor2_linz
+     - float64
+     - 右臂力矩传感器z方向力(需要具有末端板的手臂型号)
+
+   * - force_sensor2_rotx
+     - float64
+     - 右臂力矩传感器x方向扭矩(需要具有末端板的手臂型号)
+
+   * - force_sensor2_roty
+     - float64
+     - 右臂力矩传感器y方向扭矩(需要具有末端板的手臂型号)
+
+   * - force_sensor2_rotz
+     - float64
+     - 右臂力矩传感器z方向扭矩(需要具有末端板的手臂型号)
 		
 其中，hexerrorcode_curerrcode是当前系统的错误码，一旦该数值为非0，说明系统存在错误，由于错误码显示使用了十进制，而编写错误码采用了十六进制，因此需要讲十进制数据转换成十六进制数，才能解析出错误码对应的故障信息，以下是32位错误码组成说明。
 

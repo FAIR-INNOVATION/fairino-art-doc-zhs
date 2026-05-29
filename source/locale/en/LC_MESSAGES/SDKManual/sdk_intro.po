@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 16:07+0800\n"
+"POT-Creation-Date: 2026-05-28 13:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../source/SDKManual/sdk_intro.rst:3
 msgid "SDK函数介绍"
@@ -29,6 +29,7 @@ msgid "接口调用返回值类型："
 msgstr "Interface call return value type:"
 
 #: ../../source/SDKManual/sdk_intro.rst:10
+#, python-brace-format
 msgid ""
 "typedef enum _ARMErrorCode{\n"
 "}ARMErrorCode;"
@@ -79,12 +80,12 @@ msgstr ""
 "~SingleRobot();"
 
 #: ../../source/SDKManual/sdk_intro.rst:45
-#: ../../source/SDKManual/sdk_intro.rst:1434
+#: ../../source/SDKManual/sdk_intro.rst:1653
 msgid "关节空间运动"
 msgstr "Joint-space motion"
 
 #: ../../source/SDKManual/sdk_intro.rst:47
-#: ../../source/SDKManual/sdk_intro.rst:1436
+#: ../../source/SDKManual/sdk_intro.rst:1655
 msgid ""
 "/**\n"
 "* @brief  关节空间运动\n"
@@ -111,7 +112,7 @@ msgid "关节空间运动代码示例-单臂"
 msgstr "Joint-Space Motion Code Example – Single Arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:63
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int MoveJTest()\n"
 "{\n"
@@ -182,7 +183,7 @@ msgid "关节空间运动代码示例-双臂"
 msgstr "Joint-Space Motion Code Example – Dual-Arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:101
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int MoveJTest2()\n"
 "{\n"
@@ -335,7 +336,7 @@ msgid "笛卡尔空间直线运动代码示例-单臂"
 msgstr "Cartesian Space Linear Motion Code Example – Single Arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:186
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int MoveLTest()\n"
 "{\n"
@@ -446,7 +447,7 @@ msgid "笛卡尔空间直线运动代码示例-双臂"
 msgstr "Cartesian Space Linear Motion Code Example – Dual-Arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:244
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int MoveLTest2()\n"
 "{\n"
@@ -637,7 +638,7 @@ msgid "笛卡尔空间圆弧运动代码示例-单臂"
 msgstr "Cartesian Space Arc Motion Code Example – Single Arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:345
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int MoveCTest()\n"
 "{\n"
@@ -762,7 +763,7 @@ msgid "笛卡尔空间圆弧运动代码示例-双臂"
 msgstr "Cartesian Space Arc Motion Code Example – Dual-Arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:410
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int MoveCTest2()\n"
 "{\n"
@@ -1019,7 +1020,7 @@ msgid "关节空间伺服模式运动-单臂"
 msgstr "Joint-space servo mode motion – single arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:553
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int ServoJTest()\n"
 "{\n"
@@ -1154,7 +1155,7 @@ msgid "关节空间伺服模式运动-双臂"
 msgstr "Joint-space servo mode motion—dual-arm"
 
 #: ../../source/SDKManual/sdk_intro.rst:623
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "int ServoJTest2()\n"
 "{\n"
@@ -1429,12 +1430,12 @@ msgstr ""
 "}"
 
 #: ../../source/SDKManual/sdk_intro.rst:763
-#: ../../source/SDKManual/sdk_intro.rst:1450
+#: ../../source/SDKManual/sdk_intro.rst:1669
 msgid "停止运动"
 msgstr "Stop exercising"
 
 #: ../../source/SDKManual/sdk_intro.rst:765
-#: ../../source/SDKManual/sdk_intro.rst:1452
+#: ../../source/SDKManual/sdk_intro.rst:1671
 msgid ""
 "/**\n"
 "* @brief  停止运动\n"
@@ -1503,6 +1504,7 @@ msgstr ""
 "ARMErrorCode MotionQueueClear();"
 
 #: ../../source/SDKManual/sdk_intro.rst:811
+#: ../../source/SDKManual/sdk_intro.rst:828
 msgid "多点关节空间运动"
 msgstr "Multi-point joint-space motion"
 
@@ -1530,11 +1532,37 @@ msgstr ""
 "**/\n"
 "ARMErrorCode MoveJ_path(double jointPos[256][7], uint8_t pointNum, double velocity, double acceleration, char errMsg[1024]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:828
+#: ../../source/SDKManual/sdk_intro.rst:830
+msgid ""
+"/**\n"
+"* @brief  多点笛卡尔空间运动\n"
+"* @param [in] cartPos 笛卡尔位姿，单位: [mm, deg]\n"
+"* @param [in] armAngle 臂角，单位: deg\n"
+"* @param [in] pointNum 关节空间点个数\n"
+"* @param [in] velocity 速度百分比，范围[0-100]\n"
+"* @param [in] acceleration 加速度百分比，范围[0-100]，暂不开放\n"
+"* @param [out] errMsg 错误信息打印\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode MoveL_path(double cartPos[256][6], double armAngle[256], uint8_t pointNum, double velocity, double acceleration, char errMsg[1024]);"
+msgstr ""
+"/**\n"
+"* @brief  Multi-point Cartesian space motion\n"
+"* @param [in] cartPos Cartesian pose, unit: [mm, deg]\n"
+"* @param [in] armAngle Arm angle, unit: deg\n"
+"* @param [in] pointNum Number of joint-space points\n"
+"* @param [in] velocity Velocity percentage, range[0-100]\n"
+"* @param [in] acceleration Acceleration percentage, range[0-100], not available yet\n"
+"* @param [out] errMsg Error message printing\n"
+"* @return Error code\n"
+"**/\n"
+"ARMErrorCode MoveL_path(double cartPos[256][6], double armAngle[256], uint8_t pointNum, double velocity, double acceleration, char errMsg[1024]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:846
 msgid "机械臂回零"
 msgstr "Robot Arm Returning to Home Position"
 
-#: ../../source/SDKManual/sdk_intro.rst:830
+#: ../../source/SDKManual/sdk_intro.rst:848
 msgid ""
 "/**\n"
 "* @brief  机械臂回零\n"
@@ -1554,11 +1582,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode RobotHoming(double velocity, double acceleration, char errMsg[1024]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:843
+#: ../../source/SDKManual/sdk_intro.rst:861
 msgid "点动开始"
 msgstr "Jog Start"
 
-#: ../../source/SDKManual/sdk_intro.rst:845
+#: ../../source/SDKManual/sdk_intro.rst:863
 msgid ""
 "/**\n"
 "* @brief  点动开始\n"
@@ -1586,11 +1614,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode StartJOG(uint8_t ref, uint8_t number, uint8_t dir, double vel, double acc, double max_dis, char errMsg[1024]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:862
+#: ../../source/SDKManual/sdk_intro.rst:880
 msgid "点动结束"
 msgstr "Jogging ends"
 
-#: ../../source/SDKManual/sdk_intro.rst:864
+#: ../../source/SDKManual/sdk_intro.rst:882
 msgid ""
 "/**\n"
 "* @brief  点动结束\n"
@@ -1604,11 +1632,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode StopJOG();"
 
-#: ../../source/SDKManual/sdk_intro.rst:874
+#: ../../source/SDKManual/sdk_intro.rst:892
 msgid "开始奇异位姿保护"
 msgstr "Start Singular Pose Protection"
 
-#: ../../source/SDKManual/sdk_intro.rst:876
+#: ../../source/SDKManual/sdk_intro.rst:894
 msgid ""
 "/**\n"
 "* @brief  开始奇异位姿保护\n"
@@ -1626,11 +1654,11 @@ msgstr ""
 " */\n"
 "ARMErrorCode SingularAvoidStart(double dist, double ang);"
 
-#: ../../source/SDKManual/sdk_intro.rst:888
+#: ../../source/SDKManual/sdk_intro.rst:906
 msgid "停止奇异位姿保护"
 msgstr "Disable Singular Pose Protection"
 
-#: ../../source/SDKManual/sdk_intro.rst:890
+#: ../../source/SDKManual/sdk_intro.rst:908
 msgid ""
 "/**\n"
 "* @brief  停止奇异位姿保护\n"
@@ -1644,11 +1672,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SingularAvoidEnd();"
 
-#: ../../source/SDKManual/sdk_intro.rst:900
+#: ../../source/SDKManual/sdk_intro.rst:918
 msgid "设置工具坐标系"
 msgstr "Set Tool Coordinate System"
 
-#: ../../source/SDKManual/sdk_intro.rst:902
+#: ../../source/SDKManual/sdk_intro.rst:920
+#, python-brace-format
 msgid ""
 "/**\n"
 "* @brief  设置工具坐标系\n"
@@ -1666,11 +1695,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetToolCorrd(int toolNum, double* corrd);"
 
-#: ../../source/SDKManual/sdk_intro.rst:914
+#: ../../source/SDKManual/sdk_intro.rst:932
 msgid "设置机械臂加速度百分比"
 msgstr "Set robotic arm acceleration percentage"
 
-#: ../../source/SDKManual/sdk_intro.rst:916
+#: ../../source/SDKManual/sdk_intro.rst:934
 msgid ""
 "/**\n"
 "* @brief  设置机械臂加速度百分比\n"
@@ -1686,11 +1715,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetAccScale(double scale);"
 
-#: ../../source/SDKManual/sdk_intro.rst:927
+#: ../../source/SDKManual/sdk_intro.rst:945
 msgid "设置全局速度百分比"
 msgstr "Set Global Speed Percentage"
 
-#: ../../source/SDKManual/sdk_intro.rst:929
+#: ../../source/SDKManual/sdk_intro.rst:947
 msgid ""
 "/**\n"
 "* @brief  设置全局速度百分比\n"
@@ -1706,11 +1735,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetSpeed(double speed);"
 
-#: ../../source/SDKManual/sdk_intro.rst:940
+#: ../../source/SDKManual/sdk_intro.rst:958
 msgid "正运动学求解"
 msgstr "Forward Kinematics Solution"
 
-#: ../../source/SDKManual/sdk_intro.rst:942
+#: ../../source/SDKManual/sdk_intro.rst:960
 msgid ""
 "/**\n"
 "* @brief  正运动学求解\n"
@@ -1730,11 +1759,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetForwardKin(double* joint_val, double* desc_pos, double& arm_angle);"
 
-#: ../../source/SDKManual/sdk_intro.rst:955
+#: ../../source/SDKManual/sdk_intro.rst:973
 msgid "逆运动学求解"
 msgstr "Inverse Kinematics Solution"
 
-#: ../../source/SDKManual/sdk_intro.rst:957
+#: ../../source/SDKManual/sdk_intro.rst:975
 msgid ""
 "/**\n"
 "* @brief  逆运动学求解\n"
@@ -1754,11 +1783,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetInverseKin(double* desc_pos, double arm_angle, double* joint_val);"
 
-#: ../../source/SDKManual/sdk_intro.rst:970
+#: ../../source/SDKManual/sdk_intro.rst:988
 msgid "逆运动学求解(参考位置)"
 msgstr "Inverse Kinematics Solution (Reference Position)"
 
-#: ../../source/SDKManual/sdk_intro.rst:972
+#: ../../source/SDKManual/sdk_intro.rst:990
 msgid ""
 "/**\n"
 "* @brief  逆运动学求解，参考指定关节位置求解\n"
@@ -1780,12 +1809,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetInverseKinRef(double* desc_pos, double arm_angle, double* ref_joint_val, double* joint_val);"
 
-#: ../../source/SDKManual/sdk_intro.rst:986
-#: ../../source/SDKManual/sdk_intro.rst:1462
+#: ../../source/SDKManual/sdk_intro.rst:1004
+#: ../../source/SDKManual/sdk_intro.rst:1681
 msgid "获取当前关节位置(角度)"
 msgstr "Get current joint position (angle)"
 
-#: ../../source/SDKManual/sdk_intro.rst:988
+#: ../../source/SDKManual/sdk_intro.rst:1006
 msgid ""
 "/**\n"
 "* @brief  获取当前关节位置(角度)\n"
@@ -1801,11 +1830,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetActualJointPosDegree(double joint_pos[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:999
+#: ../../source/SDKManual/sdk_intro.rst:1017
 msgid "获取当前工具位姿"
 msgstr "Obtain the current tool pose"
 
-#: ../../source/SDKManual/sdk_intro.rst:1001
+#: ../../source/SDKManual/sdk_intro.rst:1019
 msgid ""
 "/**\n"
 "* @brief  获取当前工具位姿\n"
@@ -1821,11 +1850,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetActualTCPPose(double pose[6]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1012
+#: ../../source/SDKManual/sdk_intro.rst:1030
 msgid "查询机械臂运动是否完成"
 msgstr "Check whether the robotic arm movement is completed"
 
-#: ../../source/SDKManual/sdk_intro.rst:1014
+#: ../../source/SDKManual/sdk_intro.rst:1032
 msgid ""
 "/**\n"
 "* @brief  查询机械臂运动是否完成\n"
@@ -1841,11 +1870,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetRobotMotionDone(uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1025
+#: ../../source/SDKManual/sdk_intro.rst:1043
 msgid "获取当前末端速度"
 msgstr "Get current end-effector velocity"
 
-#: ../../source/SDKManual/sdk_intro.rst:1027
+#: ../../source/SDKManual/sdk_intro.rst:1045
 msgid ""
 "/**\n"
 "* @brief  获取当前末端速度\n"
@@ -1861,11 +1890,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetActualToolFlangeSpeed(double eeVal[6]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1038
+#: ../../source/SDKManual/sdk_intro.rst:1056
 msgid "获取关节扭矩"
 msgstr "Obtain joint torque"
 
-#: ../../source/SDKManual/sdk_intro.rst:1040
+#: ../../source/SDKManual/sdk_intro.rst:1058
 msgid ""
 "/**\n"
 "* @brief  获取关节扭矩\n"
@@ -1881,11 +1910,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetJointTorques(double torques[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1051
+#: ../../source/SDKManual/sdk_intro.rst:1069
 msgid "获取关节驱动器扭矩"
 msgstr "Obtain joint actuator torque"
 
-#: ../../source/SDKManual/sdk_intro.rst:1053
+#: ../../source/SDKManual/sdk_intro.rst:1071
 msgid ""
 "/**\n"
 "* @brief  获取关节驱动器扭矩\n"
@@ -1901,11 +1930,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetJointDriverTorque(double torques[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1064
+#: ../../source/SDKManual/sdk_intro.rst:1082
 msgid "查询机器人错误码"
 msgstr "Query Robot Error Codes"
 
-#: ../../source/SDKManual/sdk_intro.rst:1066
+#: ../../source/SDKManual/sdk_intro.rst:1084
 msgid ""
 "/**\n"
 "* @brief  查询机器人错误码\n"
@@ -1921,11 +1950,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetRobotErrorCode(unsigned int& errCode);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1077
+#: ../../source/SDKManual/sdk_intro.rst:1095
 msgid "获取机器人是否奇异"
 msgstr "Check whether the robot is singular"
 
-#: ../../source/SDKManual/sdk_intro.rst:1079
+#: ../../source/SDKManual/sdk_intro.rst:1097
 msgid ""
 "/**\n"
 "* @brief  获取机器人是否奇异\n"
@@ -1945,11 +1974,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetRobotSingularState(double judgeDist, double judgeAng, uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1092
+#: ../../source/SDKManual/sdk_intro.rst:1110
 msgid "获取机器人DH参数补偿值"
 msgstr "Obtain Robot DH Parameter Compensation Values"
 
-#: ../../source/SDKManual/sdk_intro.rst:1094
+#: ../../source/SDKManual/sdk_intro.rst:1112
 msgid ""
 "/**\n"
 "* @brief  获取机器人DH参数补偿值\n"
@@ -1971,12 +2000,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetDHCompensation(double dh_theta[7], double dh_a[7], double dh_d[7], double dh_alpha[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1108
-#: ../../source/SDKManual/sdk_intro.rst:1488
+#: ../../source/SDKManual/sdk_intro.rst:1126
+#: ../../source/SDKManual/sdk_intro.rst:1707
 msgid "关节使能"
 msgstr "Joint Enable"
 
-#: ../../source/SDKManual/sdk_intro.rst:1110
+#: ../../source/SDKManual/sdk_intro.rst:1128
 msgid ""
 "/**\n"
 "* @brief  关节使能\n"
@@ -1992,12 +2021,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode AxisEnable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1121
-#: ../../source/SDKManual/sdk_intro.rst:1501
+#: ../../source/SDKManual/sdk_intro.rst:1139
+#: ../../source/SDKManual/sdk_intro.rst:1720
 msgid "关节去使能"
 msgstr "Joint Disable"
 
-#: ../../source/SDKManual/sdk_intro.rst:1123
+#: ../../source/SDKManual/sdk_intro.rst:1141
 msgid ""
 "/**\n"
 "* @brief  关节去使能\n"
@@ -2013,12 +2042,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode AxisDisable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1134
-#: ../../source/SDKManual/sdk_intro.rst:1514
+#: ../../source/SDKManual/sdk_intro.rst:1152
+#: ../../source/SDKManual/sdk_intro.rst:1733
 msgid "关节校零"
 msgstr "Joint Zero Calibration"
 
-#: ../../source/SDKManual/sdk_intro.rst:1136
+#: ../../source/SDKManual/sdk_intro.rst:1154
 msgid ""
 "/**\n"
 "* @brief  关节校零\n"
@@ -2034,13 +2063,13 @@ msgstr ""
 "**/\n"
 "ARMErrorCode AxisZeroing(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1147
-#: ../../source/SDKManual/sdk_intro.rst:1527
+#: ../../source/SDKManual/sdk_intro.rst:1165
+#: ../../source/SDKManual/sdk_intro.rst:1746
 msgid "清除控制器错误"
 msgstr "Clear Controller Errors"
 
-#: ../../source/SDKManual/sdk_intro.rst:1149
-#: ../../source/SDKManual/sdk_intro.rst:1529
+#: ../../source/SDKManual/sdk_intro.rst:1167
+#: ../../source/SDKManual/sdk_intro.rst:1748
 msgid ""
 "/**\n"
 "* @brief  清除控制器错误\n"
@@ -2054,11 +2083,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode AxisResetError();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1159
+#: ../../source/SDKManual/sdk_intro.rst:1177
 msgid "设置负载重量和质心(仅JK2.0机械臂使用)"
 msgstr "Set Load Weight and Center of Gravity(OnlyJK2.0Robotic Arm Use)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1161
+#: ../../source/SDKManual/sdk_intro.rst:1179
 msgid ""
 "/**\n"
 "* @brief  设置负载重量和质心\n"
@@ -2078,11 +2107,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetLoadcoord(uint8_t index, double weight, double centerOfMass[3]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1174
+#: ../../source/SDKManual/sdk_intro.rst:1192
 msgid "设置关节摩擦力补偿开关(仅JK2.0机械臂使用)"
 msgstr "Set joint friction compensation switch(onlyJK2.0manipulator use)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1176
+#: ../../source/SDKManual/sdk_intro.rst:1194
 msgid ""
 "/**\n"
 "* @brief  设置关节摩擦力补偿开关\n"
@@ -2098,11 +2127,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode FrictionCompensationOnOff(uint8_t onOff);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1187
+#: ../../source/SDKManual/sdk_intro.rst:1205
 msgid "设置关节摩擦力补偿系数(仅JK2.0机械臂使用)"
 msgstr "Set joint friction compensation coefficient(onlyJK2.0manipulator use)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1189
+#: ../../source/SDKManual/sdk_intro.rst:1207
 msgid ""
 "/**\n"
 "* @brief  设置关节摩擦力补偿系数\n"
@@ -2118,12 +2147,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetFrictionValue(double value[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1200
+#: ../../source/SDKManual/sdk_intro.rst:1218
 msgid "设置机械臂软限位保护开关(仅JK2.0机械臂使用)"
 msgstr ""
 "Set robotic arm soft limit protection switch ( only JK2.0 robotic arm use )"
 
-#: ../../source/SDKManual/sdk_intro.rst:1202
+#: ../../source/SDKManual/sdk_intro.rst:1220
 msgid ""
 "/**\n"
 "* @brief  设置机械臂软限位保护开关\n"
@@ -2139,11 +2168,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetJointSoftLimitOnOff(uint8_t onOff);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1213
+#: ../../source/SDKManual/sdk_intro.rst:1231
 msgid "设置电流环拖动示教(仅JK2.0机械臂使用)"
 msgstr "Set current loop teaching drag ( only JK2.0 robotic arm use )"
 
-#: ../../source/SDKManual/sdk_intro.rst:1215
+#: ../../source/SDKManual/sdk_intro.rst:1233
 msgid ""
 "/**\n"
 " * @brief  设置电流环拖动示教\n"
@@ -2161,12 +2190,12 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetTeachMode(uint8_t enable, uint8_t mode = 0);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1227
+#: ../../source/SDKManual/sdk_intro.rst:1245
 msgid "设置关节扭矩力传感器拖动示教(仅JK2.0机械臂使用)"
 msgstr ""
 "Set Joint Torque Force Sensor Drag Teaching ( Only JK2.0 Robotic Arm Use )"
 
-#: ../../source/SDKManual/sdk_intro.rst:1229
+#: ../../source/SDKManual/sdk_intro.rst:1247
 msgid ""
 "/**\n"
 "* @brief  设置关节扭矩力传感器拖动示教\n"
@@ -2184,11 +2213,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetJointSensorTeachMode(uint8_t enable, uint8_t mode=0);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1241
+#: ../../source/SDKManual/sdk_intro.rst:1259
 msgid "获取是否处于拖动示教模式(仅JK2.0机械臂使用)"
 msgstr "Get whether in drag-teaching mode(OnlyJK2.0robot arm uses)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1243
+#: ../../source/SDKManual/sdk_intro.rst:1261
 msgid ""
 "/**\n"
 "* @brief 获取是否处于拖动示教模式\n"
@@ -2204,11 +2233,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode IsInDragTeach(uint8_t& mode);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1254
+#: ../../source/SDKManual/sdk_intro.rst:1272
 msgid "设置碰撞检测(仅JK2.0机械臂使用)"
 msgstr "Enable collision detection(onlyJK2.0for robotic arm use)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1256
+#: ../../source/SDKManual/sdk_intro.rst:1274
 msgid ""
 "/**\n"
 "* @brief  设置碰撞检测\n"
@@ -2226,11 +2255,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetCollisionDetectionMode(uint8_t enable, uint8_t mode);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1268
+#: ../../source/SDKManual/sdk_intro.rst:1286
 msgid "设置碰撞等级(仅JK2.0机械臂使用)"
 msgstr "Set Collision Level ( Only JK2.0 Robotic Arm Uses )"
 
-#: ../../source/SDKManual/sdk_intro.rst:1270
+#: ../../source/SDKManual/sdk_intro.rst:1288
 msgid ""
 "/**\n"
 "* @brief  设置碰撞等级\n"
@@ -2246,11 +2275,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetAnticollision(uint8_t level[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1281
+#: ../../source/SDKManual/sdk_intro.rst:1299
 msgid "设置碰撞后策略(仅JK2.0机械臂使用)"
 msgstr "Set Collision Response Strategy(OnlyJK2.0Robot Arm Use)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1283
+#: ../../source/SDKManual/sdk_intro.rst:1301
 msgid ""
 "/**\n"
 "* @brief  设置碰撞后策略\n"
@@ -2266,12 +2295,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetCollisionStrategy(uint8_t strategy);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1294
+#: ../../source/SDKManual/sdk_intro.rst:1312
 msgid "设置关节扭矩力传感器零点标定(仅JK2.0机械臂使用)"
 msgstr ""
 "Set Joint Torque Sensor Zero Calibration ( Only JK2.0 Robotic Arm Use )"
 
-#: ../../source/SDKManual/sdk_intro.rst:1296
+#: ../../source/SDKManual/sdk_intro.rst:1314
 msgid ""
 "/**\n"
 "* @brief  设置关节扭矩力传感器零点标定\n"
@@ -2289,11 +2318,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetJointSensorZero(double joint_val[7], double speed);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1308
+#: ../../source/SDKManual/sdk_intro.rst:1326
 msgid "设置机器人安装角度(仅JK2.0机械臂使用)"
 msgstr "Set Robot Installation Angle(OnlyJK2.0Robotic Arm Use)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1310
+#: ../../source/SDKManual/sdk_intro.rst:1328
 msgid ""
 "/**\n"
 "* @brief 设置机器人安装角度\n"
@@ -2311,11 +2340,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetRobotInstallAngle(double yangle, double zangle);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1322
+#: ../../source/SDKManual/sdk_intro.rst:1340
 msgid "获取机器人安装角度(仅JK2.0机械臂使用)"
 msgstr "Obtain robot installation angle(OnlyJK2.0manipulator use)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1324
+#: ../../source/SDKManual/sdk_intro.rst:1342
 msgid ""
 "/**\n"
 "* @brief 获取机器人安装角度\n"
@@ -2333,11 +2362,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetRobotInstallAngle(double& yangle, double& zangle);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1336
+#: ../../source/SDKManual/sdk_intro.rst:1354
 msgid "获取当前末端法兰位姿"
 msgstr "Obtain the current end-effector flange pose"
 
-#: ../../source/SDKManual/sdk_intro.rst:1338
+#: ../../source/SDKManual/sdk_intro.rst:1356
 msgid ""
 "/**\n"
 "* @brief  获取当前末端法兰位姿\n"
@@ -2355,11 +2384,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetActualToolFlangePose(double jointPos[7], double fLangePos[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1350
+#: ../../source/SDKManual/sdk_intro.rst:1368
 msgid "设置机械臂正限位"
 msgstr "Set the robotic arm’s positive limit"
 
-#: ../../source/SDKManual/sdk_intro.rst:1352
+#: ../../source/SDKManual/sdk_intro.rst:1370
 msgid ""
 "/**\n"
 "* @brief  设置机械臂正限位\n"
@@ -2375,11 +2404,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetLimitPositive(double limitPositive[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1363
+#: ../../source/SDKManual/sdk_intro.rst:1381
 msgid "设置机械臂负限位"
 msgstr "Set the mechanical arm’s negative limit"
 
-#: ../../source/SDKManual/sdk_intro.rst:1365
+#: ../../source/SDKManual/sdk_intro.rst:1383
 msgid ""
 "/**\n"
 "* @brief  设置机械臂负限位\n"
@@ -2395,12 +2424,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetLimitNegative(double limitNegative[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1376
-#: ../../source/SDKManual/sdk_intro.rst:1565
+#: ../../source/SDKManual/sdk_intro.rst:1394
+#: ../../source/SDKManual/sdk_intro.rst:1784
 msgid "获取关节软限位角度"
 msgstr "Obtain joint soft limit angles"
 
-#: ../../source/SDKManual/sdk_intro.rst:1378
+#: ../../source/SDKManual/sdk_intro.rst:1396
 msgid ""
 "/**\n"
 "* @brief  获取机械臂关节软限位角度\n"
@@ -2418,11 +2447,12 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetJointSoftLimitDeg(double limitNegative[7], double limitPositive[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1390
+#: ../../source/SDKManual/sdk_intro.rst:1408
+#: ../../source/SDKManual/sdk_intro.rst:1824
 msgid "获取机械臂固件版本"
 msgstr "Retrieve the robotic arm firmware version"
 
-#: ../../source/SDKManual/sdk_intro.rst:1392
+#: ../../source/SDKManual/sdk_intro.rst:1410
 msgid ""
 "/**\n"
 "* @brief  获取机械臂固件版本\n"
@@ -2450,15 +2480,328 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetFirmwareVersion(char driver1version[128], char driver2version[128], char driver3version[128], char driver4version[128], char driver5version[128], char driver6version[128], char driver7version[128]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1409
+#: ../../source/SDKManual/sdk_intro.rst:1427
+msgid "机器人控制权设置"
+msgstr "Robot Control Authority Settings"
+
+#: ../../source/SDKManual/sdk_intro.rst:1429
+msgid ""
+"/**\n"
+"* @brief  机器人控制权设置\n"
+"* @param [in] controlMode 0-SDK控制 1-ROS2控制\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetControlAuthority(uint8_t controlMode);"
+msgstr ""
+"/**\n"
+"* @brief  Robot Control Authority Setting\n"
+"* @param [in] controlMode 0-SDKControl 1-ROS2Control\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode SetControlAuthority(uint8_t controlMode);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1440
+msgid "加速度平滑开启"
+msgstr "Acceleration Smooth Start"
+
+#: ../../source/SDKManual/sdk_intro.rst:1442
+msgid ""
+"/**\n"
+"* @brief  加速度平滑开启\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode AccSmoothStart();"
+msgstr ""
+"/**\n"
+"* @brief  Acceleration Smoothing Enabled\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode AccSmoothStart();"
+
+#: ../../source/SDKManual/sdk_intro.rst:1452
+msgid "加速度平滑关闭"
+msgstr "Acceleration smoothing disabled"
+
+#: ../../source/SDKManual/sdk_intro.rst:1454
+msgid ""
+"/**\n"
+"* @brief  加速度平滑关闭\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode AccSmoothEnd();"
+msgstr ""
+"/**\n"
+"* @brief  Acceleration Smoothing Off\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode AccSmoothEnd();"
+
+#: ../../source/SDKManual/sdk_intro.rst:1464
+msgid "指定关节进入拖动/位置模式"
+msgstr "Specify joint to enter drag / position mode"
+
+#: ../../source/SDKManual/sdk_intro.rst:1466
+msgid ""
+"/**\n"
+"* @brief  指定关节进入拖动/位置模式\n"
+"* @param [in] joint_id 关节ID，范围:1~7\n"
+"* @param [in] flag 0-位置模式，1-拖动模式\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetJointDrag(uint8_t joint_id, uint8_t flag);"
+msgstr ""
+"/**\n"
+"* @brief  Specify joint to enter drag / position mode \n"
+"* @param [in] joint_id  joint ID, range :1~7\n"
+"* @param [in] flag 0- position mode, 1- drag mode \n"
+"* @return  error code \n"
+"**/\n"
+"ARMErrorCode SetJointDrag(uint8_t joint_id, uint8_t flag);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1478
+msgid "设置工件坐标系"
+msgstr "Set Workpiece Coordinate System"
+
+#: ../../source/SDKManual/sdk_intro.rst:1480
+msgid ""
+"/**\n"
+"* @brief  设置工件坐标系\n"
+"* @param [in] corrd 工件坐标系位姿，单位:[mm, deg]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetWObjCorrd(double corrd[6]);"
+msgstr ""
+"/**\n"
+"* @brief  Set Workpiece Coordinate System\n"
+"* @param [in] corrd Pose of Workpiece Coordinate System, Unit:[mm, deg]\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode SetWObjCorrd(double corrd[6]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1491
+msgid "设置关节扭矩传感器拖动示教参数"
+msgstr "Set Joint Torque Sensor Drag Teaching Parameters"
+
+#: ../../source/SDKManual/sdk_intro.rst:1493
+msgid ""
+"/**\n"
+"* @brief  设置关节扭矩传感器拖动示教参数\n"
+"* @param [in] drag_level 0-软，1-适中，2-硬\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetJointSensorTeachModeParam(uint8_t drag_level);"
+msgstr ""
+"/**\n"
+"* @brief  Set Joint Torque Sensor Drag Teaching Parameters\n"
+"* @param [in] drag_level 0-Soft, 1-Medium, 2-Hard\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode SetJointSensorTeachModeParam(uint8_t drag_level);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1504
+#: ../../source/SDKManual/sdk_intro.rst:1837
+msgid "获取关节驱动器温度"
+msgstr "Get Joint Actuator Temperature"
+
+#: ../../source/SDKManual/sdk_intro.rst:1506
+msgid ""
+"/**\n"
+"* @brief  获取关节驱动器温度\n"
+"* @param [out] temperature 关节驱动器温度，单位: 摄氏度\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetJointDriverTemperature(double temperature[7]);"
+msgstr ""
+"/**\n"
+"* @brief  Get Joint Actuator Temperature\n"
+"* @param [out] temperature Joint actuator temperature, unit: °C\n"
+"* @return Error code\n"
+"**/\n"
+"ARMErrorCode GetJointDriverTemperature(double temperature[7]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1517
+msgid "回安全点"
+msgstr "Return to Safe Point"
+
+#: ../../source/SDKManual/sdk_intro.rst:1519
+msgid ""
+"/**\n"
+"* @brief  回安全点\n"
+"* @param [in] safePoint 安全点关节位置，单位: deg\n"
+"* @param [in] velocity  速度百分比，范围：[0, 100]\n"
+"* @param [in] acc       加速度百分比，范围：[0, 100]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode MoveToSafePoint(double safePoint[7], double velocity, double acc);"
+msgstr ""
+"/**\n"
+"* @brief  Return to Safe Point\n"
+"* @param [in] safePoint Safe Point Joint Position, Unit: : deg\n"
+"* @param [in] velocity  Speed Percentage, Range: [0, 100]\n"
+"* @param [in] acc       Acceleration Percentage, Range: [0, 100]\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode MoveToSafePoint(double safePoint[7], double velocity, double acc);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1532
+msgid "力传感器激活"
+msgstr "Force Sensor Activated"
+
+#: ../../source/SDKManual/sdk_intro.rst:1534
+msgid ""
+"/**\n"
+"* @brief  力传感器激活\n"
+"* @param [in] onOff 0-复位 1-激活\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode FT_Activate(uint8_t onOff);"
+msgstr ""
+"/**\n"
+"* @brief  Force Sensor Activated\n"
+"* @param [in] onOff 0-Reset 1-Activate\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode FT_Activate(uint8_t onOff);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1545
+msgid "力传感器校零"
+msgstr "Force Sensor Zeroing"
+
+#: ../../source/SDKManual/sdk_intro.rst:1547
+msgid ""
+"/**\n"
+"* @brief  力传感器校零\n"
+"* @param [in] joints 校零关节位置，单位: deg\n"
+"* @param [in] velocity  速度百分比，范围：[0, 100]\n"
+"* @param [in] acceleration 加速度百分比，范围：[0, 100]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode FT_SetZero(double joints[7], double velocity, double acceleration);"
+msgstr ""
+"/**\n"
+"* @brief  Force Sensor Zero Calibration\n"
+"* @param [in] joints Zero Calibration Joint Position, Unit: : deg\n"
+"* @param [in] velocity  Speed Percentage, Range: [0, 100]\n"
+"* @param [in] acceleration Acceleration Percentage, Range: [0, 100]\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode FT_SetZero(double joints[7], double velocity, double acceleration);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1560
+msgid "力传感器负载辨识"
+msgstr "Force Sensor Load Identification"
+
+#: ../../source/SDKManual/sdk_intro.rst:1562
+msgid ""
+"/**\n"
+"* @brief  力传感器负载辨识\n"
+"* @param [in] joints 负载辨识点位，单位: deg\n"
+"* @param [in] velocity  速度百分比，范围：[0, 100]\n"
+"* @param [in] acceleration 加速度百分比，范围：[0, 100]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode FT_PdCogIden(double joints[3][7], double velocity, double acceleration);"
+msgstr ""
+"/**\n"
+"* @brief  Force Sensor Load Identification\n"
+"* @param [in] joints Load Identification Position, Unit: deg\n"
+"* @param [in] velocity  Speed Percentage, Range:[0, 100]\n"
+"* @param [in] acceleration Acceleration Percentage, Range:[0, 100]\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode FT_PdCogIden(double joints[3][7], double velocity, double acceleration);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1575
+msgid "力传感器安全检测"
+msgstr "Force Sensor Safety Inspection"
+
+#: ../../source/SDKManual/sdk_intro.rst:1577
+msgid ""
+"/**\n"
+"* @brief  力传感器安全检测\n"
+"* @param [in] onOff  安全检测开关\n"
+"* @param [in] safeTime 安全检测时间，单位: ms\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetForceSensorSafetyInspection(uint8_t onOff, uint8_t safeTime);"
+msgstr ""
+"/**\n"
+"* @brief  Force Sensor Safety Detection\n"
+"* @param [in] onOff  Safety Detection Switch\n"
+"* @param [in] safeTime Safety Detection Time, Unit: ms\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode SetForceSensorSafetyInspection(uint8_t onOff, uint8_t safeTime);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1589
+msgid "力传感器安全检测触发策略"
+msgstr "Force Sensor Safety Detection Trigger Strategy"
+
+#: ../../source/SDKManual/sdk_intro.rst:1591
+msgid ""
+"/**\n"
+"* @brief  力传感器安全检测触发策略\n"
+"* @param [in] tragger 安全检测触发策略 0-停止 1-重力矩模式\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetForceSensorSafetyTriggerStrategy(uint8_t tragger);"
+msgstr ""
+"/**\n"
+"* @brief  Force Sensor Safety Detection Trigger Strategy\n"
+"* @param [in] tragger Safety Detection Trigger Strategy 0-Stop 1-Gravity Torque Mode\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode SetForceSensorSafetyTriggerStrategy(uint8_t tragger);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1602
+msgid "设置力传感器坐标系"
+msgstr "Set Force Sensor Coordinate System"
+
+#: ../../source/SDKManual/sdk_intro.rst:1604
+msgid ""
+"/**\n"
+"* @brief  设置力传感器坐标系\n"
+"* @param [in] corrd 传感器坐标系位姿，单位:[mm, deg]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetForceSensorCorrd(double corrd[6]);"
+msgstr ""
+"/**\n"
+"* @brief  Set Force Sensor Coordinate System\n"
+"* @param [in] corrd Sensor coordinate system pose, unit:[mm, deg]\n"
+"* @return Error code\n"
+"**/\n"
+"ARMErrorCode SetForceSensorCorrd(double corrd[6]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1615
+msgid "设置力传感器安全检测阈值"
+msgstr "Set Force Sensor Safety Detection Threshold"
+
+#: ../../source/SDKManual/sdk_intro.rst:1617
+msgid ""
+"/**\n"
+"* @brief  设置力传感器安全检测阈值\n"
+"* @param [in] threshold 传感器检测阈值，单位:\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetForceSensorThreshold(double threshold[6]);"
+msgstr ""
+"/**\n"
+"* @brief  Set Force Sensor Safety Detection Threshold\n"
+"* @param [in] threshold Sensor Detection Threshold, Unit:\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode SetForceSensorThreshold(double threshold[6]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1628
 msgid "腰部的SDK函数介绍(存在腰部关节的情况下)"
 msgstr "Introduction to Waist SDK Functions (When the Waist Joint Exists)"
 
-#: ../../source/SDKManual/sdk_intro.rst:1412
+#: ../../source/SDKManual/sdk_intro.rst:1631
 msgid "实例化腰部"
 msgstr "Instantiate waist"
 
-#: ../../source/SDKManual/sdk_intro.rst:1414
+#: ../../source/SDKManual/sdk_intro.rst:1633
 msgid ""
 "/**\n"
 "* @brief  实例化腰部\n"
@@ -2470,11 +2813,11 @@ msgstr ""
 " **/\n"
 "RobotWaist();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1423
+#: ../../source/SDKManual/sdk_intro.rst:1642
 msgid "关闭腰部"
 msgstr "Close waist"
 
-#: ../../source/SDKManual/sdk_intro.rst:1425
+#: ../../source/SDKManual/sdk_intro.rst:1644
 msgid ""
 "/**\n"
 "* @brief  关闭腰部\n"
@@ -2486,7 +2829,7 @@ msgstr ""
 " **/\n"
 "~RobotWaist();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1464
+#: ../../source/SDKManual/sdk_intro.rst:1683
 msgid ""
 "/**\n"
 "* @brief  获取当前关节位置(角度)\n"
@@ -2502,11 +2845,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetActualJointPosDegree(double* joint_pos);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1475
+#: ../../source/SDKManual/sdk_intro.rst:1694
 msgid "查询运动是否完成"
 msgstr "Check whether the motion is completed"
 
-#: ../../source/SDKManual/sdk_intro.rst:1477
+#: ../../source/SDKManual/sdk_intro.rst:1696
 msgid ""
 "/**\n"
 "@brief  查询运动是否完成\n"
@@ -2522,7 +2865,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetRobotMotionDone(uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1490
+#: ../../source/SDKManual/sdk_intro.rst:1709
 msgid ""
 "/**\n"
 "* @brief  关节使能\n"
@@ -2538,7 +2881,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode AxisEnable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1503
+#: ../../source/SDKManual/sdk_intro.rst:1722
 msgid ""
 "/**\n"
 "* @brief  关节去使能\n"
@@ -2554,7 +2897,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode AxisDisable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1516
+#: ../../source/SDKManual/sdk_intro.rst:1735
 msgid ""
 "/**\n"
 "* @brief  关节校零\n"
@@ -2570,11 +2913,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode AxisZeroing(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1539
+#: ../../source/SDKManual/sdk_intro.rst:1758
 msgid "设置腰部正限位"
 msgstr "Set waist positive limit"
 
-#: ../../source/SDKManual/sdk_intro.rst:1541
+#: ../../source/SDKManual/sdk_intro.rst:1760
 msgid ""
 "/**\n"
 "* @brief  设置腰部正限位\n"
@@ -2590,11 +2933,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetLimitPositive(double* limitPositive);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1552
+#: ../../source/SDKManual/sdk_intro.rst:1771
 msgid "设置腰部负限位"
 msgstr "Set waist negative limit"
 
-#: ../../source/SDKManual/sdk_intro.rst:1554
+#: ../../source/SDKManual/sdk_intro.rst:1773
 msgid ""
 "/**\n"
 "* @brief  设置腰部负限位\n"
@@ -2610,7 +2953,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetLimitNegative(double* limitNegative);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1567
+#: ../../source/SDKManual/sdk_intro.rst:1786
 msgid ""
 "/**\n"
 "* @brief  获取腰部关节软限位角度\n"
@@ -2628,11 +2971,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetJointSoftLimitDeg(double* limitNegative, double* limitPositive);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1579
+#: ../../source/SDKManual/sdk_intro.rst:1798
 msgid "设置腰部加速度百分比"
 msgstr "Set Waist Acceleration Percentage"
 
-#: ../../source/SDKManual/sdk_intro.rst:1581
+#: ../../source/SDKManual/sdk_intro.rst:1800
 msgid ""
 "/**\n"
 "* @brief  设置腰部加速度百分比\n"
@@ -2648,11 +2991,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetAccScale(double scale);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1592
+#: ../../source/SDKManual/sdk_intro.rst:1811
 msgid "设置腰部全局速度百分比"
 msgstr "Set Waist Global Speed Percentage"
 
-#: ../../source/SDKManual/sdk_intro.rst:1594
+#: ../../source/SDKManual/sdk_intro.rst:1813
 msgid ""
 "/**\n"
 "* @brief  设置腰部全局速度百分比\n"
@@ -2668,15 +3011,47 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetSpeed(double speed);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1605
+#: ../../source/SDKManual/sdk_intro.rst:1826
+msgid ""
+"/**\n"
+"* @brief  获取机械臂固件版本\n"
+"* @param [out] driverversion 驱动器1固件版本\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetFirmwareVersion(char driverversion[][128]);"
+msgstr ""
+"/**\n"
+"* @brief  Retrieve Robotic Arm Firmware Version\n"
+"* @param [out] driverversion Driver1Firmware Version\n"
+"* @return Error Code\n"
+"**/\n"
+"ARMErrorCode GetFirmwareVersion(char driverversion[][128]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1839
+msgid ""
+"/**\n"
+"* @brief  获取关节驱动器温度\n"
+"* @param [out] temperature 关节驱动器温度，单位: 摄氏度\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetJointDriverTemperature(double* temperature);"
+msgstr ""
+"/**\n"
+"* @brief  Get Joint Actuator Temperature\n"
+"* @param [out] temperature Joint actuator temperature, unit: °C\n"
+"* @return Error code\n"
+"**/\n"
+"ARMErrorCode GetJointDriverTemperature(double* temperature);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1850
 msgid "工具部分的SDK函数介绍"
 msgstr "SDK Function Introduction for the Tool Section"
 
-#: ../../source/SDKManual/sdk_intro.rst:1608
+#: ../../source/SDKManual/sdk_intro.rst:1853
 msgid "实例化工具类"
 msgstr "Instantiate the utility class"
 
-#: ../../source/SDKManual/sdk_intro.rst:1610
+#: ../../source/SDKManual/sdk_intro.rst:1855
 msgid ""
 "/**\n"
 "* @brief  实例化工具类\n"
@@ -2688,11 +3063,11 @@ msgstr ""
 "**/\n"
 "RobotTool();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1619
+#: ../../source/SDKManual/sdk_intro.rst:1864
 msgid "关闭工具类"
 msgstr "Close utility class"
 
-#: ../../source/SDKManual/sdk_intro.rst:1621
+#: ../../source/SDKManual/sdk_intro.rst:1866
 msgid ""
 "/**\n"
 "* @brief  关闭工具类对象\n"
@@ -2704,11 +3079,11 @@ msgstr ""
 "**/\n"
 "~RobotTool();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1630
+#: ../../source/SDKManual/sdk_intro.rst:1875
 msgid "与机器人控制器建立通信"
 msgstr "Establish communication with the robot controller"
 
-#: ../../source/SDKManual/sdk_intro.rst:1632
+#: ../../source/SDKManual/sdk_intro.rst:1877
 msgid ""
 "/**\n"
 "* @brief  与机器人控制器建立通信，ip默认为192.168.58.1\n"
@@ -2720,11 +3095,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RPC(const char *ip, int port);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1641
+#: ../../source/SDKManual/sdk_intro.rst:1886
 msgid "与机器人控制器关闭通讯"
 msgstr "Disconnect communication with the robot controller"
 
-#: ../../source/SDKManual/sdk_intro.rst:1643
+#: ../../source/SDKManual/sdk_intro.rst:1888
 msgid ""
 "/**\n"
 "* @brief  与机器人控制器关闭通讯\n"
@@ -2738,11 +3113,11 @@ msgstr ""
 " */\n"
 "ARMErrorCode CloseRPC();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1653
+#: ../../source/SDKManual/sdk_intro.rst:1898
 msgid "获取SDK与机器人的通讯状态"
 msgstr "Obtain the communication status between the SDK and the robot"
 
-#: ../../source/SDKManual/sdk_intro.rst:1655
+#: ../../source/SDKManual/sdk_intro.rst:1900
 msgid ""
 "/**\n"
 "* @brief  获取SDK与机器人的通讯状态\n"
@@ -2758,11 +3133,11 @@ msgstr ""
 " */\n"
 "ARMErrorCode GetSDKComState(uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1666
+#: ../../source/SDKManual/sdk_intro.rst:1911
 msgid "设置机器人配置"
 msgstr "Configure Robot"
 
-#: ../../source/SDKManual/sdk_intro.rst:1668
+#: ../../source/SDKManual/sdk_intro.rst:1913
 msgid ""
 "/**\n"
 "* @brief  设置机器人配置-FAIRINO-ARTPlugin插件升级\n"
@@ -2778,11 +3153,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode RobotFrConfig(int mode);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1679
+#: ../../source/SDKManual/sdk_intro.rst:1924
 msgid "日志导出"
 msgstr "Log Export"
 
-#: ../../source/SDKManual/sdk_intro.rst:1681
+#: ../../source/SDKManual/sdk_intro.rst:1926
 msgid ""
 "/**\n"
 "* @brief  日志导出\n"
@@ -2796,11 +3171,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode RobotPackLog();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1691
+#: ../../source/SDKManual/sdk_intro.rst:1936
 msgid "数据记录"
 msgstr "Data Recording"
 
-#: ../../source/SDKManual/sdk_intro.rst:1693
+#: ../../source/SDKManual/sdk_intro.rst:1938
 msgid ""
 "/**\n"
 "* @brief  数据记录\n"
@@ -2816,13 +3191,13 @@ msgstr ""
 "**/\n"
 "ARMErrorCode RobotRecordData(int state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1704
-#: ../../source/SDKManual/sdk_intro.rst:1730
+#: ../../source/SDKManual/sdk_intro.rst:1949
+#: ../../source/SDKManual/sdk_intro.rst:1975
 msgid "SDK服务端部署"
 msgstr "SDK Server Deployment"
 
-#: ../../source/SDKManual/sdk_intro.rst:1706
-#: ../../source/SDKManual/sdk_intro.rst:1732
+#: ../../source/SDKManual/sdk_intro.rst:1951
+#: ../../source/SDKManual/sdk_intro.rst:1977
 msgid ""
 "/**\n"
 "* @brief  SDK服务端部署\n"
@@ -2838,11 +3213,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode UpdateSDKServer(std::string filepath);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1717
+#: ../../source/SDKManual/sdk_intro.rst:1962
 msgid "获取SDK版本信息"
 msgstr "Retrieve SDK version information"
 
-#: ../../source/SDKManual/sdk_intro.rst:1719
+#: ../../source/SDKManual/sdk_intro.rst:1964
 msgid ""
 "/**\n"
 "* @brief  获取SDK版本信息\n"
@@ -2858,11 +3233,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetSDKVersion(std::string& version);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1743
+#: ../../source/SDKManual/sdk_intro.rst:1988
 msgid "获取机器人软件版本信息"
 msgstr "Retrieve robot software version information"
 
-#: ../../source/SDKManual/sdk_intro.rst:1745
+#: ../../source/SDKManual/sdk_intro.rst:1990
 msgid ""
 "/**\n"
 "* @brief  获取机器人软件版本信息\n"
@@ -2880,11 +3255,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetSoftwareVersion(std::string& pluginVersion, std::string& sdkServerVersion);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1757
+#: ../../source/SDKManual/sdk_intro.rst:2002
 msgid "重启机器人操作系统"
 msgstr "Restart Robot Operating System"
 
-#: ../../source/SDKManual/sdk_intro.rst:1759
+#: ../../source/SDKManual/sdk_intro.rst:2004
 msgid ""
 "/**\n"
 "* @brief  重启机器人操作系统\n"
@@ -2898,11 +3273,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode robotSystemReboot();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1769
+#: ../../source/SDKManual/sdk_intro.rst:2014
 msgid "关闭机器人操作系统"
 msgstr "Shut down Robot Operating System"
 
-#: ../../source/SDKManual/sdk_intro.rst:1771
+#: ../../source/SDKManual/sdk_intro.rst:2016
 msgid ""
 "/**\n"
 "* @brief  关闭机器人操作系统\n"
