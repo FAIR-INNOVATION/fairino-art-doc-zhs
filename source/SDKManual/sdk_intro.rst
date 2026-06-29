@@ -1624,6 +1624,116 @@ SDK函数介绍
     **/
     ARMErrorCode SetForceSensorThreshold(double threshold[6]);
 
+无力负载辨识初始化设置
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  无力负载辨识初始化设置
+    * @param [in] onOff 负载辨识开关，0-关，1-开
+    * @param [in] forceSource 力的来源，0-关节电流，1-扭矩传感器
+    * @param [in] loadFlag 0-无负载，1-有负载
+    * @return 错误码
+    **/
+    ARMErrorCode LoadIdentifyInit(uint8_t onOff, uint8_t forceSource, uint8_t loadFlag);
+
+无力负载辨识主程序
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  无力负载辨识主程序
+    * @param [in] joints 负载辨识点位，单位: deg
+    * @param [in] velocity  速度百分比，范围：[0, 100]
+    * @param [in] acceleration 加速度百分比，范围：[0, 100]
+    * @param [in] loadFlag 0-无负载，1-有负载
+    * @return 错误码
+    **/
+    ARMErrorCode LoadIdentifyMain(double joints[9][7], double velocity, double acceleration, uint8_t loadFlag);
+
+获取无力负载辨识结果
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取无力负载辨识结果
+    * @param [in] result 负载辨识结果，result[0]: 负载质量(kg) result[1]: 负载质心x(mm) result[2]: 负载质心y(mm) result[3]: 负载质心z(mm)
+    * @return 错误码
+    **/
+    ARMErrorCode LoadIdentifyGetResult(double result[4]);
+
+激活夹爪
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  激活夹爪
+    * @return 错误码
+    **/
+    ARMErrorCode ActGripper();
+
+控制夹爪运动
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  控制夹爪运动
+    * @param [in] position 位置百分比
+    * @param [in] speed 速度百分比
+    * @param [in] force 力百分比
+    * @return 错误码
+    **/
+    ARMErrorCode MoveGripper(double position, double speed, double force);
+
+获取夹爪是否运动完成
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取夹爪是否运动完成
+    * @param [out] motiontate 0-运动中，1-运动完成
+    * @return 错误码
+    **/
+    ARMErrorCode GetGripperMotionDone(uint8_t &motionState);
+
+获取夹爪激活状态
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取夹爪激活状态
+    * @param [out] act 0-未激活，1-激活
+    * @return 错误码
+    **/
+    ARMErrorCode GetGripperActivateStatus(uint8_t &actState);
+
+获取夹爪位置
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取夹爪位置
+    * @param [out] position 百分比
+    * @return 错误码
+    **/
+    ARMErrorCode GetGripperCurPosition(double &position);
+
 腰部的SDK函数介绍(存在腰部关节的情况下)
 -----------------------------------------------------------------------------------------
 

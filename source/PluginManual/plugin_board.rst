@@ -452,6 +452,10 @@
    * - shutdownsys
      - 关机指令
      - 无参数
+
+   * - getecatcommstatus
+     - 获取ethercat通讯信息，用于辅助诊断ethercat通讯状态
+     - 无参数
 		
 同样的，根据上面阐述的指令服务器交互信息格式，每个一string指令都会有一个string反馈值，这个返回值是16位的错误码系统，其具体函数见如下表格：
 			

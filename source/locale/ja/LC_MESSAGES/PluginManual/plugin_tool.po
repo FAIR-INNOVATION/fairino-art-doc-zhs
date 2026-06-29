@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-03 17:28+0800\n"
+"POT-Creation-Date: 2026-06-26 17:46+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../source/PluginManual/plugin_tool.rst:2
 msgid "调试工具"
@@ -172,3 +172,66 @@ msgstr ""
 msgid "无论是点击执行当前位置还是开始循环，机械臂产生的运动均可以通过紧急停止来立马停在原地"
 msgstr ""
 "現在位置の実行またはループの開始をクリックした場合でも、ロボットアームが生成する動作は、非常停止ボタンを押すことで即座に停止させることができます。"
+
+#: ../../source/PluginManual/plugin_tool.rst:82
+msgid "配置工具使用"
+msgstr "設定ツール使用"
+
+#: ../../source/PluginManual/plugin_tool.rst:84
+msgid ""
+"在V3.0.3版本及之后，插件中的关键配置信息统一由配置工具管理。这样便于用户集中维护系统参数，降低配置复杂度。通过独立的配置工具，用户可以集中的修改诸如DOMAIN_ID还有DDS类型，改变以往修改参数需要深入到工程目录中的脚本或者配置文件中挨个修改，不小心会导致修改格式错误变砖。"
+msgstr ""
+"V3.0.3バージョン及び以降，プラグイン内の主要な設定情報は設定ツールによって一元管理される。これによりユーザーはシステムパラメータを集中的に保守しやすくなり，設定の複雑度を低減できる。独立した設定ツールにより，ユーザーはDOMAIN_IDやDDSのようなタイプを集中的に変更でき，従来はパラメータ変更時にプロジェクトディレクトリ内のスクリプトや設定ファイルに深く入り込んで一つずつ修正する必要があり，不注意で修正フォーマットを誤ると文鎮化を招くおそれがあった状況を変えることができる。"
+
+#: ../../source/PluginManual/plugin_tool.rst:86
+msgid ""
+"进入/opt/fairino_art_plugin目录下，运行改目录下runconfigeditor.sh脚本，可以看到配置编辑器的主界面，如下图所示："
+msgstr ""
+"/opt/fairino_art_pluginディレクトリ下に入り、そのディレクトリ下のrunconfigeditor.shスクリプトを実行し、設定エディタのメイン画面が表示され、下図に示す通り："
+
+#: ../../source/PluginManual/plugin_tool.rst:-1
+msgid "009.png"
+msgstr "009.png"
+
+#: ../../source/PluginManual/plugin_tool.rst:93
+msgid "图表 3-8 配置编辑器主界面"
+msgstr "図表 3-8 設定エディタメイン画面"
+
+#: ../../source/PluginManual/plugin_tool.rst:94
+msgid "界面upgrade settings区是设置升级配置项的:"
+msgstr "画面upgrade settings領域はアップグレード設定項目を設定する:"
+
+#: ../../source/PluginManual/plugin_tool.rst:96
+msgid ""
+"Update "
+"Mode是升级模式选择，选项有all,program_only和custom，all代表升级的时候，升级包中的程序和yaml配置文件都会覆盖到文件目录中，这样不光软件可执行文件会更新，所有的yaml配置文件也会被覆盖。Program_only是只更新软件可执行文件，配置文件保留当前软件版本中的不变;"
+msgstr ""
+"Update "
+"Modeはアップグレードモードの選択であり、選択肢にはall,program_onlyとcustomがあり、allはアップグレードする際、アップグレードパッケージ内のプログラムとyaml設定ファイルがすべてファイルディレクトリに上書きされ、これによりソフトウェアの実行ファイルが更新されるだけでなく、すべてのyaml設定ファイルも上書きされます。Program_onlyはソフトウェアの実行ファイルのみを更新し、設定ファイルは現在のソフトウェアバージョンのまま変更されずに保持されます;"
+
+#: ../../source/PluginManual/plugin_tool.rst:97
+msgid ""
+"Custeom update "
+"config是在custom启用的时候，会读取文本框里面的内容，升级程序只会更新用户指定的ros2功能包的配置文件，其他的都不变。"
+msgstr ""
+"Custeom update "
+"configはcustomが有効になった時に、テキストボックス内の内容を読み込み、アップグレードプログラムはユーザーが指定したros2機能パッケージの設定ファイルのみを更新し、その他は一切変更されない。"
+
+#: ../../source/PluginManual/plugin_tool.rst:99
+msgid ""
+"Runtime "
+"Settings是设置ROS_DOMAIN_ID和DDS类型的，以往设置这两个数据需要修改启动service脚本还有rqttool.sh脚本里面的值，现在只需要在这个界面中配置即可，不需要在其他地方再设置。"
+msgstr ""
+"Runtime "
+"SettingsはROS_DOMAIN_IDとDDSのタイプを設定するもので、以前これら2つのデータを設定するには起動serviceスクリプトやrqttool.shスクリプト内の値を修正する必要がありましたが、現在はこの画面で設定するだけで済み、他の場所で再度設定する必要はありません。"
+
+#: ../../source/PluginManual/plugin_tool.rst:101
+msgid ""
+"Command Controller Auto Execut "
+"Setting是用于fairino_hardware_command_controller中配置开机自执行指令的部分，以往需要在command_controller的install文件夹中自行写入yaml配置文件，现在只需要勾选Enable"
+" Auto Execute就可以开机，点击之后，下方会出现Add command按钮，点击按钮即可添加自执行指令函数名称和参数。"
+msgstr ""
+"Command Controller Auto Execut "
+"Settingはfairino_hardware_command_controllerで起動時自動実行コマンドを設定する部分，従来はcommand_controllerのinstallフォルダ内にyaml設定ファイルを手動で書き込む必要があった，現在はEnable"
+" Auto Executeをチェックするだけで起動できる，クリックすると，下部にAdd "
+"commandボタンが表示される，ボタンをクリックするだけで自動実行コマンドの関数名とパラメータを追加できる。"
