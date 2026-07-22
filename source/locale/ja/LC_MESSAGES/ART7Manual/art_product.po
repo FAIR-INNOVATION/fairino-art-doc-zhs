@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥（苏州）机器人技术股份有限公司
+# This file is distributed under the same license as the 法奥协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-20 15:15+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/ART7Manual/art_product.rst:2
+msgid "产品介绍"
+msgstr "製品紹介"
+
+#: ../../source/ART7Manual/art_product.rst:8
+msgid "产品尺寸"
+msgstr "製品サイズ"
+
+#: ../../source/ART7Manual/art_product.rst:10
+msgid "左臂和右臂的外形尺寸均为901mm×128mm×128mm，如图3-1和3-2所示。"
+msgstr "左アームと右アームの外寸はともに901mm×128mm×128mmであり、図3-1および3-2に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "013.png"
+msgstr "013.png"
+
+#: ../../source/ART7Manual/art_product.rst:17
+msgid "图表 3-1 左臂外形尺寸"
+msgstr "図表 3-1 左アーム外形寸法"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "014.png"
+msgstr "014.png"
+
+#: ../../source/ART7Manual/art_product.rst:23
+msgid "图表 3-2 右臂外形尺寸"
+msgstr "図表 3-2 右アーム外形寸法"
+
+#: ../../source/ART7Manual/art_product.rst:25
+msgid "铭牌信息"
+msgstr "銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:26
+msgid "配置一单臂和包装箱的铭牌信息如图3-3和3-4所示。"
+msgstr "シングルアームおよび梱包箱の銘板情報は、図3-3および3-4に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "015.png"
+msgstr "015.png"
+
+#: ../../source/ART7Manual/art_product.rst:33
+msgid "图表 3-3 配置一 单臂铭牌信息"
+msgstr "図表 3-3 構成1 シングルアーム銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "016.png"
+msgstr "016.png"
+
+#: ../../source/ART7Manual/art_product.rst:39
+msgid "图表 3-4 配置一 包装箱铭牌信息"
+msgstr "図表 3-4 構成1 梱包箱銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:40
+msgid "配置二单臂+控制器和包装箱的铭牌信息如图3-5和3-6所示。"
+msgstr "構成2のシングルアーム+コントローラおよび梱包箱の銘板情報は、図3-5および3-6に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "017.png"
+msgstr "017.png"
+
+#: ../../source/ART7Manual/art_product.rst:47
+msgid "图表 3-5 配置二 单臂铭牌信息"
+msgstr "図表 3-5 構成2 シングルアーム銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "018.png"
+msgstr "018.png"
+
+#: ../../source/ART7Manual/art_product.rst:53
+msgid "图表 3-6 配置二 包装箱铭牌信息"
+msgstr "図表 3-6 構成2 梱包箱銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:54
+msgid "配置三双臂和包装箱的铭牌信息如图3-7、3-8和3-9所示。"
+msgstr "3本アームおよび包装箱の銘板情報は、図3-7、3-8および3-9に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "019.png"
+msgstr "019.png"
+
+#: ../../source/ART7Manual/art_product.rst:61
+msgid "图表 3-7 配置三 左臂铭牌信息"
+msgstr "図表 3-7 構成3 左アーム銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "020.png"
+msgstr "020.png"
+
+#: ../../source/ART7Manual/art_product.rst:67
+msgid "图表 3-8 配置三 右臂铭牌信息"
+msgstr "図表 3-8 構成3 右アーム銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "021.png"
+msgstr "021.png"
+
+#: ../../source/ART7Manual/art_product.rst:73
+msgid "图表 3-9 配置三 包装箱铭牌信息"
+msgstr "図表 3-9 構成3 梱包箱銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:74
+msgid "配置四双臂、控制器、分支器和包装箱的铭牌信息如图3-10、3-11和3-12所示。"
+msgstr "4本アーム、コントローラ、分岐器および梱包箱の銘板情報は、図3-10、3-11および3-12に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "022.png"
+msgstr "022.png"
+
+#: ../../source/ART7Manual/art_product.rst:81
+msgid "图表 3-10 配置四 左臂铭牌信息"
+msgstr "図表 3-10 構成4 左アーム銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "023.png"
+msgstr "023.png"
+
+#: ../../source/ART7Manual/art_product.rst:87
+msgid "图表 3-11 右臂铭牌信息"
+msgstr "図表 3-11 右アーム銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "024.png"
+msgstr "024.png"
+
+#: ../../source/ART7Manual/art_product.rst:93
+msgid "图表 3-12 配置四 包装箱铭牌信息"
+msgstr "図表 3-12 構成4 包装箱銘板情報"
+
+#: ../../source/ART7Manual/art_product.rst:95
+msgid "技术参数"
+msgstr "技術仕様"
+
+#: ../../source/ART7Manual/art_product.rst:96
+msgid "机械臂的技术参数如表3-1所示。"
+msgstr "ロボットアームの技術仕様は表3-1に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:99
+msgid "表3-1  技术参数"
+msgstr "表3-1  技術仕様"
+
+#: ../../source/ART7Manual/art_product.rst:105
+msgid "**参数类型**"
+msgstr "**パラメータ型**"
+
+#: ../../source/ART7Manual/art_product.rst:106
+msgid "**具体参数**"
+msgstr "**具体的なパラメータ**"
+
+#: ../../source/ART7Manual/art_product.rst:108
+msgid "型号参数"
+msgstr "型番パラメータ"
+
+#: ../../source/ART7Manual/art_product.rst:109
+msgid "ART7-R7"
+msgstr "ART7-R7"
+
+#: ../../source/ART7Manual/art_product.rst:111
+msgid "有效负载"
+msgstr "ペイロード"
+
+#: ../../source/ART7Manual/art_product.rst:112
+msgid "单臂7kg"
+msgstr "片腕7kg"
+
+#: ../../source/ART7Manual/art_product.rst:114
+msgid "最大工作半径"
+msgstr "最大作業半径"
+
+#: ../../source/ART7Manual/art_product.rst:115
+msgid "714mm"
+msgstr "714mm"
+
+#: ../../source/ART7Manual/art_product.rst:117
+msgid "自由度"
+msgstr "自由度"
+
+#: ../../source/ART7Manual/art_product.rst:118
+msgid "7个旋转自由度"
+msgstr "7個の回転自由度"
+
+#: ../../source/ART7Manual/art_product.rst:120
+#: ../../source/ART7Manual/art_product.rst:123
+#: ../../source/ART7Manual/art_product.rst:126
+#: ../../source/ART7Manual/art_product.rst:129
+#: ../../source/ART7Manual/art_product.rst:132
+#: ../../source/ART7Manual/art_product.rst:135
+#: ../../source/ART7Manual/art_product.rst:138
+msgid "工作范围"
+msgstr "作業範囲"
+
+#: ../../source/ART7Manual/art_product.rst:121
+msgid "1轴：±175°"
+msgstr "1軸：±175°"
+
+#: ../../source/ART7Manual/art_product.rst:124
+msgid "2轴：±112°"
+msgstr "2軸：±112°"
+
+#: ../../source/ART7Manual/art_product.rst:127
+msgid "3轴：±175°"
+msgstr "3軸：±175°"
+
+#: ../../source/ART7Manual/art_product.rst:130
+msgid "4轴：-87~+112°"
+msgstr "4軸：-87~+112°"
+
+#: ../../source/ART7Manual/art_product.rst:133
+msgid "5轴：±175°"
+msgstr "5軸：±175°"
+
+#: ../../source/ART7Manual/art_product.rst:136
+msgid "6轴：±72°"
+msgstr "6軸：±72°"
+
+#: ../../source/ART7Manual/art_product.rst:139
+msgid "7轴：±90°"
+msgstr "7軸：±90°"
+
+#: ../../source/ART7Manual/art_product.rst:141
+msgid "关节速度"
+msgstr "関節速度"
+
+#: ../../source/ART7Manual/art_product.rst:142
+msgid "≥150°/s"
+msgstr "≥150°/s"
+
+#: ../../source/ART7Manual/art_product.rst:144
+msgid "噪音"
+msgstr "ノイズ"
+
+#: ../../source/ART7Manual/art_product.rst:145
+msgid "<65dB"
+msgstr "<65dB"
+
+#: ../../source/ART7Manual/art_product.rst:147
+msgid "安装方向"
+msgstr "取り付け方向"
+
+#: ../../source/ART7Manual/art_product.rst:148
+msgid "任何方向"
+msgstr "あらゆる方向"
+
+#: ../../source/ART7Manual/art_product.rst:150
+msgid "重复定位精度"
+msgstr "繰返し位置決め精度"
+
+#: ../../source/ART7Manual/art_product.rst:151
+msgid "±0.1mm"
+msgstr "±0.1mm"
+
+#: ../../source/ART7Manual/art_product.rst:153
+msgid "整机质量"
+msgstr "本体質量"
+
+#: ../../source/ART7Manual/art_product.rst:154
+msgid "约15kg"
+msgstr "約15kg"
+
+#: ../../source/ART7Manual/art_product.rst:157
+msgid "关节定义"
+msgstr "ジョイント定義"
+
+#: ../../source/ART7Manual/art_product.rst:158
+msgid "左臂和右臂的关节定义如图3-13和3-14所示。"
+msgstr "左腕と右腕の関節定義は、図3-13および3-14に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "025.png"
+msgstr "025.png"
+
+#: ../../source/ART7Manual/art_product.rst:165
+msgid "图表 3-13 左臂关节定义"
+msgstr "図 3-13 左腕関節定義"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "026.png"
+msgstr "026.png"
+
+#: ../../source/ART7Manual/art_product.rst:171
+msgid "图表 3-14 右臂关节定义"
+msgstr "図 3-14 右腕関節定義"
+
+#: ../../source/ART7Manual/art_product.rst:173
+msgid "运动范围"
+msgstr "運動範囲"
+
+#: ../../source/ART7Manual/art_product.rst:174
+msgid "机械臂的运动范围如图3-15所示。"
+msgstr "ロボットアームの動作範囲は図3-15に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "027.png"
+msgstr "027.png"
+
+#: ../../source/ART7Manual/art_product.rst:181
+msgid "图表 3-15 机械臂运动范围"
+msgstr "図表 3-15 ロボットアームの動作範囲"
+
+#: ../../source/ART7Manual/art_product.rst:183
+msgid "DH参数与坐标系"
+msgstr "DHパラメータと座標系"
+
+#: ../../source/ART7Manual/art_product.rst:184
+msgid "左臂DH参数如表3-2和图3-16所示。"
+msgstr "左アームDHのパラメータは表3-2および図3-16に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:187
+msgid "表3-2 左臂DH参数表"
+msgstr "表3-2 左腕DHパラメータ表"
+
+#: ../../source/ART7Manual/art_product.rst:193
+#: ../../source/ART7Manual/art_product.rst:256
+msgid "**joint_i**"
+msgstr "**joint_i**"
+
+#: ../../source/ART7Manual/art_product.rst:194
+#: ../../source/ART7Manual/art_product.rst:257
+msgid "**θi**"
+msgstr "**θi**"
+
+#: ../../source/ART7Manual/art_product.rst:195
+#: ../../source/ART7Manual/art_product.rst:258
+msgid "**di/mm**"
+msgstr "**di/mm**"
+
+#: ../../source/ART7Manual/art_product.rst:196
+#: ../../source/ART7Manual/art_product.rst:259
+msgid "**ai**"
+msgstr "**ai**"
+
+#: ../../source/ART7Manual/art_product.rst:197
+#: ../../source/ART7Manual/art_product.rst:260
+msgid "**αi/rad**"
+msgstr "**αi/rad**"
+
+#: ../../source/ART7Manual/art_product.rst:199
+#: ../../source/ART7Manual/art_product.rst:262
+msgid "1"
+msgstr "1"
+
+#: ../../source/ART7Manual/art_product.rst:200
+#: ../../source/ART7Manual/art_product.rst:202
+#: ../../source/ART7Manual/art_product.rst:206
+#: ../../source/ART7Manual/art_product.rst:207
+#: ../../source/ART7Manual/art_product.rst:208
+#: ../../source/ART7Manual/art_product.rst:212
+#: ../../source/ART7Manual/art_product.rst:214
+#: ../../source/ART7Manual/art_product.rst:218
+#: ../../source/ART7Manual/art_product.rst:219
+#: ../../source/ART7Manual/art_product.rst:220
+#: ../../source/ART7Manual/art_product.rst:224
+#: ../../source/ART7Manual/art_product.rst:226
+#: ../../source/ART7Manual/art_product.rst:231
+#: ../../source/ART7Manual/art_product.rst:232
+#: ../../source/ART7Manual/art_product.rst:236
+#: ../../source/ART7Manual/art_product.rst:237
+#: ../../source/ART7Manual/art_product.rst:238
+#: ../../source/ART7Manual/art_product.rst:239
+#: ../../source/ART7Manual/art_product.rst:263
+#: ../../source/ART7Manual/art_product.rst:265
+#: ../../source/ART7Manual/art_product.rst:269
+#: ../../source/ART7Manual/art_product.rst:270
+#: ../../source/ART7Manual/art_product.rst:271
+#: ../../source/ART7Manual/art_product.rst:275
+#: ../../source/ART7Manual/art_product.rst:277
+#: ../../source/ART7Manual/art_product.rst:281
+#: ../../source/ART7Manual/art_product.rst:282
+#: ../../source/ART7Manual/art_product.rst:283
+#: ../../source/ART7Manual/art_product.rst:287
+#: ../../source/ART7Manual/art_product.rst:289
+#: ../../source/ART7Manual/art_product.rst:294
+#: ../../source/ART7Manual/art_product.rst:295
+#: ../../source/ART7Manual/art_product.rst:299
+#: ../../source/ART7Manual/art_product.rst:300
+#: ../../source/ART7Manual/art_product.rst:301
+#: ../../source/ART7Manual/art_product.rst:302
+msgid "0"
+msgstr "0"
+
+#: ../../source/ART7Manual/art_product.rst:201
+#: ../../source/ART7Manual/art_product.rst:264
+msgid "187"
+msgstr "187"
+
+#: ../../source/ART7Manual/art_product.rst:203
+#: ../../source/ART7Manual/art_product.rst:215
+#: ../../source/ART7Manual/art_product.rst:227
+#: ../../source/ART7Manual/art_product.rst:266
+#: ../../source/ART7Manual/art_product.rst:278
+#: ../../source/ART7Manual/art_product.rst:290
+msgid "-pi/2"
+msgstr "-pi/2"
+
+#: ../../source/ART7Manual/art_product.rst:205
+#: ../../source/ART7Manual/art_product.rst:268
+msgid "2"
+msgstr "2"
+
+#: ../../source/ART7Manual/art_product.rst:209
+#: ../../source/ART7Manual/art_product.rst:221
+#: ../../source/ART7Manual/art_product.rst:230
+#: ../../source/ART7Manual/art_product.rst:233
+#: ../../source/ART7Manual/art_product.rst:272
+#: ../../source/ART7Manual/art_product.rst:284
+#: ../../source/ART7Manual/art_product.rst:293
+#: ../../source/ART7Manual/art_product.rst:296
+msgid "pi/2"
+msgstr "pi/2"
+
+#: ../../source/ART7Manual/art_product.rst:211
+#: ../../source/ART7Manual/art_product.rst:274
+msgid "3"
+msgstr "3"
+
+#: ../../source/ART7Manual/art_product.rst:213
+#: ../../source/ART7Manual/art_product.rst:276
+msgid "290"
+msgstr "290"
+
+#: ../../source/ART7Manual/art_product.rst:217
+#: ../../source/ART7Manual/art_product.rst:280
+msgid "4"
+msgstr "4"
+
+#: ../../source/ART7Manual/art_product.rst:223
+#: ../../source/ART7Manual/art_product.rst:286
+msgid "5"
+msgstr "5"
+
+#: ../../source/ART7Manual/art_product.rst:225
+#: ../../source/ART7Manual/art_product.rst:288
+msgid "310"
+msgstr "310"
+
+#: ../../source/ART7Manual/art_product.rst:229
+#: ../../source/ART7Manual/art_product.rst:292
+msgid "6"
+msgstr "6"
+
+#: ../../source/ART7Manual/art_product.rst:235
+#: ../../source/ART7Manual/art_product.rst:298
+msgid "7"
+msgstr "7"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "028.png"
+msgstr "028.png"
+
+#: ../../source/ART7Manual/art_product.rst:246
+msgid "图表 3-16 左臂坐标系"
+msgstr "図表 3-16 左アーム座標系"
+
+#: ../../source/ART7Manual/art_product.rst:247
+msgid "右臂DH参数如表3-3和图3-17所示。"
+msgstr "右腕DHのパラメータは、表3-3および図3-17に示すとおりである。"
+
+#: ../../source/ART7Manual/art_product.rst:250
+msgid "表3-3 右臂DH参数表"
+msgstr "表3-3 右腕DHパラメータ表"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "029.png"
+msgstr "029.png"
+
+#: ../../source/ART7Manual/art_product.rst:309
+msgid "图表 3-17 右臂坐标系"
+msgstr "図表 3-17 右アーム座標系"
+
+#: ../../source/ART7Manual/art_product.rst:311
+msgid "工具法兰尺寸"
+msgstr "ツールフランジ寸法"
+
+#: ../../source/ART7Manual/art_product.rst:312
+msgid "末端工具法兰尺寸如图3-18所示。"
+msgstr "エンドエフェクタフランジの寸法は図3-18に示すとおりです。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "030.png"
+msgstr "030.png"
+
+#: ../../source/ART7Manual/art_product.rst:318
+msgid "图表 3-18 末端工具法兰尺寸"
+msgstr "図表 3-18 エンドツールフランジ寸法"
+
+#~ msgid "600mm"
+#~ msgstr "600mm"
+
+#~ msgid "关节活动范围"
+#~ msgstr "関節可動範囲"

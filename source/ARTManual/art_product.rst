@@ -98,7 +98,7 @@
 .. centered:: 表3-1  技术参数
 
 .. list-table::
-   :widths: 30 70
+   :widths: 40 60
    :header-rows: 0
    :align: center
 

@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥（苏州）机器人技术股份有限公司
+# This file is distributed under the same license as the 法奥协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-17 14:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/ART7Manual/art_line.rst:2
+msgid "接线"
+msgstr "配線"
+
+#: ../../source/ART7Manual/art_line.rst:8
+msgid "接线注意事项"
+msgstr "配線時の注意事項"
+
+#: ../../source/ART7Manual/art_line.rst:9
+msgid "进行接线操作时，应严格遵循如下要求："
+msgstr "配線作業を行う際は、以下の要件を厳格に遵守してください："
+
+#: ../../source/ART7Manual/art_line.rst:16
+msgid "名称：**警告**"
+msgstr "名称：**警告**"
+
+#: ../../source/ART7Manual/art_line.rst:18
+#: ../../source/ART7Manual/art_line.rst:87
+msgid "说明："
+msgstr "説明："
+
+#: ../../source/ART7Manual/art_line.rst:20
+msgid "请勿触摸手臂基座内部关节模组器件，以免发生触电危险。"
+msgstr "感電の危険を避けるため、アームベース内部の関節モジュール部品には触れないでください。"
+
+#: ../../source/ART7Manual/art_line.rst:21
+msgid "外部接线工作仅限经过培训并授权的合格工程师来完成。"
+msgstr "外部配線作業は、訓練を受け認可された有資格エンジニアのみが実施するものとします。"
+
+#: ../../source/ART7Manual/art_line.rst:22
+msgid "通电前需检查设备的电压等级，否则可能造成人员伤亡和设备损坏。"
+msgstr "通電前に機器の電圧レベルを確認する必要があります。そうしないと、人身事故や機器の損傷を引き起こす恐れがあります。"
+
+#: ../../source/ART7Manual/art_line.rst:23
+msgid "为保证安全，设备必须可靠接地。"
+msgstr "安全を確保するため、機器は確実に接地する必要があります。"
+
+#: ../../source/ART7Manual/art_line.rst:24
+msgid "除电源接头外，严禁将电源输入端接入到其他端子，否则可能会损坏产品。"
+msgstr "電源コネクタを除き、電源入力端子を他の端子に接続することは厳禁です。さもないと、製品が破損する恐れがあります。"
+
+#: ../../source/ART7Manual/art_line.rst:25
+msgid "所有端子接入的输入电压严禁超出允许范围。"
+msgstr "すべての端子に印加される入力電圧は、許容範囲を超えてはなりません。"
+
+#: ../../source/ART7Manual/art_line.rst:26
+msgid "通电前需确保接线线序正确，连接可靠、绝缘可靠，否则可能会损坏产品。"
+msgstr "通電前に、配線順序が正しく、接続および絶縁が確実であることを確認してください。そうしないと、製品が損傷する恐れがあります。"
+
+#: ../../source/ART7Manual/art_line.rst:29
+msgid "系统接线"
+msgstr "システム配線"
+
+#: ../../source/ART7Manual/art_line.rst:30
+msgid ""
+"人形机械臂ART7-R7共有四种配置：配置一为单臂，配置二为单臂+控制器，配置三为双臂，配置四为双臂+控制器+分支器。其接线图如图4-1、4-2、4-3和4-4所示。"
+msgstr ""
+"人型ロボットアームART7-R7には全4種類の構成があります：構成1はシングルアーム，構成2はシングルアーム+コントローラ，構成3はデュアルアーム，構成4はデュアルアーム+コントローラ+分岐器です。その結線図は図4-1、4-2、4-3および4-4に示す通りです。"
+
+#: ../../source/ART7Manual/art_line.rst:32
+msgid "人形机械臂ART7-R7的供电电压为DC48V，控制器和分支器的供电电压为DC24V，如图4-5和4-6所示。"
+msgstr ""
+"人型ロボットアームART7-R7の供給電圧はDC48V、コントローラおよび分岐器の供給電圧はDC24Vであり、図4-5および4-6に示すとおりです。"
+
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "031.png"
+msgstr "031.png"
+
+#: ../../source/ART7Manual/art_line.rst:39
+msgid "图表 4-1 配置一接线图"
+msgstr "図表 4-1 構成1配線図"
+
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "032.png"
+msgstr "032.png"
+
+#: ../../source/ART7Manual/art_line.rst:45
+msgid "图表 4-2 配置二接线图"
+msgstr "図表 4-2 配置2配線図"
+
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "033.png"
+msgstr "033.png"
+
+#: ../../source/ART7Manual/art_line.rst:51
+msgid "图表 4-3 配置三接线图"
+msgstr "図表 4-3 構成3配線図"
+
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "034.png"
+msgstr "034.png"
+
+#: ../../source/ART7Manual/art_line.rst:57
+msgid "图表 4-4 配置四接线图"
+msgstr "図 4-4 4線結線図の構成"
+
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "035.png"
+msgstr "035.png"
+
+#: ../../source/ART7Manual/art_line.rst:63
+msgid "图表 4-5 控制器接线位置"
+msgstr "図表 4-5 コントローラ配線位置"
+
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "036.png"
+msgstr "036.png"
+
+#: ../../source/ART7Manual/art_line.rst:69
+msgid "图表 3-6 分支器接线位置"
+msgstr "図表 3-6 分岐器の配線位置"
+
+#: ../../source/ART7Manual/art_line.rst:71
+msgid "上位机调试接线"
+msgstr "ホストコンピュータのデバッグ配線"
+
+#: ../../source/ART7Manual/art_line.rst:72
+msgid "调试机械臂时用网线连接上位机和控制器。如图4-7所示。"
+msgstr "ロボットアームのデバッグ時には、LANケーブルで上位コンピュータとコントローラを接続します。図4-7に示すとおりです。"
+
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "037.png"
+msgstr "037.png"
+
+#: ../../source/ART7Manual/art_line.rst:79
+msgid "图表 4-7 上位机和控制器接线图"
+msgstr "図表 4-7 上位機とコントローラの配線図"
+
+#: ../../source/ART7Manual/art_line.rst:85
+msgid "名称：**注意**"
+msgstr "名称：**注意**"
+
+#: ../../source/ART7Manual/art_line.rst:89
+msgid "24V、48V供电电源请自备。"
+msgstr "24V、48V給電電源は各自ご用意ください。"
+
+#: ../../source/ART7Manual/art_line.rst:90
+msgid "上位机调试网线请自备。"
+msgstr "ホストPCのデバッグ用LANケーブルはあらかじめご用意ください。"
+
+#: ../../source/ART7Manual/art_line.rst:91
+msgid "控制器和分支器之间的网线请自备。"
+msgstr "コントローラーと分岐器間のLANケーブルは別途ご用意ください。"
