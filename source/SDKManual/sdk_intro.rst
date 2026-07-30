@@ -1734,6 +1734,168 @@ SDK函数介绍
     **/
     ARMErrorCode GetGripperCurPosition(double &position);
 
+关节空间阻抗控制开启
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  关节空间阻抗控制开启
+    * @param [in] forceSource 0-关节电流 1-扭矩传感器
+    * @param [in] forceThreshold 触发力阈值[30-150]，单位: N
+    * @param [in] m 质量参数
+    * @param [in] b 阻尼参数
+    * @param [in] k 刚度参数
+    * @param [in] maxVel 最大关节速度
+    * @param [in] maxAcc 最大关节加速度
+    * @return 错误码
+    **/
+    ARMErrorCode ImpedanceControlJointStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxVel[7], double maxAcc[7]);
+
+关节空间阻抗控制关闭
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  关节空间阻抗控制关闭
+    * @return 错误码
+    **/
+    ARMErrorCode ImpedanceControlJointEnd();
+
+笛卡尔空间阻抗控制开启
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  笛卡尔空间阻抗控制开启
+    * @param [in] forceSource 0-六维力传感器 1-关节电流
+    * @param [in] forceThreshold 触发力阈值[30-150]，单位: N
+    * @param [in] m 质量参数
+    * @param [in] b 阻尼参数
+    * @param [in] k 刚度参数
+    * @param [in] maxV 最大线速度
+    * @param [in] maxVA 最大线加速度
+    * @param [in] maxW 最大角速度
+    * @param [in] maxWA 最大角加速度
+    * @return 错误码
+    **/
+    ARMErrorCode ImpedanceControlCartStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxV, double maxVA, double maxW, double maxWA);
+
+笛卡尔空间阻抗控制关闭
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  笛卡尔空间阻抗控制关闭
+    * @return 错误码
+    **/
+    ARMErrorCode ImpedanceControlCartEnd();
+    
+变参数导纳控制开启
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  变参数导纳控制开启
+    * @param [in] openDir 导纳功能开放方向[x y z rx ry rz] (0-不开放，1-开放) (rx ry rz导纳功能暂不开放，参数为0)
+    * @param [in] targetForce 期望力
+    * @param [in] m 质量参数
+    * @param [in] b 阻尼参数
+    * @param [in] k 刚度参数
+    * @param [in] maxDis 最大调整距离, 范围: (0, 1000]，单位: mm
+    * @param [in] maxAng 最大调整角度, 范围: (0, 90]，单位: deg
+    * @return 错误码
+    **/
+    ARMErrorCode AdmittanceControlStart(uint8_t openDir[6], double targetForce[6], double m[6], double b[6], double k[6], double maxDis, double maxAng);
+        
+变参数导纳控制关闭
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  变参数导纳控制关闭
+    * @return 错误码
+    **/
+    ARMErrorCode AdmittanceControlEnd();
+            
+设置变参数导纳控制参数
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置变参数导纳控制参数
+    * @param [in] m 质量参数
+    * @param [in] b 阻尼参数
+    * @param [in] k 刚度参数
+    * @return 错误码
+    **/
+    ARMErrorCode SetAdmittanceControlParam(double m[6], double b[6], double k[6]);
+                
+接触检测开启
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  接触检测开启
+    * @param [in] minVal 接触力下限(相对值)，范围: (0 50](x, y, z)、(0, 3](rx, ry, rz)
+    * @param [in] maxVal 接触力上限(相对值)，范围: (0 50](x, y, z)、(0, 3](rx, ry, rz)
+    * @return 错误码
+    **/
+    ARMErrorCode ForceSensorContactDetectStart(double minVal[6], double maxVal[6]);
+                
+接触检测关闭
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  接触检测关闭
+    * @return 错误码
+    **/
+    ARMErrorCode ForceSensorContactDetectEnd();
+                
+设置接触检测触发策略
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置接触检测触发策略
+    * @param [in] strategy 接触检测策略，0-停止 1-进入重力矩模式
+    * @return 错误码
+    **/
+    ARMErrorCode SetContactDetectStrategy(uint8_t strategy);
+                
+获取接触检测触发状态
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取接触检测触发状态
+    * @param [out] state 接触检测状态，0-未触发 1-已触发
+    * @return 错误码
+    **/
+    ARMErrorCode GetContactDetectState(uint8_t& state);
+
 腰部的SDK函数介绍(存在腰部关节的情况下)
 -----------------------------------------------------------------------------------------
 

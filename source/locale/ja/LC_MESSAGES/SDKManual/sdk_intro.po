@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-26 17:46+0800\n"
+"POT-Creation-Date: 2026-07-29 10:47+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -80,12 +80,12 @@ msgstr ""
 "~SingleRobot();"
 
 #: ../../source/SDKManual/sdk_intro.rst:45
-#: ../../source/SDKManual/sdk_intro.rst:1776
+#: ../../source/SDKManual/sdk_intro.rst:1925
 msgid "关节空间运动"
 msgstr "関節空間運動"
 
 #: ../../source/SDKManual/sdk_intro.rst:47
-#: ../../source/SDKManual/sdk_intro.rst:1778
+#: ../../source/SDKManual/sdk_intro.rst:1927
 msgid ""
 "/**\n"
 "* @brief  关节空间运动\n"
@@ -1430,12 +1430,12 @@ msgstr ""
 "}"
 
 #: ../../source/SDKManual/sdk_intro.rst:763
-#: ../../source/SDKManual/sdk_intro.rst:1792
+#: ../../source/SDKManual/sdk_intro.rst:1941
 msgid "停止运动"
 msgstr "運動を中止する"
 
 #: ../../source/SDKManual/sdk_intro.rst:765
-#: ../../source/SDKManual/sdk_intro.rst:1794
+#: ../../source/SDKManual/sdk_intro.rst:1943
 msgid ""
 "/**\n"
 "* @brief  停止运动\n"
@@ -1810,7 +1810,7 @@ msgstr ""
 "ARMErrorCode GetInverseKinRef(double* desc_pos, double arm_angle, double* ref_joint_val, double* joint_val);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1004
-#: ../../source/SDKManual/sdk_intro.rst:1804
+#: ../../source/SDKManual/sdk_intro.rst:1953
 msgid "获取当前关节位置(角度)"
 msgstr "現在の関節位置（角度）を取得する"
 
@@ -2001,7 +2001,7 @@ msgstr ""
 "ARMErrorCode GetDHCompensation(double dh_theta[7], double dh_a[7], double dh_d[7], double dh_alpha[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1126
-#: ../../source/SDKManual/sdk_intro.rst:1830
+#: ../../source/SDKManual/sdk_intro.rst:1979
 msgid "关节使能"
 msgstr "ジョイントの有効化"
 
@@ -2022,7 +2022,7 @@ msgstr ""
 "ARMErrorCode AxisEnable(int joint_id);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1139
-#: ../../source/SDKManual/sdk_intro.rst:1843
+#: ../../source/SDKManual/sdk_intro.rst:1992
 msgid "关节去使能"
 msgstr "関節の無効化"
 
@@ -2043,7 +2043,7 @@ msgstr ""
 "ARMErrorCode AxisDisable(int joint_id);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1152
-#: ../../source/SDKManual/sdk_intro.rst:1856
+#: ../../source/SDKManual/sdk_intro.rst:2005
 msgid "关节校零"
 msgstr "関節のゼロ点調整"
 
@@ -2064,12 +2064,12 @@ msgstr ""
 "ARMErrorCode AxisZeroing(int joint_id);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1165
-#: ../../source/SDKManual/sdk_intro.rst:1869
+#: ../../source/SDKManual/sdk_intro.rst:2018
 msgid "清除控制器错误"
 msgstr "コントローラーのエラーをクリアする"
 
 #: ../../source/SDKManual/sdk_intro.rst:1167
-#: ../../source/SDKManual/sdk_intro.rst:1871
+#: ../../source/SDKManual/sdk_intro.rst:2020
 msgid ""
 "/**\n"
 "* @brief  清除控制器错误\n"
@@ -2422,7 +2422,7 @@ msgstr ""
 "ARMErrorCode SetLimitNegative(double limitNegative[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1394
-#: ../../source/SDKManual/sdk_intro.rst:1907
+#: ../../source/SDKManual/sdk_intro.rst:2056
 msgid "获取关节软限位角度"
 msgstr "関節のソフトリミット角度を取得"
 
@@ -2445,7 +2445,7 @@ msgstr ""
 "ARMErrorCode GetJointSoftLimitDeg(double limitNegative[7], double limitPositive[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1408
-#: ../../source/SDKManual/sdk_intro.rst:1947
+#: ../../source/SDKManual/sdk_intro.rst:2096
 msgid "获取机械臂固件版本"
 msgstr "ロボットアームのファームウェアバージョンを取得する"
 
@@ -2596,7 +2596,7 @@ msgstr ""
 "ARMErrorCode SetJointSensorTeachModeParam(uint8_t drag_level);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1504
-#: ../../source/SDKManual/sdk_intro.rst:1960
+#: ../../source/SDKManual/sdk_intro.rst:2109
 msgid "获取关节驱动器温度"
 msgstr "関節ドライバーの温度を取得"
 
@@ -2771,12 +2771,10 @@ msgstr ""
 "ARMErrorCode SetForceSensorCorrd(double corrd[6]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1615
-#: ../../source/SDKManual/sdk_intro.rst:1738
 msgid "设置力传感器安全检测阈值"
 msgstr "力センサ安全検出しきい値の設定"
 
 #: ../../source/SDKManual/sdk_intro.rst:1617
-#: ../../source/SDKManual/sdk_intro.rst:1740
 msgid ""
 "/**\n"
 "* @brief  设置力传感器安全检测阈值\n"
@@ -2964,15 +2962,273 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetGripperCurPosition(double &position);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1751
+#: ../../source/SDKManual/sdk_intro.rst:1738
+msgid "关节空间阻抗控制开启"
+msgstr "関節空間インピーダンス制御オン"
+
+#: ../../source/SDKManual/sdk_intro.rst:1740
+msgid ""
+"/**\n"
+"* @brief  关节空间阻抗控制开启\n"
+"* @param [in] forceSource 0-关节电流 1-扭矩传感器\n"
+"* @param [in] forceThreshold 触发力阈值[30-150]，单位: N\n"
+"* @param [in] m 质量参数\n"
+"* @param [in] b 阻尼参数\n"
+"* @param [in] k 刚度参数\n"
+"* @param [in] maxVel 最大关节速度\n"
+"* @param [in] maxAcc 最大关节加速度\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlJointStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxVel[7], double maxAcc[7]);"
+msgstr ""
+"/**\n"
+"* @brief  関節空間インピーダンス制御オン\n"
+"* @param [in] forceSource 0-関節電流 1-トルクセンサ\n"
+"* @param [in] forceThreshold トリガー力しきい値[30-150]，単位: N\n"
+"* @param [in] m 質量パラメータ\n"
+"* @param [in] b 減衰パラメータ\n"
+"* @param [in] k 剛性パラメータ\n"
+"* @param [in] maxVel 最大関節速度\n"
+"* @param [in] maxAcc 最大関節加速度\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlJointStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxVel[7], double maxAcc[7]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1757
+msgid "关节空间阻抗控制关闭"
+msgstr "関節空間インピーダンス制御オフ"
+
+#: ../../source/SDKManual/sdk_intro.rst:1759
+msgid ""
+"/**\n"
+"* @brief  关节空间阻抗控制关闭\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlJointEnd();"
+msgstr ""
+"/**\n"
+"* @brief  関節空間インピーダンス制御オフ\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlJointEnd();"
+
+#: ../../source/SDKManual/sdk_intro.rst:1769
+msgid "笛卡尔空间阻抗控制开启"
+msgstr "デカルト空間インピーダンス制御有効化"
+
+#: ../../source/SDKManual/sdk_intro.rst:1771
+msgid ""
+"/**\n"
+"* @brief  笛卡尔空间阻抗控制开启\n"
+"* @param [in] forceSource 0-六维力传感器 1-关节电流\n"
+"* @param [in] forceThreshold 触发力阈值[30-150]，单位: N\n"
+"* @param [in] m 质量参数\n"
+"* @param [in] b 阻尼参数\n"
+"* @param [in] k 刚度参数\n"
+"* @param [in] maxV 最大线速度\n"
+"* @param [in] maxVA 最大线加速度\n"
+"* @param [in] maxW 最大角速度\n"
+"* @param [in] maxWA 最大角加速度\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlCartStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxV, double maxVA, double maxW, double maxWA);"
+msgstr ""
+"/**\n"
+"* @brief  デカルト空間インピーダンス制御オン\n"
+"* @param [in] forceSource 0-六次元力覚センサ 1-関節電流\n"
+"* @param [in] forceThreshold トリガ力閾値[30-150]，単位: N\n"
+"* @param [in] m 質量パラメータ\n"
+"* @param [in] b 減衰パラメータ\n"
+"* @param [in] k 剛性パラメータ\n"
+"* @param [in] maxV 最大直線速度\n"
+"* @param [in] maxVA 最大直線加速度\n"
+"* @param [in] maxW 最大角速度\n"
+"* @param [in] maxWA 最大角加速度\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlCartStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxV, double maxVA, double maxW, double maxWA);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1790
+msgid "笛卡尔空间阻抗控制关闭"
+msgstr "デカルト空間インピーダンス制御オフ"
+
+#: ../../source/SDKManual/sdk_intro.rst:1792
+msgid ""
+"/**\n"
+"* @brief  笛卡尔空间阻抗控制关闭\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlCartEnd();"
+msgstr ""
+"/**\n"
+"* @brief  デカルト空間インピーダンス制御オフ\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode ImpedanceControlCartEnd();"
+
+#: ../../source/SDKManual/sdk_intro.rst:1802
+msgid "变参数导纳控制开启"
+msgstr "可変パラメータアドミタンス制御有効化"
+
+#: ../../source/SDKManual/sdk_intro.rst:1804
+msgid ""
+"/**\n"
+"* @brief  变参数导纳控制开启\n"
+"* @param [in] openDir 导纳功能开放方向[x y z rx ry rz] (0-不开放，1-开放) (rx ry rz导纳功能暂不开放，参数为0)\n"
+"* @param [in] targetForce 期望力\n"
+"* @param [in] m 质量参数\n"
+"* @param [in] b 阻尼参数\n"
+"* @param [in] k 刚度参数\n"
+"* @param [in] maxDis 最大调整距离, 范围: (0, 1000]，单位: mm\n"
+"* @param [in] maxAng 最大调整角度, 范围: (0, 90]，单位: deg\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode AdmittanceControlStart(uint8_t openDir[6], double targetForce[6], double m[6], double b[6], double k[6], double maxDis, double maxAng);"
+msgstr ""
+"/**\n"
+"* @brief  可変パラメータアドミタンス制御オン\n"
+"* @param [in] openDir アドミタンス機能開放方向[x y z rx ry rz] (0-非開放，1-開放) (rx ry rzアドミタンス機能暫定非開放，パラメータは0)\n"
+"* @param [in] targetForce 目標力\n"
+"* @param [in] m 質量パラメータ\n"
+"* @param [in] b 減衰パラメータ\n"
+"* @param [in] k 剛性パラメータ\n"
+"* @param [in] maxDis 最大調整距離, 範囲: (0, 1000]，単位: mm\n"
+"* @param [in] maxAng 最大調整角度, 範囲: (0, 90]，単位: deg\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode AdmittanceControlStart(uint8_t openDir[6], double targetForce[6], double m[6], double b[6], double k[6], double maxDis, double maxAng);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1821
+msgid "变参数导纳控制关闭"
+msgstr "可変パラメータアドミッタンス制御オフ"
+
+#: ../../source/SDKManual/sdk_intro.rst:1823
+msgid ""
+"/**\n"
+"* @brief  变参数导纳控制关闭\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode AdmittanceControlEnd();"
+msgstr ""
+"/**\n"
+"* @brief  可変パラメータアドミタンス制御オフ\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode AdmittanceControlEnd();"
+
+#: ../../source/SDKManual/sdk_intro.rst:1833
+msgid "设置变参数导纳控制参数"
+msgstr "可変パラメータアドミタンス制御パラメータの設定"
+
+#: ../../source/SDKManual/sdk_intro.rst:1835
+msgid ""
+"/**\n"
+"* @brief  设置变参数导纳控制参数\n"
+"* @param [in] m 质量参数\n"
+"* @param [in] b 阻尼参数\n"
+"* @param [in] k 刚度参数\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetAdmittanceControlParam(double m[6], double b[6], double k[6]);"
+msgstr ""
+"/**\n"
+"* @brief  可変パラメータアドミタンス制御パラメータの設定\n"
+"* @param [in] m 質量パラメータ\n"
+"* @param [in] b 減衰パラメータ\n"
+"* @param [in] k 剛性パラメータ\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode SetAdmittanceControlParam(double m[6], double b[6], double k[6]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1848
+msgid "接触检测开启"
+msgstr "接触検知オン"
+
+#: ../../source/SDKManual/sdk_intro.rst:1850
+msgid ""
+"/**\n"
+"* @brief  接触检测开启\n"
+"* @param [in] minVal 接触力下限(相对值)，范围: (0 50](x, y, z)、(0, 3](rx, ry, rz)\n"
+"* @param [in] maxVal 接触力上限(相对值)，范围: (0 50](x, y, z)、(0, 3](rx, ry, rz)\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode ForceSensorContactDetectStart(double minVal[6], double maxVal[6]);"
+msgstr ""
+"/**\n"
+"* @brief  接触検出オン\n"
+"* @param [in] minVal 接触力下限(相対値)，範囲: (0 50](x, y, z)、(0, 3](rx, ry, rz)\n"
+"* @param [in] maxVal 接触力上限(相対値)，範囲: (0 50](x, y, z)、(0, 3](rx, ry, rz)\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode ForceSensorContactDetectStart(double minVal[6], double maxVal[6]);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1862
+msgid "接触检测关闭"
+msgstr "接触検出オフ"
+
+#: ../../source/SDKManual/sdk_intro.rst:1864
+msgid ""
+"/**\n"
+"* @brief  接触检测关闭\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode ForceSensorContactDetectEnd();"
+msgstr ""
+"/**\n"
+"* @brief  接触検出オフ\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode ForceSensorContactDetectEnd();"
+
+#: ../../source/SDKManual/sdk_intro.rst:1874
+msgid "设置接触检测触发策略"
+msgstr "接触検出トリガーポリシーの設定"
+
+#: ../../source/SDKManual/sdk_intro.rst:1876
+msgid ""
+"/**\n"
+"* @brief  设置接触检测触发策略\n"
+"* @param [in] strategy 接触检测策略，0-停止 1-进入重力矩模式\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetContactDetectStrategy(uint8_t strategy);"
+msgstr ""
+"/**\n"
+"* @brief  接触検出トリガーポリシーの設定\n"
+"* @param [in] strategy 接触検出ポリシー，0-停止 1-重力トルクモードへ移行\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode SetContactDetectStrategy(uint8_t strategy);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1887
+msgid "获取接触检测触发状态"
+msgstr "接触検出トリガー状態を取得"
+
+#: ../../source/SDKManual/sdk_intro.rst:1889
+msgid ""
+"/**\n"
+"* @brief  获取接触检测触发状态\n"
+"* @param [out] state 接触检测状态，0-未触发 1-已触发\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetContactDetectState(uint8_t& state);"
+msgstr ""
+"/**\n"
+"* @brief  接触検出トリガー状態の取得\n"
+"* @param [out] state 接触検出状態，0-未トリガー 1-トリガー済み\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode GetContactDetectState(uint8_t& state);"
+
+#: ../../source/SDKManual/sdk_intro.rst:1900
 msgid "腰部的SDK函数介绍(存在腰部关节的情况下)"
 msgstr "腰部のSDK関数紹介（腰部関節が存在する場合）"
 
-#: ../../source/SDKManual/sdk_intro.rst:1754
+#: ../../source/SDKManual/sdk_intro.rst:1903
 msgid "实例化腰部"
 msgstr "ウエストのインスタンス化"
 
-#: ../../source/SDKManual/sdk_intro.rst:1756
+#: ../../source/SDKManual/sdk_intro.rst:1905
 msgid ""
 "/**\n"
 "* @brief  实例化腰部\n"
@@ -2984,11 +3240,11 @@ msgstr ""
 " **/\n"
 "RobotWaist();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1765
+#: ../../source/SDKManual/sdk_intro.rst:1914
 msgid "关闭腰部"
 msgstr "ウエストを閉じる"
 
-#: ../../source/SDKManual/sdk_intro.rst:1767
+#: ../../source/SDKManual/sdk_intro.rst:1916
 msgid ""
 "/**\n"
 "* @brief  关闭腰部\n"
@@ -3000,7 +3256,7 @@ msgstr ""
 " **/\n"
 "~RobotWaist();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1806
+#: ../../source/SDKManual/sdk_intro.rst:1955
 msgid ""
 "/**\n"
 "* @brief  获取当前关节位置(角度)\n"
@@ -3016,11 +3272,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetActualJointPosDegree(double* joint_pos);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1817
+#: ../../source/SDKManual/sdk_intro.rst:1966
 msgid "查询运动是否完成"
 msgstr "運動が完了したかどうかを照会する"
 
-#: ../../source/SDKManual/sdk_intro.rst:1819
+#: ../../source/SDKManual/sdk_intro.rst:1968
 msgid ""
 "/**\n"
 "@brief  查询运动是否完成\n"
@@ -3036,7 +3292,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetRobotMotionDone(uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1832
+#: ../../source/SDKManual/sdk_intro.rst:1981
 msgid ""
 "/**\n"
 "* @brief  关节使能\n"
@@ -3052,7 +3308,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode AxisEnable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1845
+#: ../../source/SDKManual/sdk_intro.rst:1994
 msgid ""
 "/**\n"
 "* @brief  关节去使能\n"
@@ -3068,7 +3324,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode AxisDisable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1858
+#: ../../source/SDKManual/sdk_intro.rst:2007
 msgid ""
 "/**\n"
 "* @brief  关节校零\n"
@@ -3084,11 +3340,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode AxisZeroing(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1881
+#: ../../source/SDKManual/sdk_intro.rst:2030
 msgid "设置腰部正限位"
 msgstr "腰部の正方向リミットを設定"
 
-#: ../../source/SDKManual/sdk_intro.rst:1883
+#: ../../source/SDKManual/sdk_intro.rst:2032
 msgid ""
 "/**\n"
 "* @brief  设置腰部正限位\n"
@@ -3104,11 +3360,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetLimitPositive(double* limitPositive);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1894
+#: ../../source/SDKManual/sdk_intro.rst:2043
 msgid "设置腰部负限位"
 msgstr "腰部の負のリミットを設定する"
 
-#: ../../source/SDKManual/sdk_intro.rst:1896
+#: ../../source/SDKManual/sdk_intro.rst:2045
 msgid ""
 "/**\n"
 "* @brief  设置腰部负限位\n"
@@ -3124,7 +3380,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetLimitNegative(double* limitNegative);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1909
+#: ../../source/SDKManual/sdk_intro.rst:2058
 msgid ""
 "/**\n"
 "* @brief  获取腰部关节软限位角度\n"
@@ -3142,11 +3398,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetJointSoftLimitDeg(double* limitNegative, double* limitPositive);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1921
+#: ../../source/SDKManual/sdk_intro.rst:2070
 msgid "设置腰部加速度百分比"
 msgstr "腰部加速度のパーセンテージを設定"
 
-#: ../../source/SDKManual/sdk_intro.rst:1923
+#: ../../source/SDKManual/sdk_intro.rst:2072
 msgid ""
 "/**\n"
 "* @brief  设置腰部加速度百分比\n"
@@ -3162,11 +3418,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetAccScale(double scale);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1934
+#: ../../source/SDKManual/sdk_intro.rst:2083
 msgid "设置腰部全局速度百分比"
 msgstr "腰部のグローバル速度パーセンテージを設定"
 
-#: ../../source/SDKManual/sdk_intro.rst:1936
+#: ../../source/SDKManual/sdk_intro.rst:2085
 msgid ""
 "/**\n"
 "* @brief  设置腰部全局速度百分比\n"
@@ -3182,7 +3438,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetSpeed(double speed);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1949
+#: ../../source/SDKManual/sdk_intro.rst:2098
 msgid ""
 "/**\n"
 "* @brief  获取机械臂固件版本\n"
@@ -3198,7 +3454,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetFirmwareVersion(char driverversion[][128]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1962
+#: ../../source/SDKManual/sdk_intro.rst:2111
 msgid ""
 "/**\n"
 "* @brief  获取关节驱动器温度\n"
@@ -3214,15 +3470,15 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetJointDriverTemperature(double* temperature);"
 
-#: ../../source/SDKManual/sdk_intro.rst:1973
+#: ../../source/SDKManual/sdk_intro.rst:2122
 msgid "工具部分的SDK函数介绍"
 msgstr "ツール部のSDK関数紹介"
 
-#: ../../source/SDKManual/sdk_intro.rst:1976
+#: ../../source/SDKManual/sdk_intro.rst:2125
 msgid "实例化工具类"
 msgstr "ツールクラスのインスタンス化"
 
-#: ../../source/SDKManual/sdk_intro.rst:1978
+#: ../../source/SDKManual/sdk_intro.rst:2127
 msgid ""
 "/**\n"
 "* @brief  实例化工具类\n"
@@ -3234,11 +3490,11 @@ msgstr ""
 " **/\n"
 "RobotTool();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1987
+#: ../../source/SDKManual/sdk_intro.rst:2136
 msgid "关闭工具类"
 msgstr "ツールクラスを閉じる"
 
-#: ../../source/SDKManual/sdk_intro.rst:1989
+#: ../../source/SDKManual/sdk_intro.rst:2138
 msgid ""
 "/**\n"
 "* @brief  关闭工具类对象\n"
@@ -3250,11 +3506,11 @@ msgstr ""
 " **/\n"
 "~RobotTool();"
 
-#: ../../source/SDKManual/sdk_intro.rst:1998
+#: ../../source/SDKManual/sdk_intro.rst:2147
 msgid "与机器人控制器建立通信"
 msgstr "ロボットコントローラーとの通信を確立する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2000
+#: ../../source/SDKManual/sdk_intro.rst:2149
 msgid ""
 "/**\n"
 "* @brief  与机器人控制器建立通信，ip默认为192.168.58.1\n"
@@ -3266,11 +3522,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RPC(const char *ip, int port);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2009
+#: ../../source/SDKManual/sdk_intro.rst:2158
 msgid "与机器人控制器关闭通讯"
 msgstr "ロボットコントローラとの通信を切断する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2011
+#: ../../source/SDKManual/sdk_intro.rst:2160
 msgid ""
 "/**\n"
 "* @brief  与机器人控制器关闭通讯\n"
@@ -3284,11 +3540,11 @@ msgstr ""
 " */\n"
 "ARMErrorCode CloseRPC();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2021
+#: ../../source/SDKManual/sdk_intro.rst:2170
 msgid "获取SDK与机器人的通讯状态"
 msgstr "SDKとロボット間の通信ステータスを取得する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2023
+#: ../../source/SDKManual/sdk_intro.rst:2172
 msgid ""
 "/**\n"
 "* @brief  获取SDK与机器人的通讯状态\n"
@@ -3304,11 +3560,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetSDKComState(uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2034
+#: ../../source/SDKManual/sdk_intro.rst:2183
 msgid "设置机器人配置"
 msgstr "ロボットの設定を構成する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2036
+#: ../../source/SDKManual/sdk_intro.rst:2185
 msgid ""
 "/**\n"
 "* @brief  设置机器人配置-FAIRINO-ARTPlugin插件升级\n"
@@ -3324,11 +3580,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RobotFrConfig(int mode);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2047
+#: ../../source/SDKManual/sdk_intro.rst:2196
 msgid "日志导出"
 msgstr "ログのエクスポート"
 
-#: ../../source/SDKManual/sdk_intro.rst:2049
+#: ../../source/SDKManual/sdk_intro.rst:2198
 msgid ""
 "/**\n"
 "* @brief  日志导出\n"
@@ -3342,11 +3598,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RobotPackLog();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2059
+#: ../../source/SDKManual/sdk_intro.rst:2208
 msgid "数据记录"
 msgstr "データ記録"
 
-#: ../../source/SDKManual/sdk_intro.rst:2061
+#: ../../source/SDKManual/sdk_intro.rst:2210
 msgid ""
 "/**\n"
 "* @brief  数据记录\n"
@@ -3362,13 +3618,13 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RobotRecordData(int state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2072
-#: ../../source/SDKManual/sdk_intro.rst:2098
+#: ../../source/SDKManual/sdk_intro.rst:2221
+#: ../../source/SDKManual/sdk_intro.rst:2247
 msgid "SDK服务端部署"
 msgstr "SDKサーバー側のデプロイ"
 
-#: ../../source/SDKManual/sdk_intro.rst:2074
-#: ../../source/SDKManual/sdk_intro.rst:2100
+#: ../../source/SDKManual/sdk_intro.rst:2223
+#: ../../source/SDKManual/sdk_intro.rst:2249
 msgid ""
 "/**\n"
 "* @brief  SDK服务端部署\n"
@@ -3384,11 +3640,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode UpdateSDKServer(std::string filepath);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2085
+#: ../../source/SDKManual/sdk_intro.rst:2234
 msgid "获取SDK版本信息"
 msgstr "SDKバージョン情報の取得"
 
-#: ../../source/SDKManual/sdk_intro.rst:2087
+#: ../../source/SDKManual/sdk_intro.rst:2236
 msgid ""
 "/**\n"
 "* @brief  获取SDK版本信息\n"
@@ -3404,11 +3660,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetSDKVersion(std::string& version);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2111
+#: ../../source/SDKManual/sdk_intro.rst:2260
 msgid "获取机器人软件版本信息"
 msgstr "ロボットのソフトウェアバージョン情報を取得する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2113
+#: ../../source/SDKManual/sdk_intro.rst:2262
 msgid ""
 "/**\n"
 "* @brief  获取机器人软件版本信息\n"
@@ -3426,11 +3682,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetSoftwareVersion(std::string& pluginVersion, std::string& sdkServerVersion);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2125
+#: ../../source/SDKManual/sdk_intro.rst:2274
 msgid "重启机器人操作系统"
 msgstr "ロボットオペレーティングシステムを再起動する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2127
+#: ../../source/SDKManual/sdk_intro.rst:2276
 msgid ""
 "/**\n"
 "* @brief  重启机器人操作系统\n"
@@ -3444,11 +3700,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode robotSystemReboot();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2137
+#: ../../source/SDKManual/sdk_intro.rst:2286
 msgid "关闭机器人操作系统"
 msgstr "ロボットオペレーティングシステムを終了する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2139
+#: ../../source/SDKManual/sdk_intro.rst:2288
 msgid ""
 "/**\n"
 "* @brief  关闭机器人操作系统\n"
