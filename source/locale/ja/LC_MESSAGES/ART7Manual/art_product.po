@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-20 15:15+0800\n"
+"POT-Creation-Date: 2026-08-03 10:06+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -267,8 +267,8 @@ msgid "重复定位精度"
 msgstr "繰返し位置決め精度"
 
 #: ../../source/ART7Manual/art_product.rst:151
-msgid "±0.1mm"
-msgstr "±0.1mm"
+msgid "±0.03mm"
+msgstr "±0.03mm"
 
 #: ../../source/ART7Manual/art_product.rst:153
 msgid "整机质量"
