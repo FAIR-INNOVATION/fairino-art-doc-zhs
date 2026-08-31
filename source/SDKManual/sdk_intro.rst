@@ -1749,9 +1749,11 @@ SDK函数介绍
     * @param [in] k 刚度参数
     * @param [in] maxVel 最大关节速度
     * @param [in] maxAcc 最大关节加速度
+    * @param [in] maxAng 最大调整角度(新增)
+    * @param [in] maxTor 最大限制力矩(新增)
     * @return 错误码
     **/
-    ARMErrorCode ImpedanceControlJointStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxVel[7], double maxAcc[7]);
+    ARMErrorCode ImpedanceControlJointStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxVel[7], double maxAcc[7], double maxAng[7], double maxTor[7]);
 
 关节空间阻抗控制关闭
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1782,9 +1784,11 @@ SDK函数介绍
     * @param [in] maxVA 最大线加速度
     * @param [in] maxW 最大角速度
     * @param [in] maxWA 最大角加速度
+    * @param [in] maxDix 最大调整距离(新增)
+    * @param [in] maxForce 最大力限制(新增)
     * @return 错误码
     **/
-    ARMErrorCode ImpedanceControlCartStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxV, double maxVA, double maxW, double maxWA);
+    ARMErrorCode ImpedanceControlCartStart(int forceSource, double forceThreshold[7], double m[7], double b[7], double k[7], double maxV, double maxVA, double maxW, double maxWA, double maxDix[6], double maxForce[6]);
 
 笛卡尔空间阻抗控制关闭
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1895,6 +1899,20 @@ SDK函数介绍
     * @return 错误码
     **/
     ARMErrorCode GetContactDetectState(uint8_t& state);
+                
+速度前馈功能设置
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  速度前馈功能设置
+    * @param [in] enable 0-功能关闭，1-功能开启
+    * @param [in] axis 轴id 1-设置 0-不设置
+    * @return 错误码
+    **/
+    ARMErrorCode SetVelForwardFeed(uint8_t enable, uint8_t axis[7]);
 
 腰部的SDK函数介绍(存在腰部关节的情况下)
 -----------------------------------------------------------------------------------------

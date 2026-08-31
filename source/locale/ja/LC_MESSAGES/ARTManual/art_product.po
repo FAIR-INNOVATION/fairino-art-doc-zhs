@@ -7,18 +7,18 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 法奥协作机器人用户手册\n"
+"Project-Id-Version:  法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-07 10:49+0800\n"
+"POT-Creation-Date: 2026-08-31 08:33+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: ja <LL@li.org>\n"
 "Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../source/ARTManual/art_product.rst:2
 msgid "产品介绍"
@@ -508,27 +508,26 @@ msgid "图表 3-18 末端工具法兰尺寸"
 msgstr "図3-18 末端ツールフランジ寸法"
 
 #: ../../source/ARTManual/art_product.rst:321
-msgid "机器人负载曲线"
-msgstr "ロボット負荷曲線"
+msgid "机器人负载曲线（仿真）"
+msgstr "ロボット負荷曲線（シミュレーション）"
 
 #: ../../source/ARTManual/art_product.rst:324
+#: ../../source/ARTManual/art_product.rst:414
 msgid "概述"
 msgstr "概要"
 
 #: ../../source/ARTManual/art_product.rst:325
 msgid "负载曲线用于描述机器人的负载能力，可协助用户进行型号选择，并评估所安装末端负载的可行性。"
-msgstr ""
-"負荷曲線は、ロボットの負荷能力を示すものであり、ユーザーが機種選定を行う際の支援および取り付けられたエンドローダーの実現可能性評価に役立ちます。"
+msgstr "負荷曲線は、ロボットの負荷能力を示すものであり、ユーザーが機種選定を行う際の支援および取り付けられたエンドローダーの実現可能性評価に役立ちます。"
 
 #: ../../source/ARTManual/art_product.rst:328
+#: ../../source/ARTManual/art_product.rst:418
 msgid "负载曲线"
 msgstr "負荷曲線"
 
 #: ../../source/ARTManual/art_product.rst:329
-msgid ""
-"本节所涉及的负载曲线基于ART3-R7在不同全局运行速度(30%、50%，80%和100%)，执行特定轨迹仿真获取。负载曲线存在“完整性能”和“扩展后的负载能力”两部分，具体如下："
-msgstr ""
-"本セクションで扱う負荷曲線は、ART3-R7を異なるグローバル運転速度（30％、50％、80％、および100％）で動作させ、特定の軌道をシミュレーションした結果に基づいて得られたものである。負荷曲線は「完全性能」と「拡張された負荷能力」の2つの部分から構成されており、具体的には以下のとおりである："
+msgid "本节所涉及的负载曲线基于ART3-R7在不同全局运行速度(30%、50%，80%和100%)，执行特定轨迹仿真获取。负载曲线存在“完整性能”和“扩展后的负载能力”两部分，具体如下："
+msgstr "本セクションで扱う負荷曲線は、ART3-R7を異なるグローバル運転速度（30％、50％、80％、および100％）で動作させ、特定の軌道をシミュレーションした結果に基づいて得られたものである。負荷曲線は「完全性能」と「拡張された負荷能力」の2つの部分から構成されており、具体的には以下のとおりである："
 
 #: ../../source/ARTManual/art_product.rst:331
 msgid ""
@@ -540,17 +539,16 @@ msgstr ""
 
 #: ../../source/ARTManual/art_product.rst:332
 msgid "若末端负载处于“扩展后的负载能力”，须开启“时间最优模式”并满足加速度限制，或减小机器人工作范围。"
-msgstr ""
-"末端負荷が「拡張された負荷能力」の状態にある場合、「時間最適モード」を有効化し、加速度制限を満たす必要があります。または、ロボットの作業範囲を縮小してください。"
+msgstr "末端負荷が「拡張された負荷能力」の状態にある場合、「時間最適モード」を有効化し、加速度制限を満たす必要があります。または、ロボットの作業範囲を縮小してください。"
 
 #: ../../source/ARTManual/art_product.rst:335
 msgid "参数说明"
 msgstr "パラメータの説明"
 
 #: ../../source/ARTManual/art_product.rst:336
+#: ../../source/ARTManual/art_product.rst:427
 msgid "机器人的额定有效负载取决于有效负载的重心偏移，其中，重心偏移定义为末端法兰中心与附加的有效负载重心之间的距离。"
-msgstr ""
-"ロボットの定格有効負荷は、有効負荷の重心位置のずれに依存します。ここで、重心位置のずれとは、エンド・フランジ中心と追加された有効負荷の重心との間の距離を指します。"
+msgstr "ロボットの定格有効負荷は、有効負荷の重心位置のずれに依存します。ここで、重心位置のずれとは、エンド・フランジ中心と追加された有効負荷の重心との間の距離を指します。"
 
 #: ../../source/ARTManual/art_product.rst:339
 msgid "30%运行速度下的负载曲线"
@@ -558,13 +556,13 @@ msgstr "30％運転速度における負荷曲線"
 
 #: ../../source/ARTManual/art_product.rst:341
 msgid "在30%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
-msgstr ""
-"全体運転速度が30％の条件下では、ART3-R7型ロボットの最大搬送可能負荷は5kg、定格負荷は3kgであり、負荷曲線は下図のとおりです。負荷曲線の具体的な意味は以下のとおりです："
+msgstr "全体運転速度が30％の条件下では、ART3-R7型ロボットの最大搬送可能負荷は5kg、定格負荷は3kgであり、負荷曲線は下図のとおりです。負荷曲線の具体的な意味は以下のとおりです："
 
 #: ../../source/ARTManual/art_product.rst:343
 #: ../../source/ARTManual/art_product.rst:361
 #: ../../source/ARTManual/art_product.rst:379
 #: ../../source/ARTManual/art_product.rst:397
+#: ../../source/ARTManual/art_product.rst:434
 msgid "ART3-R7在完整性能下可携带3kg及以下的负载，见“蓝色包络线”；"
 msgstr "ART3-R7は、完全な性能を発揮した状態で3kg以下の荷重を搬送可能です（「青色の包絡線」参照）。"
 
@@ -572,6 +570,7 @@ msgstr "ART3-R7は、完全な性能を発揮した状態で3kg以下の荷重�
 #: ../../source/ARTManual/art_product.rst:362
 #: ../../source/ARTManual/art_product.rst:380
 #: ../../source/ARTManual/art_product.rst:398
+#: ../../source/ARTManual/art_product.rst:435
 msgid "当负载为3kg至5kg时，为扩展后的负载能力，见“红色包络线”，此时机器人可运行在如下状态："
 msgstr "負荷が3kg～5kgの場合、拡張された負荷能力（「赤色エンベロープ線」参照）を発揮し、ロボットは以下の状態で動作可能です："
 
@@ -583,6 +582,7 @@ msgstr "①「時間最適モード」をオンにする場合、加速度は108
 #: ../../source/ARTManual/art_product.rst:366
 #: ../../source/ARTManual/art_product.rst:384
 #: ../../source/ARTManual/art_product.rst:402
+#: ../../source/ARTManual/art_product.rst:439
 msgid "②减小机器人工作范围，避免频繁冲击。"
 msgstr "②ロボットの作業範囲を縮小し、頻繁な衝撃を回避する。"
 
@@ -600,8 +600,7 @@ msgstr "50％運転速度における負荷曲線"
 
 #: ../../source/ARTManual/art_product.rst:359
 msgid "在50%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
-msgstr ""
-"グローバル運転速度を50％に設定した場合、ART3-R7型ロボットの最大許容荷重は5kg、定格荷重は3kgであり、荷重曲線は下図のとおりです。荷重曲線の具体的な意味は以下のとおりです："
+msgstr "グローバル運転速度を50％に設定した場合、ART3-R7型ロボットの最大許容荷重は5kg、定格荷重は3kgであり、荷重曲線は下図のとおりです。荷重曲線の具体的な意味は以下のとおりです："
 
 #: ../../source/ARTManual/art_product.rst:364
 msgid "①开启“时间最优模式”，建议加速度设置在180deg/s\\ :sup:`2` 以下；"
@@ -621,8 +620,7 @@ msgstr "80％運転速度における負荷曲線"
 
 #: ../../source/ARTManual/art_product.rst:377
 msgid "在80%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
-msgstr ""
-"グローバル運転速度が80％のとき、ART3-R7型ロボットの最大許容荷重は5kg、定格荷重は3kgであり、荷重曲線を以下に示します。荷重曲線の具体的な意味は以下のとおりです："
+msgstr "グローバル運転速度が80％のとき、ART3-R7型ロボットの最大許容荷重は5kg、定格荷重は3kgであり、荷重曲線を以下に示します。荷重曲線の具体的な意味は以下のとおりです："
 
 #: ../../source/ARTManual/art_product.rst:382
 msgid "①开启“时间最优模式”，建议加速度设置在288deg/s\\ :sup:`2` 以下；"
@@ -642,8 +640,7 @@ msgstr "100％運転速度における負荷曲線"
 
 #: ../../source/ARTManual/art_product.rst:395
 msgid "在100%全局运行速度下，ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线下图所示。负载曲线的具体释义如下："
-msgstr ""
-"100％のグローバル動作速度において、ART3-R7型ロボットの最大搬送荷重は5kg、定格荷重は3kgであり、荷重曲線は下図のとおりです。荷重曲線の具体的な意味は以下のとおりです："
+msgstr "100％のグローバル動作速度において、ART3-R7型ロボットの最大搬送荷重は5kg、定格荷重は3kgであり、荷重曲線は下図のとおりです。荷重曲線の具体的な意味は以下のとおりです："
 
 #: ../../source/ARTManual/art_product.rst:400
 msgid "①开启“时间最优模式”，建议加速度设置在360deg/s\\ :sup:`2` 以下；"
@@ -653,6 +650,50 @@ msgstr "①「時間最適モード」をオンにする場合、加速度は360
 msgid "051.png"
 msgstr "051.png"
 
-#: ../../source/ARTManual/art_product.rst:408
+#: ../../source/ARTManual/art_product.rst:409
 msgid "图表 3-22 负载曲线—全局运行速度100%"
 msgstr "図3-22 負荷曲線—グローバル運転速度100％"
+
+#: ../../source/ARTManual/art_product.rst:411
+msgid "机器人负载曲线（实机）"
+msgstr "ロボット負荷曲線（実機）"
+
+#: ../../source/ARTManual/art_product.rst:415
+msgid "在机器人中，负载能力通常是指机器人手臂末端执行器所能承受的最大负载，包括机器人手臂末端执行器的重量和附加负载。机械臂负载曲线用于描述末端负载重心偏移量与质量之间的关系，是客户进行机械臂选型的参考指标之一，它决定了机器人手臂的应用范围和工作效率。"
+msgstr "ロボットにおいて、負荷能力は通常、ロボットアームのエンドエフェクタが耐えられる最大負荷を指し、ロボットアームのエンドエフェクタの重量と追加負荷を含みます。機械アームの負荷曲線は、エンド負荷の重心オフセット量と質量の関係を記述するために使用され、顧客が機械アームを選定する際の参考指標の一つであり、ロボットアームの適用範囲と作業効率を決定します。"
+
+#: ../../source/ARTManual/art_product.rst:419
+msgid "本节所涉及的负载曲线基于ART3-R7全局运行速度为100%，开启速度前馈功能和T型速度，执行特定轨迹，实机测试获取。负载曲线存在“完整性能”和“扩展后的负载能力”两部分，具体如下："
+msgstr "本節で扱う負荷曲線は、ART3-R7全局運転速度が100%であり、速度フィードフォワード機能とT型速度を有効にして、特定の軌跡を実行し、実機テストで取得したものである。負荷曲線には、“完全性能”と“拡張後の負荷能力”の2つの部分があり、具体的には以下のとおりである："
+
+#: ../../source/ARTManual/art_product.rst:421
+msgid ""
+"“完整性能”的运行环境为：设置相应运行速度，维护模式内速度150 deg/s，加速度默认为300 deg/s2 "
+"。在此环境下，负载曲线“完整性能”部分适应绝大多数运行轨迹。"
+msgstr ""
+"“フル性能”の運転環境は：対応する運転速度を設定し，メンテナンスモード内の速度150 deg/s，加速度はデフォルトで300 deg/s2 "
+"。この環境下で，負荷曲線“フル性能”部分は大多数の運転軌跡に適応します。"
+
+#: ../../source/ARTManual/art_product.rst:422
+msgid "若末端负载处于“扩展后的负载能力”，建议减小机器人工作范围或降低运行速度。"
+msgstr "末端負荷が“拡張後の負荷能力”にある場合、ロボットの動作範囲を縮小するか、運転速度を下げることを推奨します。"
+
+#: ../../source/ARTManual/art_product.rst:432
+msgid "ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线图1所示。负载曲线的具体释义如下："
+msgstr "ART3-R7型ロボットの最大可搬重量は5kgであり、定格負荷は3kgです。負荷曲線図は1の通りです。負荷曲線の具体的な説明は以下の通りです："
+
+#: ../../source/ARTManual/art_product.rst:437
+msgid "①建议速度和加速度设置在150 deg/s和300 deg/s2以下；"
+msgstr "①は速度と加速度を150 deg/sと300 deg/s2以下に設定することを推奨します；"
+
+#: ../../source/ARTManual/art_product.rst:-1
+msgid "052.png"
+msgstr "052.png"
+
+#: ../../source/ARTManual/art_product.rst:445
+msgid "图表 3-23 负载曲线—全局运行速度100%"
+msgstr "図表 3-23 負荷曲線—グローバル実行速度100%"
+
+#~ msgid "ART3-R7负载曲线"
+#~ msgstr "ART3-R7負荷曲線"
+

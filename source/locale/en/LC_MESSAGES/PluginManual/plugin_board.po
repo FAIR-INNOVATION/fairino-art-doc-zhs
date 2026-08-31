@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-26 17:46+0800\n"
+"POT-Creation-Date: 2026-08-27 16:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -647,23 +647,23 @@ msgstr "[31:24] Byte 4"
 msgid "Severity (故障等级)"
 msgstr "Severity"
 
-#: ../../source/PluginManual/plugin_board.rst:241
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x00 = OK (正常)"
 msgstr "0x00 = OK (Normal)"
 
-#: ../../source/PluginManual/plugin_board.rst:242
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x01 = INFO (提示信息)"
 msgstr "0x01 = INFO (informational message)"
 
-#: ../../source/PluginManual/plugin_board.rst:243
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x02 = WARN (一般警告，不阻断运行)"
 msgstr "0x02 = WARN (General warning, does not interrupt execution)"
 
-#: ../../source/PluginManual/plugin_board.rst:244
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x0E = ERROR (运行故障，打断运动)"
 msgstr "0x0E = ERROR (Operation failure, motion interruption)"
 
-#: ../../source/PluginManual/plugin_board.rst:245
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x0F = FATAL (致命故障，触发急停与安全锁)"
 msgstr "0x0F = FATAL (Fatal fault, triggering emergency stop and safety lock)"
 
@@ -675,19 +675,19 @@ msgstr "[23:16] Byte 3"
 msgid "Subsystem (子系统模块)"
 msgstr "Subsystem"
 
-#: ../../source/PluginManual/plugin_board.rst:249
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x00 = INIT (初始化过程)"
 msgstr "0x00 = INIT (initialization process)"
 
-#: ../../source/PluginManual/plugin_board.rst:250
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x10 = RUN (运行过程)"
 msgstr "0x10 = RUN (Running Process)"
 
-#: ../../source/PluginManual/plugin_board.rst:251
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x20 = SENSOR (传感器)"
 msgstr "0x20 = SENSOR"
 
-#: ../../source/PluginManual/plugin_board.rst:252
+#: ../../source/PluginManual/plugin_board.rst
 msgid "0x30 = HAL (硬件抽象层反馈)"
 msgstr "0x30 = HAL (Hardware Abstraction Layer Feedback)"
 
@@ -1131,6 +1131,8 @@ msgstr ""
 "motors, causing the robotic arm to engage the brake."
 
 #: ../../source/PluginManual/plugin_board.rst:414
+#: ../../source/PluginManual/plugin_board.rst:462
+#: ../../source/PluginManual/plugin_board.rst:466
 msgid "同enable函数用法"
 msgstr "Same usage as the enable function"
 
@@ -1306,6 +1308,26 @@ msgstr ""
 "ethercat communication status"
 
 #: ../../source/PluginManual/plugin_board.rst:460
+msgid "enablevelff"
+msgstr "enablevelff"
+
+#: ../../source/PluginManual/plugin_board.rst:461
+msgid "开启指定速度前馈（默认关闭）,插件根据位置指令差分计算速度前馈并下发给电机，用于减小位置跟踪延迟。仅在位置控制模式下生效。"
+msgstr ""
+"Enable the specified velocity feedforward（disabled by default）,plugin "
+"calculates the velocity feedforward by differentiating the position command "
+"and sends it to the motor，to reduce the position tracking delay。It is only "
+"effective in position control mode。"
+
+#: ../../source/PluginManual/plugin_board.rst:464
+msgid "disablevelff"
+msgstr "disablevelff"
+
+#: ../../source/PluginManual/plugin_board.rst:465
+msgid "关闭机器人速度前馈功能"
+msgstr "Disable robot velocity feedforward function"
+
+#: ../../source/PluginManual/plugin_board.rst:468
 msgid ""
 "同样的，根据上面阐述的指令服务器交互信息格式，每个一string指令都会有一个string反馈值，这个返回值是16位的错误码系统，其具体函数见如下表格："
 msgstr ""
@@ -1314,235 +1336,235 @@ msgstr ""
 "16-bit error code system, whose specific functions are detailed in the table"
 " below:"
 
-#: ../../source/PluginManual/plugin_board.rst:463
+#: ../../source/PluginManual/plugin_board.rst:471
 msgid "表2-8 具体函数表"
 msgstr "Table 2-8 Specific Function Table"
 
-#: ../../source/PluginManual/plugin_board.rst:469
+#: ../../source/PluginManual/plugin_board.rst:477
 msgid "**返回值**"
 msgstr "**Return Value**"
 
-#: ../../source/PluginManual/plugin_board.rst:470
+#: ../../source/PluginManual/plugin_board.rst:478
 msgid "**触发场景释义**"
 msgstr "**Trigger Scenario Definition**"
 
-#: ../../source/PluginManual/plugin_board.rst:471
+#: ../../source/PluginManual/plugin_board.rst:479
 msgid "**常见排查与处理建议**"
 msgstr "**Common Troubleshooting and Resolution Recommendations**"
 
-#: ../../source/PluginManual/plugin_board.rst:473
+#: ../../source/PluginManual/plugin_board.rst:481
 msgid "\"0xC000\""
 msgstr "0xC000"
 
-#: ../../source/PluginManual/plugin_board.rst:474
+#: ../../source/PluginManual/plugin_board.rst:482
 msgid "执行成功。指令完整拉起并顺利结束。"
 msgstr ""
 "Execution succeeded. The command was fully launched and completed "
 "successfully."
 
-#: ../../source/PluginManual/plugin_board.rst:475
+#: ../../source/PluginManual/plugin_board.rst:483
 msgid "无需处理，上位机可继续下发后续流程。"
 msgstr ""
 "No action required; the host computer can continue issuing subsequent "
 "procedures."
 
-#: ../../source/PluginManual/plugin_board.rst:477
+#: ../../source/PluginManual/plugin_board.rst:485
 msgid "\"0xC010\""
 msgstr "0xC010"
 
-#: ../../source/PluginManual/plugin_board.rst:478
+#: ../../source/PluginManual/plugin_board.rst:486
 msgid "参数非法或防注入拦截。传入参数为空，或包含危险 Shell 字符。"
 msgstr ""
 "Invalid parameter or injection prevention intercepted. The input parameter "
 "is empty or contains dangerous shell characters."
 
-#: ../../source/PluginManual/plugin_board.rst:479
+#: ../../source/PluginManual/plugin_board.rst:487
 msgid "检查上位机下发的参数，确保仅包含合法文件路径或纯文本。"
 msgstr ""
 "Check the parameters sent by the host computer to ensure they contain only "
 "valid file paths or plain text."
 
-#: ../../source/PluginManual/plugin_board.rst:481
+#: ../../source/PluginManual/plugin_board.rst:489
 msgid "\"0xC011\""
 msgstr "0xC011"
 
-#: ../../source/PluginManual/plugin_board.rst:482
+#: ../../source/PluginManual/plugin_board.rst:490
 msgid "依赖服务不可用。试图调用的 ROS 2 内部服务（如 controller_manager）掉线或未就绪。"
 msgstr ""
 "Dependent service is unavailable. The ROS 2 internal service being called "
 "(e.g., controller_manager) is offline or not ready."
 
-#: ../../source/PluginManual/plugin_board.rst:483
+#: ../../source/PluginManual/plugin_board.rst:491
 msgid "检查目标节点是否存活，或等待系统完全启动后再下发指令。"
 msgstr ""
 "Check whether the target node is alive, or wait until the system has fully "
 "booted before issuing commands."
 
-#: ../../source/PluginManual/plugin_board.rst:485
+#: ../../source/PluginManual/plugin_board.rst:493
 msgid "\"0xC012\""
 msgstr "0xC012"
 
-#: ../../source/PluginManual/plugin_board.rst:486
+#: ../../source/PluginManual/plugin_board.rst:494
 msgid "硬件状态异常。在下发需要硬件配合的指令时，检测到底层处于报错或未使能状态。"
 msgstr ""
 "Hardware status is abnormal. An error or disabled state was detected at the "
 "underlying level when issuing commands requiring hardware cooperation."
 
-#: ../../source/PluginManual/plugin_board.rst:487
+#: ../../source/PluginManual/plugin_board.rst:495
 msgid "请先查阅 fairino_hardware 的硬件报警码，复位硬件后再试。"
 msgstr ""
 "Please first check the hardware alarm codes for fairino_hardware, then reset"
 " the hardware and try again."
 
-#: ../../source/PluginManual/plugin_board.rst:489
+#: ../../source/PluginManual/plugin_board.rst:497
 msgid "\"0xC013\""
 msgstr "0xC013"
 
-#: ../../source/PluginManual/plugin_board.rst:490
+#: ../../source/PluginManual/plugin_board.rst:498
 msgid "指令超时。指令在规定时间内未完成（如下载、系统响应等）。"
 msgstr ""
 "Command timeout. The command did not complete within the specified time "
 "(e.g., download, system response, etc.)."
 
-#: ../../source/PluginManual/plugin_board.rst:491
+#: ../../source/PluginManual/plugin_board.rst:499
 msgid "检查网络连接或系统负载是否过高。"
 msgstr "Check the network connection or whether the system load is too high."
 
-#: ../../source/PluginManual/plugin_board.rst:493
+#: ../../source/PluginManual/plugin_board.rst:501
 msgid "\"0xC020\""
 msgstr "0xC020"
 
-#: ../../source/PluginManual/plugin_board.rst:494
+#: ../../source/PluginManual/plugin_board.rst:502
 msgid "控制器切换失败。软切换（如从关节空间切换到笛卡尔空间 Controller）被系统拒绝。"
 msgstr ""
 "Controller switching failed. The soft switch (e.g., from joint space to "
 "Cartesian space controller) was rejected by the system."
 
-#: ../../source/PluginManual/plugin_board.rst:495
+#: ../../source/PluginManual/plugin_board.rst:503
 msgid "检查控制器名称是否拼写正确，或控制器端口占用冲突"
 msgstr ""
 "Check whether the controller name is spelled correctly, or whether there is "
 "a port conflict on the controller."
 
-#: ../../source/PluginManual/plugin_board.rst:497
+#: ../../source/PluginManual/plugin_board.rst:505
 msgid "\"0xC021\""
 msgstr "0xC021"
 
-#: ../../source/PluginManual/plugin_board.rst:498
+#: ../../source/PluginManual/plugin_board.rst:506
 msgid "校零超时。"
 msgstr "Zero calibration timeout."
 
-#: ../../source/PluginManual/plugin_board.rst:499
+#: ../../source/PluginManual/plugin_board.rst:507
 msgid "检查插件是否正常运行中"
 msgstr "Checking if the plugin is running normally"
 
-#: ../../source/PluginManual/plugin_board.rst:501
+#: ../../source/PluginManual/plugin_board.rst:509
 msgid "\"0xC030\""
 msgstr "0xC030"
 
-#: ../../source/PluginManual/plugin_board.rst:502
+#: ../../source/PluginManual/plugin_board.rst:510
 msgid "配置生成失败。Python 脚本解析 YAML 或生成 URDF/控制器配置失败。"
 msgstr ""
 "Configuration generation failed. The Python script failed to parse the YAML "
 "or generate the URDF/controller configuration."
 
-#: ../../source/PluginManual/plugin_board.rst:503
+#: ../../source/PluginManual/plugin_board.rst:511
 msgid "检查 YAML 格式是否正确，文件是否人为篡改或者出现乱码"
 msgstr ""
 "Check whether the YAML format is correct, and whether the file has been "
 "manually tampered with or contains garbled characters."
 
-#: ../../source/PluginManual/plugin_board.rst:505
+#: ../../source/PluginManual/plugin_board.rst:513
 msgid "\"0xC040\""
 msgstr "0xC040"
 
-#: ../../source/PluginManual/plugin_board.rst:506
+#: ../../source/PluginManual/plugin_board.rst:514
 msgid "解压升级包失败。unzip 指令返回非零退出码。"
 msgstr ""
 "Failed to extract the upgrade package. The unzip command returned a non-zero"
 " exit code."
 
-#: ../../source/PluginManual/plugin_board.rst:507
+#: ../../source/PluginManual/plugin_board.rst:515
 msgid "检查 .zip 文件路径是否正确、压缩包是否损坏或 /tmp 空间是否满。"
 msgstr ""
 "Check whether the .zip file path is correct, whether the archive is "
 "corrupted, or whether the /tmp space is full."
 
-#: ../../source/PluginManual/plugin_board.rst:509
+#: ../../source/PluginManual/plugin_board.rst:517
 msgid "\"0xC041\""
 msgstr "0xC041"
 
-#: ../../source/PluginManual/plugin_board.rst:510
+#: ../../source/PluginManual/plugin_board.rst:518
 msgid "目录覆盖失败。插件升级覆盖到 /opt/... 目录时出错。"
 msgstr ""
 "Directory overwrite failed. An error occurred while the plugin upgrade "
 "attempted to overwrite the /opt/... directory."
 
-#: ../../source/PluginManual/plugin_board.rst:511
+#: ../../source/PluginManual/plugin_board.rst:519
 msgid "检查目录的权限归属（属主是否为 fairino）或是否被占用。"
 msgstr ""
 "Check the directory permissions and ownership (whether the owner is fairino)"
 " or whether it is occupied."
 
-#: ../../source/PluginManual/plugin_board.rst:513
+#: ../../source/PluginManual/plugin_board.rst:521
 msgid "\"0xC050\""
 msgstr "0xC050"
 
-#: ../../source/PluginManual/plugin_board.rst:514
+#: ../../source/PluginManual/plugin_board.rst:522
 msgid "打包日志失败。收集、压缩 Dump 文件及系统运行日志时报错。"
 msgstr ""
 "Failed to package logs. An error occurred while collecting and compressing "
 "dump files and system runtime logs."
 
-#: ../../source/PluginManual/plugin_board.rst:515
+#: ../../source/PluginManual/plugin_board.rst:523
 msgid "检查目标存储路径权限及磁盘剩余容量。"
 msgstr ""
 "Check the permissions of the target storage path and the remaining disk "
 "capacity."
 
-#: ../../source/PluginManual/plugin_board.rst:517
+#: ../../source/PluginManual/plugin_board.rst:525
 msgid "\"0xC060\""
 msgstr "0xC060"
 
-#: ../../source/PluginManual/plugin_board.rst:518
+#: ../../source/PluginManual/plugin_board.rst:526
 msgid "数据记录操作失败。recorddata(start/stop) 指令处理失败或写入异常。"
 msgstr ""
 "Data recording operation failed. The recorddata(start/stop) command "
 "processing failed or a write exception occurred."
 
-#: ../../source/PluginManual/plugin_board.rst:519
+#: ../../source/PluginManual/plugin_board.rst:527
 msgid "检查 /tmp/record_data 目录是否可写，或内存中是否存在死锁。"
 msgstr ""
 "Check whether the /tmp/record_data directory is writable, or whether a "
 "deadlock exists in memory."
 
-#: ../../source/PluginManual/plugin_board.rst:521
+#: ../../source/PluginManual/plugin_board.rst:529
 msgid "\"0xC0FE\""
 msgstr "0xC0FE"
 
-#: ../../source/PluginManual/plugin_board.rst:522
+#: ../../source/PluginManual/plugin_board.rst:530
 msgid "未知指令。上位机发送了一个 Action Server 无法解析的命令字。"
 msgstr ""
 "Unknown command. The host computer sent a command that the Action Server "
 "cannot parse."
 
-#: ../../source/PluginManual/plugin_board.rst:523
+#: ../../source/PluginManual/plugin_board.rst:531
 msgid "对齐上位机与下位机的通信协议接口文档。"
 msgstr ""
 "Alignment of the communication protocol interface documentation between the "
 "host computer and the slave computer."
 
-#: ../../source/PluginManual/plugin_board.rst:525
+#: ../../source/PluginManual/plugin_board.rst:533
 msgid "\"0xC0FF\""
 msgstr "0xC0FF"
 
-#: ../../source/PluginManual/plugin_board.rst:526
+#: ../../source/PluginManual/plugin_board.rst:534
 msgid "底层抛出异常。C++ 或脚本内部发生未捕获的严重崩溃/被系统强杀。"
 msgstr ""
 "An exception was thrown at the lower level. A severe crash occurred inside "
 "C++ or a script, or the process was forcibly terminated by the system."
 
-#: ../../source/PluginManual/plugin_board.rst:527
+#: ../../source/PluginManual/plugin_board.rst:535
 msgid "需查看宿主机 dmesg 或节点标准输出，排查段错误（Segfault）或依赖丢失。"
 msgstr ""
 "Check the host’s dmesg or the node’s standard output to troubleshoot "
