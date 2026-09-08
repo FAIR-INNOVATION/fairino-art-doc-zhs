@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 08:33+0800\n"
+"POT-Creation-Date: 2026-09-04 11:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -569,6 +569,7 @@ msgstr ""
 "limits, or the robot’s working range must be reduced."
 
 #: ../../source/ARTManual/art_product.rst:335
+#: ../../source/ARTManual/art_product.rst:425
 msgid "参数说明"
 msgstr "Parameter Description"
 
@@ -750,6 +751,11 @@ msgid "若末端负载处于“扩展后的负载能力”，建议减小机器�
 msgstr ""
 "If the end load is within “extended load capacity”, it is recommended to "
 "reduce the robot's working range or lower the operating speed."
+
+#: ../../source/ARTManual/art_product.rst:430
+#, fuzzy
+msgid "ART3-R7负载曲线"
+msgstr "ART3-R7"
 
 #: ../../source/ARTManual/art_product.rst:432
 msgid "ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线图1所示。负载曲线的具体释义如下："

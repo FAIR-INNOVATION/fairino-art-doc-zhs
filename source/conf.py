@@ -29,8 +29,12 @@ release = '1.0.0'
 extensions = ['recommonmark']
 
 templates_path = ['_templates']
-exclude_patterns = []
 
+# 根据语言排除不需要的文档
+if language not in ('zh_CN', 'zh', 'zh-cn'):
+    exclude_patterns = ['FMManual/*']
+else:
+    exclude_patterns = []
 # language = 'zh_CN'
 locale_dirs = ['locale/']  # 设置本地化数据目录
 

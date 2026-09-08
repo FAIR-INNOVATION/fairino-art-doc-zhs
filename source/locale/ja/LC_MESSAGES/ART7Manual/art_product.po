@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 法奥协作机器人用户手册\n"
+"Project-Id-Version:  法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 10:06+0800\n"
+"POT-Creation-Date: 2026-09-04 11:11+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: ja <LL@li.org>\n"
 "Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/ART7Manual/art_product.rst:2
@@ -500,12 +500,21 @@ msgstr "エンドエフェクタフランジの寸法は図3-18に示すとお�
 msgid "030.png"
 msgstr "030.png"
 
-#: ../../source/ART7Manual/art_product.rst:318
+#: ../../source/ART7Manual/art_product.rst:319
 msgid "图表 3-18 末端工具法兰尺寸"
 msgstr "図表 3-18 エンドツールフランジ寸法"
+
+#: ../../source/ART7Manual/art_product.rst:321
+msgid "3D 模型"
+msgstr "3D Model"
+
+#: ../../source/ART7Manual/art_product.rst:322
+msgid ":download:`ART7-R7 STEP模型 <../_static/_doc/ART7-R7 STEP Models.zip>`"
+msgstr ":download:`ART7-R7 STEP Models <../_static/_doc/ART7-R7 STEP Models.zip>`"
 
 #~ msgid "600mm"
 #~ msgstr "600mm"
 
 #~ msgid "关节活动范围"
 #~ msgstr "関節可動範囲"
+

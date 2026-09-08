@@ -1,0 +1,1542 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥（苏州）机器人技术股份有限公司
+# This file is distributed under the same license as the 法奥协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥协作机器人用户手册 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-07 09:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/FMManual/fm_intro.rst:6
+msgid "安全事项"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:8
+msgid "为确保用户安全正确使用本产品，避免对人员造成伤害，特制定安全事项。在使用本产品前，请务必认真阅读以下安全事项："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:10
+msgid ""
+"（1）本产品的适用性请由系统设计者或规格制定者来判断。 "
+"本产品的使用条件具有多样化，请由系统的设计者或规格的制定者来判断系统的适用性。必要时请通过分析和测试进行判断。 "
+"请在参考最新的产品资料、确认规格的全部内容、考虑到可能发生的故障，在此基础上构建系统。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:12
+msgid ""
+"（2）请具有充分知识和经验的人员使用本产品。 在此所述产品若误操作会损害其安全性。 "
+"机械装置的组装、操作、维修保养等作业请由具有充分知识和经验的人执行。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:14
+msgid "（3）请务必在确认机械、设备的安全之后，再进行产品的使用和拆卸。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:16
+msgid "请在确认已进行了移动体的落下防止对策和失控防止对策之后再进行机械、设备的使用和维护。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:17
+msgid "请在确认已采取上述安全措施，并切断了能量源和设备电源以保证系统安全 的同时，确认和理解设备上产品个别注意事项的基础上，进行产品的拆卸。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:18
+msgid "重新启动机械、设备时，请对意外动作、误操作采取预防措施。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:20
+msgid "（4）在如下所示条件和环境下使用时，请在考虑安全对策的同时，提前向我司咨询。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:22
+msgid "明确记载的规格以外的条件或环境。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:23
+msgid "使用于原子能、铁路、航空、宇宙设备、船舶、军用、医疗设备、食品用设备、燃料装置、安全设备等场合，以及用于非产品手册中的标准规格的场合。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:24
+msgid "预测对人身和财产有重大影响，特别是在有安全要求的场合使用时。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:25
+msgid "用于互锁回路时，请设置应对故障的机械式保护功能，进行双重互锁。另外 进行定期检查以确认是否正常作动。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:28
+msgid "总体介绍"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:33
+msgid "随着机器人市场规模的不断扩大，各行业对机器人关节的需求量也随之增长，促使企业开发更通用、高性能的关节产品，以满足市场的多样化需求，降低生产成本，提高市场竞争力。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:35
+msgid "国内一些友商的关节产品已广泛运用于工业机器人、协作机器人，满足使用场景需求，强调产品的负载能力和可靠性。公司已有成熟的协作机器人用关节，也已开发了人形机器人的关节。综合已有的技术储备，开发尺寸小、重量轻、质量优、成本低的通用型关节紧紧围绕为客户解决问题，提供价值角度出发，打造属于自己的产品领域和蓝海。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:38
+msgid "产品基本信息"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:41
+msgid "FM-11-B基本信息"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:48 ../../source/FMManual/fm_intro.rst:104
+#: ../../source/FMManual/fm_intro.rst:160
+msgid "**参数类型**"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:49 ../../source/FMManual/fm_intro.rst:105
+#: ../../source/FMManual/fm_intro.rst:161
+msgid "**参数分解**"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:51
+msgid "产品类型"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:52
+msgid "FM-11-B"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:54 ../../source/FMManual/fm_intro.rst:110
+#: ../../source/FMManual/fm_intro.rst:166
+msgid "产品重量/g"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:55
+msgid "420"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:57 ../../source/FMManual/fm_intro.rst:113
+#: ../../source/FMManual/fm_intro.rst:169
+msgid "尺寸/mm"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:58
+msgid "φ52*68.5"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:60 ../../source/FMManual/fm_intro.rst:116
+#: ../../source/FMManual/fm_intro.rst:172
+msgid "减速比"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:61 ../../source/FMManual/fm_intro.rst:117
+#: ../../source/FMManual/fm_intro.rst:141
+msgid "100"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:63 ../../source/FMManual/fm_intro.rst:119
+#: ../../source/FMManual/fm_intro.rst:175
+msgid "额定扭矩/N.m"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:64
+msgid "3.7"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:66 ../../source/FMManual/fm_intro.rst:122
+#: ../../source/FMManual/fm_intro.rst:178
+msgid "平均负载扭矩/N.m"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:67
+msgid "6.2"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:69 ../../source/FMManual/fm_intro.rst:125
+#: ../../source/FMManual/fm_intro.rst:181
+msgid "最大扭矩/N.m"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:70
+msgid "17.5"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:72 ../../source/FMManual/fm_intro.rst:128
+#: ../../source/FMManual/fm_intro.rst:184
+msgid "额定转速/RPM"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:73 ../../source/FMManual/fm_intro.rst:129
+msgid "30"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:75 ../../source/FMManual/fm_intro.rst:131
+#: ../../source/FMManual/fm_intro.rst:187
+msgid "重复定位精度/”"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:76 ../../source/FMManual/fm_intro.rst:132
+#: ../../source/FMManual/fm_intro.rst:188
+msgid "±15"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:78 ../../source/FMManual/fm_intro.rst:134
+#: ../../source/FMManual/fm_intro.rst:190
+msgid "中控孔径/mm"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:79
+msgid "10"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:81 ../../source/FMManual/fm_intro.rst:137
+#: ../../source/FMManual/fm_intro.rst:193
+msgid "工作温度/℃"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:82 ../../source/FMManual/fm_intro.rst:138
+#: ../../source/FMManual/fm_intro.rst:194
+msgid "0~45℃"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:84 ../../source/FMManual/fm_intro.rst:140
+#: ../../source/FMManual/fm_intro.rst:196
+msgid "额定功率/W"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:85
+msgid "31"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:87 ../../source/FMManual/fm_intro.rst:143
+#: ../../source/FMManual/fm_intro.rst:199
+msgid "额定电压/V"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:88 ../../source/FMManual/fm_intro.rst:144
+#: ../../source/FMManual/fm_intro.rst:200
+msgid "48"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:90 ../../source/FMManual/fm_intro.rst:146
+#: ../../source/FMManual/fm_intro.rst:202
+msgid "抱闸"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:91 ../../source/FMManual/fm_intro.rst:147
+#: ../../source/FMManual/fm_intro.rst:203
+msgid "支持"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:93 ../../source/FMManual/fm_intro.rst:149
+#: ../../source/FMManual/fm_intro.rst:205
+msgid "通讯接口"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:94 ../../source/FMManual/fm_intro.rst:150
+#: ../../source/FMManual/fm_intro.rst:206
+msgid "EtherCAT"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:97
+msgid "FM-14-B基本信息"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:107
+#: ../../source/FMManual/fm_intro.rst:163
+msgid "型号"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:108
+msgid "FM-14-B"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:111
+msgid "730"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:114
+msgid "φ70*83.6"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:120
+msgid "9"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:123
+msgid "13"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:126
+msgid "63"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:135
+#: ../../source/FMManual/fm_intro.rst:191
+msgid "12"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:153
+msgid "FM-17-B基本信息"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:164
+msgid "FM-17-B"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:167
+msgid "1054"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:170
+msgid "φ80*97.4"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:173
+msgid "120"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:176
+msgid "24"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:179
+msgid "39"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:182
+msgid "86"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:185
+msgid "25"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:197
+msgid "200"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:209
+msgid "产品外形尺寸及安装孔位"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:212
+msgid "FM-11-B外形尺寸及安装孔位"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "001.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:219
+msgid "图表 4-1 FM-11-B外形尺寸及安装孔位"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:221
+msgid "FM-14-B外形尺寸及安装孔位"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "002.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:228
+msgid "图表 4-2 FM-14-B外形尺寸及安装孔位"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:230
+msgid "FM-17-B外形尺寸及安装孔位"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "003.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:237
+msgid "图表 4-2 FM-17-B外形尺寸及安装孔位"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:239
+msgid "安装事项"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:241
+msgid "在安装之前，请认真阅读通用关节相关安全说明（1.1安全事项）。在固定好产品前，请勿提前打开电源。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:244
+msgid "使用条件"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:246
+msgid "通用关节的操作及运输、存储条件为："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:248
+msgid "操作环境温度: 0℃～+45℃；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:249
+msgid "操作环境湿度: 20%～90% RH（40°C）（无霜无结露）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:250
+msgid "运输及储存温度: -20℃ ～ +60℃（无霜无结露）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:252
+msgid "通用关节须远离振动及冲击环境，环境不含灰尘、烟尘或水，不含腐蚀性气体、液体或爆炸性气体， 没有强大的电磁干扰源。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:255
+msgid "电气接口"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:257
+msgid "各通用关节的电气接口示意："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:259
+msgid "（1）FM-11-B关节电气接口图："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "004.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:266
+msgid "图表 5-1 FM-11-B关节电气接口图"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:267
+msgid "（2）FM-14/17-B关节电气接口图："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "005.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:274
+msgid "图表 5-2 FM-14/17-B关节电气接口图"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:276
+msgid "线缆连接"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:278
+msgid "电源及调试线束插头型号："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:280
+msgid "（1）电源线束"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "006.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:287
+msgid "图表 5-3-1 电源线束"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:288
+msgid "（2）网线线束"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "061.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:295
+msgid "图表 5-3-2 网线线束"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:296
+msgid "（3）调试线束"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:298
+msgid "调试线束为法奥专供线束，可按需购买"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "062.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:305
+msgid "图表 5-3-3 调试线束"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:307
+#: ../../source/FMManual/fm_intro.rst:379
+msgid "调整参数"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:310
+msgid "基本设置"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "007.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:317
+msgid "图表 6-1 基本参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:319
+msgid "通讯参数"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "008.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:326
+msgid "图表 6-2 通信参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "009.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:332
+msgid "图表 6-3 通讯接口功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "010.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:338
+msgid "图表 6-4 波特率功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:340
+msgid "电机参数"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:342
+msgid "电机参数项：总长度60个元素，元素类型为S32,当前有效数据为2-21个元素，有效元素均可读写。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "011.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:349
+msgid "图表 6-5 电机参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "012.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:355
+msgid "图表 6-6 编码器类型功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:357
+msgid "驱动参数"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:359
+msgid "监控参数项：总长度60个元素，元素类型为S32，当前有效数据为2-11个元素，有效元素均可读写。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "013.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:366
+msgid "图表 6-7 驱动参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:368
+msgid "监控参数"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:370
+msgid "监控参数项：总长度60个元素，元素类型为S32，当前有效数据为2-8个元素，有效元素只支持读取，不支持写入。故障码具体说明详见报警代码表。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "014.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:377
+msgid "图表 6-8 监控参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:381
+msgid "调整参数项：总长度60个元素，元素类型为S32，当前有效数据为2-32个元素，有效元素均可读写。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "015.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:388
+msgid "图表 6-9 调整参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:390
+msgid "运动控制"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:392
+msgid "运动控制参数项：总长度60个元素，元素类型为S32，当前有效数据为0-27个元素，有效元素均可读写。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:394
+msgid "3-电机正转方向：0-CCW方向运行，1-CW方向运行。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:395
+msgid "16-内部速度指令速度1：PV模式有效，PV模式速度指令。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "016.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:402
+msgid "图表 6-10 运动控制功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:404
+msgid "保护参数"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:406
+msgid "保护参数项：总长度60个元素，元素类型为S32，当前有效数据为2-19个元素，有效元素均可读写。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:408
+msgid "15-故障复位参数：置位对可复位故障和警告，执行故障复位功能；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "017.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:415
+msgid "图表 6-11 保护参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:417
+msgid "辅助功能"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:419
+msgid "辅助参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素，有效元素均可读写。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:421
+msgid "14-能耗电阻制动电压：默认参数51000Mv，最大能耗制动电压为70000Mv。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:422
+msgid "11~13电磁刹车电压：默认参数24000Mv，最大支持刹车电压为48000Mv"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "018.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:429
+msgid "图表 6-12 辅助参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:431
+msgid "限制参数"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:433
+msgid "限制参数项：总长度60个元素，元素类型为S32，当前有效数据为2-16个元素，有效元素均可读写。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:435
+msgid "13-电机正向位置范围参数：多圈编码器有效，该参数为多圈编码器的正向运动范围；例如多圈编码器为0~65535，正向范围建议设置为32767，约为多圈编码分辨率/2。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:437
+msgid "默认关闭不启用支持360°旋转功能，若需要启用需配置13~15参数，并将16支持360°旋转参数设置为1。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:439
+msgid "若电机正向位置范围参数大于单圈编码器分辨率，正向运动范围为（多圈编码器分辨率*单圈编码器分辨率=编码器总分辨率）/2。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "019.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:446
+msgid "图表 6-13 限制参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:448
+msgid "输出输出1"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:450
+msgid ""
+"输入输出1参数项：总长度60个元素，元素类型为S32，当前有效数据为0-12个元素。 "
+"3-低四位输入端子参数：置位-电机使能；复位-电机去使能。（需要将通讯参数中通讯接口设定为0（调试485）后才可通过设置全参数生效使能与去使能）"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "020.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:458
+msgid "图表 6-14 输入输出1参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:460
+msgid "输出输出2"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:462
+msgid "输入输出2参数项：总长度60个元素，元素类型为S32，当前有效数据为2-18个元素。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "021.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:469
+msgid "图表 6-15 输入输出2参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:471
+msgid "自适应PID刚度0"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:473
+msgid "自适应PID刚度0参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:475
+#: ../../source/FMManual/fm_intro.rst:488
+#: ../../source/FMManual/fm_intro.rst:501
+#: ../../source/FMManual/fm_intro.rst:514
+msgid "需搭配闭环PID模式参数项使用，进行自适应PID和前馈控制模式切换。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "022.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:482
+msgid "图表 6-16 自适应PID刚度0 参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:484
+msgid "自适应PID刚度1"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:486
+msgid "自适应PID刚度1参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "023.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:495
+msgid "图表 6-17 自适应PID刚度1 参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:497
+msgid "自适应PID刚度2"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:499
+msgid "自适应PID刚度2参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "024.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:508
+msgid "图表 6-18 自适应PID刚度2 参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:510
+msgid "闭环前馈控制"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:512
+msgid "闭环前馈控制参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "025.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:521
+msgid "图表 6-19 闭环前馈控制 参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:523
+msgid "闭环PID模式"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:525
+msgid "闭环控制模式参数项：总长度60个元素，元素类型为S32，当前有效数据为2-3个元素。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:527
+msgid "2-闭环控制模式：0：选择为闭环前馈控制，1：选择为自适应PID控制"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:528
+msgid "3-自适应PID刚度，当闭环控制模式为PID自适应控制时，可进行刚度配置与控制。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "026.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:535
+msgid "图表 6-20 闭环PID模式 参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "027.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:541
+msgid "图表 6-21 闭环控制模式 参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "028.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:547
+msgid "图表 6-22 自适应PID刚度 参数功能描述表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:549
+msgid "上位机调试软件DynamicLAB"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:552
+msgid "建立连接"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:554
+msgid "在设备列表中选中要连接设备（驱动器）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:555
+msgid "选择正确COM口；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:556
+msgid "设置通信波特率（默认115200）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:557
+msgid "点击地址扫描可以自动扫描主线上存在的从站数量与地址；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:558
+msgid "点击连接与从站进行通信。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "029.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:565
+msgid "图表 7-1 设备列表与通信设置图"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:566
+msgid "显示打开串口成功；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:567
+msgid "显示获取底层电机参数成功；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:569
+msgid "说明与驱动器建立连接成功。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "030.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:576
+msgid "图表 7-2 连接功能图示"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:578
+msgid "固件升级"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:580
+msgid "485升级："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:582
+#: ../../source/FMManual/fm_intro.rst:596
+msgid "功能树选中固件升级；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:583
+msgid "选择升级方式（默认485升级）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:584
+msgid "打开要升级的固件文件（.bin）文件；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:585
+msgid "发送文件开始文件传输；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:586
+msgid "等待信息栏显示文件发送完成；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "031.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:593
+msgid "图表 7-3 固件升级图示"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:594
+msgid "JLink升级："
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:597
+msgid "选择升级模式选择JLink升级（需安装JLink驱动，使用usb转JLink工具连接电脑与驱动器）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:598
+msgid "点击JLink连接，连接驱动器；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:599
+msgid "Flash擦除用于擦除驱动器中固件程序；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:600
+msgid "打开文件选择要升级固件程序（.hex格式文件）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:601
+msgid "点击发送文件进行固件升级。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:604
+msgid "参数列表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "032.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:611
+msgid "图表 7-4 固件JLink升级图示"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:612
+msgid "功能树选中参数列表；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:613
+msgid "参数根据功能分为各子参数；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:614
+msgid "对参数的加载（从文件加载）、保存（将参数保存为文件）、读取（从驱动器读取参数）、写入（将参数写入驱动器，在各子参数页读取、写入只读写当前子参数，在参数列表读取、写入读写全部参数）、写入FLASH(参数写入FLASH)、恢复出厂设置（将驱动器参数恢复出厂）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:615
+msgid "双击修改某个参数值（修改后需写入）；"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "033.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:622
+msgid "图表 7-5 参数列表图示"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:624
+msgid "全参数配置"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:626
+msgid "选择功能树中的参数列表，点击加载。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "034.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:633
+msgid "图表 7-6 功能树参数列表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:634
+msgid "在DynamicLAB文件夹中选择对应的关节的全参数配置文件"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "035.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:641
+msgid "图表 7-7 全参数配置文件"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:642
+msgid "提示窗中提示“加载全参数完毕”点击“写入”，提示写入成功后，点击“写入Flash”写入Flash完成，重新断电上电，进行读取操作查看是否写入成功。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "036.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:649
+msgid "图表 7-8 写入Flash"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:651
+msgid "速度模式运行"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:653
+msgid "在参数列表-通讯参数中，将通信接口切换为0（调试485接口），执行写入操作。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "037.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:660
+msgid "图表 7-9 切换为0写入操作"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:661
+msgid "在参数列表-运动控制中，将控制模式切换为1（速度模式），执行写入操作。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "038.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:668
+msgid "图表 7-10 切换为1写入操作"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:669
+msgid "在参数列表-输出输出1，将低四位输入端子强制ON控制字写入为1，执行写入操作。电机使能。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "039.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:676
+msgid "图表 7-11 控制字写入为1写入操作"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:677
+msgid "在参数列表-运动控制，下发内部速度指令速度1，执行写入操作，电机开始按照设定速度运行。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "040.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:684
+msgid "图表 7-12 指令速度11写入操作"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:686
+msgid "通讯协议"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:689
+msgid "EtherCAT通信"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:691
+msgid ""
+"EtherCAT，全称 Ethernet for Control Automation Technology，由 Beckhoff "
+"Atuomation GmbH 开发，是一种实时以太网用于主站和从站开放式的网络通信。 EtherCAT "
+"作为成熟的工业以太网技术，具备高性能、低成本、使用简易等特点。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "041.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:698
+msgid "图表 8-1 EtherCAT通讯规格表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:699
+msgid "点击运行控制使用标准Cia402行规。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:702
+msgid "EtherCAT对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:705
+msgid "PDO对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:706
+msgid "PDO对象字典分为RxPDO和TxPDO两种。RxPDO为驱动器接收主站数据，TxPDO为驱动器向主站反馈数据。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:709
+msgid "RxPDO"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:710
+msgid ""
+"控制字（Control "
+"Word）对象字典，可读可写（RW），其索引（Index）为0x6040，子索引（SubIndex）为0，数据类型为无符号16位，下面对控制字的每个bit信息进行说明。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "042.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:717
+msgid "图表 8-2 控制字对象字典详细信息"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:718
+msgid ""
+"其中bit3-bit0（enable operation/quick stop/enable voltage/switch "
+"on）符合Cia402协议标准，如下图所示。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "043.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:725
+msgid "图表 8-2 Cia402"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:726
+msgid "通过控制字可将关节使能和去使能。需要使能时，应将控制字按顺序（0x06->0x07->0x0F）进行赋值；需要去使能时，应将控制字直接赋值为0。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:728
+msgid "通过控制字可进行机器人零点校准，在关节去使能和处于非OP状态时，将控制字的bit13置1。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:730
+msgid ""
+"目标位置（Target "
+"Position）对象字典，可读可写（RW），其索引（Index）为0x607A，子索引（SubIndex）为0，数据类型为有符号32位。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "044.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:737
+msgid "图表 8-3 目标位置对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:738
+msgid "通过此对象字典更新需要的目标位置，单位为pulse，上位机规划位置值，607Ah目标位置值两次的差值，需小于100000Pulse。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:740
+msgid ""
+"目标扭矩（Target "
+"Torque）对象字典，可读可写（RW），其索引（Index）为0x6071，子索引（SubIndex）为0，数据类型为有符号16位。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "045.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:747
+msgid "图表 8-4 目标扭矩对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:748
+msgid "通过此对象字典更新需要的目标扭矩，单位为额定扭矩0.1%。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:750
+msgid ""
+"速度前馈（Velocity "
+"offset）对象字典，可读可写（RW），其索引（Index）为0x60B1，子索引（SubIndex）为0，数据类型为有符号32位。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "046.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:757
+msgid "图表 8-5 速度前馈对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:758
+msgid "通过此对象字典设置合理的速度前馈。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:760
+msgid "剩余的RxPDO对象字典（0x2001、0x2010、0x2011、0x2012和0x2013）未进行实际使用，不进行赘述。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:763
+msgid "TxPDO"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:765
+msgid ""
+"状态字（Status "
+"Word）对象字典，只读（RO），其索引（Index）为0x6041，子索引（SubIndex）为0，数据类型为无符号16位，下面对状态字的每个bit信息进行说明。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "047.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:772
+msgid "图表 8-6 状态字对象字典详细信息"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:773
+msgid ""
+"首先根据bit6,5,3-0（switch on disabled/quick stop/fault/operation "
+"enabled/switched on/ready to switch on）的组合可以确定功率状态机的状态，下图为具体说明。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "048.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:780
+msgid "图表 8-7 功率状态机状态确认表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:781
+msgid "bit13（home）：1的情况下表示已校零。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:782
+msgid "bit12（drag）：1的情况下表示进入拖动模式。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:783
+msgid "bit5（quick stop）：0的情况下表示功率状态机接收quick stop要求。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:784
+msgid "bit4（voltage enabled）：1的情况下表示主电路电源电压加到主回路。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:786
+msgid ""
+"当前位置（Position Actual "
+"Value）对象字典，只读（RO），其索引（Index）为0x6064，子索引（SubIndex）为0，数据类型为有符号32位。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "049.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:793
+msgid "图表 8-8 当前位置对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:794
+msgid "通过此对象字典获取关节当前的位置数据，单位为pulse。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:796
+msgid "故障码（Error Code）对象字典，只读（RO），其索引（Index）为0x603F，子索引（SubIndex）为0，数据类型为无符号16位。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "050.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:803
+msgid "图表 8-9 故障码对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:804
+msgid "如果此对象字典不为0，则驱动器出现故障。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:806
+msgid ""
+"实时扭矩（Torque Actual "
+"Value）对象字典，只读（RO），其索引（Index）为0x6077，子索引（SubIndex）为0，数据类型为有符号16位。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "051.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:813
+msgid "图表 8-10 实时扭矩对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:814
+msgid "通过此对象字典获取关节的实时扭矩数据，单位为额定扭矩0.1%。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:816
+msgid ""
+"实时速度（Velocity Actual "
+"Value）对象字典，只读（RO），其索引（Index）为0x606C，子索引（SubIndex）为0，数据类型为有符号32位。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "052.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:823
+msgid "图表 8-11 实时速度对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:824
+msgid "通过此对象字典获取关节的实时速度数据，单位为rmp。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:826
+msgid "剩余TxPDO对象字典（0x2000、0x3010、0x3011、0x3012和0x3013）未实际使用，不进行赘述。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:829
+msgid "SDO"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:831
+msgid ""
+"主站设置从站的SDO对象字典时，建议电机处于去使能状态，否则会导致异常警告；读取时不需要关心电机的状态。 1. 软件版本（Sofeware "
+"version）对象字典，只读（RO），其索引（Index）为0x100A，子索引（SubIndex）为0，数据类型为可见字符串。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "053.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:839
+msgid "图表 8-12 软件版本对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:840
+msgid "在上电初始化时，驱动器固件会将固件版本号赋值给此对象字典，可通过此对象字典查看驱动器的当前固件版本号。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:842
+msgid "基本设定（sBaseSetPara）、通信参数（sCommPara）对象字典、驱动参数（sDrivePara）对象字典、监控参数（sDisplyPara）对象字典、调整参数（sAdjPara）对象字典、运动控制（sMtCtrlPara）对象字典、保护参数（sKeepPara）对象字典、辅助功能（sAuxPara）对象字典、限制参数（sLmtPara）对象字典、输入输出1（sIoPara1）对象字典、输入输出2（sIoPara2）对象字典、自适应PID刚度0~2对象字典、闭环前馈控制对象字典、闭环PID模式对象字典。详见附录2：Sdo读写驱动器全参数表-V0.4-20251208"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:843
+msgid "全参数读取&修改通过各个对象字典的子索引1参数命令完成。以基本设定对象为例，修改参数：修改密码、驱动器型号等子索引内容后，参数命令写1，将参数全部写入驱动器RAM中，完成后驱动器将参数命令置0；参数命令写2，将参数全部写入驱动器Flash中，完成后驱动器将参数命令置0。读取参数：参数命令写2，驱动器将参数放入基本设定SDO对象字典，随后将参数命令置0。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "054.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "055.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:854
+msgid "图表 8-13 配置对象字典"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:856
+msgid "电机控制模式"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:859
+msgid "位置模式"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:861
+msgid ""
+"位置模式下，上位控制器完成位置指令规划，然后将规划好的目标位置 607Ah "
+"上以周期性同步的方式发送给伺服驱动器，位置、速度、转矩控制由伺服驱动器内部完成。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "056.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:868
+msgid "图表 8-14 位置运行模式图"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:870
+msgid "位置模式下配置图"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "057.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:877
+msgid "图表 8-15 位置模式设置流程图"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:879
+msgid "使用寿命"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:881
+msgid "FM-通用关节平均使用寿命50000h。"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:884
+msgid "附录"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:887
+msgid "附录1 报警代码表"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "058.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "059.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:-1
+msgid "060.png"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:902
+msgid "附录2：Sdo读写驱动器全参数表-V0.4-20251208"
+msgstr ""
+
+#: ../../source/FMManual/fm_intro.rst:904
+msgid ":download:`Sdo读写驱动器全参数表 <../_static/_doc/Sdo读写驱动器全参数表.xls>`"
+msgstr ""
+
+#~ msgid "FM-11基本信息"
+#~ msgstr ""
+
+#~ msgid "FM-11"
+#~ msgstr ""
+
+#~ msgid "420(有刹车)"
+#~ msgstr ""
+
+#~ msgid "φ52*68.5（有刹车）"
+#~ msgstr ""
+
+#~ msgid "15"
+#~ msgstr ""
+
+#~ msgid "刹车"
+#~ msgstr ""
+
+#~ msgid "EtherCAT(可选配CAN)"
+#~ msgstr ""
+
+#~ msgid "FM-14基本信息"
+#~ msgstr ""
+
+#~ msgid "FM-14"
+#~ msgstr ""
+
+#~ msgid "730(有刹车)"
+#~ msgstr ""
+
+#~ msgid "φ70*83.1(有刹车)"
+#~ msgstr ""
+
+#~ msgid "32"
+#~ msgstr ""
+
+#~ msgid "64"
+#~ msgstr ""
+
+#~ msgid "FM-17基本信息"
+#~ msgstr ""
+
+#~ msgid "FM-17"
+#~ msgstr ""
+
+#~ msgid "1054(有刹车)"
+#~ msgstr ""
+
+#~ msgid "φ80*96.4(有刹车)"
+#~ msgstr ""
+
+#~ msgid "76.8"
+#~ msgstr ""
+
+#~ msgid "153.6"
+#~ msgstr ""
+
+#~ msgid "FM-11外形尺寸及安装孔位"
+#~ msgstr ""
+
+#~ msgid "图表 4-1 FM-11外形尺寸及安装孔位"
+#~ msgstr ""
+
+#~ msgid "FM-14外形尺寸及安装孔位"
+#~ msgstr ""
+
+#~ msgid "图表 4-2 FM-14外形尺寸及安装孔位"
+#~ msgstr ""
+
+#~ msgid "FM-17外形尺寸及安装孔位"
+#~ msgstr ""
+
+#~ msgid "图表 4-2 FM-17外形尺寸及安装孔位"
+#~ msgstr ""
+
+#~ msgid "（1）FM-11关节电气接口图："
+#~ msgstr ""
+
+#~ msgid "图表 5-1 FM-11关节电气接口图"
+#~ msgstr ""
+
+#~ msgid "（2）FM-14/17关节电气接口图："
+#~ msgstr ""
+
+#~ msgid "图表 5-2 FM-14/17关节电气接口图"
+#~ msgstr ""
+
+#~ msgid "图表 5-3 电源线束"
+#~ msgstr ""
+
+#~ msgid "（2）调试线束"
+#~ msgstr ""
+

@@ -14,3 +14,4 @@
    ART7Manual/intro
    PluginManual/intro
    SDKManual/intro
+   FMManual/intro

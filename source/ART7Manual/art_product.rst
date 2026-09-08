@@ -316,3 +316,7 @@ DH参数与坐标系
    :width: 6in
 
 .. centered:: 图表 3-18 末端工具法兰尺寸	
+
+3D 模型
+---------------------------------
+    :download:`ART7-R7 STEP模型 <../_static/_doc/ART7-R7 STEP Models.zip>`

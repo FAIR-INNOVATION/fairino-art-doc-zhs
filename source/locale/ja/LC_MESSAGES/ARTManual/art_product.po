@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 08:33+0800\n"
+"POT-Creation-Date: 2026-09-04 11:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -542,6 +542,7 @@ msgid "若末端负载处于“扩展后的负载能力”，须开启“时间�
 msgstr "末端負荷が「拡張された負荷能力」の状態にある場合、「時間最適モード」を有効化し、加速度制限を満たす必要があります。または、ロボットの作業範囲を縮小してください。"
 
 #: ../../source/ARTManual/art_product.rst:335
+#: ../../source/ARTManual/art_product.rst:425
 msgid "参数说明"
 msgstr "パラメータの説明"
 
@@ -677,6 +678,11 @@ msgstr ""
 #: ../../source/ARTManual/art_product.rst:422
 msgid "若末端负载处于“扩展后的负载能力”，建议减小机器人工作范围或降低运行速度。"
 msgstr "末端負荷が“拡張後の負荷能力”にある場合、ロボットの動作範囲を縮小するか、運転速度を下げることを推奨します。"
+
+#: ../../source/ARTManual/art_product.rst:430
+#, fuzzy
+msgid "ART3-R7负载曲线"
+msgstr "ART3-R7"
 
 #: ../../source/ARTManual/art_product.rst:432
 msgid "ART3-R7型号机器人最大可携带负载为5kg，额定负载为3kg，负载曲线图1所示。负载曲线的具体释义如下："
