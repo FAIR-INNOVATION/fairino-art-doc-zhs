@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  法奥协作机器人用户手册\n"
+"Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-04 11:11+0800\n"
+"POT-Creation-Date: 2026-09-22 08:35+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/ART7Manual/art_product.rst:2
@@ -505,16 +505,93 @@ msgid "图表 3-18 末端工具法兰尺寸"
 msgstr "図表 3-18 エンドツールフランジ寸法"
 
 #: ../../source/ART7Manual/art_product.rst:321
+msgid "机器人负载曲线"
+msgstr "ロボット負荷曲線"
+
+#: ../../source/ART7Manual/art_product.rst:324
+msgid "概述"
+msgstr "概要"
+
+#: ../../source/ART7Manual/art_product.rst:325
+msgid ""
+"在机器人中，负载能力通常是指机器人手臂末端执行器所能承受的最大负载，包括机器人手臂末端执行器的重量和附加负载。机械臂负载曲线用于描述末端负载重心偏移量与质量之间的关系，是客户进行机械臂选型的参考指标之一，它决定了机器人手臂的应用范围和工作效率。"
+msgstr ""
+"ロボットにおいて、耐荷重能力は通常、ロボットアームの末端エフェクタが耐えられる最大負荷を指し、これにはロボットアームの末端エフェクタの重量および付加負荷が含まれます。ロボットアームの負荷曲線は、末端負荷の重心オフセット量と質量との関係を表すものであり、顧客がロボットアームを選定する際の参考指標の一つであり、ロボットアームの応用範囲と作業効率を決定します。"
+
+#: ../../source/ART7Manual/art_product.rst:328
+msgid "ART7-R7负载曲线"
+msgstr "ART7-R7負荷曲線"
+
+#: ../../source/ART7Manual/art_product.rst:330
+msgid ""
+"本节所涉及的负载曲线基于ART7-R7全局运行速度为100%，配置1000W功率电源，开启速度前馈功能和T型速度，执行特定轨迹，实机测试获取。负载曲线存在“完整性能”和“扩展后的负载能力”两部分，具体如下："
+msgstr ""
+"本節で述べる負荷曲線はART7-R7に基づきグローバル運転速度を100%とし、1000W出力の電源を構成し、速度フィードフォワード機能とT型速度を有効にし、特定の軌跡を実行し、実機テストにより取得したものです。負荷曲線には“完全性能”と“拡張後の負荷能力”の2つの部分があり、具体的には以下の通りです："
+
+#: ../../source/ART7Manual/art_product.rst:332
+msgid ""
+"“完整性能”的运行环境为：设置相应运行速度，维护模式内速度150 deg/s，加速度默认为300 deg/s\\ "
+":sup:`2`。在此环境下，负载曲线“完整性能”部分适应绝大多数运行轨迹。"
+msgstr ""
+"“完全性能”の動作環境は以下の通りです：対応する運転速度を設定し，メンテナンスモード内の速度は150 deg/s，加速度はデフォルトで300 "
+"deg/s\\ :sup:`2`です。この環境下では，負荷曲線“完全性能”部分はほとんどすべての運転軌跡に対応します。"
+
+#: ../../source/ART7Manual/art_product.rst:333
+msgid "若末端负载处于“扩展后的负载能力”，建议减小机器人工作范围或降低运行速度。"
+msgstr "末端負荷が“拡張後の負荷能力”にある場合は、ロボットの作業範囲を縮小するか、運転速度を低下させることを推奨します。"
+
+#: ../../source/ART7Manual/art_product.rst:336
+msgid "参数说明"
+msgstr "パラメータの説明"
+
+#: ../../source/ART7Manual/art_product.rst:338
+msgid "机器人的额定有效负载取决于有效负载的重心偏移，其中，重心偏移定义为末端法兰中心与附加的有效负载重心之间的距离。"
+msgstr ""
+"ロボットの定格有効ペイロードは、有効ペイロードの重心オフセットによって決まります。ここで、重心オフセットは、エンドフランジの中心と付加された有効ペイロードの重心との間の距離として定義されます。"
+
+#: ../../source/ART7Manual/art_product.rst:341
+msgid "ART7-R7负载曲线图"
+msgstr "ART7-R7負荷曲線図"
+
+#: ../../source/ART7Manual/art_product.rst:343
+msgid "ART7-R7型号机器人最大可携带负载为12kg，额定负载为7kg，负载曲线图1所示。负载曲线的具体释义如下："
+msgstr "ART7-R7型ロボットの最大可搬負荷は12kg，定格負荷は7kg，負荷曲線図は1に示す通りです。負荷曲線の具体的な定義は以下の通りです："
+
+#: ../../source/ART7Manual/art_product.rst:345
+msgid "ART7-R7在完整性能下可携带7kg及以下的负载，见“蓝色包络线”；"
+msgstr "ART7-R7は完全性能下で7kg以下の負荷を搭載可能，“の青色包絡線”を参照；"
+
+#: ../../source/ART7Manual/art_product.rst:346
+msgid "当负载为7kg至12kg时，为扩展后的负载能力，见“红色包络线”，此时机器人可运行在如下状态："
+msgstr "負荷が7kgから12kgまでの場合，拡張後の負荷能力となり，“の赤色包絡線”を参照し，このときロボットは以下の状態で運転できます："
+
+#: ../../source/ART7Manual/art_product.rst:348
+msgid "①建议速度和加速度设置在150 deg/s和300 deg/s\\ :sup:`2` 以下；"
+msgstr "①速度と加速度は150 deg/sと300 deg/s\\ :sup:`2` 以下に設定することをお勧めします；"
+
+#: ../../source/ART7Manual/art_product.rst:350
+msgid "②减小机器人工作范围，避免频繁冲击。"
+msgstr "②ロボットの作業範囲を縮小し，頻繁な衝撃を回避する。"
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "038.png"
+msgstr "038.png"
+
+#: ../../source/ART7Manual/art_product.rst:357
+msgid "图表 3-19 负载曲线—全局运行速度100%"
+msgstr "図表 3-19 負荷曲線—全体の実行速度100%"
+
+#: ../../source/ART7Manual/art_product.rst:359
 msgid "3D 模型"
 msgstr "3D Model"
 
-#: ../../source/ART7Manual/art_product.rst:322
+#: ../../source/ART7Manual/art_product.rst:360
 msgid ":download:`ART7-R7 STEP模型 <../_static/_doc/ART7-R7 STEP Models.zip>`"
-msgstr ":download:`ART7-R7 STEP Models <../_static/_doc/ART7-R7 STEP Models.zip>`"
+msgstr ""
+":download:`ART7-R7 STEP Models <../_static/_doc/ART7-R7 STEP Models.zip>`"
 
 #~ msgid "600mm"
 #~ msgstr "600mm"
 
 #~ msgid "关节活动范围"
 #~ msgstr "関節可動範囲"
-

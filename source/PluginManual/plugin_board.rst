@@ -35,6 +35,10 @@
      - float64[]
      - 实际位置反馈。电机的真实位置读数（单位：rad 或 m）。
 
+   * - hseposition
+     - float64[]
+     - 高速侧位置，单位 rad。
+
    * - velocity
      - float64[]
      - 实际速度反馈。电机的真实速度读数（单位：rad/s 或 m/s）。
@@ -54,6 +58,10 @@
    * - opmode
      - int32[]
      - 伺服运行模式 (Mode of Operation)。如 8 代表 CSP（周期同步位置），10 代表 CST（周期同步力矩）。
+
+   * - temperature
+     - float64[]
+     - 电机芯片温度，单位 ℃
 
    * - command_position
      - float64[]
@@ -199,6 +207,10 @@
      - float64
      - 左臂力矩传感器z方向扭矩(需要具有末端板的手臂型号)
 
+   * - force_sensor1_errorcode
+     - Int32
+     - 左臂力矩传感器故障信息。正常为 0，通信异常为1(需要具有末端板的手臂型号)
+
    * - force_sensor2_linx
      - float64
      - 左臂力矩传感器x方向力(需要具有末端板的手臂型号)
@@ -222,6 +234,30 @@
    * - force_sensor2_rotz
      - float64
      - 右臂力矩传感器z方向扭矩(需要具有末端板的手臂型号)
+
+   * - force_sensor2_errorcode
+     - Int32
+     - 右臂力矩传感器故障信息，正常为 0，通信异常为1(需要具有末端板的手臂型号)
+
+   * - laser_ranger_distance
+     - Float64
+     - 左臂激光测距仪测量距离(需要具有末端板的手臂型号)
+
+   * - laser_ranger_errorcode
+     - Int32
+     - 左臂激光测距仪故障信息，正常状态为0，通信异常为1，测量数据0时为2(需要具有末端板的手臂型号)
+
+   * - laser_ranger2_distance
+     - Float64
+     - 右臂激光测距仪测量距离(需要具有末端板的手臂型号)
+
+   * - laser_ranger2_errorcode
+     - Int32
+     - 右臂激光测距仪测量距离，正常状态为0，通信异常为1，测量数据0时为2 (需要具有末端板的手臂型号)
+
+   * - velocity_feedforward
+     - Float64
+     - 速度前馈，单位 rad/s。按关节顺序，和joint_names对齐。该关节已用enablevelff打开、并且处于位置模式时才有值。未打开、刚打开、复位或故障时为 0
 		
 其中，hexerrorcode_curerrcode是当前系统的错误码，一旦该数值为非0，说明系统存在错误，由于错误码显示使用了十进制，而编写错误码采用了十六进制，因此需要讲十进制数据转换成十六进制数，才能解析出错误码对应的故障信息，以下是32位错误码组成说明。
 
@@ -464,6 +500,10 @@
    * - disablevelff
      - 关闭机器人速度前馈功能
      - 同enable函数用法
+
+   * - sdosetforcesensorzero
+     - 末端六维力清零
+     - args[0]:ethercat从站id，args[1]:末端位置，当单臂的1，双臂左臂为1，右臂为2。
 		
 同样的，根据上面阐述的指令服务器交互信息格式，每个一string指令都会有一个string反馈值，这个返回值是16位的错误码系统，其具体函数见如下表格：
 			

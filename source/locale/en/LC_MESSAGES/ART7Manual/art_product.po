@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  法奥协作机器人用户手册\n"
+"Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-04 11:11+0800\n"
+"POT-Creation-Date: 2026-09-22 08:35+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/ART7Manual/art_product.rst:2
@@ -57,8 +57,8 @@ msgstr "Nameplate Information"
 #: ../../source/ART7Manual/art_product.rst:26
 msgid "配置一单臂和包装箱的铭牌信息如图3-3和3-4所示。"
 msgstr ""
-"The nameplate information for the single-arm configuration and the "
-"packaging box is shown in Figures 3-3 and 3-4."
+"The nameplate information for the single-arm configuration and the packaging"
+" box is shown in Figures 3-3 and 3-4."
 
 #: ../../source/ART7Manual/art_product.rst:-1
 msgid "015.png"
@@ -79,8 +79,8 @@ msgstr "Figure  3-4  Configuration 1   Packing box nameplate information"
 #: ../../source/ART7Manual/art_product.rst:40
 msgid "配置二单臂+控制器和包装箱的铭牌信息如图3-5和3-6所示。"
 msgstr ""
-"The nameplate information on the Configuration 2 single-arm + controller "
-"and packaging box is shown in Figure 3-5 and 3-6."
+"The nameplate information on the Configuration 2 single-arm + controller and"
+" packaging box is shown in Figure 3-5 and 3-6."
 
 #: ../../source/ART7Manual/art_product.rst:-1
 msgid "017.png"
@@ -101,8 +101,8 @@ msgstr "Figure  3-6  Configuration 2   Packing Box Nameplate Information"
 #: ../../source/ART7Manual/art_product.rst:54
 msgid "配置三双臂和包装箱的铭牌信息如图3-7、3-8和3-9所示。"
 msgstr ""
-"The nameplate information for the three-arm configuration and the "
-"packaging box is shown in Figures 3-7, 3-8, and 3-9."
+"The nameplate information for the three-arm configuration and the packaging "
+"box is shown in Figures 3-7, 3-8, and 3-9."
 
 #: ../../source/ART7Manual/art_product.rst:-1
 msgid "019.png"
@@ -131,8 +131,8 @@ msgstr "Figure  3-9  Configuration 3   Packaging Box Nameplate Information"
 #: ../../source/ART7Manual/art_product.rst:74
 msgid "配置四双臂、控制器、分支器和包装箱的铭牌信息如图3-10、3-11和3-12所示。"
 msgstr ""
-"The nameplate information for the four dual arms, controllers, branch "
-"units, and packaging boxes is shown in Figures 3-10, 3-11, and 3-12."
+"The nameplate information for the four dual arms, controllers, branch units,"
+" and packaging boxes is shown in Figures 3-10, 3-11, and 3-12."
 
 #: ../../source/ART7Manual/art_product.rst:-1
 msgid "022.png"
@@ -295,8 +295,8 @@ msgstr "Joint Definition"
 #: ../../source/ART7Manual/art_product.rst:158
 msgid "左臂和右臂的关节定义如图3-13和3-14所示。"
 msgstr ""
-"The joint definitions of the left and right arms are shown in Figures "
-"3-13 and 3-14."
+"The joint definitions of the left and right arms are shown in Figures 3-13 "
+"and 3-14."
 
 #: ../../source/ART7Manual/art_product.rst:-1
 msgid "025.png"
@@ -517,16 +517,122 @@ msgid "图表 3-18 末端工具法兰尺寸"
 msgstr "Figure  3-18  End Effector Flange Dimensions"
 
 #: ../../source/ART7Manual/art_product.rst:321
+msgid "机器人负载曲线"
+msgstr "Robot Load Curve"
+
+#: ../../source/ART7Manual/art_product.rst:324
+msgid "概述"
+msgstr "Overview"
+
+#: ../../source/ART7Manual/art_product.rst:325
+msgid ""
+"在机器人中，负载能力通常是指机器人手臂末端执行器所能承受的最大负载，包括机器人手臂末端执行器的重量和附加负载。机械臂负载曲线用于描述末端负载重心偏移量与质量之间的关系，是客户进行机械臂选型的参考指标之一，它决定了机器人手臂的应用范围和工作效率。"
+msgstr ""
+"In robotics, load capacity usually refers to the maximum load that the end "
+"effector of the robot arm can bear, including the weight of the end effector"
+" of the robot arm and the additional payload. The robotic arm load curve is "
+"used to describe the relationship between the offset of the center of "
+"gravity of the end load and the mass, is one of the reference indicators for"
+" customers to select a robotic arm, and it determines the application range "
+"and working efficiency of the robot arm."
+
+#: ../../source/ART7Manual/art_product.rst:328
+msgid "ART7-R7负载曲线"
+msgstr "ART7-R7 load curve"
+
+#: ../../source/ART7Manual/art_product.rst:330
+msgid ""
+"本节所涉及的负载曲线基于ART7-R7全局运行速度为100%，配置1000W功率电源，开启速度前馈功能和T型速度，执行特定轨迹，实机测试获取。负载曲线存在“完整性能”和“扩展后的负载能力”两部分，具体如下："
+msgstr ""
+"The load curves involved in this section are based on ART7-R7 with a global "
+"operating speed of 100%, configured with a 1000W power supply, with the "
+"speed feedforward function and T-type speed enabled, executing specific "
+"trajectories, and obtained through real machine testing. The load curves "
+"consist of two parts: “ complete performance ” and “ load capacity after "
+"extension ”, as follows:"
+
+#: ../../source/ART7Manual/art_product.rst:332
+msgid ""
+"“完整性能”的运行环境为：设置相应运行速度，维护模式内速度150 deg/s，加速度默认为300 deg/s\\ "
+":sup:`2`。在此环境下，负载曲线“完整性能”部分适应绝大多数运行轨迹。"
+msgstr ""
+"The operating environment of “full performance” is: set the corresponding "
+"operating speed, the speed in maintenance mode is 150 deg/s, and the "
+"acceleration defaults to 300 deg/s\\ :sup:`2`. In this environment, the "
+"“full performance” section of the load curve accommodates the vast majority "
+"of motion trajectories."
+
+#: ../../source/ART7Manual/art_product.rst:333
+msgid "若末端负载处于“扩展后的负载能力”，建议减小机器人工作范围或降低运行速度。"
+msgstr ""
+"If the end load is at “ of the extended load capacity ”, it is recommended "
+"to reduce the robot's working range or lower the operating speed."
+
+#: ../../source/ART7Manual/art_product.rst:336
+msgid "参数说明"
+msgstr "Parameter Description"
+
+#: ../../source/ART7Manual/art_product.rst:338
+msgid "机器人的额定有效负载取决于有效负载的重心偏移，其中，重心偏移定义为末端法兰中心与附加的有效负载重心之间的距离。"
+msgstr ""
+"The rated payload of the robot depends on the center-of-gravity offset of "
+"the payload, where the center-of-gravity offset is defined as the distance "
+"between the center of the end flange and the center of gravity of the "
+"attached payload."
+
+#: ../../source/ART7Manual/art_product.rst:341
+msgid "ART7-R7负载曲线图"
+msgstr "ART7-R7 Load Curve Chart"
+
+#: ../../source/ART7Manual/art_product.rst:343
+msgid "ART7-R7型号机器人最大可携带负载为12kg，额定负载为7kg，负载曲线图1所示。负载曲线的具体释义如下："
+msgstr ""
+"The maximum payload of the ART7-R7 model robot is 12kg，the rated load is "
+"7kg，and the load curve diagram is shown 1。The detailed explanation of the "
+"load curve is as follows："
+
+#: ../../source/ART7Manual/art_product.rst:345
+msgid "ART7-R7在完整性能下可携带7kg及以下的负载，见“蓝色包络线”；"
+msgstr ""
+"ART7-R7 can carry loads of 7kg and below at full performance，see “ blue "
+"envelope curve ”；"
+
+#: ../../source/ART7Manual/art_product.rst:346
+msgid "当负载为7kg至12kg时，为扩展后的负载能力，见“红色包络线”，此时机器人可运行在如下状态："
+msgstr ""
+"When the load is 7kg to 12kg, it is the extended load capacity, see the “ "
+"red envelope curve ”. At this time, the robot can operate in the following "
+"states:"
+
+#: ../../source/ART7Manual/art_product.rst:348
+msgid "①建议速度和加速度设置在150 deg/s和300 deg/s\\ :sup:`2` 以下；"
+msgstr ""
+"①It is recommended that the speed and acceleration be set below 150 deg/s "
+"and 300 deg/s\\ :sup:`2` ;"
+
+#: ../../source/ART7Manual/art_product.rst:350
+msgid "②减小机器人工作范围，避免频繁冲击。"
+msgstr "②Reduce the robot's working range to avoid frequent impacts."
+
+#: ../../source/ART7Manual/art_product.rst:-1
+msgid "038.png"
+msgstr "038.png"
+
+#: ../../source/ART7Manual/art_product.rst:357
+msgid "图表 3-19 负载曲线—全局运行速度100%"
+msgstr "Chart 3-19 Load Curve—Global Running Speed 100%"
+
+#: ../../source/ART7Manual/art_product.rst:359
 msgid "3D 模型"
 msgstr "3D Model"
 
-#: ../../source/ART7Manual/art_product.rst:322
+#: ../../source/ART7Manual/art_product.rst:360
 msgid ":download:`ART7-R7 STEP模型 <../_static/_doc/ART7-R7 STEP Models.zip>`"
-msgstr ":download:`ART7-R7 STEP Models <../_static/_doc/ART7-R7 STEP Models.zip>`"
+msgstr ""
+":download:`ART7-R7 STEP Models <../_static/_doc/ART7-R7 STEP Models.zip>`"
 
 #~ msgid "600mm"
 #~ msgstr "600mm"
 
 #~ msgid "关节活动范围"
 #~ msgstr "Range of Motion"
-

@@ -1183,7 +1183,7 @@ SDK函数介绍
     * @brief  设置负载重量和质心
     * @param [in] index 负载列表下标，范围:[0-19]
     * @param [in] mess 负载重量，单位:kg
-    * @param [in] mess 负载质心坐标，单位:mm
+    * @param [in] mess 负载质心坐标(ART系列相对于末端坐标系(Z轴朝外，X朝按钮))，单位:mm
     * @return 错误码
     **/
     ARMErrorCode SetLoadcoord(uint8_t index, double mess, double messCenter[3]);
@@ -1240,6 +1240,72 @@ SDK函数介绍
      * @return 错误码
      **/
     ARMErrorCode SetTeachMode(uint8_t enable, uint8_t mode=0);
+
+设置电流环拖动示教调试用例(仅JK2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+    SingleRobot robot(ART7_R7, LeftArm);
+    ARMErrorCode rtnCode;
+
+    // 3. 设置安装角度
+    double yangle = -90;
+    double zangle = 90;
+    rtnCode = robot.SetRobotInstallAngle(yangle, zangle);  // 注意机械臂型号不同或者左右臂安装角度不同，安装角度根据实际情况而定。
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        Std::cout << "安装角度设置失败" << std::endl;
+    }
+
+    // 4. 设置负载质量和质心坐标
+    double messCenter[3] = {0.0, 0.0, 0.0};
+    rtnCode = robot.SetLoadcoord(1, 0.0, messCenter);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        Std::cout << "负载质量和质心坐标设置失败" << std::endl;
+    }
+
+    // 5. 关节软限位保护开
+    double limitNegative[7] = {-172.0, -112.0, -172.0, -77.0, -172.0, -72.0, -87.0};
+    double limitPositive[7] = {172.0, 112.0, 172.0, 112.0, 172.0, 72.0, 87.0};
+    rtnCode = robot.SetJointSoftLimitOnOff(1);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        Std::cout << "开启关节软限位保护失败" << std::endl;
+    }
+
+        // 6. 电流环拖动功能打开
+    rtnCode = robot.SetTeachMode(1);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        Std::cout << "电流环拖动开启失败" << std::endl;
+    }
+
+        // 6. 电流环拖动功能打开
+    rtnCode = robot.SetTeachMode(0);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        Std::cout << "电流环拖动关闭失败" << std::endl;
+    }
+
+        // 7. 关闭通信
+        tool.CloseRPC();
+        return 0;
+    }
 
 设置关节扭矩力传感器拖动示教(仅JK2.0机械臂使用)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1307,6 +1373,83 @@ SDK函数介绍
     * @return 错误码
     **/
     ARMErrorCode SetCollisionStrategy(uint8_t strategy);
+
+设置碰撞后策略调试用例(仅JK2.0机械臂使用)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+    SingleRobot robot(ART7_R7, LeftArm);
+    ARMErrorCode rtnCode;
+
+    // 3. 设置安装角度
+    double yangle = -90;
+    double zangle = 90;
+    rtnCode = robot.SetRobotInstallAngle(yangle, zangle);  // 注意机械臂型号不同或者左右臂安装角度不同，安装角度根据实际情况而定。
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        std::cout << "安装角度设置失败" << std::endl;
+    return -1;
+    }
+
+    // 4. 碰撞检测开启
+    rtnCode = robot.SetCollisionDetectionMode(1, 0);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        std::cout << "碰撞检测开启失败" << std::endl;
+    return -1;
+    }
+
+    // 5. 设置碰撞等级和策略
+    uint8_t level[7] = {5, 5, 5, 5, 5, 5, 5};  // 碰撞等级
+    rtnCode = robot.SetAnticollision(level);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        std::cout << "碰撞等级设置失败" << std::endl;
+    return -1;
+    }
+    rtnCode = robot.SetCollisionStrategy(1);  // 碰撞策略：重力矩
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        std::cout << "碰撞策略设置失败" << std::endl;
+    return -1;
+    }
+
+    // 6. 关节空间运动
+    double target[7] = {10, 20, 0, 0, 0, 0, 0};
+    char err_msg[1024];
+    rtnCode = robot.MoveJ(target, 30.0, 20.0, 0, err_msg);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        std::cout << "MoveJ运动失败" << std::endl;
+    return -1;
+    }
+
+        // 7. 碰撞检测关闭
+    rtnCode = robot.SetCollisionDetectionMode(0, 0);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+        std::cout << "碰撞检测关闭失败" << std::endl;
+    return -1;
+    }
+
+        // 7. 关闭通信
+        tool.CloseRPC();
+        return 0;
+    }
 
 设置关节扭矩力传感器零点标定(仅JK2.0机械臂使用)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1900,6 +2043,76 @@ SDK函数介绍
     **/
     ARMErrorCode GetContactDetectState(uint8_t& state);
                 
+力传感器数据清零
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  力传感器数据清零
+    * @return 错误码
+    **/
+    ARMErrorCode ForceSensorSetZero();
+                
+力传感器数据清零调试用例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+        SingleRobot robot(ART7_R7, SingleArm);
+
+        // 3. 力传感器激活
+    ARMErrorCode rtn = robot.FT_Activate(1);
+    if (ret == ARMErrorCode::Success)
+    {
+        std::cout << "力传感器激活执行成功" << std::endl;
+    }
+    else
+    {
+        std::cout << "力传感器激活执行失败，错误码: " << (int)ret << std::endl;
+    }
+
+    // 4. 力传感器数据清零
+    rtn = robot.ForceSensorSetZero();
+    if (ret == ARMErrorCode::Success)
+    {
+        std::cout << "力传感器数据清零执行成功" << std::endl;
+    }
+    else
+    {
+        std::cout << "力传感器数据清零执行失败，错误码: " << (int)ret << std::endl;
+    }
+
+        // 5. 力传感器关闭
+    rtn = robot.FT_Activate(0);
+    if (ret == ARMErrorCode::Success)
+    {
+        std::cout << "力传感器关闭执行成功" << std::endl;
+    }
+    else
+    {
+        std::cout << "力传感器关闭执行失败，错误码: " << (int)ret << std::endl;
+    }
+
+        // 7. 清理
+        tool.CloseRPC();
+        return 0;
+    }
+                
 速度前馈功能设置
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1913,6 +2126,51 @@ SDK函数介绍
     * @return 错误码
     **/
     ARMErrorCode SetVelForwardFeed(uint8_t enable, uint8_t axis[7]);
+                
+速度前馈功能设置调试用例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+        SingleRobot robot(ART7_R7, SingleArm);
+
+    // 3. 开启2、3、4轴速度前速前馈
+    uint8_t axis[7] = {0, 1, 1, 1, 0, 0, 0};
+    ArmErrorCode rtnCode = robot.SetVelForwardFeed(1, axis);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+    std::cout << "速度前馈开启失败" << std::endl;
+    return -1;
+    }
+
+        // 4. 关闭2和4轴速度前速前馈
+    axis[1] = 0;
+    axis[3] = 0;
+    rtnCode = robot.SetVelForwardFeed(0, axis);
+    if (rtnCode != ARMErrorCode::Success)
+    {
+    std::cout << "速度前馈关闭失败" << std::endl;
+    return -1;
+    }
+
+        // 7. 关闭通信
+        tool.CloseRPC();
+        return 0;
+    }
+    
 
 腰部的SDK函数介绍(存在腰部关节的情况下)
 -----------------------------------------------------------------------------------------

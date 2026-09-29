@@ -7,26 +7,27 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 法奥协作机器人用户手册 \n"
+"Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-07 09:38+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/FMManual/fm_intro.rst:6
 msgid "安全事项"
-msgstr ""
+msgstr "安全事項"
 
 #: ../../source/FMManual/fm_intro.rst:8
 msgid "为确保用户安全正确使用本产品，避免对人员造成伤害，特制定安全事项。在使用本产品前，请务必认真阅读以下安全事项："
 msgstr ""
+"本製品を安全かつ正しくご使用いただき、人員への傷害を防止するため、安全事項を定めております。本製品をご使用になる前に、以下の安全事項を必ずよくお読みください："
 
 #: ../../source/FMManual/fm_intro.rst:10
 msgid ""
@@ -34,1418 +35,1514 @@ msgid ""
 "本产品的使用条件具有多样化，请由系统的设计者或规格的制定者来判断系统的适用性。必要时请通过分析和测试进行判断。 "
 "请在参考最新的产品资料、确认规格的全部内容、考虑到可能发生的故障，在此基础上构建系统。"
 msgstr ""
+"（1）本製品の適合性は、システム設計者または仕様策定者のご判断をお願いいたします。 "
+"本製品の使用条件は多様であるため、システムの設計者または仕様の策定者にシステムの適合性をご判断いただくようお願いいたします。必要に応じて、解析および試験による判断を行ってください。"
+" 最新の製品資料を参考にし、仕様の全内容を確認し、発生が想定される故障を考慮したうえで、システムを構築してください。"
 
 #: ../../source/FMManual/fm_intro.rst:12
 msgid ""
-"（2）请具有充分知识和经验的人员使用本产品。 在此所述产品若误操作会损害其安全性。 "
-"机械装置的组装、操作、维修保养等作业请由具有充分知识和经验的人执行。"
+"（2）请具有充分知识和经验的人员使用本产品。 在此所述产品若误操作会损害其安全性。 机械装置的组装、操作、维修保养等作业请由具有充分知识和经验的人执行。"
 msgstr ""
+"（2）十分な知識と経験を有する者に本製品を使用させてください。 ここに記載の製品は誤操作するとその安全性が損なわれるおそれがあります。 "
+"機械装置の組立、操作、保守・保全などの作業は十分な知識と経験を有する者に実施させてください。"
 
 #: ../../source/FMManual/fm_intro.rst:14
 msgid "（3）请务必在确认机械、设备的安全之后，再进行产品的使用和拆卸。"
-msgstr ""
+msgstr "（3）機械、設備の安全を確認した後で、必ず製品の使用および取り外しを行ってください。"
 
 #: ../../source/FMManual/fm_intro.rst:16
 msgid "请在确认已进行了移动体的落下防止对策和失控防止对策之后再进行机械、设备的使用和维护。"
-msgstr ""
+msgstr "移動体の落下防止対策と暴走防止対策が実施されていることを確認した上で、機械、設備の使用と保守を行ってください。"
 
 #: ../../source/FMManual/fm_intro.rst:17
 msgid "请在确认已采取上述安全措施，并切断了能量源和设备电源以保证系统安全 的同时，确认和理解设备上产品个别注意事项的基础上，进行产品的拆卸。"
 msgstr ""
+"上記の安全措置が講じられていることを確認し、システムの安全を確保するためにエネルギー源および装置の電源を遮断した "
+"と同時に、装置上の製品の個別注意事項を確認・理解した上で、製品の取り外しを行ってください。"
 
 #: ../../source/FMManual/fm_intro.rst:18
 msgid "重新启动机械、设备时，请对意外动作、误操作采取预防措施。"
-msgstr ""
+msgstr "機械、設備を再起動する際は、不慮の動作、誤操作に対して予防措置を講じてください。"
 
 #: ../../source/FMManual/fm_intro.rst:20
 msgid "（4）在如下所示条件和环境下使用时，请在考虑安全对策的同时，提前向我司咨询。"
-msgstr ""
+msgstr "（4）以下に示す条件および環境下で使用される場合は、安全対策を考慮するとともに、事前に当社へご相談ください。"
 
 #: ../../source/FMManual/fm_intro.rst:22
 msgid "明确记载的规格以外的条件或环境。"
-msgstr ""
+msgstr "明確に記載された規格以外の条件または環境。"
 
 #: ../../source/FMManual/fm_intro.rst:23
 msgid "使用于原子能、铁路、航空、宇宙设备、船舶、军用、医疗设备、食品用设备、燃料装置、安全设备等场合，以及用于非产品手册中的标准规格的场合。"
 msgstr ""
+"原子力、鉄道、航空、宇宙機器、船舶、軍用、医療機器、食品用機器、燃料装置、安全機器などの用途に使用する場合、および製品マニュアルに記載された標準仕様以外の用途に使用する場合。"
 
 #: ../../source/FMManual/fm_intro.rst:24
 msgid "预测对人身和财产有重大影响，特别是在有安全要求的场合使用时。"
-msgstr ""
+msgstr "予測は人身および財産に重大な影響を及ぼすものであり、特に安全性が求められる場面で使用する場合には注意が必要です。"
 
 #: ../../source/FMManual/fm_intro.rst:25
 msgid "用于互锁回路时，请设置应对故障的机械式保护功能，进行双重互锁。另外 进行定期检查以确认是否正常作动。"
 msgstr ""
+"インターロック回路として使用する場合は，故障に対処するための機械式保護機能を設けて，二重のインターロックを行ってください。また， "
+"定期的に点検を行い，正常に作動しているかどうかを確認してください。"
 
 #: ../../source/FMManual/fm_intro.rst:28
 msgid "总体介绍"
-msgstr ""
+msgstr "総合紹介"
 
 #: ../../source/FMManual/fm_intro.rst:33
-msgid "随着机器人市场规模的不断扩大，各行业对机器人关节的需求量也随之增长，促使企业开发更通用、高性能的关节产品，以满足市场的多样化需求，降低生产成本，提高市场竞争力。"
+msgid ""
+"随着机器人市场规模的不断扩大，各行业对机器人关节的需求量也随之增长，促使企业开发更通用、高性能的关节产品，以满足市场的多样化需求，降低生产成本，提高市场竞争力。"
 msgstr ""
+"ロボット市場規模の絶え間ない拡大につれて，各業界のロボット関節に対する需要量もそれに伴い増加し，企業はより汎用的、高性能な関節製品の開発を促され，市場の多様化するニーズを満たし，生産コストを低減し，市場競争力を向上させる。"
 
 #: ../../source/FMManual/fm_intro.rst:35
-msgid "国内一些友商的关节产品已广泛运用于工业机器人、协作机器人，满足使用场景需求，强调产品的负载能力和可靠性。公司已有成熟的协作机器人用关节，也已开发了人形机器人的关节。综合已有的技术储备，开发尺寸小、重量轻、质量优、成本低的通用型关节紧紧围绕为客户解决问题，提供价值角度出发，打造属于自己的产品领域和蓝海。"
+msgid ""
+"国内一些友商的关节产品已广泛运用于工业机器人、协作机器人，满足使用场景需求，强调产品的负载能力和可靠性。公司已有成熟的协作机器人用关节，也已开发了人形机器人的关节。综合已有的技术储备，开发尺寸小、重量轻、质量优、成本低的通用型关节紧紧围绕为客户解决问题，提供价值角度出发，打造属于自己的产品领域和蓝海。"
 msgstr ""
+"国内の一部の同業他社の関節製品は、すでに産業用ロボット、協働ロボットに広く応用されており、使用シーンのニーズを満たし、製品の耐荷重能力と信頼性を強調しています。当社はすでに成熟した協働ロボット用関節を有しており、ヒューマノイドロボット用の関節もすでに開発しました。既存の技術蓄積を総合的に活かし、小型・軽量・高品質・低コストの汎用型関節の開発を、お客様の問題解決と価値提供という観点を中心に据えて推進し、独自の製品分野とブルーオーシャンを築いていきます。"
 
 #: ../../source/FMManual/fm_intro.rst:38
 msgid "产品基本信息"
-msgstr ""
+msgstr "製品基本情報"
 
 #: ../../source/FMManual/fm_intro.rst:41
 msgid "FM-11-B基本信息"
-msgstr ""
+msgstr "FM-11-B基本情報"
 
-#: ../../source/FMManual/fm_intro.rst:48 ../../source/FMManual/fm_intro.rst:104
+#: ../../source/FMManual/fm_intro.rst:48
+#: ../../source/FMManual/fm_intro.rst:104
 #: ../../source/FMManual/fm_intro.rst:160
 msgid "**参数类型**"
-msgstr ""
+msgstr "**パラメータの型**"
 
-#: ../../source/FMManual/fm_intro.rst:49 ../../source/FMManual/fm_intro.rst:105
+#: ../../source/FMManual/fm_intro.rst:49
+#: ../../source/FMManual/fm_intro.rst:105
 #: ../../source/FMManual/fm_intro.rst:161
 msgid "**参数分解**"
-msgstr ""
+msgstr "**パラメータ分解**"
 
 #: ../../source/FMManual/fm_intro.rst:51
 msgid "产品类型"
-msgstr ""
+msgstr "製品タイプ"
 
 #: ../../source/FMManual/fm_intro.rst:52
 msgid "FM-11-B"
-msgstr ""
+msgstr "FM-11-B"
 
-#: ../../source/FMManual/fm_intro.rst:54 ../../source/FMManual/fm_intro.rst:110
+#: ../../source/FMManual/fm_intro.rst:54
+#: ../../source/FMManual/fm_intro.rst:110
 #: ../../source/FMManual/fm_intro.rst:166
 msgid "产品重量/g"
-msgstr ""
+msgstr "製品重量/g"
 
 #: ../../source/FMManual/fm_intro.rst:55
 msgid "420"
-msgstr ""
+msgstr "420"
 
-#: ../../source/FMManual/fm_intro.rst:57 ../../source/FMManual/fm_intro.rst:113
+#: ../../source/FMManual/fm_intro.rst:57
+#: ../../source/FMManual/fm_intro.rst:113
 #: ../../source/FMManual/fm_intro.rst:169
 msgid "尺寸/mm"
-msgstr ""
+msgstr "サイズ/mm"
 
 #: ../../source/FMManual/fm_intro.rst:58
 msgid "φ52*68.5"
-msgstr ""
+msgstr "φ52*68.5"
 
-#: ../../source/FMManual/fm_intro.rst:60 ../../source/FMManual/fm_intro.rst:116
+#: ../../source/FMManual/fm_intro.rst:60
+#: ../../source/FMManual/fm_intro.rst:116
 #: ../../source/FMManual/fm_intro.rst:172
 msgid "减速比"
-msgstr ""
+msgstr "減速比"
 
-#: ../../source/FMManual/fm_intro.rst:61 ../../source/FMManual/fm_intro.rst:117
+#: ../../source/FMManual/fm_intro.rst:61
+#: ../../source/FMManual/fm_intro.rst:117
 #: ../../source/FMManual/fm_intro.rst:141
 msgid "100"
-msgstr ""
+msgstr "100"
 
-#: ../../source/FMManual/fm_intro.rst:63 ../../source/FMManual/fm_intro.rst:119
+#: ../../source/FMManual/fm_intro.rst:63
+#: ../../source/FMManual/fm_intro.rst:119
 #: ../../source/FMManual/fm_intro.rst:175
 msgid "额定扭矩/N.m"
-msgstr ""
+msgstr "定格トルク/N.m"
 
 #: ../../source/FMManual/fm_intro.rst:64
 msgid "3.7"
-msgstr ""
+msgstr "3.7"
 
-#: ../../source/FMManual/fm_intro.rst:66 ../../source/FMManual/fm_intro.rst:122
+#: ../../source/FMManual/fm_intro.rst:66
+#: ../../source/FMManual/fm_intro.rst:122
 #: ../../source/FMManual/fm_intro.rst:178
 msgid "平均负载扭矩/N.m"
-msgstr ""
+msgstr "平均負荷トルク/N.m"
 
 #: ../../source/FMManual/fm_intro.rst:67
 msgid "6.2"
-msgstr ""
+msgstr "6.2"
 
-#: ../../source/FMManual/fm_intro.rst:69 ../../source/FMManual/fm_intro.rst:125
+#: ../../source/FMManual/fm_intro.rst:69
+#: ../../source/FMManual/fm_intro.rst:125
 #: ../../source/FMManual/fm_intro.rst:181
 msgid "最大扭矩/N.m"
-msgstr ""
+msgstr "最大トルク/N.m"
 
 #: ../../source/FMManual/fm_intro.rst:70
 msgid "17.5"
-msgstr ""
+msgstr "17.5"
 
-#: ../../source/FMManual/fm_intro.rst:72 ../../source/FMManual/fm_intro.rst:128
+#: ../../source/FMManual/fm_intro.rst:72
+#: ../../source/FMManual/fm_intro.rst:128
 #: ../../source/FMManual/fm_intro.rst:184
 msgid "额定转速/RPM"
-msgstr ""
+msgstr "定格回転数/RPM"
 
-#: ../../source/FMManual/fm_intro.rst:73 ../../source/FMManual/fm_intro.rst:129
+#: ../../source/FMManual/fm_intro.rst:73
+#: ../../source/FMManual/fm_intro.rst:129
 msgid "30"
-msgstr ""
+msgstr "30"
 
-#: ../../source/FMManual/fm_intro.rst:75 ../../source/FMManual/fm_intro.rst:131
+#: ../../source/FMManual/fm_intro.rst:75
+#: ../../source/FMManual/fm_intro.rst:131
 #: ../../source/FMManual/fm_intro.rst:187
 msgid "重复定位精度/”"
-msgstr ""
+msgstr "繰り返し位置決め精度/”"
 
-#: ../../source/FMManual/fm_intro.rst:76 ../../source/FMManual/fm_intro.rst:132
+#: ../../source/FMManual/fm_intro.rst:76
+#: ../../source/FMManual/fm_intro.rst:132
 #: ../../source/FMManual/fm_intro.rst:188
 msgid "±15"
-msgstr ""
+msgstr "±15"
 
-#: ../../source/FMManual/fm_intro.rst:78 ../../source/FMManual/fm_intro.rst:134
+#: ../../source/FMManual/fm_intro.rst:78
+#: ../../source/FMManual/fm_intro.rst:134
 #: ../../source/FMManual/fm_intro.rst:190
 msgid "中控孔径/mm"
-msgstr ""
+msgstr "中央孔径/mm"
 
 #: ../../source/FMManual/fm_intro.rst:79
 msgid "10"
-msgstr ""
+msgstr "10"
 
-#: ../../source/FMManual/fm_intro.rst:81 ../../source/FMManual/fm_intro.rst:137
+#: ../../source/FMManual/fm_intro.rst:81
+#: ../../source/FMManual/fm_intro.rst:137
 #: ../../source/FMManual/fm_intro.rst:193
 msgid "工作温度/℃"
-msgstr ""
+msgstr "動作温度/℃"
 
-#: ../../source/FMManual/fm_intro.rst:82 ../../source/FMManual/fm_intro.rst:138
+#: ../../source/FMManual/fm_intro.rst:82
+#: ../../source/FMManual/fm_intro.rst:138
 #: ../../source/FMManual/fm_intro.rst:194
 msgid "0~45℃"
-msgstr ""
+msgstr "0~45℃"
 
-#: ../../source/FMManual/fm_intro.rst:84 ../../source/FMManual/fm_intro.rst:140
+#: ../../source/FMManual/fm_intro.rst:84
+#: ../../source/FMManual/fm_intro.rst:140
 #: ../../source/FMManual/fm_intro.rst:196
 msgid "额定功率/W"
-msgstr ""
+msgstr "定格電力/W"
 
 #: ../../source/FMManual/fm_intro.rst:85
 msgid "31"
-msgstr ""
+msgstr "31"
 
-#: ../../source/FMManual/fm_intro.rst:87 ../../source/FMManual/fm_intro.rst:143
+#: ../../source/FMManual/fm_intro.rst:87
+#: ../../source/FMManual/fm_intro.rst:143
 #: ../../source/FMManual/fm_intro.rst:199
 msgid "额定电压/V"
-msgstr ""
+msgstr "定格電圧/V"
 
-#: ../../source/FMManual/fm_intro.rst:88 ../../source/FMManual/fm_intro.rst:144
+#: ../../source/FMManual/fm_intro.rst:88
+#: ../../source/FMManual/fm_intro.rst:144
 #: ../../source/FMManual/fm_intro.rst:200
 msgid "48"
-msgstr ""
+msgstr "48"
 
-#: ../../source/FMManual/fm_intro.rst:90 ../../source/FMManual/fm_intro.rst:146
+#: ../../source/FMManual/fm_intro.rst:90
+#: ../../source/FMManual/fm_intro.rst:146
 #: ../../source/FMManual/fm_intro.rst:202
 msgid "抱闸"
-msgstr ""
+msgstr "ブレーキ"
 
-#: ../../source/FMManual/fm_intro.rst:91 ../../source/FMManual/fm_intro.rst:147
+#: ../../source/FMManual/fm_intro.rst:91
+#: ../../source/FMManual/fm_intro.rst:147
 #: ../../source/FMManual/fm_intro.rst:203
 msgid "支持"
-msgstr ""
+msgstr "サポート"
 
-#: ../../source/FMManual/fm_intro.rst:93 ../../source/FMManual/fm_intro.rst:149
+#: ../../source/FMManual/fm_intro.rst:93
+#: ../../source/FMManual/fm_intro.rst:149
 #: ../../source/FMManual/fm_intro.rst:205
 msgid "通讯接口"
-msgstr ""
+msgstr "通信インターフェース"
 
-#: ../../source/FMManual/fm_intro.rst:94 ../../source/FMManual/fm_intro.rst:150
+#: ../../source/FMManual/fm_intro.rst:94
+#: ../../source/FMManual/fm_intro.rst:150
 #: ../../source/FMManual/fm_intro.rst:206
 msgid "EtherCAT"
-msgstr ""
+msgstr "EtherCAT"
 
 #: ../../source/FMManual/fm_intro.rst:97
 msgid "FM-14-B基本信息"
-msgstr ""
+msgstr "FM-14-B基本情報"
 
 #: ../../source/FMManual/fm_intro.rst:107
 #: ../../source/FMManual/fm_intro.rst:163
 msgid "型号"
-msgstr ""
+msgstr "型番"
 
 #: ../../source/FMManual/fm_intro.rst:108
 msgid "FM-14-B"
-msgstr ""
+msgstr "FM-14-B"
 
 #: ../../source/FMManual/fm_intro.rst:111
 msgid "730"
-msgstr ""
+msgstr "730"
 
 #: ../../source/FMManual/fm_intro.rst:114
 msgid "φ70*83.6"
-msgstr ""
+msgstr "φ70*83.6"
 
 #: ../../source/FMManual/fm_intro.rst:120
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../source/FMManual/fm_intro.rst:123
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../source/FMManual/fm_intro.rst:126
 msgid "63"
-msgstr ""
+msgstr "63"
 
 #: ../../source/FMManual/fm_intro.rst:135
 #: ../../source/FMManual/fm_intro.rst:191
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../source/FMManual/fm_intro.rst:153
 msgid "FM-17-B基本信息"
-msgstr ""
+msgstr "FM-17-B基本情報"
 
 #: ../../source/FMManual/fm_intro.rst:164
 msgid "FM-17-B"
-msgstr ""
+msgstr "FM-17-B"
 
 #: ../../source/FMManual/fm_intro.rst:167
 msgid "1054"
-msgstr ""
+msgstr "1054"
 
 #: ../../source/FMManual/fm_intro.rst:170
 msgid "φ80*97.4"
-msgstr ""
+msgstr "φ80*97.4"
 
 #: ../../source/FMManual/fm_intro.rst:173
 msgid "120"
-msgstr ""
+msgstr "120"
 
 #: ../../source/FMManual/fm_intro.rst:176
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../source/FMManual/fm_intro.rst:179
 msgid "39"
-msgstr ""
+msgstr "39"
 
 #: ../../source/FMManual/fm_intro.rst:182
 msgid "86"
-msgstr ""
+msgstr "86"
 
 #: ../../source/FMManual/fm_intro.rst:185
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: ../../source/FMManual/fm_intro.rst:197
 msgid "200"
-msgstr ""
+msgstr "200"
 
 #: ../../source/FMManual/fm_intro.rst:209
 msgid "产品外形尺寸及安装孔位"
-msgstr ""
+msgstr "製品外形寸法及び取付穴位置"
 
 #: ../../source/FMManual/fm_intro.rst:212
 msgid "FM-11-B外形尺寸及安装孔位"
-msgstr ""
+msgstr "FM-11-B外形寸法及び取付穴位置"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "001.png"
-msgstr ""
+msgstr "001.png"
 
 #: ../../source/FMManual/fm_intro.rst:219
 msgid "图表 4-1 FM-11-B外形尺寸及安装孔位"
-msgstr ""
+msgstr "図表 4-1 FM-11-B外形寸法及び取付穴位置"
 
 #: ../../source/FMManual/fm_intro.rst:221
 msgid "FM-14-B外形尺寸及安装孔位"
-msgstr ""
+msgstr "FM-14-B外形寸法及び取付穴位置"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "002.png"
-msgstr ""
+msgstr "002.png"
 
 #: ../../source/FMManual/fm_intro.rst:228
 msgid "图表 4-2 FM-14-B外形尺寸及安装孔位"
-msgstr ""
+msgstr "図表 4-2 FM-14-B外形寸法および取付穴位置"
 
 #: ../../source/FMManual/fm_intro.rst:230
 msgid "FM-17-B外形尺寸及安装孔位"
-msgstr ""
+msgstr "FM-17-B外形寸法及び取付穴位置"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "003.png"
-msgstr ""
+msgstr "003.png"
 
 #: ../../source/FMManual/fm_intro.rst:237
 msgid "图表 4-2 FM-17-B外形尺寸及安装孔位"
-msgstr ""
+msgstr "図表 4-2 FM-17-B外形寸法及び取付穴位置"
 
 #: ../../source/FMManual/fm_intro.rst:239
 msgid "安装事项"
-msgstr ""
+msgstr "インストール事項"
 
 #: ../../source/FMManual/fm_intro.rst:241
 msgid "在安装之前，请认真阅读通用关节相关安全说明（1.1安全事项）。在固定好产品前，请勿提前打开电源。"
 msgstr ""
+"取付前に，汎用ジョイントに関する安全説明（1.1安全上の注意事項）をよくお読みください。製品を確実に固定する前に，先に電源を投入しないでください。"
 
 #: ../../source/FMManual/fm_intro.rst:244
 msgid "使用条件"
-msgstr ""
+msgstr "使用条件"
 
 #: ../../source/FMManual/fm_intro.rst:246
 msgid "通用关节的操作及运输、存储条件为："
-msgstr ""
+msgstr "汎用ジョイントの操作及び輸送、保管条件は以下の通りです："
 
 #: ../../source/FMManual/fm_intro.rst:248
 msgid "操作环境温度: 0℃～+45℃；"
-msgstr ""
+msgstr "動作環境温度: 0℃～+45℃；"
 
 #: ../../source/FMManual/fm_intro.rst:249
 msgid "操作环境湿度: 20%～90% RH（40°C）（无霜无结露）；"
-msgstr ""
+msgstr "動作環境湿度: 20%～90% RH（40°C）（霜・結露なきこと）；"
 
 #: ../../source/FMManual/fm_intro.rst:250
 msgid "运输及储存温度: -20℃ ～ +60℃（无霜无结露）；"
-msgstr ""
+msgstr "輸送及び保管温度: -20℃ ～ +60℃（結霜・結露なし）；"
 
 #: ../../source/FMManual/fm_intro.rst:252
 msgid "通用关节须远离振动及冲击环境，环境不含灰尘、烟尘或水，不含腐蚀性气体、液体或爆炸性气体， 没有强大的电磁干扰源。"
 msgstr ""
+"汎用ジョイントは振動及び衝撃の環境から遠ざける必要があり，環境には埃、煙塵又は水が含まれず，腐食性ガス、液体又は爆発性ガスが含まれず， "
+"には強力な電磁干渉源がない。"
 
 #: ../../source/FMManual/fm_intro.rst:255
 msgid "电气接口"
-msgstr ""
+msgstr "電気インターフェース"
 
 #: ../../source/FMManual/fm_intro.rst:257
 msgid "各通用关节的电气接口示意："
-msgstr ""
+msgstr "各汎用関節の電気インターフェースの概略図："
 
 #: ../../source/FMManual/fm_intro.rst:259
 msgid "（1）FM-11-B关节电气接口图："
-msgstr ""
+msgstr "（1）FM-11-B関節電気インターフェース図："
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "004.png"
-msgstr ""
+msgstr "004.png"
 
 #: ../../source/FMManual/fm_intro.rst:266
 msgid "图表 5-1 FM-11-B关节电气接口图"
-msgstr ""
+msgstr "図表 5-1 FM-11-B関節電気インターフェース図"
 
 #: ../../source/FMManual/fm_intro.rst:267
 msgid "（2）FM-14/17-B关节电气接口图："
-msgstr ""
+msgstr "（2）FM-14/17-B関節電気インタフェース図："
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "005.png"
-msgstr ""
+msgstr "005.png"
 
 #: ../../source/FMManual/fm_intro.rst:274
 msgid "图表 5-2 FM-14/17-B关节电气接口图"
-msgstr ""
+msgstr "図表 5-2 FM-14/17-B関節電気インターフェース図"
 
 #: ../../source/FMManual/fm_intro.rst:276
 msgid "线缆连接"
-msgstr ""
+msgstr "ケーブル接続"
 
 #: ../../source/FMManual/fm_intro.rst:278
 msgid "电源及调试线束插头型号："
-msgstr ""
+msgstr "電源及びデバッグハーネスプラグ型番："
 
 #: ../../source/FMManual/fm_intro.rst:280
 msgid "（1）电源线束"
-msgstr ""
+msgstr "（1）電源ハーネス"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "006.png"
-msgstr ""
+msgstr "006.png"
 
 #: ../../source/FMManual/fm_intro.rst:287
 msgid "图表 5-3-1 电源线束"
-msgstr ""
+msgstr "図表 5-3-1 電源ハーネス"
 
 #: ../../source/FMManual/fm_intro.rst:288
 msgid "（2）网线线束"
-msgstr ""
+msgstr "（2）LANケーブルハーネス"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "061.png"
-msgstr ""
+msgstr "061.png"
 
 #: ../../source/FMManual/fm_intro.rst:295
 msgid "图表 5-3-2 网线线束"
-msgstr ""
+msgstr "図表 5-3-2 ネットワークケーブルハーネス"
 
 #: ../../source/FMManual/fm_intro.rst:296
 msgid "（3）调试线束"
-msgstr ""
+msgstr "（3）デバッグハーネス"
 
 #: ../../source/FMManual/fm_intro.rst:298
 msgid "调试线束为法奥专供线束，可按需购买"
-msgstr ""
+msgstr "デバッグ用ハーネスは法奥専用ハーネス，必要に応じて購入可能です"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "062.png"
-msgstr ""
+msgstr "062.png"
 
 #: ../../source/FMManual/fm_intro.rst:305
 msgid "图表 5-3-3 调试线束"
-msgstr ""
+msgstr "図表 5-3-3 デバッグハーネス"
 
 #: ../../source/FMManual/fm_intro.rst:307
 #: ../../source/FMManual/fm_intro.rst:379
 msgid "调整参数"
-msgstr ""
+msgstr "パラメータの調整"
 
 #: ../../source/FMManual/fm_intro.rst:310
 msgid "基本设置"
-msgstr ""
+msgstr "基本設定"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "007.png"
-msgstr ""
+msgstr "007.png"
 
 #: ../../source/FMManual/fm_intro.rst:317
 msgid "图表 6-1 基本参数功能描述表"
-msgstr ""
+msgstr "図表 6-1 基本パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:319
 msgid "通讯参数"
-msgstr ""
+msgstr "通信パラメータ"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "008.png"
-msgstr ""
+msgstr "008.png"
 
 #: ../../source/FMManual/fm_intro.rst:326
 msgid "图表 6-2 通信参数功能描述表"
-msgstr ""
+msgstr "図表 6-2 通信パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "009.png"
-msgstr ""
+msgstr "009.png"
 
 #: ../../source/FMManual/fm_intro.rst:332
 msgid "图表 6-3 通讯接口功能描述表"
-msgstr ""
+msgstr "図表 6-3 通信インタフェース機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "010.png"
-msgstr ""
+msgstr "010.png"
 
 #: ../../source/FMManual/fm_intro.rst:338
 msgid "图表 6-4 波特率功能描述表"
-msgstr ""
+msgstr "図表 6-4 ボーレート機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:340
 msgid "电机参数"
-msgstr ""
+msgstr "モーター参数"
 
 #: ../../source/FMManual/fm_intro.rst:342
 msgid "电机参数项：总长度60个元素，元素类型为S32,当前有效数据为2-21个元素，有效元素均可读写。"
-msgstr ""
+msgstr "モータパラメータ項目：総長さは60個の要素，要素タイプはS32,現在の有効データは2-21個の要素，有効な要素はいずれも読み書き可能です。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "011.png"
-msgstr ""
+msgstr "011.png"
 
 #: ../../source/FMManual/fm_intro.rst:349
 msgid "图表 6-5 电机参数功能描述表"
-msgstr ""
+msgstr "図表 6-5 モーターパラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "012.png"
-msgstr ""
+msgstr "012.png"
 
 #: ../../source/FMManual/fm_intro.rst:355
 msgid "图表 6-6 编码器类型功能描述表"
-msgstr ""
+msgstr "図表 6-6 エンコーダタイプ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:357
 msgid "驱动参数"
-msgstr ""
+msgstr "駆動パラメータ"
 
 #: ../../source/FMManual/fm_intro.rst:359
 msgid "监控参数项：总长度60个元素，元素类型为S32，当前有效数据为2-11个元素，有效元素均可读写。"
-msgstr ""
+msgstr "監視パラメータ項目：総長60個の要素、要素タイプはS32、現在有効データは2-11個の要素、有効要素はいずれも読み書き可能。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "013.png"
-msgstr ""
+msgstr "013.png"
 
 #: ../../source/FMManual/fm_intro.rst:366
 msgid "图表 6-7 驱动参数功能描述表"
-msgstr ""
+msgstr "図表 6-7 駆動パラメータ機能記述表"
 
 #: ../../source/FMManual/fm_intro.rst:368
 msgid "监控参数"
-msgstr ""
+msgstr "監視パラメータ"
 
 #: ../../source/FMManual/fm_intro.rst:370
 msgid "监控参数项：总长度60个元素，元素类型为S32，当前有效数据为2-8个元素，有效元素只支持读取，不支持写入。故障码具体说明详见报警代码表。"
 msgstr ""
+"監視パラメータ項目：総長は60個の要素、要素タイプはS32、現在の有効データは2-8個の要素、有効要素は読み取りのみをサポートし、書き込みはサポートしません。故障コードの具体的な説明はアラームコード表をご参照ください。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "014.png"
-msgstr ""
+msgstr "014.png"
 
 #: ../../source/FMManual/fm_intro.rst:377
 msgid "图表 6-8 监控参数功能描述表"
-msgstr ""
+msgstr "図表 6-8 監視パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:381
 msgid "调整参数项：总长度60个元素，元素类型为S32，当前有效数据为2-32个元素，有效元素均可读写。"
-msgstr ""
+msgstr "調整パラメータ項目：総長60個の要素，要素タイプはS32，現在の有効データは2-32個の要素，有効な要素はいずれも読み書き可能です。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "015.png"
-msgstr ""
+msgstr "015.png"
 
 #: ../../source/FMManual/fm_intro.rst:388
 msgid "图表 6-9 调整参数功能描述表"
-msgstr ""
+msgstr "チャート 6-9 調整パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:390
 msgid "运动控制"
-msgstr ""
+msgstr "運動制御"
 
 #: ../../source/FMManual/fm_intro.rst:392
 msgid "运动控制参数项：总长度60个元素，元素类型为S32，当前有效数据为0-27个元素，有效元素均可读写。"
-msgstr ""
+msgstr "運動制御パラメータ項目：総長60個の要素，要素タイプはS32，現在の有効データは0-27個の要素，有効な要素はいずれも読み書き可能です。"
 
 #: ../../source/FMManual/fm_intro.rst:394
 msgid "3-电机正转方向：0-CCW方向运行，1-CW方向运行。"
-msgstr ""
+msgstr "3-モーター正転方向：0-CCW方向運転，1-CW方向運転。"
 
 #: ../../source/FMManual/fm_intro.rst:395
 msgid "16-内部速度指令速度1：PV模式有效，PV模式速度指令。"
-msgstr ""
+msgstr "16-内部速度指令速度1：PVモード有効，PVモード速度指令。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "016.png"
-msgstr ""
+msgstr "016.png"
 
 #: ../../source/FMManual/fm_intro.rst:402
 msgid "图表 6-10 运动控制功能描述表"
-msgstr ""
+msgstr "図表 6-10 運動制御機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:404
 msgid "保护参数"
-msgstr ""
+msgstr "保護パラメータ"
 
 #: ../../source/FMManual/fm_intro.rst:406
 msgid "保护参数项：总长度60个元素，元素类型为S32，当前有效数据为2-19个元素，有效元素均可读写。"
-msgstr ""
+msgstr "保護パラメータ項目：総長は60個の要素、要素タイプはS32、現在の有効データは2-19個の要素で、有効な要素はすべて読み書き可能です。"
 
 #: ../../source/FMManual/fm_intro.rst:408
 msgid "15-故障复位参数：置位对可复位故障和警告，执行故障复位功能；"
-msgstr ""
+msgstr "15-故障リセットパラメータ：セットすると、リセット可能な故障および警告に対して、故障リセット機能を実行します；"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "017.png"
-msgstr ""
+msgstr "017.png"
 
 #: ../../source/FMManual/fm_intro.rst:415
 msgid "图表 6-11 保护参数功能描述表"
-msgstr ""
+msgstr "チャート 6-11 保護パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:417
 msgid "辅助功能"
-msgstr ""
+msgstr "補助機能"
 
 #: ../../source/FMManual/fm_intro.rst:419
 msgid "辅助参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素，有效元素均可读写。"
-msgstr ""
+msgstr "補助パラメータ項目：総長は60個の要素，要素タイプはS32，現在の有効データは2-30個の要素，有効要素はいずれも読み書き可能です。"
 
 #: ../../source/FMManual/fm_intro.rst:421
 msgid "14-能耗电阻制动电压：默认参数51000Mv，最大能耗制动电压为70000Mv。"
-msgstr ""
+msgstr "14-エネルギー消費抵抗制動電圧：デフォルトパラメータ51000Mv，最大エネルギー消費制動電圧は70000Mv。"
 
 #: ../../source/FMManual/fm_intro.rst:422
 msgid "11~13电磁刹车电压：默认参数24000Mv，最大支持刹车电压为48000Mv"
-msgstr ""
+msgstr "11~13電磁ブレーキ電圧：デフォルトパラメータ24000Mv，最大対応ブレーキ電圧は48000Mv"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "018.png"
-msgstr ""
+msgstr "018.png"
 
 #: ../../source/FMManual/fm_intro.rst:429
 msgid "图表 6-12 辅助参数功能描述表"
-msgstr ""
+msgstr "チャート 6-12 補助パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:431
 msgid "限制参数"
-msgstr ""
+msgstr "制限パラメータ"
 
 #: ../../source/FMManual/fm_intro.rst:433
 msgid "限制参数项：总长度60个元素，元素类型为S32，当前有效数据为2-16个元素，有效元素均可读写。"
-msgstr ""
+msgstr "制限パラメータ項目：総長60個の要素、要素タイプはS32、現在の有効データは2-16個の要素、有効な要素はいずれも読み書き可能です。"
 
 #: ../../source/FMManual/fm_intro.rst:435
-msgid "13-电机正向位置范围参数：多圈编码器有效，该参数为多圈编码器的正向运动范围；例如多圈编码器为0~65535，正向范围建议设置为32767，约为多圈编码分辨率/2。"
+msgid ""
+"13-电机正向位置范围参数：多圈编码器有效，该参数为多圈编码器的正向运动范围；例如多圈编码器为0~65535，正向范围建议设置为32767，约为多圈编码分辨率/2。"
 msgstr ""
+"13-モーター正方向位置範囲パラメータ：マルチターンエンコーダーで有効，このパラメータはマルチターンエンコーダーの正方向運動範囲です；例えばマルチターンエンコーダーが0~65535の場合，正方向範囲は32767に設定することを推奨します，これはマルチターンエンコーダーの分解能/2にほぼ相当します。"
 
 #: ../../source/FMManual/fm_intro.rst:437
 msgid "默认关闭不启用支持360°旋转功能，若需要启用需配置13~15参数，并将16支持360°旋转参数设置为1。"
 msgstr ""
+"デフォルトでは無効になっており360°回転機能のサポートは有効化されません，有効にする必要がある場合は13~15パラメータを設定し，16の360°回転をサポートするパラメータを1に設定する必要があります。"
 
 #: ../../source/FMManual/fm_intro.rst:439
 msgid "若电机正向位置范围参数大于单圈编码器分辨率，正向运动范围为（多圈编码器分辨率*单圈编码器分辨率=编码器总分辨率）/2。"
 msgstr ""
+"モーター正方向位置範囲パラメータがシングルターンエンコーダー分解能より大きい場合、正方向運動範囲は（マルチターンエンコーダー分解能*シングルターンエンコーダー分解能=エンコーダー総分解能）/2。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "019.png"
-msgstr ""
+msgstr "019.png"
 
 #: ../../source/FMManual/fm_intro.rst:446
 msgid "图表 6-13 限制参数功能描述表"
-msgstr ""
+msgstr "図表 6-13 制限パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:448
 msgid "输出输出1"
-msgstr ""
+msgstr "出力出力1"
 
 #: ../../source/FMManual/fm_intro.rst:450
 msgid ""
-"输入输出1参数项：总长度60个元素，元素类型为S32，当前有效数据为0-12个元素。 "
-"3-低四位输入端子参数：置位-电机使能；复位-电机去使能。（需要将通讯参数中通讯接口设定为0（调试485）后才可通过设置全参数生效使能与去使能）"
+"输入输出1参数项：总长度60个元素，元素类型为S32，当前有效数据为0-12个元素。 3-低四位输入端子参数：置位-电机使能；复位-"
+"电机去使能。（需要将通讯参数中通讯接口设定为0（调试485）后才可通过设置全参数生效使能与去使能）"
 msgstr ""
+"入出力1パラメータ項目：総長60個の要素，要素タイプはS32，現在の有効データは0-12個の要素。 3-下位4ビット入力端子パラメータ：セット-"
+"モータをイネーブル；リセット-"
+"モータをディスエーブル。（通信パラメータ内の通信インターフェースを0（デバッグ485）に設定した後にのみ全パラメータの設定によってイネーブルとディスエーブルを有効にできます）"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "020.png"
-msgstr ""
+msgstr "020.png"
 
 #: ../../source/FMManual/fm_intro.rst:458
 msgid "图表 6-14 输入输出1参数功能描述表"
-msgstr ""
+msgstr "図表 6-14 入出力1パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:460
 msgid "输出输出2"
-msgstr ""
+msgstr "出力出力2"
 
 #: ../../source/FMManual/fm_intro.rst:462
 msgid "输入输出2参数项：总长度60个元素，元素类型为S32，当前有效数据为2-18个元素。"
-msgstr ""
+msgstr "入出力2パラメータ項目：総長60個の要素，要素タイプはS32，現在有効なデータは2-18個の要素。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "021.png"
-msgstr ""
+msgstr "021.png"
 
 #: ../../source/FMManual/fm_intro.rst:469
 msgid "图表 6-15 输入输出2参数功能描述表"
-msgstr ""
+msgstr "図表 6-15 入出力2パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:471
 msgid "自适应PID刚度0"
-msgstr ""
+msgstr "適応PID剛性0"
 
 #: ../../source/FMManual/fm_intro.rst:473
 msgid "自适应PID刚度0参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
-msgstr ""
+msgstr "適応PID剛性0パラメータ項目：総長60個の要素，要素タイプはS32，現在有効なデータは2-30個の要素。"
 
 #: ../../source/FMManual/fm_intro.rst:475
 #: ../../source/FMManual/fm_intro.rst:488
 #: ../../source/FMManual/fm_intro.rst:501
 #: ../../source/FMManual/fm_intro.rst:514
 msgid "需搭配闭环PID模式参数项使用，进行自适应PID和前馈控制模式切换。"
-msgstr ""
+msgstr "閉ループPIDモードパラメータ項目と組み合わせて使用する必要があり，適応PIDとフィードフォワード制御モードの切替を行います。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "022.png"
-msgstr ""
+msgstr "022.png"
 
 #: ../../source/FMManual/fm_intro.rst:482
 msgid "图表 6-16 自适应PID刚度0 参数功能描述表"
-msgstr ""
+msgstr "図表 6-16 適応PID剛性0 パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:484
 msgid "自适应PID刚度1"
-msgstr ""
+msgstr "適応PID剛性1"
 
 #: ../../source/FMManual/fm_intro.rst:486
 msgid "自适应PID刚度1参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
-msgstr ""
+msgstr "適応PID剛性1パラメータ項目：総長60個の要素，要素タイプはS32，現在有効データは2-30個の要素。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "023.png"
-msgstr ""
+msgstr "023.png"
 
 #: ../../source/FMManual/fm_intro.rst:495
 msgid "图表 6-17 自适应PID刚度1 参数功能描述表"
-msgstr ""
+msgstr "図表 6-17 適応PID剛性1 パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:497
 msgid "自适应PID刚度2"
-msgstr ""
+msgstr "適応PID剛性2"
 
 #: ../../source/FMManual/fm_intro.rst:499
 msgid "自适应PID刚度2参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
-msgstr ""
+msgstr "適応PID剛性2パラメータ項目：総長60個の要素、要素タイプはS32、現在有効なデータは2-30個の要素。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "024.png"
-msgstr ""
+msgstr "024.png"
 
 #: ../../source/FMManual/fm_intro.rst:508
 msgid "图表 6-18 自适应PID刚度2 参数功能描述表"
-msgstr ""
+msgstr "図表 6-18 適応PID剛性2 パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:510
 msgid "闭环前馈控制"
-msgstr ""
+msgstr "閉ループフィードフォワード制御"
 
 #: ../../source/FMManual/fm_intro.rst:512
 msgid "闭环前馈控制参数项：总长度60个元素，元素类型为S32，当前有效数据为2-30个元素。"
-msgstr ""
+msgstr "閉ループフィードフォワード制御パラメータ項目：総長さ60個の要素、要素タイプはS32、現在有効なデータは2-30個の要素。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "025.png"
-msgstr ""
+msgstr "025.png"
 
 #: ../../source/FMManual/fm_intro.rst:521
 msgid "图表 6-19 闭环前馈控制 参数功能描述表"
-msgstr ""
+msgstr "図表 6-19 閉ループフィードフォワード制御 パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:523
 msgid "闭环PID模式"
-msgstr ""
+msgstr "閉ループPIDモード"
 
 #: ../../source/FMManual/fm_intro.rst:525
 msgid "闭环控制模式参数项：总长度60个元素，元素类型为S32，当前有效数据为2-3个元素。"
-msgstr ""
+msgstr "閉ループ制御モードのパラメータ項目：総長60個の要素、要素タイプはS32、現在有効データは2-3個の要素。"
 
 #: ../../source/FMManual/fm_intro.rst:527
 msgid "2-闭环控制模式：0：选择为闭环前馈控制，1：选择为自适应PID控制"
-msgstr ""
+msgstr "2-閉ループ制御モード：0：閉ループフィードフォワード制御として選択，1：アダプティブPID制御として選択"
 
 #: ../../source/FMManual/fm_intro.rst:528
 msgid "3-自适应PID刚度，当闭环控制模式为PID自适应控制时，可进行刚度配置与控制。"
-msgstr ""
+msgstr "3-適応PID剛性，閉ループ制御モードがPID適応制御の場合，剛性の設定と制御を行うことができます。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "026.png"
-msgstr ""
+msgstr "026.png"
 
 #: ../../source/FMManual/fm_intro.rst:535
 msgid "图表 6-20 闭环PID模式 参数功能描述表"
-msgstr ""
+msgstr "図表 6-20 閉ループPIDモード パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "027.png"
-msgstr ""
+msgstr "027.png"
 
 #: ../../source/FMManual/fm_intro.rst:541
 msgid "图表 6-21 闭环控制模式 参数功能描述表"
-msgstr ""
+msgstr "図表 6-21 クローズドループ制御モード パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "028.png"
-msgstr ""
+msgstr "028.png"
 
 #: ../../source/FMManual/fm_intro.rst:547
 msgid "图表 6-22 自适应PID刚度 参数功能描述表"
-msgstr ""
+msgstr "図表 6-22 適応PID剛性 パラメータ機能説明表"
 
 #: ../../source/FMManual/fm_intro.rst:549
 msgid "上位机调试软件DynamicLAB"
-msgstr ""
+msgstr "上位機デバッグソフトウェアDynamicLAB"
 
 #: ../../source/FMManual/fm_intro.rst:552
 msgid "建立连接"
-msgstr ""
+msgstr "接続を確立"
 
 #: ../../source/FMManual/fm_intro.rst:554
 msgid "在设备列表中选中要连接设备（驱动器）；"
-msgstr ""
+msgstr "デバイスリストで接続するデバイス（ドライブ）を選択します；"
 
 #: ../../source/FMManual/fm_intro.rst:555
 msgid "选择正确COM口；"
-msgstr ""
+msgstr "正しいCOMポートを選択；"
 
 #: ../../source/FMManual/fm_intro.rst:556
 msgid "设置通信波特率（默认115200）；"
-msgstr ""
+msgstr "通信ボーレートを設定（デフォルト115200）；"
 
 #: ../../source/FMManual/fm_intro.rst:557
 msgid "点击地址扫描可以自动扫描主线上存在的从站数量与地址；"
-msgstr ""
+msgstr "アドレススキャンをクリックすると、メインライン上に存在するスレーブ局の数とアドレスが自動的にスキャンされます；"
 
 #: ../../source/FMManual/fm_intro.rst:558
 msgid "点击连接与从站进行通信。"
-msgstr ""
+msgstr "接続をクリックしてスレーブ局と通信を行います。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "029.png"
-msgstr ""
+msgstr "029.png"
 
 #: ../../source/FMManual/fm_intro.rst:565
 msgid "图表 7-1 设备列表与通信设置图"
-msgstr ""
+msgstr "図表 7-1 設備リストと通信設定図"
 
 #: ../../source/FMManual/fm_intro.rst:566
 msgid "显示打开串口成功；"
-msgstr ""
+msgstr "シリアルポートを開くことに成功したことを表示；"
 
 #: ../../source/FMManual/fm_intro.rst:567
 msgid "显示获取底层电机参数成功；"
-msgstr ""
+msgstr "低レベルモーターパラメータの取得に成功したことを表示します；"
 
 #: ../../source/FMManual/fm_intro.rst:569
 msgid "说明与驱动器建立连接成功。"
-msgstr ""
+msgstr "ドライバーとの接続の確立に成功したことを示します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "030.png"
-msgstr ""
+msgstr "030.png"
 
 #: ../../source/FMManual/fm_intro.rst:576
 msgid "图表 7-2 连接功能图示"
-msgstr ""
+msgstr "図表 7-2 接続機能図示"
 
 #: ../../source/FMManual/fm_intro.rst:578
 msgid "固件升级"
-msgstr ""
+msgstr "ファームウェアのアップグレード"
 
 #: ../../source/FMManual/fm_intro.rst:580
 msgid "485升级："
-msgstr ""
+msgstr "485アップグレード："
 
 #: ../../source/FMManual/fm_intro.rst:582
 #: ../../source/FMManual/fm_intro.rst:596
 msgid "功能树选中固件升级；"
-msgstr ""
+msgstr "機能ツリーでファームウェアアップグレードを選択；"
 
 #: ../../source/FMManual/fm_intro.rst:583
 msgid "选择升级方式（默认485升级）；"
-msgstr ""
+msgstr "アップグレード方式を選択（デフォルトは485アップグレード）；"
 
 #: ../../source/FMManual/fm_intro.rst:584
 msgid "打开要升级的固件文件（.bin）文件；"
-msgstr ""
+msgstr "アップグレードするファームウェアファイル（.bin）ファイルを開きます；"
 
 #: ../../source/FMManual/fm_intro.rst:585
 msgid "发送文件开始文件传输；"
-msgstr ""
+msgstr "ファイルを送信してファイル転送を開始；"
 
 #: ../../source/FMManual/fm_intro.rst:586
 msgid "等待信息栏显示文件发送完成；"
-msgstr ""
+msgstr "情報バーにファイル送信完了が表示されるのを待つ；"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "031.png"
-msgstr ""
+msgstr "031.png"
 
 #: ../../source/FMManual/fm_intro.rst:593
 msgid "图表 7-3 固件升级图示"
-msgstr ""
+msgstr "図表 7-3 ファームウェアアップグレード図示"
 
 #: ../../source/FMManual/fm_intro.rst:594
 msgid "JLink升级："
-msgstr ""
+msgstr "JLinkアップグレード："
 
 #: ../../source/FMManual/fm_intro.rst:597
 msgid "选择升级模式选择JLink升级（需安装JLink驱动，使用usb转JLink工具连接电脑与驱动器）；"
 msgstr ""
+"アップグレードモードを選択し、JLinkを選択してアップグレード（JLinkドライバーのインストールが必要、usbからJLinkへの変換ツールを使用してパソコンとドライブを接続）；"
 
 #: ../../source/FMManual/fm_intro.rst:598
 msgid "点击JLink连接，连接驱动器；"
-msgstr ""
+msgstr "JLink接続をクリックして，ドライブを接続します；"
 
 #: ../../source/FMManual/fm_intro.rst:599
 msgid "Flash擦除用于擦除驱动器中固件程序；"
-msgstr ""
+msgstr "Flash消去はドライブ内のファームウェアプログラムを消去するために使用されます；"
 
 #: ../../source/FMManual/fm_intro.rst:600
 msgid "打开文件选择要升级固件程序（.hex格式文件）；"
-msgstr ""
+msgstr "ファイルを開いてアップグレードするファームウェアプログラムを選択（.hex形式のファイル）；"
 
 #: ../../source/FMManual/fm_intro.rst:601
 msgid "点击发送文件进行固件升级。"
-msgstr ""
+msgstr "クリックしてファイルを送信し、ファームウェアのアップグレードを行います。"
 
 #: ../../source/FMManual/fm_intro.rst:604
 msgid "参数列表"
-msgstr ""
+msgstr "パラメータリスト"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "032.png"
-msgstr ""
+msgstr "032.png"
 
 #: ../../source/FMManual/fm_intro.rst:611
 msgid "图表 7-4 固件JLink升级图示"
-msgstr ""
+msgstr "図表 7-4 ファームウェアJLinkアップグレード図示"
 
 #: ../../source/FMManual/fm_intro.rst:612
 msgid "功能树选中参数列表；"
-msgstr ""
+msgstr "機能ツリー選択パラメータリスト；"
 
 #: ../../source/FMManual/fm_intro.rst:613
 msgid "参数根据功能分为各子参数；"
-msgstr ""
+msgstr "パラメータは機能に応じて各サブパラメータに分類されます；"
 
 #: ../../source/FMManual/fm_intro.rst:614
-msgid "对参数的加载（从文件加载）、保存（将参数保存为文件）、读取（从驱动器读取参数）、写入（将参数写入驱动器，在各子参数页读取、写入只读写当前子参数，在参数列表读取、写入读写全部参数）、写入FLASH(参数写入FLASH)、恢复出厂设置（将驱动器参数恢复出厂）；"
+msgid ""
+"对参数的加载（从文件加载）、保存（将参数保存为文件）、读取（从驱动器读取参数）、写入（将参数写入驱动器，在各子参数页读取、写入只读写当前子参数，在参数列表读取、写入读写全部参数）、写入FLASH(参数写入FLASH)、恢复出厂设置（将驱动器参数恢复出厂）；"
 msgstr ""
+"パラメータのロード（ファイルからロード）、保存（パラメータをファイルとして保存）、読み取り（ドライブからパラメータを読み取る）、書き込み（パラメータをドライブに書き込み、各サブパラメータページでの読み取り、書き込みは現在のサブパラメータのみを読み書きし、パラメータ一覧での読み取り、書き込みはすべてのパラメータを読み書きする）、FLASH(パラメータをFLASH)に書き込む、出荷時設定への復元（ドライブのパラメータを出荷時の状態に戻す）；"
 
 #: ../../source/FMManual/fm_intro.rst:615
 msgid "双击修改某个参数值（修改后需写入）；"
-msgstr ""
+msgstr "ダブルクリックでパラメータ値を修正します（修正後は書き込みが必要です）；"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "033.png"
-msgstr ""
+msgstr "033.png"
 
 #: ../../source/FMManual/fm_intro.rst:622
 msgid "图表 7-5 参数列表图示"
-msgstr ""
+msgstr "図表 7-5 パラメータリスト図示"
 
 #: ../../source/FMManual/fm_intro.rst:624
 msgid "全参数配置"
-msgstr ""
+msgstr "全パラメータ設定"
 
 #: ../../source/FMManual/fm_intro.rst:626
 msgid "选择功能树中的参数列表，点击加载。"
-msgstr ""
+msgstr "機能ツリー内のパラメーターリストを選択し、ロードをクリックします。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "034.png"
-msgstr ""
+msgstr "034.png"
 
 #: ../../source/FMManual/fm_intro.rst:633
 msgid "图表 7-6 功能树参数列表"
-msgstr ""
+msgstr "図表 7-6 機能ツリーパラメータリスト"
 
 #: ../../source/FMManual/fm_intro.rst:634
 msgid "在DynamicLAB文件夹中选择对应的关节的全参数配置文件"
-msgstr ""
+msgstr "DynamicLABフォルダーで対応する関節の全パラメータ設定ファイルを選択する"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "035.png"
-msgstr ""
+msgstr "035.png"
 
 #: ../../source/FMManual/fm_intro.rst:641
 msgid "图表 7-7 全参数配置文件"
-msgstr ""
+msgstr "図表 7-7 全パラメータ設定ファイル"
 
 #: ../../source/FMManual/fm_intro.rst:642
-msgid "提示窗中提示“加载全参数完毕”点击“写入”，提示写入成功后，点击“写入Flash”写入Flash完成，重新断电上电，进行读取操作查看是否写入成功。"
+msgid ""
+"提示窗中提示“加载全参数完毕”点击“写入”，提示写入成功后，点击“写入Flash”写入Flash完成，重新断电上电，进行读取操作查看是否写入成功。"
 msgstr ""
+"メッセージウィンドウに“全パラメータの読み込みが完了”と表示されたら、“をクリックして”を書き込み、書き込み成功と表示されたら、“をクリックしてFlash”を書き込み、Flashの書き込みが完了したら、再度電源を切って入れ直し、読み出し操作を行って書き込みが成功したかどうかを確認します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "036.png"
-msgstr ""
+msgstr "036.png"
 
 #: ../../source/FMManual/fm_intro.rst:649
 msgid "图表 7-8 写入Flash"
-msgstr ""
+msgstr "チャート 7-8 書き込みFlash"
 
 #: ../../source/FMManual/fm_intro.rst:651
 msgid "速度模式运行"
-msgstr ""
+msgstr "速度モード運転"
 
 #: ../../source/FMManual/fm_intro.rst:653
 msgid "在参数列表-通讯参数中，将通信接口切换为0（调试485接口），执行写入操作。"
-msgstr ""
+msgstr "パラメータリスト-通信パラメータにて、通信インターフェースを0（デバッグ485インターフェース）に切り替え、書き込み操作を実行します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "037.png"
-msgstr ""
+msgstr "037.png"
 
 #: ../../source/FMManual/fm_intro.rst:660
 msgid "图表 7-9 切换为0写入操作"
-msgstr ""
+msgstr "図表 7-9 を0書き込み操作に切り替える"
 
 #: ../../source/FMManual/fm_intro.rst:661
 msgid "在参数列表-运动控制中，将控制模式切换为1（速度模式），执行写入操作。"
-msgstr ""
+msgstr "パラメータリスト-モーション制御で，制御モードを1（速度モード）に切り替え，書き込み操作を実行します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "038.png"
-msgstr ""
+msgstr "038.png"
 
 #: ../../source/FMManual/fm_intro.rst:668
 msgid "图表 7-10 切换为1写入操作"
-msgstr ""
+msgstr "チャート 7-10 を1書き込み操作に切り替え"
 
 #: ../../source/FMManual/fm_intro.rst:669
 msgid "在参数列表-输出输出1，将低四位输入端子强制ON控制字写入为1，执行写入操作。电机使能。"
 msgstr ""
+"パラメータリスト-で出力1を出力し，下位4ビットの入力端子を強制的にONにして制御ワードを1に書き込み，書き込み操作を実行する。モータをイネーブルする。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "039.png"
-msgstr ""
+msgstr "039.png"
 
 #: ../../source/FMManual/fm_intro.rst:676
 msgid "图表 7-11 控制字写入为1写入操作"
-msgstr ""
+msgstr "図表 7-11 の制御ワードの書き込みは1書き込み操作です"
 
 #: ../../source/FMManual/fm_intro.rst:677
 msgid "在参数列表-运动控制，下发内部速度指令速度1，执行写入操作，电机开始按照设定速度运行。"
-msgstr ""
+msgstr "パラメータリスト-モーション制御で、内部速度指令速度1を送信し、書き込み操作を実行すると、モータが設定速度で運転を開始します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "040.png"
-msgstr ""
+msgstr "040.png"
 
 #: ../../source/FMManual/fm_intro.rst:684
 msgid "图表 7-12 指令速度11写入操作"
-msgstr ""
+msgstr "図表 7-12 指令速度11書き込み操作"
 
 #: ../../source/FMManual/fm_intro.rst:686
 msgid "通讯协议"
-msgstr ""
+msgstr "通信プロトコル"
 
 #: ../../source/FMManual/fm_intro.rst:689
 msgid "EtherCAT通信"
-msgstr ""
+msgstr "EtherCAT通信"
 
 #: ../../source/FMManual/fm_intro.rst:691
 msgid ""
-"EtherCAT，全称 Ethernet for Control Automation Technology，由 Beckhoff "
-"Atuomation GmbH 开发，是一种实时以太网用于主站和从站开放式的网络通信。 EtherCAT "
-"作为成熟的工业以太网技术，具备高性能、低成本、使用简易等特点。"
+"EtherCAT，全称 Ethernet for Control Automation Technology，由 Beckhoff Atuomation"
+" GmbH 开发，是一种实时以太网用于主站和从站开放式的网络通信。 EtherCAT 作为成熟的工业以太网技术，具备高性能、低成本、使用简易等特点。"
 msgstr ""
+"EtherCAT、正式名称 Ethernet for Control Automation Technology、 Beckhoff "
+"Atuomation GmbH によって開発され、マスタとスレーブ間のオープンなネットワーク通信に用いられるリアルタイムイーサネットです。 "
+"EtherCAT は成熟した産業用イーサネット技術として、高性能、低コスト、使いやすいなどの特徴を備えています。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "041.png"
-msgstr ""
+msgstr "041.png"
 
 #: ../../source/FMManual/fm_intro.rst:698
 msgid "图表 8-1 EtherCAT通讯规格表"
-msgstr ""
+msgstr "図表 8-1 EtherCAT通信仕様表"
 
 #: ../../source/FMManual/fm_intro.rst:699
 msgid "点击运行控制使用标准Cia402行规。"
-msgstr ""
+msgstr "実行制御をクリックして標準Cia402プロファイルを使用します。"
 
 #: ../../source/FMManual/fm_intro.rst:702
 msgid "EtherCAT对象字典"
-msgstr ""
+msgstr "EtherCATオブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:705
 msgid "PDO对象字典"
-msgstr ""
+msgstr "PDOオブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:706
 msgid "PDO对象字典分为RxPDO和TxPDO两种。RxPDO为驱动器接收主站数据，TxPDO为驱动器向主站反馈数据。"
 msgstr ""
+"PDOオブジェクトディクショナリはRxPDOとTxPDOの2種類に分けられます。RxPDOはドライバがマスタからデータを受信するもので，TxPDOはドライバがマスタへデータをフィードバックするものです。"
 
 #: ../../source/FMManual/fm_intro.rst:709
 msgid "RxPDO"
-msgstr ""
+msgstr "RxPDO"
 
 #: ../../source/FMManual/fm_intro.rst:710
 msgid ""
 "控制字（Control "
 "Word）对象字典，可读可写（RW），其索引（Index）为0x6040，子索引（SubIndex）为0，数据类型为无符号16位，下面对控制字的每个bit信息进行说明。"
 msgstr ""
+"制御ワード（Control "
+"Word）オブジェクトディクショナリ、読み書き可能（RW）、そのインデックス（Index）は0x6040、サブインデックス（SubIndex）は0、データ型は符号なし16ビット、以下、制御ワードの各bit情報について説明します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "042.png"
-msgstr ""
+msgstr "042.png"
 
 #: ../../source/FMManual/fm_intro.rst:717
 msgid "图表 8-2 控制字对象字典详细信息"
-msgstr ""
+msgstr "図表 8-2 制御ワードオブジェクトディクショナリ詳細情報"
 
 #: ../../source/FMManual/fm_intro.rst:718
 msgid ""
 "其中bit3-bit0（enable operation/quick stop/enable voltage/switch "
 "on）符合Cia402协议标准，如下图所示。"
 msgstr ""
+"このうちbit3-bit0（enable operation/quick stop/enable voltage/switch "
+"on）はCia402プロトコル標準に準拠しており、下図に示すとおりです。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "043.png"
-msgstr ""
+msgstr "043.png"
 
 #: ../../source/FMManual/fm_intro.rst:725
 msgid "图表 8-2 Cia402"
-msgstr ""
+msgstr "図表 8-2 Cia402"
 
 #: ../../source/FMManual/fm_intro.rst:726
-msgid "通过控制字可将关节使能和去使能。需要使能时，应将控制字按顺序（0x06->0x07->0x0F）进行赋值；需要去使能时，应将控制字直接赋值为0。"
+msgid ""
+"通过控制字可将关节使能和去使能。需要使能时，应将控制字按顺序（0x06->0x07->0x0F）进行赋值；需要去使能时，应将控制字直接赋值为0。"
 msgstr ""
+"制御ワードによって、ジョイントのイネーブルおよびディスエーブルが可能です。イネーブルが必要な場合は、制御ワードを順序（0x06->0x07->0x0F）に従って代入する必要があります；ディスエーブルが必要な場合は、制御ワードを直接0に代入する必要があります。"
 
 #: ../../source/FMManual/fm_intro.rst:728
 msgid "通过控制字可进行机器人零点校准，在关节去使能和处于非OP状态时，将控制字的bit13置1。"
 msgstr ""
+"制御ワードを通じてロボットのゼロ点キャリブレーションを行うことができ、関節が無効化されて非OP状態にあるとき、制御ワードのbit13を1に設定します。"
 
 #: ../../source/FMManual/fm_intro.rst:730
 msgid ""
 "目标位置（Target "
 "Position）对象字典，可读可写（RW），其索引（Index）为0x607A，子索引（SubIndex）为0，数据类型为有符号32位。"
 msgstr ""
+"目標位置（Target "
+"Position）オブジェクト辞書、読み書き可能（RW）、そのインデックス（Index）は0x607A、サブインデックス（SubIndex）は0、データ型は符号付き32ビット。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "044.png"
-msgstr ""
+msgstr "044.png"
 
 #: ../../source/FMManual/fm_intro.rst:737
 msgid "图表 8-3 目标位置对象字典"
-msgstr ""
+msgstr "図表 8-3 目標位置オブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:738
 msgid "通过此对象字典更新需要的目标位置，单位为pulse，上位机规划位置值，607Ah目标位置值两次的差值，需小于100000Pulse。"
 msgstr ""
+"このオブジェクトディクショナリを通じて必要な目標位置を更新します，単位はpulseです，上位機が計画した位置値，607Ah目標位置値の2回の差分値は100000Pulseより小さくなければなりません。"
 
 #: ../../source/FMManual/fm_intro.rst:740
 msgid ""
 "目标扭矩（Target "
 "Torque）对象字典，可读可写（RW），其索引（Index）为0x6071，子索引（SubIndex）为0，数据类型为有符号16位。"
 msgstr ""
+"目標トルク（Target "
+"Torque）オブジェクトディクショナリ，読み書き可能（RW），そのインデックス（Index）は0x6071，サブインデックス（SubIndex）は0，データ型は符号付き16ビット。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "045.png"
-msgstr ""
+msgstr "045.png"
 
 #: ../../source/FMManual/fm_intro.rst:747
 msgid "图表 8-4 目标扭矩对象字典"
-msgstr ""
+msgstr "図表 8-4 目標トルクオブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:748
 msgid "通过此对象字典更新需要的目标扭矩，单位为额定扭矩0.1%。"
-msgstr ""
+msgstr "このオブジェクトディクショナリを通じて必要な目標トルクを更新し、単位は定格トルク0.1%です。"
 
 #: ../../source/FMManual/fm_intro.rst:750
 msgid ""
 "速度前馈（Velocity "
 "offset）对象字典，可读可写（RW），其索引（Index）为0x60B1，子索引（SubIndex）为0，数据类型为有符号32位。"
 msgstr ""
+"速度フィードフォワード（Velocity "
+"offset）オブジェクトディクショナリ，読み書き可能（RW），そのインデックス（Index）は0x60B1，サブインデックス（SubIndex）は0，データ型は符号付き32ビットです。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "046.png"
-msgstr ""
+msgstr "046.png"
 
 #: ../../source/FMManual/fm_intro.rst:757
 msgid "图表 8-5 速度前馈对象字典"
-msgstr ""
+msgstr "図表 8-5 速度フィードフォワードオブジェクトディクショナリ"
 
 #: ../../source/FMManual/fm_intro.rst:758
 msgid "通过此对象字典设置合理的速度前馈。"
-msgstr ""
+msgstr "このオブジェクトディクショナリを通じて、適切な速度フィードフォワードを設定します。"
 
 #: ../../source/FMManual/fm_intro.rst:760
 msgid "剩余的RxPDO对象字典（0x2001、0x2010、0x2011、0x2012和0x2013）未进行实际使用，不进行赘述。"
 msgstr ""
+"残りのRxPDOオブジェクト辞書（0x2001、0x2010、0x2011、0x2012と0x2013）は実際には使用されておらず，詳述は省略します。"
 
 #: ../../source/FMManual/fm_intro.rst:763
 msgid "TxPDO"
-msgstr ""
+msgstr "TxPDO"
 
 #: ../../source/FMManual/fm_intro.rst:765
 msgid ""
 "状态字（Status "
 "Word）对象字典，只读（RO），其索引（Index）为0x6041，子索引（SubIndex）为0，数据类型为无符号16位，下面对状态字的每个bit信息进行说明。"
 msgstr ""
+"ステータスワード（Status "
+"Word）のオブジェクトディクショナリは、読み取り専用（RO）で、そのインデックス（Index）は0x6041、サブインデックス（SubIndex）は0、データ型は符号なし16ビットで、以下ではステータスワードの各bit情報について説明します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "047.png"
-msgstr ""
+msgstr "047.png"
 
 #: ../../source/FMManual/fm_intro.rst:772
 msgid "图表 8-6 状态字对象字典详细信息"
-msgstr ""
+msgstr "図表 8-6 ステータスワードオブジェクトディクショナリ詳細情報"
 
 #: ../../source/FMManual/fm_intro.rst:773
 msgid ""
 "首先根据bit6,5,3-0（switch on disabled/quick stop/fault/operation "
 "enabled/switched on/ready to switch on）的组合可以确定功率状态机的状态，下图为具体说明。"
 msgstr ""
+"まずbit6,5,3-0（switch on disabled/quick stop/fault/operation enabled/switched "
+"on/ready to switch on）の組み合わせに基づいて、電力状態マシンの状態を確定することができます。下図は具体的な説明です。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "048.png"
-msgstr ""
+msgstr "048.png"
 
 #: ../../source/FMManual/fm_intro.rst:780
 msgid "图表 8-7 功率状态机状态确认表"
-msgstr ""
+msgstr "図表 8-7 パワーステートマシン状態確認表"
 
 #: ../../source/FMManual/fm_intro.rst:781
 msgid "bit13（home）：1的情况下表示已校零。"
-msgstr ""
+msgstr "bit13（home）：1の場合はゼロ校正済みであることを示します。"
 
 #: ../../source/FMManual/fm_intro.rst:782
 msgid "bit12（drag）：1的情况下表示进入拖动模式。"
-msgstr ""
+msgstr "bit12（drag）：1の場合、ドラッグモードへの移行を示します。"
 
 #: ../../source/FMManual/fm_intro.rst:783
 msgid "bit5（quick stop）：0的情况下表示功率状态机接收quick stop要求。"
-msgstr ""
+msgstr "bit5（quick stop）：0の場合、パワー状態マシンがquick stop要求を受信することを示す。"
 
 #: ../../source/FMManual/fm_intro.rst:784
 msgid "bit4（voltage enabled）：1的情况下表示主电路电源电压加到主回路。"
-msgstr ""
+msgstr "bit4（voltage enabled）：1の場合、主回路電源電圧が主回路に印加されていることを示します。"
 
 #: ../../source/FMManual/fm_intro.rst:786
 msgid ""
 "当前位置（Position Actual "
 "Value）对象字典，只读（RO），其索引（Index）为0x6064，子索引（SubIndex）为0，数据类型为有符号32位。"
 msgstr ""
+"現在位置（Position Actual "
+"Value）のオブジェクトディクショナリ、読み取り専用（RO）、そのインデックス（Index）は0x6064、サブインデックス（SubIndex）は0、データ型は符号付き32ビットです。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "049.png"
-msgstr ""
+msgstr "049.png"
 
 #: ../../source/FMManual/fm_intro.rst:793
 msgid "图表 8-8 当前位置对象字典"
-msgstr ""
+msgstr "チャート 8-8 現在位置オブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:794
 msgid "通过此对象字典获取关节当前的位置数据，单位为pulse。"
-msgstr ""
+msgstr "このオブジェクトディクショナリを通じて関節の現在の位置データを取得し、単位はpulseです。"
 
 #: ../../source/FMManual/fm_intro.rst:796
-msgid "故障码（Error Code）对象字典，只读（RO），其索引（Index）为0x603F，子索引（SubIndex）为0，数据类型为无符号16位。"
+msgid ""
+"故障码（Error Code）对象字典，只读（RO），其索引（Index）为0x603F，子索引（SubIndex）为0，数据类型为无符号16位。"
 msgstr ""
+"故障コード（Error "
+"Code）のオブジェクトディクショナリ，読み取り専用（RO），そのインデックス（Index）は0x603F，サブインデックス（SubIndex）は0，データ型は符号なし16ビット。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "050.png"
-msgstr ""
+msgstr "050.png"
 
 #: ../../source/FMManual/fm_intro.rst:803
 msgid "图表 8-9 故障码对象字典"
-msgstr ""
+msgstr "図表 8-9 故障コードオブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:804
 msgid "如果此对象字典不为0，则驱动器出现故障。"
-msgstr ""
+msgstr "このオブジェクトディクショナリが0でない場合，ドライバに故障が発生します。"
 
 #: ../../source/FMManual/fm_intro.rst:806
 msgid ""
 "实时扭矩（Torque Actual "
 "Value）对象字典，只读（RO），其索引（Index）为0x6077，子索引（SubIndex）为0，数据类型为有符号16位。"
 msgstr ""
+"リアルタイムトルク（Torque Actual "
+"Value）オブジェクトディクショナリ、読み取り専用（RO）、そのインデックス（Index）は0x6077、サブインデックス（SubIndex）は0、データ型は符号付き16ビットです。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "051.png"
-msgstr ""
+msgstr "051.png"
 
 #: ../../source/FMManual/fm_intro.rst:813
 msgid "图表 8-10 实时扭矩对象字典"
-msgstr ""
+msgstr "グラフ 8-10 リアルタイムトルクオブジェクトディクショナリ"
 
 #: ../../source/FMManual/fm_intro.rst:814
 msgid "通过此对象字典获取关节的实时扭矩数据，单位为额定扭矩0.1%。"
-msgstr ""
+msgstr "このオブジェクトディクショナリを通じて関節のリアルタイムトルクデータを取得し、単位は定格トルク0.1%です。"
 
 #: ../../source/FMManual/fm_intro.rst:816
 msgid ""
 "实时速度（Velocity Actual "
 "Value）对象字典，只读（RO），其索引（Index）为0x606C，子索引（SubIndex）为0，数据类型为有符号32位。"
 msgstr ""
+"リアルタイム速度（Velocity Actual "
+"Value）オブジェクトディクショナリ，読み取り専用（RO），そのインデックス（Index）は0x606C，サブインデックス（SubIndex）は0，データ型は符号付き32ビット。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "052.png"
-msgstr ""
+msgstr "052.png"
 
 #: ../../source/FMManual/fm_intro.rst:823
 msgid "图表 8-11 实时速度对象字典"
-msgstr ""
+msgstr "図表 8-11 リアルタイム速度オブジェクトディクショナリ"
 
 #: ../../source/FMManual/fm_intro.rst:824
 msgid "通过此对象字典获取关节的实时速度数据，单位为rmp。"
-msgstr ""
+msgstr "このオブジェクトディクショナリを通じて関節のリアルタイム速度データを取得し，単位はrmpです。"
 
 #: ../../source/FMManual/fm_intro.rst:826
 msgid "剩余TxPDO对象字典（0x2000、0x3010、0x3011、0x3012和0x3013）未实际使用，不进行赘述。"
 msgstr ""
+"残りのTxPDOオブジェクトディクショナリ（0x2000、0x3010、0x3011、0x3012および0x3013）は実際には使用されていないため、これ以上の説明は省略します。"
 
 #: ../../source/FMManual/fm_intro.rst:829
 msgid "SDO"
-msgstr ""
+msgstr "SDO"
 
 #: ../../source/FMManual/fm_intro.rst:831
 msgid ""
 "主站设置从站的SDO对象字典时，建议电机处于去使能状态，否则会导致异常警告；读取时不需要关心电机的状态。 1. 软件版本（Sofeware "
 "version）对象字典，只读（RO），其索引（Index）为0x100A，子索引（SubIndex）为0，数据类型为可见字符串。"
 msgstr ""
+"マスターがスレーブのSDOオブジェクトディクショナリを設定する際は、モーターがディセーブル状態にあることを推奨します。そうでない場合は異常警告が発生します；読み取り時はモーターの状態を気にする必要はありません。"
+" 1. ソフトウェアバージョン（Sofeware "
+"version）オブジェクトディクショナリは読み取り専用（RO）で、そのインデックス（Index）は0x100A、サブインデックス（SubIndex）は0、データ型は可視文字列です。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "053.png"
-msgstr ""
+msgstr "053.png"
 
 #: ../../source/FMManual/fm_intro.rst:839
 msgid "图表 8-12 软件版本对象字典"
-msgstr ""
+msgstr "図表 8-12 ソフトウェアバージョンオブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:840
 msgid "在上电初始化时，驱动器固件会将固件版本号赋值给此对象字典，可通过此对象字典查看驱动器的当前固件版本号。"
 msgstr ""
+"通電時の初期化時に、ドライバーのファームウェアはファームウェアのバージョン番号をこのオブジェクトディクショナリに代入し、このオブジェクトディクショナリを通じてドライバーの現在のファームウェアバージョン番号を確認することができます。"
 
 #: ../../source/FMManual/fm_intro.rst:842
-msgid "基本设定（sBaseSetPara）、通信参数（sCommPara）对象字典、驱动参数（sDrivePara）对象字典、监控参数（sDisplyPara）对象字典、调整参数（sAdjPara）对象字典、运动控制（sMtCtrlPara）对象字典、保护参数（sKeepPara）对象字典、辅助功能（sAuxPara）对象字典、限制参数（sLmtPara）对象字典、输入输出1（sIoPara1）对象字典、输入输出2（sIoPara2）对象字典、自适应PID刚度0~2对象字典、闭环前馈控制对象字典、闭环PID模式对象字典。详见附录2：Sdo读写驱动器全参数表-V0.4-20251208"
+msgid ""
+"基本设定（sBaseSetPara）、通信参数（sCommPara）对象字典、驱动参数（sDrivePara）对象字典、监控参数（sDisplyPara）对象字典、调整参数（sAdjPara）对象字典、运动控制（sMtCtrlPara）对象字典、保护参数（sKeepPara）对象字典、辅助功能（sAuxPara）对象字典、限制参数（sLmtPara）对象字典、输入输出1（sIoPara1）对象字典、输入输出2（sIoPara2）对象字典、自适应PID刚度0~2对象字典、闭环前馈控制对象字典、闭环PID模式对象字典。详见附录2：Sdo读写驱动器全参数表-V0.4-20251208"
 msgstr ""
+"基本設定（sBaseSetPara）、通信パラメータ（sCommPara）オブジェクトディクショナリ、ドライブパラメータ（sDrivePara）オブジェクトディクショナリ、モニタパラメータ（sDisplyPara）オブジェクトディクショナリ、調整パラメータ（sAdjPara）オブジェクトディクショナリ、モーション制御（sMtCtrlPara）オブジェクトディクショナリ、保護パラメータ（sKeepPara）オブジェクトディクショナリ、補助機能（sAuxPara）オブジェクトディクショナリ、制限パラメータ（sLmtPara）オブジェクトディクショナリ、入出力1（sIoPara1）オブジェクトディクショナリ、入出力2（sIoPara2）オブジェクトディクショナリ、適応PID剛性0~2オブジェクトディクショナリ、クローズドループフィードフォワード制御オブジェクトディクショナリ、クローズドループPIDモードオブジェクトディクショナリ。詳細は付録2：Sdoドライバ全パラメータ読み書き表-V0.4-20251208を参照してください。"
 
 #: ../../source/FMManual/fm_intro.rst:843
-msgid "全参数读取&修改通过各个对象字典的子索引1参数命令完成。以基本设定对象为例，修改参数：修改密码、驱动器型号等子索引内容后，参数命令写1，将参数全部写入驱动器RAM中，完成后驱动器将参数命令置0；参数命令写2，将参数全部写入驱动器Flash中，完成后驱动器将参数命令置0。读取参数：参数命令写2，驱动器将参数放入基本设定SDO对象字典，随后将参数命令置0。"
+msgid ""
+"全参数读取&修改通过各个对象字典的子索引1参数命令完成。以基本设定对象为例，修改参数：修改密码、驱动器型号等子索引内容后，参数命令写1，将参数全部写入驱动器RAM中，完成后驱动器将参数命令置0；参数命令写2，将参数全部写入驱动器Flash中，完成后驱动器将参数命令置0。读取参数：参数命令写2，驱动器将参数放入基本设定SDO对象字典，随后将参数命令置0。"
 msgstr ""
+"全パラメータの読み取り&変更は、各オブジェクトディクショナリのサブインデックス1パラメータコマンドによって完了します。基本設定オブジェクトを例として、パラメータの変更：パスワード、ドライバ型番などのサブインデックス内容を変更した後、パラメータコマンドに1を書き込み、パラメータをすべてドライバRAMに書き込み、完了後ドライバはパラメータコマンドを0に設定します；パラメータコマンドに2を書き込み、パラメータをすべてドライバFlashに書き込み、完了後ドライバはパラメータコマンドを0に設定します。パラメータの読み取り：パラメータコマンドに2を書き込むと、ドライバはパラメータを基本設定SDOオブジェクトディクショナリに格納し、その後パラメータコマンドを0に設定します。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "054.png"
-msgstr ""
+msgstr "054.png"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "055.png"
-msgstr ""
+msgstr "055.png"
 
 #: ../../source/FMManual/fm_intro.rst:854
 msgid "图表 8-13 配置对象字典"
-msgstr ""
+msgstr "図表 8-13 設定オブジェクト辞書"
 
 #: ../../source/FMManual/fm_intro.rst:856
 msgid "电机控制模式"
-msgstr ""
+msgstr "モーター制御モード"
 
 #: ../../source/FMManual/fm_intro.rst:859
 msgid "位置模式"
-msgstr ""
+msgstr "位置モード"
 
 #: ../../source/FMManual/fm_intro.rst:861
 msgid ""
 "位置模式下，上位控制器完成位置指令规划，然后将规划好的目标位置 607Ah "
 "上以周期性同步的方式发送给伺服驱动器，位置、速度、转矩控制由伺服驱动器内部完成。"
 msgstr ""
+"位置モードでは、上位コントローラが位置指令のプランニングを完了し、その後、プランニング済みの目標位置を 607Ah "
+"上で周期的に同期する方式でサーボドライバに送信し、位置、速度、トルクの制御はサーボドライバ内部で実行されます。"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "056.png"
-msgstr ""
+msgstr "056.png"
 
 #: ../../source/FMManual/fm_intro.rst:868
 msgid "图表 8-14 位置运行模式图"
-msgstr ""
+msgstr "図表 8-14 位置運転モード図"
 
 #: ../../source/FMManual/fm_intro.rst:870
 msgid "位置模式下配置图"
-msgstr ""
+msgstr "位置モード下の構成図"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "057.png"
-msgstr ""
+msgstr "057.png"
 
 #: ../../source/FMManual/fm_intro.rst:877
 msgid "图表 8-15 位置模式设置流程图"
-msgstr ""
+msgstr "図表 8-15 位置モード設定フロー図"
 
 #: ../../source/FMManual/fm_intro.rst:879
 msgid "使用寿命"
-msgstr ""
+msgstr "使用寿命"
 
 #: ../../source/FMManual/fm_intro.rst:881
 msgid "FM-通用关节平均使用寿命50000h。"
-msgstr ""
+msgstr "FM-汎用関節の平均使用寿命50000h。"
 
 #: ../../source/FMManual/fm_intro.rst:884
 msgid "附录"
-msgstr ""
+msgstr "付録"
 
 #: ../../source/FMManual/fm_intro.rst:887
 msgid "附录1 报警代码表"
-msgstr ""
+msgstr "付録1 アラームコード表"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "058.png"
-msgstr ""
+msgstr "058.png"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "059.png"
-msgstr ""
+msgstr "059.png"
 
 #: ../../source/FMManual/fm_intro.rst:-1
 msgid "060.png"
-msgstr ""
+msgstr "060.png"
 
 #: ../../source/FMManual/fm_intro.rst:902
 msgid "附录2：Sdo读写驱动器全参数表-V0.4-20251208"
-msgstr ""
+msgstr "付録2：Sdo読み書きドライバ全パラメータ一覧-V0.4-20251208"
 
 #: ../../source/FMManual/fm_intro.rst:904
 msgid ":download:`Sdo读写驱动器全参数表 <../_static/_doc/Sdo读写驱动器全参数表.xls>`"
 msgstr ""
+":download:`Sdo読み書きドライブ全パラメータ表 <../_static/_doc/Sdo読み書きドライブ全パラメータ表.xls>`"
 
 #~ msgid "FM-11基本信息"
 #~ msgstr ""
@@ -1539,4 +1636,3 @@ msgstr ""
 
 #~ msgid "（2）调试线束"
 #~ msgstr ""
-
