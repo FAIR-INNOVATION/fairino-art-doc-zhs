@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-17 14:16+0800\n"
+"POT-Creation-Date: 2026-10-30 15:45+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgid "名称：**警告**"
 msgstr "Name:**Warning**"
 
 #: ../../source/ART7Manual/art_line.rst:18
-#: ../../source/ART7Manual/art_line.rst:87
+#: ../../source/ART7Manual/art_line.rst:94
 msgid "说明："
 msgstr "Note:"
 
@@ -88,7 +88,15 @@ msgstr ""
 msgid "系统接线"
 msgstr "System Wiring"
 
-#: ../../source/ART7Manual/art_line.rst:30
+#: ../../source/ART7Manual/art_line.rst:-1
+msgid "039.png"
+msgstr "039.png"
+
+#: ../../source/ART7Manual/art_line.rst:36
+msgid "图表 4 基座板线束连接图"
+msgstr "Diagram  4  Base Plate Wire Harness Connection Diagram"
+
+#: ../../source/ART7Manual/art_line.rst:37
 msgid ""
 "人形机械臂ART7-R7共有四种配置：配置一为单臂，配置二为单臂+控制器，配置三为双臂，配置四为双臂+控制器+分支器。其接线图如图4-1、4-2、4-3和4-4所示。"
 msgstr ""
@@ -97,7 +105,7 @@ msgstr ""
 "dual-arm, Configuration 4 is dual-arm+ controller+ splitter. Its wiring "
 "diagrams are shown in Figures 4-1, 4-2, 4-3 and 4-4."
 
-#: ../../source/ART7Manual/art_line.rst:32
+#: ../../source/ART7Manual/art_line.rst:39
 msgid "人形机械臂ART7-R7的供电电压为DC48V，控制器和分支器的供电电压为DC24V，如图4-5和4-6所示。"
 msgstr ""
 "The power supply voltage of the humanoid robotic arm ART7-R7 is DC48V, and "
@@ -108,7 +116,7 @@ msgstr ""
 msgid "031.png"
 msgstr "031.png"
 
-#: ../../source/ART7Manual/art_line.rst:39
+#: ../../source/ART7Manual/art_line.rst:46
 msgid "图表 4-1 配置一接线图"
 msgstr "Figure  4-1  Configuration 1 Wiring Diagram"
 
@@ -116,7 +124,7 @@ msgstr "Figure  4-1  Configuration 1 Wiring Diagram"
 msgid "032.png"
 msgstr "032.png"
 
-#: ../../source/ART7Manual/art_line.rst:45
+#: ../../source/ART7Manual/art_line.rst:52
 msgid "图表 4-2 配置二接线图"
 msgstr "Figure  4-2  Configuration 2 Wiring Diagram"
 
@@ -124,7 +132,7 @@ msgstr "Figure  4-2  Configuration 2 Wiring Diagram"
 msgid "033.png"
 msgstr "033.png"
 
-#: ../../source/ART7Manual/art_line.rst:51
+#: ../../source/ART7Manual/art_line.rst:58
 msgid "图表 4-3 配置三接线图"
 msgstr "Figure  4-3  Configuration 3 Wiring Diagram"
 
@@ -132,7 +140,7 @@ msgstr "Figure  4-3  Configuration 3 Wiring Diagram"
 msgid "034.png"
 msgstr "034.png"
 
-#: ../../source/ART7Manual/art_line.rst:57
+#: ../../source/ART7Manual/art_line.rst:64
 msgid "图表 4-4 配置四接线图"
 msgstr "Figure  4-4  Configuration 4 Wiring Diagram"
 
@@ -140,7 +148,7 @@ msgstr "Figure  4-4  Configuration 4 Wiring Diagram"
 msgid "035.png"
 msgstr "035.png"
 
-#: ../../source/ART7Manual/art_line.rst:63
+#: ../../source/ART7Manual/art_line.rst:70
 msgid "图表 4-5 控制器接线位置"
 msgstr "Figure  4-5  Controller Wiring Location"
 
@@ -148,15 +156,15 @@ msgstr "Figure  4-5  Controller Wiring Location"
 msgid "036.png"
 msgstr "036.png"
 
-#: ../../source/ART7Manual/art_line.rst:69
+#: ../../source/ART7Manual/art_line.rst:76
 msgid "图表 3-6 分支器接线位置"
 msgstr "Figure  3-6  Splitter wiring position"
 
-#: ../../source/ART7Manual/art_line.rst:71
+#: ../../source/ART7Manual/art_line.rst:78
 msgid "上位机调试接线"
 msgstr "Host PC Debugging Wiring"
 
-#: ../../source/ART7Manual/art_line.rst:72
+#: ../../source/ART7Manual/art_line.rst:79
 msgid "调试机械臂时用网线连接上位机和控制器。如图4-7所示。"
 msgstr ""
 "When debugging the robotic arm, connect the host computer and the controller"
@@ -166,23 +174,23 @@ msgstr ""
 msgid "037.png"
 msgstr "037.png"
 
-#: ../../source/ART7Manual/art_line.rst:79
+#: ../../source/ART7Manual/art_line.rst:86
 msgid "图表 4-7 上位机和控制器接线图"
 msgstr "Figure  4-7  Wiring Diagram of Host Computer and Controller"
 
-#: ../../source/ART7Manual/art_line.rst:85
+#: ../../source/ART7Manual/art_line.rst:92
 msgid "名称：**注意**"
 msgstr "Name:**Note**"
 
-#: ../../source/ART7Manual/art_line.rst:89
+#: ../../source/ART7Manual/art_line.rst:96
 msgid "24V、48V供电电源请自备。"
 msgstr "Please provide your own power supply for 24V and 48V."
 
-#: ../../source/ART7Manual/art_line.rst:90
+#: ../../source/ART7Manual/art_line.rst:97
 msgid "上位机调试网线请自备。"
 msgstr "Please provide your own Ethernet cable for host computer debugging."
 
-#: ../../source/ART7Manual/art_line.rst:91
+#: ../../source/ART7Manual/art_line.rst:98
 msgid "控制器和分支器之间的网线请自备。"
 msgstr ""
 "Please provide your own network cable between the controller and the "

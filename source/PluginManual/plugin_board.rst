@@ -6,7 +6,9 @@
 
 状态看板
 --------------------------------------
-状态看板实际上是一个默认随着插件开机自启动的controller，名称为fairino_hardware_state_broadcaster，它以500HZ的频率监控插件中所有状态反馈接口，并以topic的形式发布出来，消息类型名称是fairino_hardware_state_broadcaster/msg/HardwareState。
+状态看板是一个默认随着插件开机自启动的controller，名称为fairino_hardware_state_broadcaster。它通过hardware_states话题发布机器人及硬件状态，通过dexhand_states话题发布灵巧手状态。
+
+hardware_states的消息类型为hardware_state_broadcaster_msgs/msg/HardwareState，默认发布频率为50Hz；dexhand_states的消息类型为hardware_state_broadcaster_msgs/msg/DexhandState，默认发布频率跟随hardware_states。发布频率可以通过配置文件设置。
 
 .. centered:: 表2-1 具体的msg定义
 
@@ -103,9 +105,29 @@
      - float64
      - 通用模拟输入 (AI)。0-10V 或 4-20mA 模拟量信号的数字化读数。
 
-   * - interface485_feedback485
+   * - robot_type_id
+     - uint32
+     - 机器人型号标识。由当前加载的机型配置提供，0表示未知型号。
+
+   * - robot_configuration_mask
+     - uint32
+     - 机器人构型掩码。由当前机型配置提供，具体位定义以对应机型为准。
+
+   * - joint_fault_tolerant_state
+     - int32[]
+     - 关节通信容错状态。数组顺序与joint_names对应，0表示无通信故障，1表示关节驱动器EtherCAT通信故障。不包含末端板、分支器等非关节从站。
+
+   * - slaves_state
+     - int32[]
+     - EtherCAT从站工作状态。按照配置中的从站顺序排列，包含关节和其他从站。0表示正常，1表示从站掉线，2表示非OP状态或AL状态异常，4表示Error
+
+   * - end_device_fault_state
+     - uint16[2]
+     - 左右末端设备异常状态。数组下标0对应左末端，下标1对应右末端，单末端使用下标0。0表示无已上报异常，非0时按位解析，多个异常可以同时存在。
+
+   * - controllerio_di
      - float64
-     - RS-485 接口反馈。用于末端智能夹爪或外部串口传感器的通信数据回读。
+     - 控制器数字输入状态。
 
    * - interfacecan_feedbackcan
      - float64
@@ -401,6 +423,111 @@
    * - 0x02100002
      - 指令队列写入失败
      - 瞬时并发过高，导致系统在极短瞬间无法将插补点推入无锁队列，可能引起短暂的运动卡顿。
+		
+   * - 0x02100004
+     - 末端设备异常
+     - 左右末端至少一侧反馈异常。
+
+灵巧手状态通过dexhand_states话题独立发布。该话题反馈左右灵巧手的激活状态、设备ID、当前指令号、电机数量及运动完成情况，同时反馈每个电机的位置、速度、力矩和错误码。该功能需要对应机型具备配套末端接口并完成灵巧手配置。
+
+具体的msg定义如下表所示：
+
+.. list-table::
+   :widths: 20 20 60
+   :header-rows: 0
+   :align: center
+
+   * - **字段名称**
+     - **数据类型**
+     - **物理含义与业务释义**
+
+   * - header
+     - std_msgs/Header
+     - 消息头，包含状态数据的时间戳。
+
+   * - interfacedexhands1_act
+     - float64
+     - 左臂灵巧手的激活状态。
+
+   * - interfacedexhands1_id
+     - float64
+     - 左臂灵巧手的设备ID。
+
+   * - interfacedexhands1_cmdnum
+     - float64
+     - 左臂灵巧手当前反馈的指令号，用于与下发指令对应。
+
+   * - interfacedexhands1_slavenum
+     - float64
+     - 左臂灵巧手实际反馈的电机数量。
+
+   * - interfacedexhands1_movedone
+     - float64
+     - 左臂灵巧手整体运动完成标志。1表示全部电机运动到位，0表示尚未全部到位。
+
+   * - interfacedexhands1_curpos
+     - float64[]
+     - 左臂灵巧手各电机的当前位置，使用设备协议定义的绝对位置单位。
+
+   * - interfacedexhands1_curspd
+     - float64[]
+     - 左臂灵巧手各电机的当前速度，单位为百分比。
+
+   * - interfacedexhands1_curtor
+     - float64[]
+     - 左臂灵巧手各电机的当前力矩，单位为百分比。
+
+   * - interfacedexhands1_done
+     - float64[]
+     - 左臂灵巧手各电机的运动完成标志，1表示完成，0表示未完成。
+
+   * - interfacedexhands1_error
+     - float64[]
+     - 左臂灵巧手各电机的错误码。0，无故障；1，RS-485通信超时；2，设备指令错误；3，工件掉落；4，末端异常。
+
+   * - interfacedexhands2_act
+     - float64
+     - 右臂灵巧手的激活状态。
+
+   * - interfacedexhands2_id
+     - float64
+     - 右臂灵巧手的设备ID。
+
+   * - interfacedexhands2_cmdnum
+     - float64
+     - 右臂灵巧手当前反馈的指令号，用于与下发指令对应。
+
+   * - interfacedexhands2_slavenum
+     - float64
+     - 右臂灵巧手实际反馈的电机数量。
+
+   * - interfacedexhands2_movedone
+     - float64
+     - 右臂灵巧手整体运动完成标志。1表示全部电机运动到位，0表示尚未全部到位。
+
+   * - interfacedexhands2_curpos
+     - float64[]
+     - 右臂灵巧手各电机的当前位置，使用设备协议定义的绝对位置单位。
+
+   * - interfacedexhands2_curspd
+     - float64[]
+     - 右臂灵巧手各电机的当前速度，单位为百分比。
+
+   * - interfacedexhands2_curtor
+     - float64[]
+     - 右臂灵巧手各电机的当前力矩，单位为百分比。
+
+   * - interfacedexhands2_done
+     - float64[]
+     - 右臂灵巧手各电机的运动完成标志，1表示完成，0表示未完成。
+
+   * - interfacedexhands2_error
+     - float64[]
+     - 右臂灵巧手各电机的错误码。0，无故障；1，RS-485通信超时；2，设备指令错误；3，工件掉落；4，末端异常。
+
+以上电机数组按照电机编号从小到大排列，下标0对应1号电机。数组长度根据对应灵巧手反馈的slavenum确定，最多支持16个电机；数量无效时数组为空。这里的16表示接口容量，实际支持的电机数量以所连接的灵巧手为准。
+
+movedone表示整只灵巧手的运动完成情况，done数组表示各电机分别是否完成。判断一条指令的执行结果时，应同时结合cmdnum、完成标志和错误码。
 
 指令服务器
 ----------------------------------------
@@ -504,6 +631,30 @@
    * - sdosetforcesensorzero
      - 末端六维力清零
      - args[0]:ethercat从站id，args[1]:末端位置，当单臂的1，双臂左臂为1，右臂为2。
+
+   * - sdogetslaveporterrcounter
+     - 获取各关节EtherCAT端口的错误计数，用于辅助排查总线通信异常。
+     - 无参数
+
+   * - sdosetdexteroushandsact
+     - 设置指定末端灵巧手的激活或复位状态。
+     - args[0]：从站id；args[1]：末端位置，1为左侧、2为右侧，单末端使用1；args[2]：灵巧手设备id；args[3]：激活标志，取0或1。
+
+   * - sdosetcleardexteroushandserror
+     - 清除指定末端灵巧手的故障。
+     - args[0]：从站id；args[1]：末端位置，1为左侧、2为右侧，单末端使用1。
+
+   * - enabletorqueff
+     - 开启指定关节的位置模式力矩前馈，可同时修改并保存所选关节的前馈系数。
+     - args[0]：可选关节掩码，不填或填0表示全部关节。其后可依次填写所选关节的系数，顺序按照关节编号从小到大排列；不填写系数时使用现有系数。
+
+   * - disabletorqueff
+     - 关闭指定关节的位置模式力矩前馈。
+     - args[0]：可选关节掩码，不填或填0表示全部关节。
+
+   * - gettorqueffgain
+     - 查询指定关节当前使用的力矩前馈系数，返回关节名称及对应系数。
+     - args[0]：可选关节掩码，不填或填0表示全部关节。
 		
 同样的，根据上面阐述的指令服务器交互信息格式，每个一string指令都会有一个string反馈值，这个返回值是16位的错误码系统，其具体函数见如下表格：
 			

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 法奥协作机器人用户手册\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-24 14:42+0800\n"
+"POT-Creation-Date: 2026-10-29 16:40+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -80,12 +80,12 @@ msgstr ""
 "~SingleRobot();"
 
 #: ../../source/SDKManual/sdk_intro.rst:45
-#: ../../source/SDKManual/sdk_intro.rst:2201
+#: ../../source/SDKManual/sdk_intro.rst:2778
 msgid "关节空间运动"
 msgstr "関節空間運動"
 
 #: ../../source/SDKManual/sdk_intro.rst:47
-#: ../../source/SDKManual/sdk_intro.rst:2203
+#: ../../source/SDKManual/sdk_intro.rst:2780
 msgid ""
 "/**\n"
 "* @brief  关节空间运动\n"
@@ -1430,12 +1430,12 @@ msgstr ""
 "}"
 
 #: ../../source/SDKManual/sdk_intro.rst:763
-#: ../../source/SDKManual/sdk_intro.rst:2217
+#: ../../source/SDKManual/sdk_intro.rst:2794
 msgid "停止运动"
 msgstr "運動を中止する"
 
 #: ../../source/SDKManual/sdk_intro.rst:765
-#: ../../source/SDKManual/sdk_intro.rst:2219
+#: ../../source/SDKManual/sdk_intro.rst:2796
 msgid ""
 "/**\n"
 "* @brief  停止运动\n"
@@ -1810,7 +1810,7 @@ msgstr ""
 "ARMErrorCode GetInverseKinRef(double* desc_pos, double arm_angle, double* ref_joint_val, double* joint_val);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1004
-#: ../../source/SDKManual/sdk_intro.rst:2229
+#: ../../source/SDKManual/sdk_intro.rst:2806
 msgid "获取当前关节位置(角度)"
 msgstr "現在の関節位置（角度）を取得する"
 
@@ -2001,7 +2001,7 @@ msgstr ""
 "ARMErrorCode GetDHCompensation(double dh_theta[7], double dh_a[7], double dh_d[7], double dh_alpha[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1126
-#: ../../source/SDKManual/sdk_intro.rst:2255
+#: ../../source/SDKManual/sdk_intro.rst:2832
 msgid "关节使能"
 msgstr "ジョイントの有効化"
 
@@ -2022,7 +2022,7 @@ msgstr ""
 "ARMErrorCode AxisEnable(int joint_id);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1139
-#: ../../source/SDKManual/sdk_intro.rst:2268
+#: ../../source/SDKManual/sdk_intro.rst:2845
 msgid "关节去使能"
 msgstr "関節の無効化"
 
@@ -2043,7 +2043,7 @@ msgstr ""
 "ARMErrorCode AxisDisable(int joint_id);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1152
-#: ../../source/SDKManual/sdk_intro.rst:2281
+#: ../../source/SDKManual/sdk_intro.rst:2858
 msgid "关节校零"
 msgstr "関節のゼロ点調整"
 
@@ -2064,12 +2064,12 @@ msgstr ""
 "ARMErrorCode AxisZeroing(int joint_id);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1165
-#: ../../source/SDKManual/sdk_intro.rst:2294
+#: ../../source/SDKManual/sdk_intro.rst:2871
 msgid "清除控制器错误"
 msgstr "コントローラーのエラーをクリアする"
 
 #: ../../source/SDKManual/sdk_intro.rst:1167
-#: ../../source/SDKManual/sdk_intro.rst:2296
+#: ../../source/SDKManual/sdk_intro.rst:2873
 msgid ""
 "/**\n"
 "* @brief  清除控制器错误\n"
@@ -2084,7 +2084,7 @@ msgstr ""
 "ARMErrorCode AxisResetError();"
 
 #: ../../source/SDKManual/sdk_intro.rst:1177
-msgid "设置负载重量和质心(仅JK2.0机械臂使用)"
+msgid "设置负载重量和质心"
 msgstr "負荷重量および重心を設定(のみJK2.0アーム使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1179
@@ -2108,7 +2108,7 @@ msgstr ""
 "ARMErrorCode SetLoadcoord(uint8_t index, double mess, double messCenter[3]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1192
-msgid "设置关节摩擦力补偿开关(仅JK2.0机械臂使用)"
+msgid "设置关节摩擦力补偿开关"
 msgstr "関節摩擦力補償スイッチを設定(のみJK2.0ロボットアーム使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1194
@@ -2128,7 +2128,7 @@ msgstr ""
 "ARMErrorCode FrictionCompensationOnOff(uint8_t onOff);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1205
-msgid "设置关节摩擦力补偿系数(仅JK2.0机械臂使用)"
+msgid "设置关节摩擦力补偿系数"
 msgstr "関節摩擦力補償係数を設定します(のみJK2.0ロボットアームで使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1207
@@ -2148,7 +2148,7 @@ msgstr ""
 "ARMErrorCode SetFrictionValue(double value[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1218
-msgid "设置机械臂软限位保护开关(仅JK2.0机械臂使用)"
+msgid "设置机械臂软限位保护开关"
 msgstr "機械アームのソフトリミット保護スイッチを設定(のみJK2.0機械アームで使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1220
@@ -2168,7 +2168,7 @@ msgstr ""
 "ARMErrorCode SetJointSoftLimitOnOff(uint8_t onOff);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1231
-msgid "设置电流环拖动示教(仅JK2.0机械臂使用)"
+msgid "设置电流环拖动示教"
 msgstr "電流ループ・トローリング教示を設定(のみJK2.0ロボットアーム使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1233
@@ -2190,7 +2190,7 @@ msgstr ""
 "ARMErrorCode SetTeachMode(uint8_t enable, uint8_t mode=0);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1245
-msgid "设置电流环拖动示教调试用例(仅JK2.0机械臂使用)"
+msgid "设置电流环拖动示教调试用例"
 msgstr "設定電流ループドラッグティーチデバッグケース(僅かにJK2.0ロボットアーム使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1247
@@ -2316,7 +2316,7 @@ msgstr ""
 "}"
 
 #: ../../source/SDKManual/sdk_intro.rst:1311
-msgid "设置关节扭矩力传感器拖动示教(仅JK2.0机械臂使用)"
+msgid "设置关节扭矩力传感器拖动示教"
 msgstr "関節トルク力センサを設定して、ドラッグ式ティーチングを行う(はJK2.0ロボットアームのみで使用可能)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1313
@@ -2338,7 +2338,7 @@ msgstr ""
 "ARMErrorCode SetJointSensorTeachMode(uint8_t enable, uint8_t mode = 0);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1325
-msgid "获取是否处于拖动示教模式(仅JK2.0机械臂使用)"
+msgid "获取是否处于拖动示教模式"
 msgstr "ドラッグティーチングモードかどうかを取得(のみJK2.0ロボットアーム使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1327
@@ -2358,7 +2358,7 @@ msgstr ""
 "ARMErrorCode IsInDragTeach(uint8_t& mode);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1338
-msgid "设置碰撞检测(仅JK2.0机械臂使用)"
+msgid "设置碰撞检测"
 msgstr "衝突検出を設定(のみJK2.0ロボットアームが使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1340
@@ -2380,7 +2380,7 @@ msgstr ""
 "ARMErrorCode SetCollisionDetectionMode(uint8_t enable, uint8_t mode);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1352
-msgid "设置碰撞等级(仅JK2.0机械臂使用)"
+msgid "设置碰撞等级"
 msgstr "衝突レベルを設定(のみJK2.0ロボットアームが使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1354
@@ -2400,7 +2400,7 @@ msgstr ""
 "ARMErrorCode SetAnticollision(uint8_t level[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1365
-msgid "设置碰撞后策略(仅JK2.0机械臂使用)"
+msgid "设置碰撞后策略"
 msgstr "衝突後のポリシーを設定(のみJK2.0ロボットアームが使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1367
@@ -2420,7 +2420,7 @@ msgstr ""
 "ARMErrorCode SetCollisionStrategy(uint8_t strategy);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1378
-msgid "设置碰撞后策略调试用例(仅JK2.0机械臂使用)"
+msgid "设置碰撞后策略调试用例"
 msgstr "衝突後の戦略デバッグケース(のみJK2.0ロボットアーム使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1380
@@ -2568,7 +2568,7 @@ msgstr ""
 "}"
 
 #: ../../source/SDKManual/sdk_intro.rst:1455
-msgid "设置关节扭矩力传感器零点标定(仅JK2.0机械臂使用)"
+msgid "设置关节扭矩力传感器零点标定"
 msgstr "関節トルク力センサのゼロ点校正を設定(のみJK2.0ロボットアームで使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1457
@@ -2590,7 +2590,7 @@ msgstr ""
 "ARMErrorCode SetJointSensorZero(double joint_val[7], double speed);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1469
-msgid "设置机器人安装角度(仅JK2.0机械臂使用)"
+msgid "设置机器人安装角度"
 msgstr "ロボットの設置角度を設定する(「のみ」JK2.0アームのみ使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1471
@@ -2612,7 +2612,7 @@ msgstr ""
 "ARMErrorCode SetRobotInstallAngle(double yangle, double zangle);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1483
-msgid "获取机器人安装角度(仅JK2.0机械臂使用)"
+msgid "获取机器人安装角度"
 msgstr "ロボットの設置角度を取得(のみJK2.0アーム使用)"
 
 #: ../../source/SDKManual/sdk_intro.rst:1485
@@ -2696,7 +2696,7 @@ msgstr ""
 "ARMErrorCode SetLimitNegative(double limitNegative[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1537
-#: ../../source/SDKManual/sdk_intro.rst:2332
+#: ../../source/SDKManual/sdk_intro.rst:2909
 msgid "获取关节软限位角度"
 msgstr "関節のソフトリミット角度を取得"
 
@@ -2719,7 +2719,7 @@ msgstr ""
 "ARMErrorCode GetJointSoftLimitDeg(double limitNegative[7], double limitPositive[7]);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1551
-#: ../../source/SDKManual/sdk_intro.rst:2372
+#: ../../source/SDKManual/sdk_intro.rst:2949
 msgid "获取机械臂固件版本"
 msgstr "ロボットアームのファームウェアバージョンを取得する"
 
@@ -2870,7 +2870,7 @@ msgstr ""
 "ARMErrorCode SetJointSensorTeachModeParam(uint8_t drag_level);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1647
-#: ../../source/SDKManual/sdk_intro.rst:2385
+#: ../../source/SDKManual/sdk_intro.rst:2962
 msgid "获取关节驱动器温度"
 msgstr "関節ドライバーの温度を取得"
 
@@ -2971,16 +2971,16 @@ msgid ""
 "* @param [in] acceleration 加速度百分比，范围：[0, 100]\n"
 "* @return 错误码\n"
 "**/\n"
-"ARMErrorCode FT_PdCogIden(double joints[3][7], double velocity, double acceleration);"
+"ARMErrorCode FT_PdCogIden(double joints[3], double velocity, double acceleration);"
 msgstr ""
 "/**\n"
-"* @brief  力センサ負荷識別\n"
-"* @param [in] joints 負荷識別ポイント位置、単位: deg\n"
-"* @param [in] velocity  速度パーセント、範囲：[0, 100]\n"
-"* @param [in] acceleration 加速度パーセント、範囲：[0, 100]\n"
+"* @brief  力センサー負荷識別\n"
+"* @param [in] joints 負荷識別点位、単位: deg\n"
+"* @param [in] velocity  速度パーセンテージ、範囲：[0, 100]\n"
+"* @param [in] acceleration 加速度パーセンテージ、範囲：[0, 100]\n"
 "* @return エラーコード\n"
 "**/\n"
-"ARMErrorCode FT_PdCogIden(double joints[3][7], double velocity, double acceleration);"
+"ARMErrorCode FT_PdCogIden(double joints[3], double velocity, double acceleration);"
 
 #: ../../source/SDKManual/sdk_intro.rst:1718
 msgid "力传感器安全检测"
@@ -3631,10 +3631,1024 @@ msgstr ""
 "}"
 
 #: ../../source/SDKManual/sdk_intro.rst:2117
+msgid "获取各关节力矩前馈系数"
+msgstr "各関節トルクフィードフォワード係数を取得"
+
+#: ../../source/SDKManual/sdk_intro.rst:2119
+msgid ""
+"/**\n"
+"* @brief  获取各关节力矩前馈系数\n"
+"* @param [out] gain 各轴力矩前馈系数(0,2]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetForceForwardFeedGain(double gain);"
+msgstr ""
+"/**\n"
+"* @brief  各関節トルクフィードフォワード係数を取得\n"
+"* @param [out] gain 各軸トルクフィードフォワード係数(0,2]\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode GetForceForwardFeedGain(double gain);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2130
+msgid "力矩前馈开启与关闭"
+msgstr "トルク前馈のオンとオフ"
+
+#: ../../source/SDKManual/sdk_intro.rst:2132
+msgid ""
+"/**\n"
+"* @brief  力矩前馈开启与关闭\n"
+"* @param [in] enable 力矩前馈开关，0-力矩前馈关 1-力矩前馈开\n"
+"* @param [in] gain 各轴力矩前馈系数(0,2]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetForceForwardFeed(uint8_t enable,double gain);"
+msgstr ""
+"/**\n"
+"* @brief  トルクフィードフォワードのオンとオフ\n"
+"* @param [in] enable トルクフィードフォワードスイッチ、0-トルクフィードフォワードオフ 1-トルクフィードフォワードオン\n"
+"* @param [in] gain 各軸のトルクフィードフォワード係数(0,2]\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode SetForceForwardFeed(uint8_t enable,double gain);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2144
+msgid "力矩前馈开启与关闭代码示例"
+msgstr "トルクフィードフォワードのオンとオフのコード例"
+
+#: ../../source/SDKManual/sdk_intro.rst:2146
+msgid ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 建立通信\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 连接失败\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. 创建单臂实例（7轴）\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"    // 3. 力矩前馈开启\n"
+"    double gain_set[7] = {1.0,1.0, 1.0, 1.0, 1.0, 1.0, 1.0};\n"
+"    ARMErrorCode rtn = robot.SetForceForwardFeed(1, gain_set);\n"
+"    if (ret == ARMErrorCode::Success)\n"
+"    {\n"
+"        std::cout << \"力矩前馈开启执行成功\" << std::endl;\n"
+"    }\n"
+"    else\n"
+"    {\n"
+"        std::cout << \"力矩前馈开启执行失败，错误码: \" << (int)ret << std::endl;\n"
+"    }\n"
+"\n"
+"    // 4. 力矩前馈系数获取\n"
+"    double gain_get[7] = {0};\n"
+"    rtn = robot.GetForceForwardFeedGain(gain_get);\n"
+"    if (ret == ARMErrorCode::Success)\n"
+"    {\n"
+"        std::cout << \"获取力矩前馈系数执行成功\" << std::endl;\n"
+"        std::cout << \"力矩前馈系数: \" << gain_get[0] << “,” << gain_get[1] << “,”\n"
+"        gain_get[2] << “,” << gain_get[3] << “,” << gain_get[4] << “,” << gain_get[5] << “,”\n"
+"        gain_get[6] << std::endl;\n"
+"    }\n"
+"    else\n"
+"    {\n"
+"        std::cout << \"获取力矩前馈系数执行失败，错误码: \" << (int)ret << std::endl;\n"
+"    }\n"
+"\n"
+"        // 5. 力矩前馈关闭\n"
+"    rtn = robot.SetForceForwardFeed(1, gain_set);\n"
+"    if (ret == ARMErrorCode::Success)\n"
+"    {\n"
+"        std::cout << \"力矩前馈关闭执行成功\" << std::endl;\n"
+"    }\n"
+"    else\n"
+"    {\n"
+"        std::cout << \"力矩前馈关闭执行失败，错误码: \" << (int)ret << std::endl;\n"
+"    }\n"
+"\n"
+"    // 7. 清理\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+msgstr ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 通信を確立\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 接続失敗\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. シングルアームインスタンス（7軸）を作成\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"    // 3. トルクフィードフォワードオン\n"
+"    double gain_set[7] = {1.0,1.0, 1.0, 1.0, 1.0, 1.0, 1.0};\n"
+"    ARMErrorCode rtn = robot.SetForceForwardFeed(1, gain_set);\n"
+"    if (ret == ARMErrorCode::Success)\n"
+"    {\n"
+"        std::cout << \"トルクフィードフォワードオンの実行成功\" << std::endl;\n"
+"    }\n"
+"    else\n"
+"    {\n"
+"        std::cout << \"トルクフィードフォワードオンの実行失敗、エラーコード: \" << (int)ret << std::endl;\n"
+"    }\n"
+"\n"
+"    // 4. トルクフィードフォワード係数取得\n"
+"    double gain_get[7] = {0};\n"
+"    rtn = robot.GetForceForwardFeedGain(gain_get);\n"
+"    if (ret == ARMErrorCode::Success)\n"
+"    {\n"
+"        std::cout << \"トルクフィードフォワード係数取得の実行成功\" << std::endl;\n"
+"        std::cout << \"トルクフィードフォワード係数: \" << gain_get[0] << “,” << gain_get[1] << “,”\n"
+"        gain_get[2] << “,” << gain_get[3] << “,” << gain_get[4] << “,” << gain_get[5] << “,”\n"
+"        gain_get[6] << std::endl;\n"
+"    }\n"
+"    else\n"
+"    {\n"
+"        std::cout << \"トルクフィードフォワード係数取得の実行失敗、エラーコード: \" << (int)ret << std::endl;\n"
+"    }\n"
+"\n"
+"        // 5. トルクフィードフォワードオフ\n"
+"    rtn = robot.SetForceForwardFeed(1, gain_set);\n"
+"    if (ret == ARMErrorCode::Success)\n"
+"    {\n"
+"        std::cout << \"トルクフィードフォワードオフの実行成功\" << std::endl;\n"
+"    }\n"
+"    else\n"
+"    {\n"
+"        std::cout << \"トルクフィードフォワードオフの実行失敗、エラーコード: \" << (int)ret << std::endl;\n"
+"    }\n"
+"\n"
+"    // 7. クリア\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+
+#: ../../source/SDKManual/sdk_intro.rst:2207
+msgid "获取指定关节运动速度"
+msgstr "指定された関節の運動速度を取得"
+
+#: ../../source/SDKManual/sdk_intro.rst:2209
+msgid ""
+"/**\n"
+"* @brief  获取指定关节运动速度\n"
+"* @param [in] joint_id 关节序号[1, 7]\n"
+"* @param [out] speed 关节速度、单位°/s (0,150|180]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetSingleAxisSpeed(uint8_t joint_id,double speed);"
+msgstr ""
+"/**\n"
+"* @brief  指定された関節の運動速度を取得\n"
+"* @param [in] joint_id 関節番号[1, 7]\n"
+"* @param [out] speed 関節速度、単位°/s (0,150|180]\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode GetSingleAxisSpeed(uint8_t joint_id,double speed);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2221
+msgid "获取指定关节运动加速度"
+msgstr "指定された関節の運動加速度を取得"
+
+#: ../../source/SDKManual/sdk_intro.rst:2223
+msgid ""
+"/**\n"
+"* @brief  获取指定关节运动加速度\n"
+"* @param [in] joint_id 关节序号[1, 7]\n"
+"* @param [out] acc 关节加速度、单位°/s^2 (0,300|360]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetSingleAxisAcc(uint8_t joint_id,double acc);"
+msgstr ""
+"/**\n"
+"* @brief  指定された関節の運動加速度を取得\n"
+"* @param [in] joint_id 関節番号[1, 7]\n"
+"* @param [out] acc 関節の加速度、単位°/s^2 (0,300|360]\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode GetSingleAxisAcc(uint8_t joint_id,double acc);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2235
+msgid "设置指定关节运动速度"
+msgstr "指定された関節の運動速度を設定"
+
+#: ../../source/SDKManual/sdk_intro.rst:2237
+msgid ""
+"/**\n"
+"* @brief  设置指定关节运动速度\n"
+"* @param [in] joint_id 关节序号[1, 7]\n"
+"* @param [in] speed 待设置关节速度、单位°/s；1 2关节;最大速度150，3-7关节最大速度180 (0,150|180]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetSingleAxisSpeed(uint8_t joint_id,double speed);"
+msgstr ""
+"/**\n"
+"* @brief  指定された関節の運動速度を設定\n"
+"* @param [in] joint_id 関節番号[1, 7]\n"
+"* @param [in] speed 設定する関節の速度、単位°/s；1 2関節;最大速度150，3-7関節最大速度180 (0,150|180]\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode SetSingleAxisSpeed(uint8_t joint_id,double speed);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2249
+msgid "设置指定关节运动加速度"
+msgstr "指定された関節の運動加速度を設定"
+
+#: ../../source/SDKManual/sdk_intro.rst:2251
+msgid ""
+"/**\n"
+"* @brief  设置指定关节运动加速度\n"
+"* @param [in] joint_id 关节序号[1, 7]\n"
+"* @param [in] acc 待设置关节加速度、单位° (0,300|360]\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode SetSingleAxisAcc(uint8_t joint_id,double acc);"
+msgstr ""
+"/**\n"
+"* @brief  指定された関節の運動加速度を設定\n"
+"* @param [in] joint_id 関節番号[1, 7]\n"
+"* @param [in] acc 設定する関節の加速度、単位° (0,300|360]\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode SetSingleAxisAcc(uint8_t joint_id,double acc);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2263
+msgid "设置指定关节运动加速度代码示例"
+msgstr "指定された関節の運動加速度を設定するコード例"
+
+#: ../../source/SDKManual/sdk_intro.rst:2265
+msgid ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 建立通信\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 连接失败\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. 创建单臂实例（7轴）\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"// 3. 获取关节运动速度和加速度\n"
+"double speed[7] = {0};\n"
+"double acc[7] = {0};\n"
+"ARMErrorCode rtn;\n"
+"for (uint8_t i = 0; i < 7; i++)\n"
+"{\n"
+"rtn = robot.GetSingleAxisSpeed(i+1, speed[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"获取关节速度失败\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"rtn = robot.GetSingleAxisAcc(i+1, acc[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"获取关节加速度失败\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"}\n"
+"\n"
+"// 4. 设置关节运动速度和加速度\n"
+"for (uint8_t i = 0; i < 7; i++)\n"
+"{\n"
+"rtn = robot.SetSingleAxisSpeed(i+1, speed[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"设置关节速度失败\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"rtn = robot.SetSingleAxisAcc(i+1, acc[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"设置关节加速度失败\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"}\n"
+"    // 5. 清理\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+msgstr ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 通信を確立\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 接続失敗\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. シングルアームインスタンス（7軸）を作成\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"// 3. 関節の運動速度と加速度を取得\n"
+"double speed[7] = {0};\n"
+"double acc[7] = {0};\n"
+"ARMErrorCode rtn;\n"
+"for (uint8_t i = 0; i < 7; i++)\n"
+"{\n"
+"rtn = robot.GetSingleAxisSpeed(i+1, speed[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"関節速度の取得に失敗\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"rtn = robot.GetSingleAxisAcc(i+1, acc[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"関節加速度の取得に失敗\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"}\n"
+"\n"
+"// 4. 関節の運動速度と加速度を設定\n"
+"for (uint8_t i = 0; i < 7; i++)\n"
+"{\n"
+"rtn = robot.SetSingleAxisSpeed(i+1, speed[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"関節速度の設定に失敗\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"rtn = robot.SetSingleAxisAcc(i+1, acc[i]);\n"
+"if (rtn != ARMErrorCode::Success)\n"
+"{\n"
+"std::cout << \"関節加速度の設定に失敗\" << std::endl;\n"
+"return -1;\n"
+"}\n"
+"}\n"
+"    // 5. クリア\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+
+#: ../../source/SDKManual/sdk_intro.rst:2324
+msgid "获取机械臂各轴扭矩传感器零点参数"
+msgstr "ロボットアーム各軸トルクセンサーのゼロポイントパラメータを取得"
+
+#: ../../source/SDKManual/sdk_intro.rst:2326
+msgid ""
+"/**\n"
+"* @brief 获取机械臂各轴扭矩传感器零点参数\n"
+"* @param [out] zero_param 机械臂扭矩传感器零点参数\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetJointSensorZeroParam(double zero_param);"
+msgstr ""
+"/**\n"
+"* @brief ロボットアーム各軸トルクセンサーのゼロ点パラメータを取得\n"
+"* @param [out] zero_param ロボットアームトルクセンサーのゼロ点パラメータ\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode GetJointSensorZeroParam(double zero_param);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2337
+msgid "获取机械臂各轴扭矩传感器零点参数代码示例"
+msgstr "ロボットアーム各軸トルクセンサーのゼロポイントパラメータ取得コード例"
+
+#: ../../source/SDKManual/sdk_intro.rst:2339
+msgid ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 建立通信\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 连接失败\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. 创建单臂实例（7轴）\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"// 3. 获取扭矩传感器零点参数\n"
+"double zero_param[7] = {0};\n"
+"ARMErrorCode rtn = robot.GetJointSensorZeroParam(zero_param);\n"
+"if (rtn == ARMErrorCode::Success)\n"
+"{\n"
+"    std::cout << \"获取扭矩传感器零点参数执行成功\" << std::endl;\n"
+"    std::cout << \"扭矩传感器零点参数: \" << zero_param[0] << “,” << zero_param[1] << “,”\n"
+"    zero_param[2] << “,” << zero_param[3] << “,” << zero_param[4] << “,” <<\n"
+"zero_param[5] << “,” << zero_param[6] << std::endl;\n"
+"}\n"
+"else\n"
+"{\n"
+"    std::cout << \"获取扭矩传感器零点参数执行失败，错误码: \" << (int)ret << std::endl;\n"
+"}\n"
+"\n"
+"    // 4. 清理\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+msgstr ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 通信を確立\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 接続失敗\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. シングルアームインスタンス（7軸）を作成\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"// 3. トルクセンサーのゼロ点パラメータを取得\n"
+"double zero_param[7] = {0};\n"
+"ARMErrorCode rtn = robot.GetJointSensorZeroParam(zero_param);\n"
+"if (rtn == ARMErrorCode::Success)\n"
+"{\n"
+"    std::cout << \"トルクセンサーのゼロ点パラメータの取得が成功しました\" << std::endl;\n"
+"    std::cout << \"トルクセンサーのゼロ点パラメータ: \" << zero_param[0] << “,” << zero_param[1] << “,”\n"
+"    zero_param[2] << “,” << zero_param[3] << “,” << zero_param[4] << “,” <<\n"
+"zero_param[5] << “,” << zero_param[6] << std::endl;\n"
+"}\n"
+"else\n"
+"{\n"
+"    std::cout << \"トルクセンサーのゼロ点パラメータの取得に失敗しました、エラーコード: \" << (int)ret << std::endl;\n"
+"}\n"
+"\n"
+"    // 4. クリア\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+
+#: ../../source/SDKManual/sdk_intro.rst:2377
+msgid "获取碰撞检测开启标志"
+msgstr "衝突検出の有効化フラグを取得"
+
+#: ../../source/SDKManual/sdk_intro.rst:2379
+msgid ""
+"/**\n"
+"* @brief 获取碰撞检测开启标志\n"
+"* @param [out] openState 0-碰撞检测未开启 1-碰撞检测开启\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetCollisionOpenState(double openState);"
+msgstr ""
+"/**\n"
+"* @brief 衝突検出の有効化フラグを取得\n"
+"* @param [out] openState 0-衝突検出が有効化されていません 1-衝突検出が有効化されています\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode GetCollisionOpenState(double openState);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2390
+msgid "获取碰撞检测开启标志代码示例"
+msgstr "衝突検出の有効化フラグを取得するコード例"
+
+#: ../../source/SDKManual/sdk_intro.rst:2392
+msgid ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 建立通信\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 连接失败\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. 创建单臂实例（7轴）\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"// 3. 获取碰撞检测开启标志\n"
+"uint8_t openState;\n"
+"ARMErrorCode rtn = robot.GetCollisionOpenState(openState);\n"
+"if (rtn == ARMErrorCode::Success)\n"
+"{\n"
+"    std::cout << \"获取碰撞检测开启标志执行成功\" << std::endl;\n"
+"    std::cout << \"碰撞检测开启标志: \" << (int)openState << std::endl;\n"
+"}\n"
+"else\n"
+"{\n"
+"    std::cout << \"获取碰撞检测开启标志执行失败，错误码: \" << (int)ret << std::endl;\n"
+"}\n"
+"\n"
+"    // 4. 清理\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+msgstr ""
+"#include <iostream>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 通信を確立\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 接続失敗\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // 2. シングルアームインスタンス（7軸）を作成\n"
+"    SingleRobot robot(ART7_R7, SingleArm);\n"
+"\n"
+"// 3. 衝突検出の有効化フラグを取得\n"
+"uint8_t openState;\n"
+"ARMErrorCode rtn = robot.GetCollisionOpenState(openState);\n"
+"if (rtn == ARMErrorCode::Success)\n"
+"{\n"
+"    std::cout << \"衝突検出の有効化フラグを取得する実行が成功しました\" << std::endl;\n"
+"    std::cout << \"衝突椾出の有効化フラグ: \" << (int)openState << std::endl;\n"
+"}\n"
+"else\n"
+"{\n"
+"    std::cout << \"衝突検出の有効化フラグを取得する実行が失敗しました、エラーコード: \" << (int)ret << std::endl;\n"
+"}\n"
+"\n"
+"    // 4. クリア\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+
+#: ../../source/SDKManual/sdk_intro.rst:2428
+msgid "获取控制器当前系统时间"
+msgstr "コントローラーの現在のシステム時間を取得する"
+
+#: ../../source/SDKManual/sdk_intro.rst:2430
+msgid ""
+"/**\n"
+"* @brief 获取控制器当前系统时间\n"
+"* @param [out] sysTime 系统时间，格式： year:month:data-hour:minute:second\n"
+"* @return 错误码\n"
+"**/\n"
+"ARMErrorCode GetControllerSystemTime(std::string sysTime);"
+msgstr ""
+"/**\n"
+"* @brief コントローラの現在のシステム時間を取得\n"
+"* @param [out] sysTime システム時間、フォーマット： year:month:data-hour:minute:second\n"
+"* @return エラーコード\n"
+"**/\n"
+"ARMErrorCode GetControllerSystemTime(std::string sysTime);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2441
+msgid "获取控制器当前系统时间代码示例"
+msgstr "コントローラーの現在のシステム時間取得コード例"
+
+#: ../../source/SDKManual/sdk_intro.rst:2443
+msgid ""
+"#include <iostream>\n"
+"#include <string>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 建立通信\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 连接失败\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"// 2. 获取控制器系统时间\n"
+"std::string sysTime;\n"
+"rtn = tool.GetControllerSystemTime(sysTime);\n"
+"if (rtn == ARMErrorCode::Success)\n"
+"{\n"
+"    std::cout << \"获取控制器系统时间执行成功\" << std::endl;\n"
+"    std::cout << \"系统时间: \" << sysTime << std::endl;\n"
+"}\n"
+"else\n"
+"{\n"
+"    std::cout << \"获取控制器系统时间执行失败，错误码: \" << (int)ret << std::endl;\n"
+"}\n"
+"\n"
+"    // 4. 清理\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+msgstr ""
+"#include <iostream>\n"
+"#include <string>\n"
+"#include \"humanorid_sdk.h\"\n"
+"\n"
+"int main() {\n"
+"    // 1. 通信を確立\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != Success) {\n"
+"        std::cout << \"RPC 接続失敗\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"// 2. コントローラーシステム時間を取得\n"
+"std::string sysTime;\n"
+"rtn = tool.GetControllerSystemTime(sysTime);\n"
+"if (rtn == ARMErrorCode::Success)\n"
+"{\n"
+"    std::cout << \"コントローラーシステム時間の取得が成功しました\" << std::endl;\n"
+"    std::cout << \"システム時間: \" << sysTime << std::endl;\n"
+"}\n"
+"else\n"
+"{\n"
+"    std::cout << \"コントローラーシステム時間の取得に失敗しました、エラーコード: \" << (int)ret << std::endl;\n"
+"}\n"
+"\n"
+"    // 4. クリア\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+
+#: ../../source/SDKManual/sdk_intro.rst:2477
+msgid "灵巧手控制初始化"
+msgstr "器用な手の制御初期化"
+
+#: ../../source/SDKManual/sdk_intro.rst:2479
+msgid ""
+"/**\n"
+"* @brief 灵巧手控制初始化。InitHand 只做本地登记，不发起网络请求，因此返回 Success 不代表设备在线；设备在线状态由后续 ActHand 与 GetHandState 确认。\n"
+"* @param [in] backend 两只手共享的 TCP 后端；为空返回 TCP_ConnectErr。两只手必须传同一个实例。非空\n"
+"* @param [in] config 本手配置：side / slave_id / hand_id / model。model.valid()\n"
+"* @param [in] arm_controllezr_id 本手所在臂的控制器索引，由 RobotTool::GetControllerId 获取；单臂通常为 0，双臂左 0 / 右 1。\n"
+"* @param [in] errMsg 失败原因，可直接打印。\n"
+"* @return TCP_ConnectErr    未调用 InitHand，或后端未连接。\n"
+"          SDKServer_RunErr  服务端拒绝（常见状态码 4）；检查手供电、485、末端板拓扑与 hand_id。\n"
+"          CMD_RunErr        本侧执行失败（传输或解析异常）。\n"
+"**/\n"
+"ARMErrorCode InitHand(std::shared_ptr<DexHandTcpBackend> backend,const HandConfig& config, uint8_t arm_controller_id, char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief 器用な手の制御初期化。InitHand ローカル登録のみを行い、ネットワークリクエストは発行しないため、 Success が返されるのはデバイスがオンラインであることを意味しません；デバイスのオンライン状態は後続の ActHand と GetHandState によって確認されます。\n"
+"* @param [in] backend 二つの手で共有する TCP バックエンド；空の場合、 TCP_ConnectErrを返します。二つの手には同じインスタンスを渡す必要があります。非空\n"
+"* @param [in] config この手の設定：side / slave_id / hand_id / model。model.valid()\n"
+"* @param [in] arm_controllezr_id この手が属する腕のコントローラーインデックスは、 RobotTool::GetControllerId から取得します；単腕では通常 0、両腕では左 0 / 右 1です。\n"
+"* @param [in] errMsg 失敗の理由、直接プリント可能です。\n"
+"* @return TCP_ConnectErr    未呼び出し InitHand、またはバックエンドが接続されていない。\n"
+"          SDKServer_RunErr  サーバ拒否（一般的なステータスコード 4）；手の電源供給、485、末端板トポロジー、および hand_idを確認してください。\n"
+"          CMD_RunErr        こちら側での実行失敗（転送または解析異常）。\n"
+"**/\n"
+"ARMErrorCode InitHand(std::shared_ptr<DexHandTcpBackend> backend,const HandConfig& config, uint8_t arm_controller_id, char[1024] errMsg);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2495
+msgid "激活灵巧手"
+msgstr "アクティブ化__PROTECT_X__"
+
+#: ../../source/SDKManual/sdk_intro.rst:2497
+msgid ""
+"/**\n"
+"* @brief 激活灵巧手，使能手部电机。接口使用 config.hand_id 作为寻址参数，因此两只手必须配置正确的 hand_id。\n"
+"* @param [out] errMsg 失败原因，可直接打印。\n"
+"* @return TCP_ConnectErr    未调用 InitHand，或后端未连接。\n"
+"        SDKServer_RunErr    服务端拒绝（常见状态码 4）；检查手供电、485、末端板拓扑与 hand_id。\n"
+"        CMD_RunErr  本侧执行失败（传输或解析异常）。\n"
+"        CMD_OverTime        响应超时或不完整。\n"
+"**/\n"
+"ARMErrorCode ActHand(char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief 敏捷手をアクティブ化し、手のモーターを有効にします。インターフェースは config.hand_id をアドレス指定パラメータとして使用するため、2つの手は正しい hand_idを設定する必要があります。\n"
+"* @param [out] errMsg 失敗の理由は直接印刷可能です。\n"
+"* @return TCP_ConnectErr    が InitHandを呼び出していない、またはバックエンドが接続されていない場合。\n"
+"        SDKServer_RunErr    サーバー側で拒否されました（一般的なステータスコード 4）；手の電源、485、末端板のトポロジー、および hand_idを確認してください。\n"
+"        CMD_RunErr  この側での実行に失敗しました（送信または解析例外）。\n"
+"        CMD_OverTime        応答がタイムアウトしたか不完全です。\n"
+"**/\n"
+"ARMErrorCode ActHand(char[1024] errMsg);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2511
+msgid "复位灵巧手"
+msgstr "リセット__PROTECT_X__"
+
+#: ../../source/SDKManual/sdk_intro.rst:2513
+msgid ""
+"/**\n"
+"* @brief 复位灵巧手，使手部电机失能。复位后运动指令会被服务端拒绝，需要重新 ActHand 才能恢复。\n"
+"* @param [out] errMsg 失败原因，可直接打印。\n"
+"* @return TCP_ConnectErr    未调用 InitHand，或后端未连接。\n"
+"        SDKServer_RunErr    服务端拒绝。\n"
+"        CMD_RunErr  本侧执行失败。\n"
+"**/\n"
+"ARMErrorCode ResetHand(char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief リセットデクストラスハンド、手部モーターを無効にする。リセット後、運動命令はサーバー側で拒否され、再び ActHand する必要がある。\n"
+"* @param [out] errMsg 失敗の理由は直接印刷できる。\n"
+"* @return TCP_ConnectErr    が呼び出されていない、またはバックエンドが接続されていない。\n"
+"        SDKServer_RunErr    サーバー側で拒否された。\n"
+"        CMD_RunErr  こちら側での実行に失敗した。\n"
+"**/\n"
+"ARMErrorCode ResetHand(char[1024] errMsg);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2526
+msgid "清除本手故障"
+msgstr "本手の故障をクリアする"
+
+#: ../../source/SDKManual/sdk_intro.rst:2528
+msgid ""
+"/**\n"
+"* @brief 清除本手故障。清除的是故障标志，不修复机械卡阻、丢步或电机损坏。\n"
+"* @param [out] errMsg 失败原因，可直接打印。\n"
+"* @return TCP_ConnectErr    未调用 InitHand，或后端未连接。\n"
+"        SDKServer_RunErr    服务端拒绝。\n"
+"        CMD_RunErr  本侧执行失败。\n"
+"        CMD_OverTime        响应超时或不完整。\n"
+"**/\n"
+"ARMErrorCode ClearError(char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief 本手の故障をクリアします。クリアするのは故障フラグだけで、機械的な詰まり、ステップロス、またはモータの損傷は修復しません。\n"
+"* @param [out] errMsg 失敗の原因は直接印刷できます。\n"
+"* @return TCP_ConnectErr    が呼び出されていない、またはバックエンドが接続されていません。 InitHandサーバーが拒否しました。\n"
+"        SDKServer_RunErr    この側で実行に失敗しました。\n"
+"        CMD_RunErr  応答がタイムアウトしたか、不完全です。\n"
+"        CMD_OverTime        "
+
+#: ../../source/SDKManual/sdk_intro.rst:2542
+msgid "控制单个关节"
+msgstr "個々の関節を制御する"
+
+#: ../../source/SDKManual/sdk_intro.rst:2544
+msgid ""
+"/**\n"
+"* @brief 控制单个关节。接口按 (finger, joint) 经型号表映射到协议槽位，生成 mask = 1 << slot，pos/speed/force 各只包含 1 个元素。\n"
+"* @param [in] finger 手指号：0 拇指、1 食指、2 中指、3 无名指、4 小指。[0, 4]\n"
+"* @param [in] joint 手指号：关节号；O6 拇指 2 关节，其余手指各 1 关节。拇指 [0,1]，其余 0\n"
+"* @param [in] pos 目标位置；小值弯曲、大值伸直。[0, 255]\n"
+"* @param [in] speed 目标速度百分比。[0, 100]\n"
+"* @param [in] force 目标力百分比。[0, 100]\n"
+"* @param [out] errMsg 失败原因，可直接打印。\n"
+"* @return InvalidInput_OutOfRange   手指/关节越界，语义层直接拒绝，零下发。\n"
+"        TCP_ConnectErr      未调用 InitHand，或后端未连接。\n"
+"        SDKServer_RunErr    服务端拒绝（常见状态码 5：手未激活、失能或反馈未就绪）。\n"
+"        CMD_RunErr  本侧执行失败。\n"
+"        CMD_OverTime        响应超时或不完整。\n"
+"**/\n"
+"ARMErrorCode MoveMotor(uint8_t finger, int joint, double pos, double speed, double force, char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief 単一の関節を制御します。インターフェースは (finger, joint) 経由でモデル表にマッピングされ、プロトコルスロットに変換され、 mask = 1 << slotが生成されます。pos/speed/force はそれぞれ 1 個の要素のみを含みます。\n"
+"* @param [in] finger 指番号：0 親指、1 人差し指、2 中指、3 薬指、4 小指。[0, 4]\n"
+"* @param [in] joint 指番号：関節番号；O6 親指は 2 関節、残りの指はそれぞれ 1 関節です。親指 [0,1]、残りは 0\n"
+"* @param [in] pos 目標位置；小さな値は曲げる、大きな値は伸ばすことを示します。[0, 255]\n"
+"* @param [in] speed 目標速度パーセンテージ。[0, 100]\n"
+"* @param [in] force 目標力パーセンテージ。[0, 100]\n"
+"* @param [out] errMsg 失敗理由、直接印刷可能です。\n"
+"* @return InvalidInput_OutOfRange   指/関節が範囲外の場合、意味論層では直接拒否し、ゼロを送信します。\n"
+"        TCP_ConnectErr      が呼び出されていない、またはバックエンドが接続されていない場合。\n"
+"        SDKServer_RunErr    サーバーが拒否（一般的なステータスコード 5：手がアクティブ化されていない、無効になっている、またはフィードバックが準備できていない）。\n"
+"        CMD_RunErr  こちら側での実行に失敗しました。\n"
+"        CMD_OverTime        応答タイムアウトまたは不完全。\n"
+"**/\n"
+"ARMErrorCode MoveMotor(uint8_t finger, int joint, double pos, double speed, double force, char[1024] errMsg);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2564
+msgid "控制整根手指"
+msgstr "指全体を制御する"
+
+#: ../../source/SDKManual/sdk_intro.rst:2566
+msgid ""
+"/**\n"
+"* @brief 控制整根手指。pos/speed/force 的长度必须等于该手指的关节数，按关节号传入；接口内部按槽位升序压缩成 mask 与三段数组。\n"
+"* @param [in] finger 手指号：0 拇指、1 食指、2 中指、3 无名指、4 小指。[0, 4]\n"
+"* @param [in] pos 各关节目标位置。长度 = jointsOfFinger(finger)\n"
+"* @param [in] speed 各关节目标速度。长度 = jointsOfFinger(finger)\n"
+"* @param [in] force 各关节目标力。长度 = jointsOfFinger(finger)\n"
+"* @param [in] len 数组长度，必须等于该指关节数。2（拇指）/ 1（其余）\n"
+"* @param [out] errMsg 失败原因，可直接打印。\n"
+"* @return InvalidInput_Nullptr      pos/speed/force 存在空指针。\n"
+"        InvalidInput_OutOfRange     手指越界，或数组长度不等于关节数；零下发。\n"
+"        TCP_ConnectErr      未调用 InitHand，或后端未连接。\n"
+"        SDKServer_RunErr    服务端拒绝。\n"
+"        CMD_RunErr  本侧执行失败。\n"
+"        CMD_OverTime        响应超时或不完整。\n"
+"**/\n"
+"ARMErrorCode MoveFinger(uint8_t finger, double pos, double speed, double force, int len, char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief 整根手指を制御します。pos/speed/force の長さはその指の関節の数と等しくなければならず、関節番号で渡されます。インターフェース内部ではスロットの昇順で mask と3つの配列に圧縮されます。\n"
+"* @param [in] finger 指の番号：0 親指、1 人差し指、2 中指、3 薬指、4 小指。[0, 4]\n"
+"* @param [in] pos 各関節の目標位置。長さ = jointsOfFinger(finger)\n"
+"* @param [in] speed 各関節の目標速度。長さ = jointsOfFinger(finger)\n"
+"* @param [in] force 各関節の目標力。長さ = jointsOfFinger(finger)\n"
+"* @param [in] len 配列の長さは、その指の関節の数と等しくなければなりません。2（親指）/ 1（その他）\n"
+"* @param [out] errMsg 失敗の理由。直接印刷可能です。\n"
+"* @return InvalidInput_Nullptr      pos/speed/force ヌルポインタが存在します。\n"
+"        InvalidInput_OutOfRange     指が範囲外であるか、または配列の長さが関節の数と一致しない場合；ゼロ以下の発行。\n"
+"        TCP_ConnectErr      呼び出されていない InitHand、またはバックエンドが接続されていません。\n"
+"        SDKServer_RunErr    サーバーが拒否しました。\n"
+"        CMD_RunErr  この側で実行に失敗しました。\n"
+"        CMD_OverTime        応答がタイムアウトしたか、不完全です。\n"
+"**/\n"
+"ARMErrorCode MoveFinger(uint8_t finger, double pos, double speed, double force, int len, char[1024] errMsg);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2587
+msgid "控制全部关节"
+msgstr "すべての関節を制御する"
+
+#: ../../source/SDKManual/sdk_intro.rst:2589
+msgid ""
+"/**\n"
+"* @brief 控制全部关节。len 必须等于 model.motor_count；数组按非预留槽升序排列，接口内部生成 mask 并跳过预留槽。O6 的 motor_count=6，mask=0x003F。\n"
+"* @param [in] pos 各关节目标位置。长度 = jointsOfFinger(finger)\n"
+"* @param [in] speed 各关节目标速度。长度 = jointsOfFinger(finger)\n"
+"* @param [in] force 各关节目标力。长度 = jointsOfFinger(finger)\n"
+"* @param [in] len 数组长度，必须等于该指关节数。2（拇指）/ 1（其余）\n"
+"* @param [out] errMsg 失败原因，可直接打印。\n"
+"* @return InvalidInput_Nullptr      pos/speed/force 存在空指针。\n"
+"        InvalidInput_OutOfRange     len <= 0，或 len 不等于 motor_count；零下发。\n"
+"        TCP_ConnectErr      未调用 InitHand，或后端未连接。\n"
+"        SDKServer_RunErr    服务端拒绝（常见状态码 5）。\n"
+"        CMD_RunErr  本侧执行失败。\n"
+"        CMD_OverTime        响应超时或不完整。\n"
+"**/\n"
+"ARMErrorCode MoveAllFingers(double pos, double speed, double force, int len, char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief すべての関節を制御します。len は model.motor_countと等しくなければなりません；配列は予約されていないスロットで昇順に並べられ、インターフェース内部で mask が生成され、予約されたスロットはスキップされます。O6 の motor_count=6、mask=0x003F。\n"
+"* @param [in] pos 各関節の目標位置。長さ = jointsOfFinger(finger)\n"
+"* @param [in] speed 各関節の目標速度。長さ = jointsOfFinger(finger)\n"
+"* @param [in] force 各関節の目標力。長さ = jointsOfFinger(finger)\n"
+"* @param [in] len 配列の長さは、該当する関节数と等しくなければなりません。2（親指）/ 1（その他）\n"
+"* @param [out] errMsg 失敗の理由であり、直接印刷することができます。\n"
+"* @return InvalidInput_Nullptr      pos/speed/force ヌルポインタが存在します。\n"
+"        InvalidInput_OutOfRange     len <= 0または len が motor_countと等しくない場合；ゼロ未満で送信。\n"
+"        TCP_ConnectErr      が InitHandを呼び出さなかった場合、またはバックエンドが接続されていない場合。\n"
+"        SDKServer_RunErr    サーバー側で拒否されました（一般的なステータスコード 5）。\n"
+"        CMD_RunErr  この側で実行に失敗しました。\n"
+"        CMD_OverTime        応答がタイムアウトしたか、不完全です。\n"
+"**/\n"
+"ARMErrorCode MoveAllFingers(double pos, double speed, double force, int len, char[1024] errMsg);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2609
+msgid "读取本手最新状态快照"
+msgstr "最新の状態スナップショットを読み取る"
+
+#: ../../source/SDKManual/sdk_intro.rst:2611
+msgid ""
+"/**\n"
+"* @brief 读取本手最新状态快照\n"
+"* @param [out] state 状态快照；stamp_ns==0 表示未取到数据。\n"
+"* @param [out] errMsg 失败原因，可直接打印。\n"
+"* @return CMD_OverTime      未取得状态（stamp_ns == 0）：查询失败、超时或响应字段不符。\n"
+"        TCP_ConnectErr      未调用 InitHand，或后端未连接。\n"
+"**/\n"
+"ARMErrorCode GetHandState(HandState& state, char[1024] errMsg);"
+msgstr ""
+"/**\n"
+"* @brief 本手の最新状態スナップショットを読み取り\n"
+"* @param [out] state 状態スナップショット；stamp_ns==0 データが取得できなかったことを示します。\n"
+"* @param [out] errMsg 失敗の原因、直接印刷可能です。\n"
+"* @return CMD_OverTime      状態が取得できませんでした（stamp_ns == 0）：クエリ失敗、タイムアウト、または応答フィールドの不一致。\n"
+"        TCP_ConnectErr      が呼び出されなかった、またはバックエンドに接続されていない場合。\n"
+"**/\n"
+"ARMErrorCode GetHandState(HandState& state, char[1024] errMsg);"
+
+#: ../../source/SDKManual/sdk_intro.rst:2624
+msgid "读取本手最新状态快照代码示例"
+msgstr "読み取り本手最新状態スナップショットコード例"
+
+#: ../../source/SDKManual/sdk_intro.rst:2626
+msgid ""
+"#include <chrono>\n"
+"#include <iostream>\n"
+"#include <memory>\n"
+"#include <thread>\n"
+"#include \"humanorid_sdk.h\"\n"
+"#include \"dexhand/robot_hand.h\"\n"
+"\n"
+"int main() {\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != ARMErrorCode::Success) {\n"
+"        std::cout << \"RPC 连接失败\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    uint8_t arm = 0;\n"
+"    if (tool.GetControllerId(\"left_arm_controller\", arm) !=\n"
+"        ARMErrorCode::Success) {\n"
+"        std::cout << \"未找到 left_arm_controller\" << std::endl;\n"
+"        tool.CloseRPC();\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    auto backend = std::make_shared<dexhand::DexHandTcpBackend>();\n"
+"    dexhand::HandConfig cfg;\n"
+"    cfg.side = dexhand::HandSide::kLeft;\n"
+"    cfg.slave_id = 0;\n"
+"    cfg.hand_id = 1;\n"
+"    cfg.model = dexhand::makeLinkerHandO6();\n"
+"\n"
+"    RobotHand hand;\n"
+"    char err[1024] = {0};\n"
+"    if (hand.InitHand(backend, cfg, arm, err) !=\n"
+"            ARMErrorCode::Success ||\n"
+"        hand.ActHand(err) != ARMErrorCode::Success) {\n"
+"        std::cout << \"初始化/激活失败：\" << err << std::endl;\n"
+"        tool.CloseRPC();\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    const double open[6] = {254, 254, 254, 254, 254, 254};\n"
+"    const double speed[6] = {30, 30, 30, 30, 30, 30};\n"
+"    const double force[6] = {60, 60, 60, 60, 60, 60};\n"
+"    if (hand.MoveAllFingers(open, speed, force, 6, err) !=\n"
+"            ARMErrorCode::Success) {\n"
+"        std::cout << \"张开失败：\" << err << std::endl;\n"
+"        tool.CloseRPC();\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    dexhand::HandState st;\n"
+"    for (int i = 0; i < 30; ++i) {\n"
+"        if (hand.GetHandState(st, err) == ARMErrorCode::Success &&\n"
+"            st.move_done == 1) {\n"
+"            break;\n"
+"        }\n"
+"        std::this_thread::sleep_for(std::chrono::milliseconds(300));\n"
+"    }\n"
+"    std::cout << \"joint_count=\" << st.joint_count\n"
+"            << \" move_done=\" << st.move_done << std::endl;\n"
+"\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+msgstr ""
+"#include <chrono>\n"
+"#include <iostream>\n"
+"#include <memory>\n"
+"#include <thread>\n"
+"#include \"humanorid_sdk.h\"\n"
+"#include \"dexhand/robot_hand.h\"\n"
+"\n"
+"int main() {\n"
+"    RobotTool tool;\n"
+"    if (tool.RPC(\"192.168.58.1\", 8081) != ARMErrorCode::Success) {\n"
+"        std::cout << \"RPC 接続失敗\" << std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    uint8_t arm = 0;\n"
+"    if (tool.GetControllerId(\"left_arm_controller\", arm) !=\n"
+"        ARMErrorCode::Success) {\n"
+"        std::cout << \"見つかりませんでした left_arm_controller\" << std::endl;\n"
+"        tool.CloseRPC();\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    auto backend = std::make_shared<dexhand::DexHandTcpBackend>();\n"
+"    dexhand::HandConfig cfg;\n"
+"    cfg.side = dexhand::HandSide::kLeft;\n"
+"    cfg.slave_id = 0;\n"
+"    cfg.hand_id = 1;\n"
+"    cfg.model = dexhand::makeLinkerHandO6();\n"
+"\n"
+"    RobotHand hand;\n"
+"    char err[1024] = {0};\n"
+"    if (hand.InitHand(backend, cfg, arm, err) !=\n"
+"            ARMErrorCode::Success ||\n"
+"        hand.ActHand(err) != ARMErrorCode::Success) {\n"
+"        std::cout << \"初期化/アクティベーション失敗：\" << err << std::endl;\n"
+"        tool.CloseRPC();\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    const double open[6] = {254, 254, 254, 254, 254, 254};\n"
+"    const double speed[6] = {30, 30, 30, 30, 30, 30};\n"
+"    const double force[6] = {60, 60, 60, 60, 60, 60};\n"
+"    if (hand.MoveAllFingers(open, speed, force, 6, err) !=\n"
+"            ARMErrorCode::Success) {\n"
+"        std::cout << \"開く失敗：\" << err << std::endl;\n"
+"        tool.CloseRPC();\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    dexhand::HandState st;\n"
+"    for (int i = 0; i < 30; ++i) {\n"
+"        if (hand.GetHandState(st, err) == ARMErrorCode::Success &&\n"
+"            st.move_done == 1) {\n"
+"            break;\n"
+"        }\n"
+"        std::this_thread::sleep_for(std::chrono::milliseconds(300));\n"
+"    }\n"
+"    std::cout << \"joint_count=\" << st.joint_count\n"
+"            << \" move_done=\" << st.move_done << std::endl;\n"
+"\n"
+"    tool.CloseRPC();\n"
+"    return 0;\n"
+"}"
+
+#: ../../source/SDKManual/sdk_intro.rst:2694
 msgid "速度前馈功能设置"
 msgstr "速度フィードフォワード機能設定"
 
-#: ../../source/SDKManual/sdk_intro.rst:2119
+#: ../../source/SDKManual/sdk_intro.rst:2696
 msgid ""
 "/**\n"
 "* @brief  速度前馈功能设置\n"
@@ -3652,11 +4666,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode SetVelForwardFeed(uint8_t enable, uint8_t axis[7]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2131
+#: ../../source/SDKManual/sdk_intro.rst:2708
 msgid "速度前馈功能设置调试用例"
 msgstr "速度前馈機能設定デバッグ用例"
 
-#: ../../source/SDKManual/sdk_intro.rst:2133
+#: ../../source/SDKManual/sdk_intro.rst:2710
 msgid ""
 "#include <iostream>\n"
 "#include \"humanorid_sdk.h\"\n"
@@ -3734,15 +4748,15 @@ msgstr ""
 "    return 0;\n"
 "}"
 
-#: ../../source/SDKManual/sdk_intro.rst:2176
+#: ../../source/SDKManual/sdk_intro.rst:2753
 msgid "腰部的SDK函数介绍(存在腰部关节的情况下)"
 msgstr "腰部のSDK関数紹介（腰部関節が存在する場合）"
 
-#: ../../source/SDKManual/sdk_intro.rst:2179
+#: ../../source/SDKManual/sdk_intro.rst:2756
 msgid "实例化腰部"
 msgstr "ウエストのインスタンス化"
 
-#: ../../source/SDKManual/sdk_intro.rst:2181
+#: ../../source/SDKManual/sdk_intro.rst:2758
 msgid ""
 "/**\n"
 "* @brief  实例化腰部\n"
@@ -3754,11 +4768,11 @@ msgstr ""
 " **/\n"
 "RobotWaist();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2190
+#: ../../source/SDKManual/sdk_intro.rst:2767
 msgid "关闭腰部"
 msgstr "ウエストを閉じる"
 
-#: ../../source/SDKManual/sdk_intro.rst:2192
+#: ../../source/SDKManual/sdk_intro.rst:2769
 msgid ""
 "/**\n"
 "* @brief  关闭腰部\n"
@@ -3770,7 +4784,7 @@ msgstr ""
 " **/\n"
 "~RobotWaist();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2231
+#: ../../source/SDKManual/sdk_intro.rst:2808
 msgid ""
 "/**\n"
 "* @brief  获取当前关节位置(角度)\n"
@@ -3786,11 +4800,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetActualJointPosDegree(double* joint_pos);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2242
+#: ../../source/SDKManual/sdk_intro.rst:2819
 msgid "查询运动是否完成"
 msgstr "運動が完了したかどうかを照会する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2244
+#: ../../source/SDKManual/sdk_intro.rst:2821
 msgid ""
 "/**\n"
 "@brief  查询运动是否完成\n"
@@ -3806,7 +4820,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetRobotMotionDone(uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2257
+#: ../../source/SDKManual/sdk_intro.rst:2834
 msgid ""
 "/**\n"
 "* @brief  关节使能\n"
@@ -3822,7 +4836,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode AxisEnable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2270
+#: ../../source/SDKManual/sdk_intro.rst:2847
 msgid ""
 "/**\n"
 "* @brief  关节去使能\n"
@@ -3838,7 +4852,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode AxisDisable(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2283
+#: ../../source/SDKManual/sdk_intro.rst:2860
 msgid ""
 "/**\n"
 "* @brief  关节校零\n"
@@ -3854,11 +4868,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode AxisZeroing(int joint_id);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2306
+#: ../../source/SDKManual/sdk_intro.rst:2883
 msgid "设置腰部正限位"
 msgstr "腰部の正方向リミットを設定"
 
-#: ../../source/SDKManual/sdk_intro.rst:2308
+#: ../../source/SDKManual/sdk_intro.rst:2885
 msgid ""
 "/**\n"
 "* @brief  设置腰部正限位\n"
@@ -3874,11 +4888,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetLimitPositive(double* limitPositive);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2319
+#: ../../source/SDKManual/sdk_intro.rst:2896
 msgid "设置腰部负限位"
 msgstr "腰部の負のリミットを設定する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2321
+#: ../../source/SDKManual/sdk_intro.rst:2898
 msgid ""
 "/**\n"
 "* @brief  设置腰部负限位\n"
@@ -3894,7 +4908,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetLimitNegative(double* limitNegative);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2334
+#: ../../source/SDKManual/sdk_intro.rst:2911
 msgid ""
 "/**\n"
 "* @brief  获取腰部关节软限位角度\n"
@@ -3912,11 +4926,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetJointSoftLimitDeg(double* limitNegative, double* limitPositive);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2346
+#: ../../source/SDKManual/sdk_intro.rst:2923
 msgid "设置腰部加速度百分比"
 msgstr "腰部加速度のパーセンテージを設定"
 
-#: ../../source/SDKManual/sdk_intro.rst:2348
+#: ../../source/SDKManual/sdk_intro.rst:2925
 msgid ""
 "/**\n"
 "* @brief  设置腰部加速度百分比\n"
@@ -3932,11 +4946,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetAccScale(double scale);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2359
+#: ../../source/SDKManual/sdk_intro.rst:2936
 msgid "设置腰部全局速度百分比"
 msgstr "腰部のグローバル速度パーセンテージを設定"
 
-#: ../../source/SDKManual/sdk_intro.rst:2361
+#: ../../source/SDKManual/sdk_intro.rst:2938
 msgid ""
 "/**\n"
 "* @brief  设置腰部全局速度百分比\n"
@@ -3952,7 +4966,7 @@ msgstr ""
 " **/\n"
 "ARMErrorCode SetSpeed(double speed);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2374
+#: ../../source/SDKManual/sdk_intro.rst:2951
 msgid ""
 "/**\n"
 "* @brief  获取机械臂固件版本\n"
@@ -3968,7 +4982,7 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetFirmwareVersion(char driverversion[][128]);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2387
+#: ../../source/SDKManual/sdk_intro.rst:2964
 msgid ""
 "/**\n"
 "* @brief  获取关节驱动器温度\n"
@@ -3984,15 +4998,15 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetJointDriverTemperature(double* temperature);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2398
+#: ../../source/SDKManual/sdk_intro.rst:2975
 msgid "工具部分的SDK函数介绍"
 msgstr "ツール部のSDK関数紹介"
 
-#: ../../source/SDKManual/sdk_intro.rst:2401
+#: ../../source/SDKManual/sdk_intro.rst:2978
 msgid "实例化工具类"
 msgstr "ツールクラスのインスタンス化"
 
-#: ../../source/SDKManual/sdk_intro.rst:2403
+#: ../../source/SDKManual/sdk_intro.rst:2980
 msgid ""
 "/**\n"
 "* @brief  实例化工具类\n"
@@ -4004,11 +5018,11 @@ msgstr ""
 " **/\n"
 "RobotTool();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2412
+#: ../../source/SDKManual/sdk_intro.rst:2989
 msgid "关闭工具类"
 msgstr "ツールクラスを閉じる"
 
-#: ../../source/SDKManual/sdk_intro.rst:2414
+#: ../../source/SDKManual/sdk_intro.rst:2991
 msgid ""
 "/**\n"
 "* @brief  关闭工具类对象\n"
@@ -4020,11 +5034,11 @@ msgstr ""
 " **/\n"
 "~RobotTool();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2423
+#: ../../source/SDKManual/sdk_intro.rst:3000
 msgid "与机器人控制器建立通信"
 msgstr "ロボットコントローラーとの通信を確立する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2425
+#: ../../source/SDKManual/sdk_intro.rst:3002
 msgid ""
 "/**\n"
 "* @brief  与机器人控制器建立通信，ip默认为192.168.58.1\n"
@@ -4036,11 +5050,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RPC(const char *ip, int port);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2434
+#: ../../source/SDKManual/sdk_intro.rst:3011
 msgid "与机器人控制器关闭通讯"
 msgstr "ロボットコントローラとの通信を切断する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2436
+#: ../../source/SDKManual/sdk_intro.rst:3013
 msgid ""
 "/**\n"
 "* @brief  与机器人控制器关闭通讯\n"
@@ -4054,11 +5068,11 @@ msgstr ""
 " */\n"
 "ARMErrorCode CloseRPC();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2446
+#: ../../source/SDKManual/sdk_intro.rst:3023
 msgid "获取SDK与机器人的通讯状态"
 msgstr "SDKとロボット間の通信ステータスを取得する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2448
+#: ../../source/SDKManual/sdk_intro.rst:3025
 msgid ""
 "/**\n"
 "* @brief  获取SDK与机器人的通讯状态\n"
@@ -4074,11 +5088,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetSDKComState(uint8_t& state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2459
+#: ../../source/SDKManual/sdk_intro.rst:3036
 msgid "设置机器人配置"
 msgstr "ロボットの設定を構成する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2461
+#: ../../source/SDKManual/sdk_intro.rst:3038
 msgid ""
 "/**\n"
 "* @brief  设置机器人配置-FAIRINO-ARTPlugin插件升级\n"
@@ -4094,11 +5108,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RobotFrConfig(int mode);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2472
+#: ../../source/SDKManual/sdk_intro.rst:3049
 msgid "日志导出"
 msgstr "ログのエクスポート"
 
-#: ../../source/SDKManual/sdk_intro.rst:2474
+#: ../../source/SDKManual/sdk_intro.rst:3051
 msgid ""
 "/**\n"
 "* @brief  日志导出\n"
@@ -4112,11 +5126,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RobotPackLog();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2484
+#: ../../source/SDKManual/sdk_intro.rst:3061
 msgid "数据记录"
 msgstr "データ記録"
 
-#: ../../source/SDKManual/sdk_intro.rst:2486
+#: ../../source/SDKManual/sdk_intro.rst:3063
 msgid ""
 "/**\n"
 "* @brief  数据记录\n"
@@ -4132,13 +5146,13 @@ msgstr ""
 " **/\n"
 "ARMErrorCode RobotRecordData(int state);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2497
-#: ../../source/SDKManual/sdk_intro.rst:2523
+#: ../../source/SDKManual/sdk_intro.rst:3074
+#: ../../source/SDKManual/sdk_intro.rst:3100
 msgid "SDK服务端部署"
 msgstr "SDKサーバー側のデプロイ"
 
-#: ../../source/SDKManual/sdk_intro.rst:2499
-#: ../../source/SDKManual/sdk_intro.rst:2525
+#: ../../source/SDKManual/sdk_intro.rst:3076
+#: ../../source/SDKManual/sdk_intro.rst:3102
 msgid ""
 "/**\n"
 "* @brief  SDK服务端部署\n"
@@ -4154,11 +5168,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode UpdateSDKServer(std::string filepath);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2510
+#: ../../source/SDKManual/sdk_intro.rst:3087
 msgid "获取SDK版本信息"
 msgstr "SDKバージョン情報の取得"
 
-#: ../../source/SDKManual/sdk_intro.rst:2512
+#: ../../source/SDKManual/sdk_intro.rst:3089
 msgid ""
 "/**\n"
 "* @brief  获取SDK版本信息\n"
@@ -4174,11 +5188,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode GetSDKVersion(std::string& version);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2536
+#: ../../source/SDKManual/sdk_intro.rst:3113
 msgid "获取机器人软件版本信息"
 msgstr "ロボットのソフトウェアバージョン情報を取得する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2538
+#: ../../source/SDKManual/sdk_intro.rst:3115
 msgid ""
 "/**\n"
 "* @brief  获取机器人软件版本信息\n"
@@ -4196,11 +5210,11 @@ msgstr ""
 "**/\n"
 "ARMErrorCode GetSoftwareVersion(std::string& pluginVersion, std::string& sdkServerVersion);"
 
-#: ../../source/SDKManual/sdk_intro.rst:2550
+#: ../../source/SDKManual/sdk_intro.rst:3127
 msgid "重启机器人操作系统"
 msgstr "ロボットオペレーティングシステムを再起動する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2552
+#: ../../source/SDKManual/sdk_intro.rst:3129
 msgid ""
 "/**\n"
 "* @brief  重启机器人操作系统\n"
@@ -4214,11 +5228,11 @@ msgstr ""
 " **/\n"
 "ARMErrorCode robotSystemReboot();"
 
-#: ../../source/SDKManual/sdk_intro.rst:2562
+#: ../../source/SDKManual/sdk_intro.rst:3139
 msgid "关闭机器人操作系统"
 msgstr "ロボットオペレーティングシステムを終了する"
 
-#: ../../source/SDKManual/sdk_intro.rst:2564
+#: ../../source/SDKManual/sdk_intro.rst:3141
 msgid ""
 "/**\n"
 "* @brief  关闭机器人操作系统\n"

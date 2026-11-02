@@ -1173,7 +1173,7 @@ SDK函数介绍
     **/
     ARMErrorCode AxisResetError();
 
-设置负载重量和质心(仅JK2.0机械臂使用)
+设置负载重量和质心
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1188,7 +1188,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetLoadcoord(uint8_t index, double mess, double messCenter[3]);
 
-设置关节摩擦力补偿开关(仅JK2.0机械臂使用)
+设置关节摩擦力补偿开关
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1201,7 +1201,7 @@ SDK函数介绍
     **/
     ARMErrorCode FrictionCompensationOnOff(uint8_t onOff);
 
-设置关节摩擦力补偿系数(仅JK2.0机械臂使用)
+设置关节摩擦力补偿系数
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1214,7 +1214,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetFrictionValue(double value[7]);
 
-设置机械臂软限位保护开关(仅JK2.0机械臂使用)
+设置机械臂软限位保护开关
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1227,7 +1227,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetJointSoftLimitOnOff(uint8_t onOff);
 
-设置电流环拖动示教(仅JK2.0机械臂使用)
+设置电流环拖动示教
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1241,7 +1241,7 @@ SDK函数介绍
      **/
     ARMErrorCode SetTeachMode(uint8_t enable, uint8_t mode=0);
 
-设置电流环拖动示教调试用例(仅JK2.0机械臂使用)
+设置电流环拖动示教调试用例
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1307,7 +1307,7 @@ SDK函数介绍
         return 0;
     }
 
-设置关节扭矩力传感器拖动示教(仅JK2.0机械臂使用)
+设置关节扭矩力传感器拖动示教
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1321,7 +1321,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetJointSensorTeachMode(uint8_t enable, uint8_t mode=0);
 
-获取是否处于拖动示教模式(仅JK2.0机械臂使用)
+获取是否处于拖动示教模式
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1334,7 +1334,7 @@ SDK函数介绍
     **/
     ARMErrorCode IsInDragTeach(uint8_t& mode);
 
-设置碰撞检测(仅JK2.0机械臂使用)
+设置碰撞检测
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1348,7 +1348,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetCollisionDetectionMode(uint8_t enable, uint8_t mode);
 
-设置碰撞等级(仅JK2.0机械臂使用)
+设置碰撞等级
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1361,7 +1361,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetAnticollision(uint8_t level[7]);
 
-设置碰撞后策略(仅JK2.0机械臂使用)
+设置碰撞后策略
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1374,7 +1374,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetCollisionStrategy(uint8_t strategy);
 
-设置碰撞后策略调试用例(仅JK2.0机械臂使用)
+设置碰撞后策略调试用例
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1451,7 +1451,7 @@ SDK函数介绍
         return 0;
     }
 
-设置关节扭矩力传感器零点标定(仅JK2.0机械臂使用)
+设置关节扭矩力传感器零点标定
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1465,7 +1465,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetJointSensorZero(double joint_val[7], double speed);
 
-设置机器人安装角度(仅JK2.0机械臂使用)
+设置机器人安装角度
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1479,7 +1479,7 @@ SDK函数介绍
     **/
     ARMErrorCode SetRobotInstallAngle(double yangle, double zangle);
 
-获取机器人安装角度(仅JK2.0机械臂使用)
+获取机器人安装角度
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: c++
@@ -1712,7 +1712,7 @@ SDK函数介绍
     * @param [in] acceleration 加速度百分比，范围：[0, 100]
     * @return 错误码
     **/
-    ARMErrorCode FT_PdCogIden(double joints[3][7], double velocity, double acceleration);
+    ARMErrorCode FT_PdCogIden(double joints[3], double velocity, double acceleration);
 
 力传感器安全检测
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2113,6 +2113,583 @@ SDK函数介绍
         return 0;
     }
                 
+获取各关节力矩前馈系数
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取各关节力矩前馈系数
+    * @param [out] gain 各轴力矩前馈系数(0,2]
+    * @return 错误码
+    **/
+    ARMErrorCode GetForceForwardFeedGain(double gain);
+                
+力矩前馈开启与关闭
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  力矩前馈开启与关闭
+    * @param [in] enable 力矩前馈开关，0-力矩前馈关 1-力矩前馈开
+    * @param [in] gain 各轴力矩前馈系数(0,2]
+    * @return 错误码
+    **/
+    ARMErrorCode SetForceForwardFeed(uint8_t enable,double gain);
+                
+力矩前馈开启与关闭代码示例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+        SingleRobot robot(ART7_R7, SingleArm);
+
+        // 3. 力矩前馈开启
+        double gain_set[7] = {1.0,1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
+        ARMErrorCode rtn = robot.SetForceForwardFeed(1, gain_set);
+        if (ret == ARMErrorCode::Success)
+        {
+            std::cout << "力矩前馈开启执行成功" << std::endl;
+        }
+        else
+        {
+            std::cout << "力矩前馈开启执行失败，错误码: " << (int)ret << std::endl;
+        }
+
+        // 4. 力矩前馈系数获取
+        double gain_get[7] = {0};
+        rtn = robot.GetForceForwardFeedGain(gain_get);
+        if (ret == ARMErrorCode::Success)
+        {
+            std::cout << "获取力矩前馈系数执行成功" << std::endl;
+            std::cout << "力矩前馈系数: " << gain_get[0] << “,” << gain_get[1] << “,” 
+            gain_get[2] << “,” << gain_get[3] << “,” << gain_get[4] << “,” << gain_get[5] << “,”
+            gain_get[6] << std::endl;
+        }
+        else
+        {
+            std::cout << "获取力矩前馈系数执行失败，错误码: " << (int)ret << std::endl;
+        }
+
+            // 5. 力矩前馈关闭
+        rtn = robot.SetForceForwardFeed(1, gain_set);
+        if (ret == ARMErrorCode::Success)
+        {
+            std::cout << "力矩前馈关闭执行成功" << std::endl;
+        }
+        else
+        {
+            std::cout << "力矩前馈关闭执行失败，错误码: " << (int)ret << std::endl;
+        }
+
+        // 7. 清理
+        tool.CloseRPC();
+        return 0;
+    }
+                
+获取指定关节运动速度
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取指定关节运动速度
+    * @param [in] joint_id 关节序号[1, 7]
+    * @param [out] speed 关节速度、单位°/s (0,150|180]
+    * @return 错误码
+    **/
+    ARMErrorCode GetSingleAxisSpeed(uint8_t joint_id,double speed);
+                
+获取指定关节运动加速度
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  获取指定关节运动加速度
+    * @param [in] joint_id 关节序号[1, 7]
+    * @param [out] acc 关节加速度、单位°/s^2 (0,300|360]
+    * @return 错误码
+    **/
+    ARMErrorCode GetSingleAxisAcc(uint8_t joint_id,double acc);
+                
+设置指定关节运动速度
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置指定关节运动速度
+    * @param [in] joint_id 关节序号[1, 7]
+    * @param [in] speed 待设置关节速度、单位°/s；1 2关节;最大速度150，3-7关节最大速度180 (0,150|180]
+    * @return 错误码
+    **/
+    ARMErrorCode SetSingleAxisSpeed(uint8_t joint_id,double speed);
+                
+设置指定关节运动加速度
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief  设置指定关节运动加速度
+    * @param [in] joint_id 关节序号[1, 7]
+    * @param [in] acc 待设置关节加速度、单位° (0,300|360]
+    * @return 错误码
+    **/
+    ARMErrorCode SetSingleAxisAcc(uint8_t joint_id,double acc);
+                
+设置指定关节运动加速度代码示例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+        SingleRobot robot(ART7_R7, SingleArm);
+
+    // 3. 获取关节运动速度和加速度
+    double speed[7] = {0};
+    double acc[7] = {0};
+    ARMErrorCode rtn;
+    for (uint8_t i = 0; i < 7; i++)
+    {
+    rtn = robot.GetSingleAxisSpeed(i+1, speed[i]);
+    if (rtn != ARMErrorCode::Success)
+    {
+    std::cout << "获取关节速度失败" << std::endl;
+    return -1;
+    }
+    rtn = robot.GetSingleAxisAcc(i+1, acc[i]);
+    if (rtn != ARMErrorCode::Success)
+    {
+    std::cout << "获取关节加速度失败" << std::endl;
+    return -1;
+    }
+    }
+
+    // 4. 设置关节运动速度和加速度
+    for (uint8_t i = 0; i < 7; i++)
+    {
+    rtn = robot.SetSingleAxisSpeed(i+1, speed[i]);
+    if (rtn != ARMErrorCode::Success)
+    {
+    std::cout << "设置关节速度失败" << std::endl;
+    return -1;
+    }
+    rtn = robot.SetSingleAxisAcc(i+1, acc[i]);
+    if (rtn != ARMErrorCode::Success)
+    {
+    std::cout << "设置关节加速度失败" << std::endl;
+    return -1;
+    }
+    }
+        // 5. 清理
+        tool.CloseRPC();
+        return 0;
+    }
+                
+获取机械臂各轴扭矩传感器零点参数
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 获取机械臂各轴扭矩传感器零点参数
+    * @param [out] zero_param 机械臂扭矩传感器零点参数
+    * @return 错误码
+    **/
+    ARMErrorCode GetJointSensorZeroParam(double zero_param);
+                
+获取机械臂各轴扭矩传感器零点参数代码示例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+        SingleRobot robot(ART7_R7, SingleArm);
+
+    // 3. 获取扭矩传感器零点参数
+    double zero_param[7] = {0};
+    ARMErrorCode rtn = robot.GetJointSensorZeroParam(zero_param);
+    if (rtn == ARMErrorCode::Success)
+    {
+        std::cout << "获取扭矩传感器零点参数执行成功" << std::endl;
+        std::cout << "扭矩传感器零点参数: " << zero_param[0] << “,” << zero_param[1] << “,” 
+        zero_param[2] << “,” << zero_param[3] << “,” << zero_param[4] << “,” << 
+    zero_param[5] << “,” << zero_param[6] << std::endl;
+    }
+    else
+    {
+        std::cout << "获取扭矩传感器零点参数执行失败，错误码: " << (int)ret << std::endl;
+    }
+
+        // 4. 清理
+        tool.CloseRPC();
+        return 0;
+    }
+                
+获取碰撞检测开启标志
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 获取碰撞检测开启标志
+    * @param [out] openState 0-碰撞检测未开启 1-碰撞检测开启
+    * @return 错误码
+    **/
+    ARMErrorCode GetCollisionOpenState(double openState);
+                
+获取碰撞检测开启标志代码示例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        // 2. 创建单臂实例（7轴）
+        SingleRobot robot(ART7_R7, SingleArm);
+
+    // 3. 获取碰撞检测开启标志
+    uint8_t openState;
+    ARMErrorCode rtn = robot.GetCollisionOpenState(openState);
+    if (rtn == ARMErrorCode::Success)
+    {
+        std::cout << "获取碰撞检测开启标志执行成功" << std::endl;
+        std::cout << "碰撞检测开启标志: " << (int)openState << std::endl;
+    }
+    else
+    {
+        std::cout << "获取碰撞检测开启标志执行失败，错误码: " << (int)ret << std::endl;
+    }
+
+        // 4. 清理
+        tool.CloseRPC();
+        return 0;
+    }
+                
+获取控制器当前系统时间
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 获取控制器当前系统时间
+    * @param [out] sysTime 系统时间，格式： year:month:data-hour:minute:second
+    * @return 错误码
+    **/
+    ARMErrorCode GetControllerSystemTime(std::string sysTime);
+                
+获取控制器当前系统时间代码示例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <iostream>
+    #include <string>
+    #include "humanorid_sdk.h"
+
+    int main() {
+        // 1. 建立通信
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+    // 2. 获取控制器系统时间
+    std::string sysTime;
+    rtn = tool.GetControllerSystemTime(sysTime);
+    if (rtn == ARMErrorCode::Success)
+    {
+        std::cout << "获取控制器系统时间执行成功" << std::endl;
+        std::cout << "系统时间: " << sysTime << std::endl;
+    }
+    else
+    {
+        std::cout << "获取控制器系统时间执行失败，错误码: " << (int)ret << std::endl;
+    }
+
+        // 4. 清理
+        tool.CloseRPC();
+        return 0;
+    }
+
+灵巧手控制初始化
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 灵巧手控制初始化。InitHand 只做本地登记，不发起网络请求，因此返回 Success 不代表设备在线；设备在线状态由后续 ActHand 与 GetHandState 确认。
+    * @param [in] backend 两只手共享的 TCP 后端；为空返回 TCP_ConnectErr。两只手必须传同一个实例。非空
+    * @param [in] config 本手配置：side / slave_id / hand_id / model。model.valid()
+    * @param [in] arm_controllezr_id 本手所在臂的控制器索引，由 RobotTool::GetControllerId 获取；单臂通常为 0，双臂左 0 / 右 1。
+    * @param [in] errMsg 失败原因，可直接打印。
+    * @return TCP_ConnectErr	未调用 InitHand，或后端未连接。
+              SDKServer_RunErr	服务端拒绝（常见状态码 4）；检查手供电、485、末端板拓扑与 hand_id。
+              CMD_RunErr	本侧执行失败（传输或解析异常）。
+    **/
+    ARMErrorCode InitHand(std::shared_ptr<DexHandTcpBackend> backend,const HandConfig& config, uint8_t arm_controller_id, char[1024] errMsg);
+                
+激活灵巧手
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 激活灵巧手，使能手部电机。接口使用 config.hand_id 作为寻址参数，因此两只手必须配置正确的 hand_id。
+    * @param [out] errMsg 失败原因，可直接打印。
+    * @return TCP_ConnectErr	未调用 InitHand，或后端未连接。
+            SDKServer_RunErr	服务端拒绝（常见状态码 4）；检查手供电、485、末端板拓扑与 hand_id。
+            CMD_RunErr	本侧执行失败（传输或解析异常）。
+            CMD_OverTime	响应超时或不完整。
+    **/
+    ARMErrorCode ActHand(char[1024] errMsg);
+                
+复位灵巧手
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 复位灵巧手，使手部电机失能。复位后运动指令会被服务端拒绝，需要重新 ActHand 才能恢复。
+    * @param [out] errMsg 失败原因，可直接打印。
+    * @return TCP_ConnectErr	未调用 InitHand，或后端未连接。
+            SDKServer_RunErr	服务端拒绝。
+            CMD_RunErr	本侧执行失败。
+    **/
+    ARMErrorCode ResetHand(char[1024] errMsg);
+                
+清除本手故障
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 清除本手故障。清除的是故障标志，不修复机械卡阻、丢步或电机损坏。
+    * @param [out] errMsg 失败原因，可直接打印。
+    * @return TCP_ConnectErr	未调用 InitHand，或后端未连接。
+            SDKServer_RunErr	服务端拒绝。
+            CMD_RunErr	本侧执行失败。
+            CMD_OverTime	响应超时或不完整。
+    **/
+    ARMErrorCode ClearError(char[1024] errMsg);
+                
+控制单个关节
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 控制单个关节。接口按 (finger, joint) 经型号表映射到协议槽位，生成 mask = 1 << slot，pos/speed/force 各只包含 1 个元素。
+    * @param [in] finger 手指号：0 拇指、1 食指、2 中指、3 无名指、4 小指。[0, 4]
+    * @param [in] joint 手指号：关节号；O6 拇指 2 关节，其余手指各 1 关节。拇指 [0,1]，其余 0
+    * @param [in] pos 目标位置；小值弯曲、大值伸直。[0, 255]
+    * @param [in] speed 目标速度百分比。[0, 100]
+    * @param [in] force 目标力百分比。[0, 100]
+    * @param [out] errMsg 失败原因，可直接打印。
+    * @return InvalidInput_OutOfRange	手指/关节越界，语义层直接拒绝，零下发。
+            TCP_ConnectErr	未调用 InitHand，或后端未连接。
+            SDKServer_RunErr	服务端拒绝（常见状态码 5：手未激活、失能或反馈未就绪）。
+            CMD_RunErr	本侧执行失败。
+            CMD_OverTime	响应超时或不完整。
+    **/
+    ARMErrorCode MoveMotor(uint8_t finger, int joint, double pos, double speed, double force, char[1024] errMsg);
+                
+控制整根手指
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 控制整根手指。pos/speed/force 的长度必须等于该手指的关节数，按关节号传入；接口内部按槽位升序压缩成 mask 与三段数组。
+    * @param [in] finger 手指号：0 拇指、1 食指、2 中指、3 无名指、4 小指。[0, 4]
+    * @param [in] pos 各关节目标位置。长度 = jointsOfFinger(finger)
+    * @param [in] speed 各关节目标速度。长度 = jointsOfFinger(finger)
+    * @param [in] force 各关节目标力。长度 = jointsOfFinger(finger)
+    * @param [in] len 数组长度，必须等于该指关节数。2（拇指）/ 1（其余）
+    * @param [out] errMsg 失败原因，可直接打印。
+    * @return InvalidInput_Nullptr	pos/speed/force 存在空指针。
+            InvalidInput_OutOfRange	手指越界，或数组长度不等于关节数；零下发。
+            TCP_ConnectErr	未调用 InitHand，或后端未连接。
+            SDKServer_RunErr	服务端拒绝。
+            CMD_RunErr	本侧执行失败。
+            CMD_OverTime	响应超时或不完整。
+    **/
+    ARMErrorCode MoveFinger(uint8_t finger, double pos, double speed, double force, int len, char[1024] errMsg);
+                
+控制全部关节
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 控制全部关节。len 必须等于 model.motor_count；数组按非预留槽升序排列，接口内部生成 mask 并跳过预留槽。O6 的 motor_count=6，mask=0x003F。
+    * @param [in] pos 各关节目标位置。长度 = jointsOfFinger(finger)
+    * @param [in] speed 各关节目标速度。长度 = jointsOfFinger(finger)
+    * @param [in] force 各关节目标力。长度 = jointsOfFinger(finger)
+    * @param [in] len 数组长度，必须等于该指关节数。2（拇指）/ 1（其余）
+    * @param [out] errMsg 失败原因，可直接打印。
+    * @return InvalidInput_Nullptr	pos/speed/force 存在空指针。
+            InvalidInput_OutOfRange	len <= 0，或 len 不等于 motor_count；零下发。
+            TCP_ConnectErr	未调用 InitHand，或后端未连接。
+            SDKServer_RunErr	服务端拒绝（常见状态码 5）。
+            CMD_RunErr	本侧执行失败。
+            CMD_OverTime	响应超时或不完整。
+    **/
+    ARMErrorCode MoveAllFingers(double pos, double speed, double force, int len, char[1024] errMsg);
+                
+读取本手最新状态快照
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    /**
+    * @brief 读取本手最新状态快照
+    * @param [out] state 状态快照；stamp_ns==0 表示未取到数据。
+    * @param [out] errMsg 失败原因，可直接打印。
+    * @return CMD_OverTime	未取得状态（stamp_ns == 0）：查询失败、超时或响应字段不符。
+            TCP_ConnectErr	未调用 InitHand，或后端未连接。
+    **/
+    ARMErrorCode GetHandState(HandState& state, char[1024] errMsg);
+                
+读取本手最新状态快照代码示例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+    :linenos:
+
+    #include <chrono>
+    #include <iostream>
+    #include <memory>
+    #include <thread>
+    #include "humanorid_sdk.h"
+    #include "dexhand/robot_hand.h"
+
+    int main() {
+        RobotTool tool;
+        if (tool.RPC("192.168.58.1", 8081) != ARMErrorCode::Success) {
+            std::cout << "RPC 连接失败" << std::endl;
+            return -1;
+        }
+
+        uint8_t arm = 0;
+        if (tool.GetControllerId("left_arm_controller", arm) !=
+            ARMErrorCode::Success) {
+            std::cout << "未找到 left_arm_controller" << std::endl;
+            tool.CloseRPC();
+            return -1;
+        }
+
+        auto backend = std::make_shared<dexhand::DexHandTcpBackend>();
+        dexhand::HandConfig cfg;
+        cfg.side = dexhand::HandSide::kLeft;
+        cfg.slave_id = 0;
+        cfg.hand_id = 1;
+        cfg.model = dexhand::makeLinkerHandO6();
+
+        RobotHand hand;
+        char err[1024] = {0};
+        if (hand.InitHand(backend, cfg, arm, err) !=
+                ARMErrorCode::Success ||
+            hand.ActHand(err) != ARMErrorCode::Success) {
+            std::cout << "初始化/激活失败：" << err << std::endl;
+            tool.CloseRPC();
+            return -1;
+        }
+
+        const double open[6] = {254, 254, 254, 254, 254, 254};
+        const double speed[6] = {30, 30, 30, 30, 30, 30};
+        const double force[6] = {60, 60, 60, 60, 60, 60};
+        if (hand.MoveAllFingers(open, speed, force, 6, err) !=
+                ARMErrorCode::Success) {
+            std::cout << "张开失败：" << err << std::endl;
+            tool.CloseRPC();
+            return -1;
+        }
+
+        dexhand::HandState st;
+        for (int i = 0; i < 30; ++i) {
+            if (hand.GetHandState(st, err) == ARMErrorCode::Success &&
+                st.move_done == 1) {
+                break;
+            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(300));
+        }
+        std::cout << "joint_count=" << st.joint_count
+                << " move_done=" << st.move_done << std::endl;
+
+        tool.CloseRPC();
+        return 0;
+    }
+
 速度前馈功能设置
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

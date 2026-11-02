@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022-2026, 法奥（苏州）机器人技术股份有限公司
+# This file is distributed under the same license as the 法奥协作机器人用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 法奥协作机器人用户手册\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-29 16:53+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/PluginManual/plugin_traj.rst:2
+msgid "轨迹复现"
+msgstr "Trajectory Replay"
+
+#: ../../source/PluginManual/plugin_traj.rst:8
+msgid "环境搭建"
+msgstr "Environment Setup"
+
+#: ../../source/PluginManual/plugin_traj.rst:10
+msgid "**Step1**: 升级插件和SDK服务端，要求版本为V3.0.7及以下版本，升级完成后重启控制器。"
+msgstr ""
+"**Step1**:  upgrade the plugin and SDK server, requiring the version to be "
+"V3.0.7 and below, after the upgrade is completed, restart the controller."
+
+#: ../../source/PluginManual/plugin_traj.rst:12
+msgid ""
+"**Step2**: 将 ROS2 Action 通信所需的接口功能包(fairino_sdk_server_interfaces)解压至上位机，通过 "
+"colcon 构建工具编译，生成相应的消息、服务及动作类型。如下图1所示。"
+msgstr ""
+"**Step2**: decompress the interface function package required for  ROS2 "
+"Action  communication to the host computer, compile it through the  colcon  "
+"build tool, and generate the corresponding messages, service, and action "
+"types. As shown in the following figure 1."
+
+#: ../../source/PluginManual/plugin_traj.rst:-1
+msgid "010.png"
+msgstr "010.png"
+
+#: ../../source/PluginManual/plugin_traj.rst:19
+msgid "图表 4-1 编译接口功能包"
+msgstr "Chart Compilation Interface Function Package 4-1 "
+
+#: ../../source/PluginManual/plugin_traj.rst:20
+msgid ""
+"**Step3**: 编译完成后，执行 source install/setup.bash 加载工作空间环境变量，使 ROS2 Action "
+"接口类型在当前终端环境中可用。然后使用 ROS2 Action 接口向机器人下发控制指令，并接收执行结果。如下图2所示。"
+msgstr ""
+"**Step3**: After compilation, execute  source install/setup.bash  to load "
+"the workspace environment variables, making the  ROS2 Action  interface type"
+" available in the current terminal environment. Then use the  ROS2 Action  "
+"interface to send control commands to the robot and receive execution "
+"results. As shown in the following figure 2."
+
+#: ../../source/PluginManual/plugin_traj.rst:-1
+msgid "011.png"
+msgstr "011.png"
+
+#: ../../source/PluginManual/plugin_traj.rst:27
+msgid "图表 4-2 加载工作空间环境变量"
+msgstr "图表 4-2 Load workspace environment variables"
+
+#: ../../source/PluginManual/plugin_traj.rst:29
+msgid "轨迹复现功能介绍"
+msgstr "Trajectory Replay Function Introduction"
+
+#: ../../source/PluginManual/plugin_traj.rst:32
+msgid "接口说明"
+msgstr "Interface Description"
+
+#: ../../source/PluginManual/plugin_traj.rst:34
+msgid "获取指定关节运动速度。"
+msgstr "获取 specified joint motion speed."
+
+#: ../../source/PluginManual/plugin_traj.rst:41
+msgid "**指令名称**"
+msgstr "**Instruction Name**"
+
+#: ../../source/PluginManual/plugin_traj.rst:42
+msgid "**功能描述**"
+msgstr "**Function Description**"
+
+#: ../../source/PluginManual/plugin_traj.rst:43
+msgid "**输入参数说明**"
+msgstr "**Input Parameter Description**"
+
+#: ../../source/PluginManual/plugin_traj.rst:45
+msgid "StartJOG"
+msgstr "StartJOG"
+
+#: ../../source/PluginManual/plugin_traj.rst:46
+msgid "点动开始，可以设置关节点动和笛卡尔点动参数。"
+msgstr "Jog start, you can set the joint jog and Cartesian jog parameters."
+
+#: ../../source/PluginManual/plugin_traj.rst
+#: ../../source/PluginManual/plugin_traj.rst:58
+#: ../../source/PluginManual/plugin_traj.rst:77
+#: ../../source/PluginManual/plugin_traj.rst:116
+#: ../../source/PluginManual/plugin_traj.rst:130
+#: ../../source/PluginManual/plugin_traj.rst:134
+#: ../../source/PluginManual/plugin_traj.rst:138
+#: ../../source/PluginManual/plugin_traj.rst:146
+#: ../../source/PluginManual/plugin_traj.rst:150
+#: ../../source/PluginManual/plugin_traj.rst:154
+msgid "args[0]: 0-左臂 1-右臂，单臂配置为0"
+msgstr "args[0]: 0-left arm 1-right arm, single arm configuration is 0"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[1]: 0-关节点动 1-笛卡尔点动(基坐标系)"
+msgstr "args[1]: 0-Joint Move 1-Cartesian Move(Base Coordinate System)"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[2]: 1-关节1/x,...,6-关节6/rz,7-关节7"
+msgstr "args[2]: 1-joint1/x,...,6-joint6/rz,7-joint7"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[3]: 0-负方向，1-正方向"
+msgstr "args[3]: 0-negative direction, 1-positive direction"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[4]: 速度百分比"
+msgstr "args[4]:  speed percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[5]: 加速度百分比"
+msgstr "args[5]:  acceleration percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[6]: 加加速度百分比"
+msgstr "args[6]: Jerk percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[7]: 单次最大点动距离"
+msgstr "args[7]: Maximum single jog distance"
+
+#: ../../source/PluginManual/plugin_traj.rst:56
+msgid "StopJOG"
+msgstr "StopJOG"
+
+#: ../../source/PluginManual/plugin_traj.rst:57
+msgid "停止点动"
+msgstr "Stop jogging"
+
+#: ../../source/PluginManual/plugin_traj.rst:60
+msgid "RobotHoming"
+msgstr "RobotHoming"
+
+#: ../../source/PluginManual/plugin_traj.rst:61
+msgid "机械臂回零点"
+msgstr "The robotic arm returns to the zero point"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[1]: 速度百分比"
+msgstr "args[1]:  speed percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[2]: 加速度百分比"
+msgstr "args[2]:  acceleration percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[3]: 加加速度百分比"
+msgstr "args[3]: Jerk percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[4]: 是否阻塞 -1-非阻塞 0-阻塞"
+msgstr "args[4]: whether to block -1-non-blocking 0-blocking"
+
+#: ../../source/PluginManual/plugin_traj.rst:68
+msgid "SetTPDStart"
+msgstr "SetTPDStart"
+
+#: ../../source/PluginManual/plugin_traj.rst:69
+msgid "开始轨迹记录"
+msgstr "Start trajectory recording"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[1]: 0-关节位置"
+msgstr "args[1]: 0-joint position"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[2]: 轨迹文件名"
+msgstr "args[2]:  trajectory file name"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[3]: 数据采样周期，2、4、8ms"
+msgstr "args[3]: data sampling period, 2、4、8ms"
+
+#: ../../source/PluginManual/plugin_traj.rst:75
+msgid "SetTPDEnd"
+msgstr "SetTPDEnd"
+
+#: ../../source/PluginManual/plugin_traj.rst:76
+msgid "停止轨迹记录。"
+msgstr "Stop trajectory recording."
+
+#: ../../source/PluginManual/plugin_traj.rst:79
+msgid "GetTPDStartPose"
+msgstr "GetTPDStartPose"
+
+#: ../../source/PluginManual/plugin_traj.rst:80
+msgid "获取轨迹起始点位数据。"
+msgstr "获取 trajectory starting point data."
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[1]: 轨迹文件名"
+msgstr "args[1]:  trajectory filename"
+
+#: ../../source/PluginManual/plugin_traj.rst:84
+msgid "MoveToTPDStart"
+msgstr "MoveToTPDStart"
+
+#: ../../source/PluginManual/plugin_traj.rst:85
+msgid "运动到轨迹记录起点"
+msgstr "Move to the starting point of the trajectory record"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[2]: 运动类型0-PTP"
+msgstr "args[2]: Type of Exercise0-PTP"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[3]: 运动速度百分比"
+msgstr "args[3]:  movement speed percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst:91
+msgid "LoadTPD"
+msgstr "LoadTPD"
+
+#: ../../source/PluginManual/plugin_traj.rst:92
+msgid "轨迹预加载"
+msgstr "Trajectory Preloading"
+
+#: ../../source/PluginManual/plugin_traj.rst:96
+msgid "MoveTPD"
+msgstr "MoveTPD"
+
+#: ../../source/PluginManual/plugin_traj.rst:97
+msgid "轨迹复现运动"
+msgstr "trajectory reproduction movement"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[2]: 速度百分比"
+msgstr "args[2]:  speed percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst:102
+msgid "SetTPDUpdate"
+msgstr "SetTPDUpdate"
+
+#: ../../source/PluginManual/plugin_traj.rst:103
+msgid "轨迹微调更新"
+msgstr "Trajectory Fine-tuning Update"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[2]: 微调方法 1-点动微调 2-拖动微调"
+msgstr "args[2]: Fine-tuning method 1-Jog fine-tuning 2-Drag fine-tuning"
+
+#: ../../source/PluginManual/plugin_traj.rst:109
+msgid "SetTPDDelete"
+msgstr "SetTPDDelete"
+
+#: ../../source/PluginManual/plugin_traj.rst:110
+msgid "轨迹文件删除"
+msgstr "trajectory file deletion"
+
+#: ../../source/PluginManual/plugin_traj.rst:114
+msgid "GetTPDList"
+msgstr "GetTPDList"
+
+#: ../../source/PluginManual/plugin_traj.rst:115
+msgid "获取当前轨迹列表"
+msgstr "Get the current track list"
+
+#: ../../source/PluginManual/plugin_traj.rst:118
+msgid "SetSpeed"
+msgstr "SetSpeed"
+
+#: ../../source/PluginManual/plugin_traj.rst:119
+msgid "设置全局速度百分比"
+msgstr "Set global speed percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst:123
+msgid "SetAccScale"
+msgstr "SetAccScale"
+
+#: ../../source/PluginManual/plugin_traj.rst:124
+msgid "设置全局加速度百分比"
+msgstr "Set global acceleration percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst
+msgid "args[1]: 加速度百分比"
+msgstr "args[1]:  acceleration percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst:128
+msgid "GetSpeed"
+msgstr "GetSpeed"
+
+#: ../../source/PluginManual/plugin_traj.rst:129
+msgid "获取全局速度百分比"
+msgstr "获取 global speed percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst:132
+msgid "GetAccScale"
+msgstr "GetAccScale"
+
+#: ../../source/PluginManual/plugin_traj.rst:133
+msgid "获取全局加速度百分比"
+msgstr "获取 global acceleration percentage"
+
+#: ../../source/PluginManual/plugin_traj.rst:136
+msgid "GetActualJointDeg"
+msgstr "GetActualJointDeg"
+
+#: ../../source/PluginManual/plugin_traj.rst:137
+msgid "获取当前机械臂关节位置"
+msgstr "Get the current robot arm joint position"
+
+#: ../../source/PluginManual/plugin_traj.rst:140
+msgid "GetRobotErrorCode"
+msgstr "GetRobotErrorCode"
+
+#: ../../source/PluginManual/plugin_traj.rst:141
+msgid "获取机械臂错误码"
+msgstr "获取 robotic arm error code"
+
+#: ../../source/PluginManual/plugin_traj.rst:142
+msgid "args[0]: 参数为0"
+msgstr "args[0]:  parameter is 0"
+
+#: ../../source/PluginManual/plugin_traj.rst:144
+msgid "PauseMotion"
+msgstr "PauseMotion"
+
+#: ../../source/PluginManual/plugin_traj.rst:145
+msgid "暂停机械臂运动"
+msgstr "Pause the robotic arm movement"
+
+#: ../../source/PluginManual/plugin_traj.rst:148
+msgid "ResumeMotion"
+msgstr "ResumeMotion"
+
+#: ../../source/PluginManual/plugin_traj.rst:149
+msgid "恢复机械臂运动"
+msgstr "恢复 mechanical arm motion"
+
+#: ../../source/PluginManual/plugin_traj.rst:152
+msgid "StopMotion"
+msgstr "StopMotion"
+
+#: ../../source/PluginManual/plugin_traj.rst:153
+msgid "停止机械臂运动"
+msgstr "Stop the robotic arm movement"
+
+#: ../../source/PluginManual/plugin_traj.rst:156
+msgid "ResetError"
+msgstr "ResetError"
+
+#: ../../source/PluginManual/plugin_traj.rst:157
+msgid "清除错误"
+msgstr "Clear errors"
+
+#: ../../source/PluginManual/plugin_traj.rst:158
+msgid "无"
+msgstr "无"
+
+#: ../../source/PluginManual/plugin_traj.rst:161
+msgid "调试用例"
+msgstr "Debugging test cases"
+
+#: ../../source/PluginManual/plugin_traj.rst:163
+msgid "轨迹记录与复现使用案例："
+msgstr "Trajectory recording and replay use cases:"
+
+#: ../../source/PluginManual/plugin_traj.rst:165
+#, python-brace-format
+msgid ""
+"source install/setup.bash\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1001, command: 'SetTPDStart(0,0,traj1,2)'}\"    // 轨迹记录开始\n"
+"\n"
+"/* 按住拖动按钮进入拖动 */\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1002, command: 'SetTPDEnd(0)'}\"    // 轨迹记录结束\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1003, command: 'LoadTPD(0,traj1)'}\"    // 轨迹预加载\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1004, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // 运动到轨迹起点\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1005, command: 'MoveTPD(0,traj1,10)'}\"    // 轨迹复现"
+msgstr ""
+"source install/setup.bash\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1001, command: 'SetTPDStart(0,0,traj1,2)'}\"    // Trajectory recording starts\n"
+"\n"
+"/* Hold and drag the button to enter dragging */\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1002, command: 'SetTPDEnd(0)'}\"    // Trajectory recording ends\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1003, command: 'LoadTPD(0,traj1)'}\"    // Trajectory preloading\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1004, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // Move to the starting point of the trajectory\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1005, command: 'MoveTPD(0,traj1,10)'}\"    // Trajectory replay"
+
+#: ../../source/PluginManual/plugin_traj.rst:180
+msgid "笛卡尔点动轨迹微调使用案例："
+msgstr "Descartes point motion trajectory fine-tuning use case:"
+
+#: ../../source/PluginManual/plugin_traj.rst:182
+#, python-brace-format
+msgid ""
+"source install/setup.bash\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1001, command: 'LoadTPD(0,traj1)'}\"    // 轨迹预加载\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1002, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // 运动到轨迹起点\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1003, command: 'MoveTPD(0,traj1,10)'}\"    // 轨迹复现\n"
+"\n"
+"/* 运动到待微调位置 */\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1004, command: 'StopMotion(0)'}\"    // 轨迹复现停止运动\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1005, command: 'StartJOG(0,1,1,1,10,10,10,1)'}\"    // 笛卡尔点动，延基坐标系X轴正方向最大移动1mm\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1006, command: 'SetTPDUpdate(0,traj1,1,2)'}\"    // 笛卡尔点动轨迹微调保存\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1007, command: 'LoadTPD(0,traj1)'}\"    // 轨迹预加载\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1008, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // 运动到轨迹起点\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1009, command: 'MoveTPD(0,traj1,10)'}\"    // 轨迹复现"
+msgstr ""
+"source install/setup.bash\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1001, command: 'LoadTPD(0,traj1)'}\"    // trajectory preloading\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1002, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // move to the starting point of the trajectory\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1003, command: 'MoveTPD(0,traj1,10)'}\"    // trajectory reproduction\n"
+"\n"
+"/* move to the position for fine-tuning */\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1004, command: 'StopMotion(0)'}\"    // stop movement of trajectory reproduction\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1005, command: 'StartJOG(0,1,1,1,10,10,10,1)'}\"    // Cartesian jogging, along the base coordinate systemXmaximum movement in the positive direction of the axis1mm\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1006, command: 'SetTPDUpdate(0,traj1,1,2)'}\"    // save fine-tuning of Cartesian jogging trajectory\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1007, command: 'LoadTPD(0,traj1)'}\"    // trajectory preloading\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1008, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // move to the starting point of the trajectory\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1009, command: 'MoveTPD(0,traj1,10)'}\"    // trajectory reproduction"
+
+#: ../../source/PluginManual/plugin_traj.rst:200
+msgid "拖动示教轨迹微调使用案例："
+msgstr "Drag teaching trajectory fine-tuning use case:"
+
+#: ../../source/PluginManual/plugin_traj.rst:202
+#, python-brace-format
+msgid ""
+"source install/setup.bash\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1001, command: 'LoadTPD(0,traj1)'}\"    // 轨迹预加载\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1002, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // 运动到轨迹起点\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1003, command: 'MoveTPD(0,traj1,10)'}\"    // 轨迹复现\n"
+"\n"
+"/* 运动到待微调位置 */\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1004, command: 'StopMotion(0)'}\"    // 轨迹复现停止运动\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1005, command: 'SetTPDStart(0,0,traj1_tmp,2)'}\"    // 微调轨迹记录开始,注意轨迹命名格式，原轨迹+”_tmp”\n"
+"/* 按住拖动按钮进入拖动 */\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1006, command: 'SetTPDEnd(0)'}\"    // 微调轨迹记录结束\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1007, command: 'SetTPDUpdate(0,traj1,2,2)'}\"    // 拖动示教轨迹微调保存，注意轨迹文件名称\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1008, command: 'LoadTPD(0,traj1)'}\"    // 轨迹预加载\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1009, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // 运动到轨迹起点\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1010, command: 'MoveTPD(0,traj1,10)'}\"    // 轨迹复现"
+msgstr ""
+"source install/setup.bash\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1001, command: 'LoadTPD(0,traj1)'}\"    // Trajectory Preload\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1002, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // Move to Trajectory Start Point\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1003, command: 'MoveTPD(0,traj1,10)'}\"    // Trajectory Reproduction\n"
+"\n"
+"/* Move to Fine-tuning Position */\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1004, command: 'StopMotion(0)'}\"    // Stop Trajectory Reproduction Movement\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1005, command: 'SetTPDStart(0,0,traj1_tmp,2)'}\"    // Start Fine-tuning Trajectory Recording,Pay Attention to the Trajectory Naming Format, Original Trajectory+”_tmp”\n"
+"/* Hold and Drag Button to Enter Dragging */\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1006, command: 'SetTPDEnd(0)'}\"    // End Fine-tuning Trajectory Recording\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1007, command: 'SetTPDUpdate(0,traj1,2,2)'}\"    // Save Fine-tuned Teaching Trajectory by Dragging, Pay Attention to the Trajectory File Name\n"
+"\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1008, command: 'LoadTPD(0,traj1)'}\"    // Trajectory Preload\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1009, command: 'MoveToTPDStart(0,traj1,0,50)'}\"    // Move to Trajectory Start Point\n"
+"ros2 action send_goal /fairino_sdk/execute_command fairino_sdk_server_interfaces/action/ExecuteCommand \"{client_request_id: 1010, command: 'MoveTPD(0,traj1,10)'}\"    // Trajectory Reproduction"
+
+#~ msgid "006.png"
+#~ msgstr "006.png"

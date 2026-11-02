@@ -8,3 +8,4 @@ ROS2驱动
     plugin_intro
     plugin_board
     plugin_tool
+    plugin_traj
