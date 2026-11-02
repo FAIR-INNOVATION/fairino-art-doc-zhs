@@ -3818,7 +3818,7 @@ msgstr ""
 
 #: ../../source/SDKManual/sdk_intro.rst:2221
 msgid "获取指定关节运动加速度"
-msgstr "获取 specified joint motion acceleration"
+msgstr "Get specified joint motion acceleration"
 
 #: ../../source/SDKManual/sdk_intro.rst:2223
 msgid ""
@@ -4096,7 +4096,7 @@ msgstr ""
 
 #: ../../source/SDKManual/sdk_intro.rst:2377
 msgid "获取碰撞检测开启标志"
-msgstr "获取 collision detection enable flag"
+msgstr "Get collision detection enable flag"
 
 #: ../../source/SDKManual/sdk_intro.rst:2379
 msgid ""
@@ -4116,7 +4116,7 @@ msgstr ""
 
 #: ../../source/SDKManual/sdk_intro.rst:2390
 msgid "获取碰撞检测开启标志代码示例"
-msgstr "获取 collision detection enable flag code example"
+msgstr "Get collision detection enable flag code example"
 
 #: ../../source/SDKManual/sdk_intro.rst:2392
 msgid ""

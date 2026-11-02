@@ -81,7 +81,7 @@ msgstr "Interface Description"
 
 #: ../../source/PluginManual/plugin_traj.rst:34
 msgid "获取指定关节运动速度。"
-msgstr "获取 specified joint motion speed."
+msgstr "Get specified joint motion speed."
 
 #: ../../source/PluginManual/plugin_traj.rst:41
 msgid "**指令名称**"
@@ -210,7 +210,7 @@ msgstr "GetTPDStartPose"
 
 #: ../../source/PluginManual/plugin_traj.rst:80
 msgid "获取轨迹起始点位数据。"
-msgstr "获取 trajectory starting point data."
+msgstr "Get trajectory starting point data."
 
 #: ../../source/PluginManual/plugin_traj.rst
 msgid "args[1]: 轨迹文件名"
@@ -306,7 +306,7 @@ msgstr "GetSpeed"
 
 #: ../../source/PluginManual/plugin_traj.rst:129
 msgid "获取全局速度百分比"
-msgstr "获取 global speed percentage"
+msgstr "Get global speed percentage"
 
 #: ../../source/PluginManual/plugin_traj.rst:132
 msgid "GetAccScale"
@@ -314,7 +314,7 @@ msgstr "GetAccScale"
 
 #: ../../source/PluginManual/plugin_traj.rst:133
 msgid "获取全局加速度百分比"
-msgstr "获取 global acceleration percentage"
+msgstr "Get global acceleration percentage"
 
 #: ../../source/PluginManual/plugin_traj.rst:136
 msgid "GetActualJointDeg"
@@ -330,7 +330,7 @@ msgstr "GetRobotErrorCode"
 
 #: ../../source/PluginManual/plugin_traj.rst:141
 msgid "获取机械臂错误码"
-msgstr "获取 robotic arm error code"
+msgstr "Get robotic arm error code"
 
 #: ../../source/PluginManual/plugin_traj.rst:142
 msgid "args[0]: 参数为0"
@@ -350,7 +350,7 @@ msgstr "ResumeMotion"
 
 #: ../../source/PluginManual/plugin_traj.rst:149
 msgid "恢复机械臂运动"
-msgstr "恢复 mechanical arm motion"
+msgstr "Resume mechanical arm motion"
 
 #: ../../source/PluginManual/plugin_traj.rst:152
 msgid "StopMotion"
@@ -370,7 +370,7 @@ msgstr "Clear errors"
 
 #: ../../source/PluginManual/plugin_traj.rst:158
 msgid "无"
-msgstr "无"
+msgstr "Null"
 
 #: ../../source/PluginManual/plugin_traj.rst:161
 msgid "调试用例"
